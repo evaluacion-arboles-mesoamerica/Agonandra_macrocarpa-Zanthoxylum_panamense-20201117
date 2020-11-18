@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0f97734b21d4777b53a79f78cb225aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c0f97734b21d4777b53a79f78cb225aa" ></div>
+        
+</body>
+<script>    
+    
+            var map_c0f97734b21d4777b53a79f78cb225aa = L.map(
+                "map_c0f97734b21d4777b53a79f78cb225aa",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+
+            
+
+        
+    
+            var tile_layer_9c3ffb90606f49099a379579194c04e1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+            var tile_layer_259fea6cf0564ab98ed0ea7de638e340 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+            var circle_marker_900258a2f753496e837f2e2a238d59d1 = L.circleMarker(
+                [10.175, -84.108333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_d2d8aefb1dc04c6ebf5f4a3cb0a23e04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46990ba84d5f4baeb2b5948c66e00da7 = $(`<div id="html_46990ba84d5f4baeb2b5948c66e00da7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North end of Cerros Las Marías, N slope of Volcán Barva. <strong>Elevación:</strong> 2240.0 m  <strong>Fecha:</strong> 1986-04-19 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_d2d8aefb1dc04c6ebf5f4a3cb0a23e04.setContent(html_46990ba84d5f4baeb2b5948c66e00da7);
+        
+
+        circle_marker_900258a2f753496e837f2e2a238d59d1.bindPopup(popup_d2d8aefb1dc04c6ebf5f4a3cb0a23e04)
+        ;
+
+        
+    
+    
+            var circle_marker_139c2373e57c4a3e9a302c329f442871 = L.circleMarker(
+                [10.168611, -84.113333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_6ea035aa42b24ac085695b6a2c0318c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22e724f056354555b7c74c994bdd5390 = $(`<div id="html_22e724f056354555b7c74c994bdd5390" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero del Transecto,   on   flat   portion   of   ridge   during   otherwise   steep   descent   from   Cerro   Las   Marías   to   old   road   that   leads   from   San   Rafael,   Vara   Blanca   to   regufio,   pluvial montane   forest,   Transect   2250-1 <strong>Elevación:</strong> 2225.0 m  <strong>Fecha:</strong> 1992-05-30 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6ea035aa42b24ac085695b6a2c0318c0.setContent(html_22e724f056354555b7c74c994bdd5390);
+        
+
+        circle_marker_139c2373e57c4a3e9a302c329f442871.bindPopup(popup_6ea035aa42b24ac085695b6a2c0318c0)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca7913ec69045eb9a29039ff179725b = L.circleMarker(
+                [10.16, -84.09],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_49b1153ff5814842840d76ee1a67993f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fe9be70e07345709a492a34adf546fe = $(`<div id="html_4fe9be70e07345709a492a34adf546fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nac. Braulio Carrillo Colonia Jesús María, ca. 1 Km Norte de la Laguna Danta. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1990-05-07 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_49b1153ff5814842840d76ee1a67993f.setContent(html_4fe9be70e07345709a492a34adf546fe);
+        
+
+        circle_marker_4ca7913ec69045eb9a29039ff179725b.bindPopup(popup_49b1153ff5814842840d76ee1a67993f)
+        ;
+
+        
+    
+    
+            var circle_marker_cd7dfe4126de489a9549fdc268842dd9 = L.circleMarker(
+                [10.216667, -84.083333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_fc2d2d5458b747ae99dcf41c9ca19ea2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_085bdebb37b245009fc39ea6135ef85c = $(`<div id="html_085bdebb37b245009fc39ea6135ef85c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Río San Rafael, Atlantic slope of Volcán Barva. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-04-12 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_fc2d2d5458b747ae99dcf41c9ca19ea2.setContent(html_085bdebb37b245009fc39ea6135ef85c);
+        
+
+        circle_marker_cd7dfe4126de489a9549fdc268842dd9.bindPopup(popup_fc2d2d5458b747ae99dcf41c9ca19ea2)
+        ;
+
+        
+    
+    
+            var circle_marker_7749c0b1a3d345109940f8cb82eba120 = L.circleMarker(
+                [10.1675, -84.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_24dacc0a409947a3b13e34a3d4403e8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fe5078dda034d829518d2c22dd0f94c = $(`<div id="html_0fe5078dda034d829518d2c22dd0f94c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, Casa 2060 m, hike N on trail for 1.5 hr to 2250 m, in very steep section of trail. <strong>Elevación:</strong> 2350.0 m  <strong>Fecha:</strong> 2005-02-01 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_24dacc0a409947a3b13e34a3d4403e8e.setContent(html_0fe5078dda034d829518d2c22dd0f94c);
+        
+
+        circle_marker_7749c0b1a3d345109940f8cb82eba120.bindPopup(popup_24dacc0a409947a3b13e34a3d4403e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_7078aa44532746e88f28389ff7f977e7 = L.circleMarker(
+                [10.163611, -84.109167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_c7d21aa63b77437c97fb496ee98a94d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9d31cd8f31c429189610d1a201de207 = $(`<div id="html_e9d31cd8f31c429189610d1a201de207" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, Casa 2060 m, hike N on trail for 2.5 hrs to ridgetop. <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2004-04-27 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c7d21aa63b77437c97fb496ee98a94d4.setContent(html_e9d31cd8f31c429189610d1a201de207);
+        
+
+        circle_marker_7078aa44532746e88f28389ff7f977e7.bindPopup(popup_c7d21aa63b77437c97fb496ee98a94d4)
+        ;
+
+        
+    
+    
+            var circle_marker_435f34a772af4966a894ca332cab8865 = L.circleMarker(
+                [10.083333, -84.06666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_c990626445a440299933d6d73aff52d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fec78a35ac444b39f89c360085b991d = $(`<div id="html_4fec78a35ac444b39f89c360085b991d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Area Gallito, reserva Forestal, Cordillera Central Volcánica; Km 4 (Km 11 de San Rafael) del Parque Residencial del Monte, camino empedrado. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 1984-03-13 <strong>Recolectores:</strong> Clark P. Cowan <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_c990626445a440299933d6d73aff52d6.setContent(html_4fec78a35ac444b39f89c360085b991d);
+        
+
+        circle_marker_435f34a772af4966a894ca332cab8865.bindPopup(popup_c990626445a440299933d6d73aff52d6)
+        ;
+
+        
+    
+    
+            var circle_marker_4b2acb058cf340e1928421a9bbbb166e = L.circleMarker(
+                [10.05, -84.026667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_d0dfd8ad45114416a3b0b3a2bb8db562 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f412064c7f704885a25cec72843b213e = $(`<div id="html_f412064c7f704885a25cec72843b213e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pass between Volcán Irazú and Volcán Barba, beyond San Rafael de Heredia. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1969-04-22 <strong>Recolectores:</strong> Gerrit Davidse|Richard W. Pohl <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d0dfd8ad45114416a3b0b3a2bb8db562.setContent(html_f412064c7f704885a25cec72843b213e);
+        
+
+        circle_marker_4b2acb058cf340e1928421a9bbbb166e.bindPopup(popup_d0dfd8ad45114416a3b0b3a2bb8db562)
+        ;
+
+        
+    
+    
+            var circle_marker_6775457293d04577b1c11abd960dc24c = L.circleMarker(
+                [10.1, -84.06],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_423e80ca1b7046b69c4064d221c2530e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e461929c63944d1acf348fc632704fe = $(`<div id="html_4e461929c63944d1acf348fc632704fe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet secondary forest about 15 m high, with many epiphytes, with frequent wind and rain from the Caribbean, Río Vueltas, (upper Río Patria), eastern slope of Volcán Barba near the Continental Divide <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1970-01-26 <strong>Recolectores:</strong> William C. Burger|Ronald L. Liesner <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_423e80ca1b7046b69c4064d221c2530e.setContent(html_4e461929c63944d1acf348fc632704fe);
+        
+
+        circle_marker_6775457293d04577b1c11abd960dc24c.bindPopup(popup_423e80ca1b7046b69c4064d221c2530e)
+        ;
+
+        
+    
+    
+            var circle_marker_2a581741a60943fd8db8bdbbccb17486 = L.circleMarker(
+                [9.47, -82.93],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_516b8235dcea4ee181af8c57772ba039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad1b3b22f5414efda2bda69d74a337df = $(`<div id="html_ad1b3b22f5414efda2bda69d74a337df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica/Panama <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1965-02-03 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> C.Taylor</div>`)[0];
+            popup_516b8235dcea4ee181af8c57772ba039.setContent(html_ad1b3b22f5414efda2bda69d74a337df);
+        
+
+        circle_marker_2a581741a60943fd8db8bdbbccb17486.bindPopup(popup_516b8235dcea4ee181af8c57772ba039)
+        ;
+
+        
+    
+    
+            var circle_marker_30b5113848b34b3fbb270e7e66bccd67 = L.circleMarker(
+                [10.08, -84.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_aec5d6ab16a041a587d652c232d4d0f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f78a738d5784ce8abb6badcb4da41e3 = $(`<div id="html_4f78a738d5784ce8abb6badcb4da41e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe.Colectado en alrededores del camino al Cerro.Curso de moscas de la fruta. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1997-05-16 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_aec5d6ab16a041a587d652c232d4d0f5.setContent(html_4f78a738d5784ce8abb6badcb4da41e3);
+        
+
+        circle_marker_30b5113848b34b3fbb270e7e66bccd67.bindPopup(popup_aec5d6ab16a041a587d652c232d4d0f5)
+        ;
+
+        
+    
+    
+            var circle_marker_173cf262723c4782bcbd0c4635e1de8c = L.circleMarker(
+                [10.086111, -84.072778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_2c2c5af4dec04710951fcfd46759672b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6abd399e5d94e939ee93a987232ad99 = $(`<div id="html_e6abd399e5d94e939ee93a987232ad99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Refugio Cerro Dantas. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 2015-05-01 <strong>Recolectores:</strong> Barry Hammel; Isabel Pérez <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2c2c5af4dec04710951fcfd46759672b.setContent(html_e6abd399e5d94e939ee93a987232ad99);
+        
+
+        circle_marker_173cf262723c4782bcbd0c4635e1de8c.bindPopup(popup_2c2c5af4dec04710951fcfd46759672b)
+        ;
+
+        
+    
+    
+            var circle_marker_64f6a8e869e34829b7903d1745a5e0b5 = L.circleMarker(
+                [10.168611, -84.113333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_ec4f04f4e84a4ba19f495bb22edf373e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45134faf6a284f3893954730baa53da8 = $(`<div id="html_45134faf6a284f3893954730baa53da8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero del Transecto. On flat portion of ridge during descent from Cerro Las Marias to old road that leads from San Rafael, Vara Blanca to regufio. Pluvial Montane forest.     Transect 2250-1 <strong>Elevación:</strong> 2225.0 m  <strong>Fecha:</strong> 1992-05-30 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ec4f04f4e84a4ba19f495bb22edf373e.setContent(html_45134faf6a284f3893954730baa53da8);
+        
+
+        circle_marker_64f6a8e869e34829b7903d1745a5e0b5.bindPopup(popup_ec4f04f4e84a4ba19f495bb22edf373e)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a3a49770464e89a59a8d9fce964356 = L.circleMarker(
+                [10.163889, -84.093889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_8f84e047c6e4448397163a090f72611c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce1bc93f19d1423b8f0b23dcef73357f = $(`<div id="html_ce1bc93f19d1423b8f0b23dcef73357f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Jesus Maria, ca. 1 Km Norte de la Laguna Danta. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1990-05-07 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_8f84e047c6e4448397163a090f72611c.setContent(html_ce1bc93f19d1423b8f0b23dcef73357f);
+        
+
+        circle_marker_e6a3a49770464e89a59a8d9fce964356.bindPopup(popup_8f84e047c6e4448397163a090f72611c)
+        ;
+
+        
+    
+    
+            var circle_marker_8c239cef9109409e97d3f7baa96e63bf = L.circleMarker(
+                [10.086944, -84.07305600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_a963fea41ba14915ab3200adff25f67a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_726a8beada6c4e15a33fe82e8d805163 = $(`<div id="html_726a8beada6c4e15a33fe82e8d805163" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1997-05-16 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a963fea41ba14915ab3200adff25f67a.setContent(html_726a8beada6c4e15a33fe82e8d805163);
+        
+
+        circle_marker_8c239cef9109409e97d3f7baa96e63bf.bindPopup(popup_a963fea41ba14915ab3200adff25f67a)
+        ;
+
+        
+    
+    
+            var circle_marker_26d74f2177f0483eab67e0059cf3c649 = L.circleMarker(
+                [10.086944, -84.07305600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_ae92b1897cec4e9c9087b568cef72f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c50d63d99cf42219a7fc048f5479f8c = $(`<div id="html_5c50d63d99cf42219a7fc048f5479f8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1997-05-16 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ae92b1897cec4e9c9087b568cef72f8d.setContent(html_5c50d63d99cf42219a7fc048f5479f8c);
+        
+
+        circle_marker_26d74f2177f0483eab67e0059cf3c649.bindPopup(popup_ae92b1897cec4e9c9087b568cef72f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_a06c36c274de4c37875738359810e5e8 = L.circleMarker(
+                [10.086944, -84.07305600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_6b9668c62dfc48e8ace51d6837a2a2b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1516563b6b542859a12940ca660d918 = $(`<div id="html_b1516563b6b542859a12940ca660d918" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Chompipe. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1997-05-16 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6b9668c62dfc48e8ace51d6837a2a2b4.setContent(html_b1516563b6b542859a12940ca660d918);
+        
+
+        circle_marker_a06c36c274de4c37875738359810e5e8.bindPopup(popup_6b9668c62dfc48e8ace51d6837a2a2b4)
+        ;
+
+        
+    
+    
+            var circle_marker_e6c4e6f6289044718edd0e70091232de = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_2214246e21954fccb6dc4582323a5999 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bcea7acd8d744f981b4576704c46d4d = $(`<div id="html_7bcea7acd8d744f981b4576704c46d4d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-01-26 <strong>Recolectores:</strong> W. C. Burger & R. L. Liesner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2214246e21954fccb6dc4582323a5999.setContent(html_7bcea7acd8d744f981b4576704c46d4d);
+        
+
+        circle_marker_e6c4e6f6289044718edd0e70091232de.bindPopup(popup_2214246e21954fccb6dc4582323a5999)
+        ;
+
+        
+    
+    
+            var circle_marker_a1b881c4f4a74d639d428c704655499b = L.circleMarker(
+                [10.5, -84.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_5ac24e30344d433781aac3e66446fe28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_008dbbacf55a4c728d800024b934332e = $(`<div id="html_008dbbacf55a4c728d800024b934332e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1965-02-03 <strong>Recolectores:</strong> R. W. Lent <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_5ac24e30344d433781aac3e66446fe28.setContent(html_008dbbacf55a4c728d800024b934332e);
+        
+
+        circle_marker_a1b881c4f4a74d639d428c704655499b.bindPopup(popup_5ac24e30344d433781aac3e66446fe28)
+        ;
+
+        
+    
+    
+            var circle_marker_bbba055851e942689d736f2400424159 = L.circleMarker(
+                [10.06, -83.85],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_28765da18b144cdb9247b3f5b8cbebc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a69b7a542b354eb284184818e728f3f3 = $(`<div id="html_a69b7a542b354eb284184818e728f3f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Descendiendo por la falda norte del Volcàn Irazù. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1995-01-06 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_28765da18b144cdb9247b3f5b8cbebc1.setContent(html_a69b7a542b354eb284184818e728f3f3);
+        
+
+        circle_marker_bbba055851e942689d736f2400424159.bindPopup(popup_28765da18b144cdb9247b3f5b8cbebc1)
+        ;
+
+        
+    
+    
+            var circle_marker_a78444b4483c48e1bcd8af67756b1ccf = L.circleMarker(
+                [10.16, -84.09],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_1e0fbfcd902443419709eca0f37c9526 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8f5fafdbd3647eab10a2678748f94a0 = $(`<div id="html_a8f5fafdbd3647eab10a2678748f94a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Colonia Jesús María, ca. 1 km Norte de la laguna Danta. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1990-05-07 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1e0fbfcd902443419709eca0f37c9526.setContent(html_a8f5fafdbd3647eab10a2678748f94a0);
+        
+
+        circle_marker_a78444b4483c48e1bcd8af67756b1ccf.bindPopup(popup_1e0fbfcd902443419709eca0f37c9526)
+        ;
+
+        
+    
+    
+            var circle_marker_df0513c6786b44c5913c589faafff188 = L.circleMarker(
+                [10.16, -84.11],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_13e97ede94c04ec8be43c720d8fbfe45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5302632dd9b14ac48a4d7765b958ab72 = $(`<div id="html_5302632dd9b14ac48a4d7765b958ab72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Sendero del transecto. On flat portion of ridge during descent from Cerro Las Marìas to old road that leads from San Rafael, Vara Blanca to Refugio. Pluvial Montane forest. Transect 2250-1. <strong>Elevación:</strong> 2275.0 m  <strong>Fecha:</strong> 1992-05-30 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_13e97ede94c04ec8be43c720d8fbfe45.setContent(html_5302632dd9b14ac48a4d7765b958ab72);
+        
+
+        circle_marker_df0513c6786b44c5913c589faafff188.bindPopup(popup_13e97ede94c04ec8be43c720d8fbfe45)
+        ;
+
+        
+    
+    
+            var circle_marker_5190809964de46c6a64d671f77d40dec = L.circleMarker(
+                [10.16, -84.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_c680ff414aca46239d2d962c0fe44e29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18721d19dc7f4104a61996471971ea2c = $(`<div id="html_18721d19dc7f4104a61996471971ea2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North end of Cerros Las Marìas, N slope of Volcàn Barva. <strong>Elevación:</strong> 2240.0 m  <strong>Fecha:</strong> 1986-04-19 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Grayum, Michael</div>`)[0];
+            popup_c680ff414aca46239d2d962c0fe44e29.setContent(html_18721d19dc7f4104a61996471971ea2c);
+        
+
+        circle_marker_5190809964de46c6a64d671f77d40dec.bindPopup(popup_c680ff414aca46239d2d962c0fe44e29)
+        ;
+
+        
+    
+    
+            var circle_marker_16ae90e39ed94483b09cbb8ee420fb1a = L.circleMarker(
+                [10.1, -84.06],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+        
+    
+        var popup_a49295f416fc433db1625bcae4b821cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00702a9c6a4242489dfb8ed0abb338de = $(`<div id="html_00702a9c6a4242489dfb8ed0abb338de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet secondary forest about 15 m high, with manye epiphytes, with frequent wind and rain from the Caribbean. Rìo Vueltas (upper Rìo Patria) eastern slope of Volcàn Barva near the continental divide at about 2000 m altitude. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1970-01-26 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a49295f416fc433db1625bcae4b821cc.setContent(html_00702a9c6a4242489dfb8ed0abb338de);
+        
+
+        circle_marker_16ae90e39ed94483b09cbb8ee420fb1a.bindPopup(popup_a49295f416fc433db1625bcae4b821cc)
+        ;
+
+        
+    
+    
+            var layer_control_9937394a9f8c4e308b05eaa505fe1240 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9c3ffb90606f49099a379579194c04e1,
+                    "ESRI World Imagery" : tile_layer_259fea6cf0564ab98ed0ea7de638e340,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_9937394a9f8c4e308b05eaa505fe1240.base_layers,
+                layer_control_9937394a9f8c4e308b05eaa505fe1240.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c0f97734b21d4777b53a79f78cb225aa);
+            tile_layer_259fea6cf0564ab98ed0ea7de638e340.remove();
+        
+</script>

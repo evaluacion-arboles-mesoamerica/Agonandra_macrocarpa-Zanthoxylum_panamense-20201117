@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bf46ed5868844ecb9e46274dd9df4e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6bf46ed5868844ecb9e46274dd9df4e1" ></div>
+        
+</body>
+<script>    
+    
+            var map_6bf46ed5868844ecb9e46274dd9df4e1 = L.map(
+                "map_6bf46ed5868844ecb9e46274dd9df4e1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+
+            
+
+        
+    
+            var tile_layer_6ba2878b411c4539b19c777d89aeef4d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+            var tile_layer_c3af8fc447bf482c8a02c5b05ce159f8 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+            var circle_marker_9a30c6054de842e48f2028656e9eb743 = L.circleMarker(
+                [10.320833, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_fe3c5d8ca23742d39468499b949f68aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_396263a7acdd4643adfc50b01ed0d5b7 = $(`<div id="html_396263a7acdd4643adfc50b01ed0d5b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordillera de Tilarán, Valle del Río Peñas Blancas, Quebrada el Valle. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1993-08-17 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_fe3c5d8ca23742d39468499b949f68aa.setContent(html_396263a7acdd4643adfc50b01ed0d5b7);
+        
+
+        circle_marker_9a30c6054de842e48f2028656e9eb743.bindPopup(popup_fe3c5d8ca23742d39468499b949f68aa)
+        ;
+
+        
+    
+    
+            var circle_marker_2c4d67cb555b4a2f8b82f7c61a6b2d52 = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_356e89857b3846778ef186344b7fcd51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e5ca1967ab04e18a6dd1ff81cba5c40 = $(`<div id="html_0e5ca1967ab04e18a6dd1ff81cba5c40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde. Tract X. Pacific slope wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1991-08-24 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_356e89857b3846778ef186344b7fcd51.setContent(html_0e5ca1967ab04e18a6dd1ff81cba5c40);
+        
+
+        circle_marker_2c4d67cb555b4a2f8b82f7c61a6b2d52.bindPopup(popup_356e89857b3846778ef186344b7fcd51)
+        ;
+
+        
+    
+    
+            var circle_marker_3debecb4ad334159b5307a32d5372b00 = L.circleMarker(
+                [10.38333, -84.83333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_8aebb00bdc16488da6b073a6cab88144 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08e67cc626ec4264abd8536a597fc546 = $(`<div id="html_08e67cc626ec4264abd8536a597fc546" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiquito de Arenal, Tilaran, Altos de San Bosco, 10 km NW Monteverde, Atlantic slope wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1986-08-27 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|April Clagget|Michelle Powell <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_8aebb00bdc16488da6b073a6cab88144.setContent(html_08e67cc626ec4264abd8536a597fc546);
+        
+
+        circle_marker_3debecb4ad334159b5307a32d5372b00.bindPopup(popup_8aebb00bdc16488da6b073a6cab88144)
+        ;
+
+        
+    
+    
+            var circle_marker_a49cc611ae2d4b91ba456d5c9fc74c6a = L.circleMarker(
+                [10.76, -85.3],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_d8fcd02d942143dbbc2171d8b683f0cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a05a92d8565e474fa6fdb7e02672f6d0 = $(`<div id="html_a05a92d8565e474fa6fdb7e02672f6d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Rincón de La Vieja Liberia. Del Mirador siguiendo la fila al noroeste. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1988-03-02 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_d8fcd02d942143dbbc2171d8b683f0cd.setContent(html_a05a92d8565e474fa6fdb7e02672f6d0);
+        
+
+        circle_marker_a49cc611ae2d4b91ba456d5c9fc74c6a.bindPopup(popup_d8fcd02d942143dbbc2171d8b683f0cd)
+        ;
+
+        
+    
+    
+            var circle_marker_18d5b07d2ce548bb8f036cd81a58e179 = L.circleMarker(
+                [10.333333, -84.75],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_96f445d1cc5e4eee93ea6700f0c35991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e044ca1e0dbe4b04b120b5694e1eb07a = $(`<div id="html_e044ca1e0dbe4b04b120b5694e1eb07a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, Peñas Blancas river valley on Atlantic slope. <strong>Elevación:</strong> 1025.0 m  <strong>Fecha:</strong> 1986-07-27 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_96f445d1cc5e4eee93ea6700f0c35991.setContent(html_e044ca1e0dbe4b04b120b5694e1eb07a);
+        
+
+        circle_marker_18d5b07d2ce548bb8f036cd81a58e179.bindPopup(popup_96f445d1cc5e4eee93ea6700f0c35991)
+        ;
+
+        
+    
+    
+            var circle_marker_50d3c805fc22498abfb0a0857a42551b = L.circleMarker(
+                [10.8, -84.83333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_441cd0ca9196425fb65104b1fdc91d5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0eb171b376714e1c87a3d361a53e8592 = $(`<div id="html_0eb171b376714e1c87a3d361a53e8592" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, cloud forest. Transect 4. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-12 <strong>Recolectores:</strong> Alwyn H. Gentry|William A. Haber|Lindsay P. Woodruff|Brad Boyle <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_441cd0ca9196425fb65104b1fdc91d5d.setContent(html_0eb171b376714e1c87a3d361a53e8592);
+        
+
+        circle_marker_50d3c805fc22498abfb0a0857a42551b.bindPopup(popup_441cd0ca9196425fb65104b1fdc91d5d)
+        ;
+
+        
+    
+    
+            var circle_marker_d9c1512b2b2a415b90ab5c22c28712f1 = L.circleMarker(
+                [10.26, -84.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_6b5f819de7dd4752b2fcb5daa15e2066 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53d2645cc122419fadf95e51094efd40 = $(`<div id="html_53d2645cc122419fadf95e51094efd40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Monteverde, Finca de Chepe Rojas, al oeste del pueblo. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-06-24 <strong>Recolectores:</strong> Erick Bello C.|William A. Haber|Barry E. Hammel <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_6b5f819de7dd4752b2fcb5daa15e2066.setContent(html_53d2645cc122419fadf95e51094efd40);
+        
+
+        circle_marker_d9c1512b2b2a415b90ab5c22c28712f1.bindPopup(popup_6b5f819de7dd4752b2fcb5daa15e2066)
+        ;
+
+        
+    
+    
+            var circle_marker_5fbf923e69a44d49be7d93536021d7e3 = L.circleMarker(
+                [10.26, -84.83],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_766957b3b56849d08cb89990da818bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58610156da7040b399339f31c0fbc073 = $(`<div id="html_58610156da7040b399339f31c0fbc073" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Monteverde, Finca de Chepe Rojas, al oeste del pueblo. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1988-06-24 <strong>Recolectores:</strong> Erick Bello C.|William A. Haber|Barry E. Hammel <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_766957b3b56849d08cb89990da818bd0.setContent(html_58610156da7040b399339f31c0fbc073);
+        
+
+        circle_marker_5fbf923e69a44d49be7d93536021d7e3.bindPopup(popup_766957b3b56849d08cb89990da818bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_7d6cbeeb4c20466db545b007b1deb3c6 = L.circleMarker(
+                [10.301110000000001, -84.79916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_81eae10965f743ce8f359c0f3b587485 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9202720371e24619ada33195f091648f = $(`<div id="html_9202720371e24619ada33195f091648f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vertiente Pacífico, Reserva Monteverde, Cordillera de Tilarán [covers parts of Alajuela, Puntarenas & Guanacaste] arriba de Quebrada Cuecha, en bosque maduro <strong>Elevación:</strong> 1570.0 m  <strong>Fecha:</strong> 1976-12-13 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_81eae10965f743ce8f359c0f3b587485.setContent(html_9202720371e24619ada33195f091648f);
+        
+
+        circle_marker_7d6cbeeb4c20466db545b007b1deb3c6.bindPopup(popup_81eae10965f743ce8f359c0f3b587485)
+        ;
+
+        
+    
+    
+            var circle_marker_3216ece4a379493e9c7157f5875b8167 = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_ba90d1c0464e491d90db29a6724ac8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e434e819830c4a6982135cd458983b4c = $(`<div id="html_e434e819830c4a6982135cd458983b4c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> in & around the Monteverde Nature reserve, mostly on the Pacific watershed cloud forest & swamp forest <strong>Elevación:</strong> 782.5 m  <strong>Fecha:</strong> 1975-10-31 <strong>Recolectores:</strong> William C. Burger|Richard A. Baker <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ba90d1c0464e491d90db29a6724ac8c5.setContent(html_e434e819830c4a6982135cd458983b4c);
+        
+
+        circle_marker_3216ece4a379493e9c7157f5875b8167.bindPopup(popup_ba90d1c0464e491d90db29a6724ac8c5)
+        ;
+
+        
+    
+    
+            var circle_marker_bb1be23aa2314bf4bcffc02df4977624 = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_6992edcd9d464412b8ab7da9707dee26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22917a1af2a442ddae8a35f5928446cc = $(`<div id="html_22917a1af2a442ddae8a35f5928446cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-08-08 <strong>Recolectores:</strong> Luis J. Poveda Álvarez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_6992edcd9d464412b8ab7da9707dee26.setContent(html_22917a1af2a442ddae8a35f5928446cc);
+        
+
+        circle_marker_bb1be23aa2314bf4bcffc02df4977624.bindPopup(popup_6992edcd9d464412b8ab7da9707dee26)
+        ;
+
+        
+    
+    
+            var circle_marker_eda2dd2e11644bdaba6a367c3fc5a941 = L.circleMarker(
+                [10.3, -84.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_8a94243e59fe44e28abd1748531c5aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26a1a878eb2f40399286cec7741a8488 = $(`<div id="html_26a1a878eb2f40399286cec7741a8488" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In Mata's pasture, Monteverde <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1975-08-24 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_8a94243e59fe44e28abd1748531c5aad.setContent(html_26a1a878eb2f40399286cec7741a8488);
+        
+
+        circle_marker_eda2dd2e11644bdaba6a367c3fc5a941.bindPopup(popup_8a94243e59fe44e28abd1748531c5aad)
+        ;
+
+        
+    
+    
+            var circle_marker_a1db4016c54b401a9494075fb9c613e6 = L.circleMarker(
+                [10.240833, -84.428333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_bf9b6d00f3f643fb9bd59a584f314048 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2252f905fb434aad95f706129dd95495 = $(`<div id="html_2252f905fb434aad95f706129dd95495" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Zapote y Buena Vista <strong>Elevación:</strong> 140.0 m  <strong>Fecha:</strong> 1972-07-19 <strong>Recolectores:</strong> Leslie R. Holdridge <strong>Identificadores:</strong> F. R. Barrie, X/</div>`)[0];
+            popup_bf9b6d00f3f643fb9bd59a584f314048.setContent(html_2252f905fb434aad95f706129dd95495);
+        
+
+        circle_marker_a1db4016c54b401a9494075fb9c613e6.bindPopup(popup_bf9b6d00f3f643fb9bd59a584f314048)
+        ;
+
+        
+    
+    
+            var circle_marker_ddf7b144b6d14fe9b9bd64919e2767c7 = L.circleMarker(
+                [10.320833, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_30242e2d3d9a4b3b9eeaaae9d95aae9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0349444a7dcf41e08b2ca647a0497d21 = $(`<div id="html_0349444a7dcf41e08b2ca647a0497d21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Rio Penas Blancas, Quebrada El Valle <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1993-08-17 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_30242e2d3d9a4b3b9eeaaae9d95aae9c.setContent(html_0349444a7dcf41e08b2ca647a0497d21);
+        
+
+        circle_marker_ddf7b144b6d14fe9b9bd64919e2767c7.bindPopup(popup_30242e2d3d9a4b3b9eeaaae9d95aae9c)
+        ;
+
+        
+    
+    
+            var circle_marker_2650b8133a234ff584e8238352e1115c = L.circleMarker(
+                [10.3, -84.800007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_99f57702c3924401bd9d3bf81faaaa90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f734c8b62194049be171a5cb8d7f1ed = $(`<div id="html_4f734c8b62194049be171a5cb8d7f1ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Tract X. Pacific slope wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1991-08-24 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_99f57702c3924401bd9d3bf81faaaa90.setContent(html_4f734c8b62194049be171a5cb8d7f1ed);
+        
+
+        circle_marker_2650b8133a234ff584e8238352e1115c.bindPopup(popup_99f57702c3924401bd9d3bf81faaaa90)
+        ;
+
+        
+    
+    
+            var circle_marker_1ce69de76005474eac46fd98f96f36c0 = L.circleMarker(
+                [10.25, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_5b3f3334001944359bab436f39547303 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a842ff993fe74efa85f776163753f8db = $(`<div id="html_a842ff993fe74efa85f776163753f8db" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guacimal, Altos de Rio Veracruz. Finca Brenes. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-01-12 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_5b3f3334001944359bab436f39547303.setContent(html_a842ff993fe74efa85f776163753f8db);
+        
+
+        circle_marker_1ce69de76005474eac46fd98f96f36c0.bindPopup(popup_5b3f3334001944359bab436f39547303)
+        ;
+
+        
+    
+    
+            var circle_marker_d8597cd1f82d4a2db2bf9113eede9e75 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+        
+    
+        var popup_c50dce708bed46b18645f6f8678da05b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e7db48f922b474c9b637cc43a33db3f = $(`<div id="html_0e7db48f922b474c9b637cc43a33db3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-08-08 <strong>Recolectores:</strong> L. J. Poveda <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_c50dce708bed46b18645f6f8678da05b.setContent(html_0e7db48f922b474c9b637cc43a33db3f);
+        
+
+        circle_marker_d8597cd1f82d4a2db2bf9113eede9e75.bindPopup(popup_c50dce708bed46b18645f6f8678da05b)
+        ;
+
+        
+    
+    
+            var layer_control_1f9fef4d9f874bd3bbbb577a8c39b4a9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6ba2878b411c4539b19c777d89aeef4d,
+                    "ESRI World Imagery" : tile_layer_c3af8fc447bf482c8a02c5b05ce159f8,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_1f9fef4d9f874bd3bbbb577a8c39b4a9.base_layers,
+                layer_control_1f9fef4d9f874bd3bbbb577a8c39b4a9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6bf46ed5868844ecb9e46274dd9df4e1);
+            tile_layer_c3af8fc447bf482c8a02c5b05ce159f8.remove();
+        
+</script>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c7c05cac7cf4c7482dea6c9cbc4066d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1c7c05cac7cf4c7482dea6c9cbc4066d" ></div>
+        
+</body>
+<script>    
+    
+            var map_1c7c05cac7cf4c7482dea6c9cbc4066d = L.map(
+                "map_1c7c05cac7cf4c7482dea6c9cbc4066d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+
+            
+
+        
+    
+            var tile_layer_9d7f5e36a831454390d94421e4c0e958 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+            var tile_layer_f912308133154c25b9b7c5babb66916e = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+            var circle_marker_44268d44ccd944a9b500e20fe7f58e7a = L.circleMarker(
+                [10.986889, -85.43422199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_30b6478d6a4a41b8adab0c667ca447fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e57b24e34fa404aad63362fa85c406c = $(`<div id="html_9e57b24e34fa404aad63362fa85c406c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2016-11-21 11:00:00 <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_30b6478d6a4a41b8adab0c667ca447fd.setContent(html_9e57b24e34fa404aad63362fa85c406c);
+        
+
+        circle_marker_44268d44ccd944a9b500e20fe7f58e7a.bindPopup(popup_30b6478d6a4a41b8adab0c667ca447fd)
+        ;
+
+        
+    
+    
+            var circle_marker_634b4832a782497a9ef8531b9e574bd7 = L.circleMarker(
+                [10.61, -84.99],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_a486affe89364c22b3016923f651f6f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f147d2c61c74fe6ad35d6629909aded = $(`<div id="html_1f147d2c61c74fe6ad35d6629909aded" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Tenorio; Cordillera de Tilarán. Tierras Morenas; Río San Lorenzo. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1993-03-23 00:00:00 <strong>Recolectores:</strong> Gladys Rodríguez|Quírico Jiménez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_a486affe89364c22b3016923f651f6f4.setContent(html_1f147d2c61c74fe6ad35d6629909aded);
+        
+
+        circle_marker_634b4832a782497a9ef8531b9e574bd7.bindPopup(popup_a486affe89364c22b3016923f651f6f4)
+        ;
+
+        
+    
+    
+            var circle_marker_ef95870715e1400bac830fa71c03dd4a = L.circleMarker(
+                [10.408333, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_a071d07b440141b6b85086db2540abc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9aec8dda85fb48d7912f48e5d0f354b5 = $(`<div id="html_9aec8dda85fb48d7912f48e5d0f354b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. de Tilarán. Palmital, Quebrada Malanga, Río Caño Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 00:00:00 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_a071d07b440141b6b85086db2540abc8.setContent(html_9aec8dda85fb48d7912f48e5d0f354b5);
+        
+
+        circle_marker_ef95870715e1400bac830fa71c03dd4a.bindPopup(popup_a071d07b440141b6b85086db2540abc8)
+        ;
+
+        
+    
+    
+            var circle_marker_709ca3059c1c487d838a9664de8e1840 = L.circleMarker(
+                [10.408333, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_656970a624b2489ebfe269cbf897cd8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92b0f24257fa4c75b426d9bad6684617 = $(`<div id="html_92b0f24257fa4c75b426d9bad6684617" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. de Tilarán. Palmital, Quebrada Malanga, Río Caño Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 00:00:00 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_656970a624b2489ebfe269cbf897cd8f.setContent(html_92b0f24257fa4c75b426d9bad6684617);
+        
+
+        circle_marker_709ca3059c1c487d838a9664de8e1840.bindPopup(popup_656970a624b2489ebfe269cbf897cd8f)
+        ;
+
+        
+    
+    
+            var circle_marker_bf54044cbf514d2f8838c94380565f7d = L.circleMarker(
+                [10.88, -85.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_dfaede14b32e4e58b698466478df2c7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e2018b787314398ae889911570bda9d = $(`<div id="html_6e2018b787314398ae889911570bda9d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Cordillera de Guanacaste, Estación San Ramón, Sendero El Níspero, Dos Ríos <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-03-23 00:00:00 <strong>Recolectores:</strong> Dunia García <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_dfaede14b32e4e58b698466478df2c7f.setContent(html_6e2018b787314398ae889911570bda9d);
+        
+
+        circle_marker_bf54044cbf514d2f8838c94380565f7d.bindPopup(popup_dfaede14b32e4e58b698466478df2c7f)
+        ;
+
+        
+    
+    
+            var circle_marker_3659a704ada042a19256be36f1d5a9da = L.circleMarker(
+                [10.71, -85.34],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_504f374458ac44708dd3f7f3b1d8bf80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2458c3a9d0824b29a4cd3426938915d4 = $(`<div id="html_2458c3a9d0824b29a4cd3426938915d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. Nac. Rincón de la Vieja Colecta a 6 Km de la Administración. Carretera a Liberia. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1991-03-14 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_504f374458ac44708dd3f7f3b1d8bf80.setContent(html_2458c3a9d0824b29a4cd3426938915d4);
+        
+
+        circle_marker_3659a704ada042a19256be36f1d5a9da.bindPopup(popup_504f374458ac44708dd3f7f3b1d8bf80)
+        ;
+
+        
+    
+    
+            var circle_marker_1255450a929f429e8b375ea2f10c2f7f = L.circleMarker(
+                [10.608333, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_3000e2aa0d7943408223b7ba14e66ac8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e98cb18a3e114d089a542d84a8034800 = $(`<div id="html_e98cb18a3e114d089a542d84a8034800" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Tenorio. Tierras Morenas. Tilarán. Río San Lorenzo. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1991-03-24 00:00:00 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> F. Barrie</div>`)[0];
+            popup_3000e2aa0d7943408223b7ba14e66ac8.setContent(html_e98cb18a3e114d089a542d84a8034800);
+        
+
+        circle_marker_1255450a929f429e8b375ea2f10c2f7f.bindPopup(popup_3000e2aa0d7943408223b7ba14e66ac8)
+        ;
+
+        
+    
+    
+            var circle_marker_9d2504428c2a42238f88c8fe7fe5c6ee = L.circleMarker(
+                [11.03333, -85.40833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_babd7c7b32b3447ebdc4ec77123a3684 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca47c2e8387f4ab093e2b6b6f1a6f37f = $(`<div id="html_ca47c2e8387f4ab093e2b6b6f1a6f37f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Estación Pitilla, Sendero Evangelista <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1990-12-09 00:00:00 <strong>Recolectores:</strong> Petrona Ríos Castro <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_babd7c7b32b3447ebdc4ec77123a3684.setContent(html_ca47c2e8387f4ab093e2b6b6f1a6f37f);
+        
+
+        circle_marker_9d2504428c2a42238f88c8fe7fe5c6ee.bindPopup(popup_babd7c7b32b3447ebdc4ec77123a3684)
+        ;
+
+        
+    
+    
+            var circle_marker_7341eed1701642b79a5a7ead7ec5c1fe = L.circleMarker(
+                [10.28416, -84.04638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_3d059f297f1d43a78b97d3d46c10e83c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95ec9a1de98a400a8a09919b01dffdff = $(`<div id="html_95ec9a1de98a400a8a09919b01dffdff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Horquetas. Est. El; Plástico. 15 km de Horquetas. Sendero El Tigre. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1994-11-01 00:00:00 <strong>Recolectores:</strong> Javier Sánchez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_3d059f297f1d43a78b97d3d46c10e83c.setContent(html_95ec9a1de98a400a8a09919b01dffdff);
+        
+
+        circle_marker_7341eed1701642b79a5a7ead7ec5c1fe.bindPopup(popup_3d059f297f1d43a78b97d3d46c10e83c)
+        ;
+
+        
+    
+    
+            var circle_marker_d7c899117c5646239236ca4de382a7a1 = L.circleMarker(
+                [10.611111, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_1fe15706595e404381f39d9dece4b1e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_304b35a8fd3d4d858066312630e5c841 = $(`<div id="html_304b35a8fd3d4d858066312630e5c841" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ZP Tenorio Tilarán. Cord. de Guanacaste; Tierras Morenas; alrededores Río San Lorenzo. <strong>Elevación:</strong> 105.0 m  <strong>Fecha:</strong> 1993-04-05 00:00:00 <strong>Recolectores:</strong> Gladys Rodríguez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1fe15706595e404381f39d9dece4b1e3.setContent(html_304b35a8fd3d4d858066312630e5c841);
+        
+
+        circle_marker_d7c899117c5646239236ca4de382a7a1.bindPopup(popup_1fe15706595e404381f39d9dece4b1e3)
+        ;
+
+        
+    
+    
+            var circle_marker_fe993a9cb9a34153a07eab66c0a27979 = L.circleMarker(
+                [10.88, -85.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_855b606c25e14fc5b778190715e2094a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c8a3ec8a79f40928d3b02898fdbd801 = $(`<div id="html_4c8a3ec8a79f40928d3b02898fdbd801" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Cordillera de Guanacaste, Estación San Ramón, Dos Riós, Sendero el Nispero <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1995-04-04 00:00:00 <strong>Recolectores:</strong> Freddy A. Quesada <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_855b606c25e14fc5b778190715e2094a.setContent(html_4c8a3ec8a79f40928d3b02898fdbd801);
+        
+
+        circle_marker_fe993a9cb9a34153a07eab66c0a27979.bindPopup(popup_855b606c25e14fc5b778190715e2094a)
+        ;
+
+        
+    
+    
+            var circle_marker_13392aba87a24d41ae0646698099b2f0 = L.circleMarker(
+                [10.608333, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_893f3f2ad2d8427ea42d1e2f01c89cda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8382934b6f043d58d96a107de2850fc = $(`<div id="html_d8382934b6f043d58d96a107de2850fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> ZP Tenorio Tilarán; Tierras Morenas; Río San Lorenzo. bosque 1º, 2º y potreros. <strong>Elevación:</strong> 105.0 m  <strong>Fecha:</strong> 1991-03-24 00:00:00 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_893f3f2ad2d8427ea42d1e2f01c89cda.setContent(html_d8382934b6f043d58d96a107de2850fc);
+        
+
+        circle_marker_13392aba87a24d41ae0646698099b2f0.bindPopup(popup_893f3f2ad2d8427ea42d1e2f01c89cda)
+        ;
+
+        
+    
+    
+            var circle_marker_7f34cc3203eb48d3884041cdd8f8be84 = L.circleMarker(
+                [10.990556, -85.427778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_d783d53765fc42f689abe78c82c50a0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29a3dfb6fff74e37bb54ea7a1e327d49 = $(`<div id="html_29a3dfb6fff74e37bb54ea7a1e327d49" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste. Estación Pitilla. Fila Orosilito y Sendero El Mismo. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-03-02 00:00:00 <strong>Recolectores:</strong> Petrona Ríos Castro <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_d783d53765fc42f689abe78c82c50a0a.setContent(html_29a3dfb6fff74e37bb54ea7a1e327d49);
+        
+
+        circle_marker_7f34cc3203eb48d3884041cdd8f8be84.bindPopup(popup_d783d53765fc42f689abe78c82c50a0a)
+        ;
+
+        
+    
+    
+            var circle_marker_04259e8aa5fb4434a833b017f61a86cc = L.circleMarker(
+                [10.990556, -85.427778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_1302ea1877244f94ba77a07d83cf14f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d47ebc6d9b584ae787838c4632219181 = $(`<div id="html_d47ebc6d9b584ae787838c4632219181" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> PN Guanacaste. Est. Pitilla, Sendero los Memos. bosque 1º & 2º <strong>Elevación:</strong> 74.0 m  <strong>Fecha:</strong> 1995-04-15 00:00:00 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1302ea1877244f94ba77a07d83cf14f6.setContent(html_d47ebc6d9b584ae787838c4632219181);
+        
+
+        circle_marker_04259e8aa5fb4434a833b017f61a86cc.bindPopup(popup_1302ea1877244f94ba77a07d83cf14f6)
+        ;
+
+        
+    
+    
+            var circle_marker_4b21cfbe1b0d4a54842f44469bcf359a = L.circleMarker(
+                [10.408333, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_e9439c93bc2441b7bb678c450af1bc34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_696a8dadd8b44a178c4181682364fc8a = $(`<div id="html_696a8dadd8b44a178c4181682364fc8a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Palmital, Quebrada Malanga, Rio Cano Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 00:00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_e9439c93bc2441b7bb678c450af1bc34.setContent(html_696a8dadd8b44a178c4181682364fc8a);
+        
+
+        circle_marker_4b21cfbe1b0d4a54842f44469bcf359a.bindPopup(popup_e9439c93bc2441b7bb678c450af1bc34)
+        ;
+
+        
+    
+    
+            var circle_marker_9b1308907b6444358a43cc4cdecf98e7 = L.circleMarker(
+                [10.611111, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_7ac1b06f3a5f46229cac9dc58a46cfb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac1cfa5c6be64038a31d6df1b5a2e1a1 = $(`<div id="html_ac1cfa5c6be64038a31d6df1b5a2e1a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas; alrededores Rio San Lorenzo. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1993-04-05 00:00:00 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_7ac1b06f3a5f46229cac9dc58a46cfb9.setContent(html_ac1cfa5c6be64038a31d6df1b5a2e1a1);
+        
+
+        circle_marker_9b1308907b6444358a43cc4cdecf98e7.bindPopup(popup_7ac1b06f3a5f46229cac9dc58a46cfb9)
+        ;
+
+        
+    
+    
+            var circle_marker_f4320bea209e4fb098e3fbb374e73e62 = L.circleMarker(
+                [10.880556, -85.40139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_406f2291a31843769abf6d50bb3db929 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aab727bd684642509b26bf3290f8403f = $(`<div id="html_aab727bd684642509b26bf3290f8403f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Ramon. Dos Rios. Sendero el Nispero. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1995-04-04 00:00:00 <strong>Recolectores:</strong> Freddy A. Quesada <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_406f2291a31843769abf6d50bb3db929.setContent(html_aab727bd684642509b26bf3290f8403f);
+        
+
+        circle_marker_f4320bea209e4fb098e3fbb374e73e62.bindPopup(popup_406f2291a31843769abf6d50bb3db929)
+        ;
+
+        
+    
+    
+            var circle_marker_db7279041af9484bab8083046198372d = L.circleMarker(
+                [10.611111, -84.99583299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_6312ac2dbffd4eaca4dfab0cc8cba3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32f8cfc7d3fb49138607ee228fef8e09 = $(`<div id="html_32f8cfc7d3fb49138607ee228fef8e09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas; Rio San Lorenzo. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1993-03-23 00:00:00 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_6312ac2dbffd4eaca4dfab0cc8cba3c1.setContent(html_32f8cfc7d3fb49138607ee228fef8e09);
+        
+
+        circle_marker_db7279041af9484bab8083046198372d.bindPopup(popup_6312ac2dbffd4eaca4dfab0cc8cba3c1)
+        ;
+
+        
+    
+    
+            var circle_marker_955850ddf87f43fab34c61798f1f7b4b = L.circleMarker(
+                [10.408333, -84.775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_3d39e2582eb246c2ba0698e96bf56c1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_256340b9faeb49609a9a6d73ea538669 = $(`<div id="html_256340b9faeb49609a9a6d73ea538669" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Palmital, Quebrada Malanga, Rio Cano Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 00:00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_3d39e2582eb246c2ba0698e96bf56c1d.setContent(html_256340b9faeb49609a9a6d73ea538669);
+        
+
+        circle_marker_955850ddf87f43fab34c61798f1f7b4b.bindPopup(popup_3d39e2582eb246c2ba0698e96bf56c1d)
+        ;
+
+        
+    
+    
+            var circle_marker_99c6fd06fb7843739d59a5959dade128 = L.circleMarker(
+                [10.777222, -85.264444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_754a3a9de6d949f3bfde51609386c0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_232c5d9d178f4705a984d821c9916e8c = $(`<div id="html_232c5d9d178f4705a984d821c9916e8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Colonia Blanca, entre Quebrada Rancho Grande y finca Los Mora. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1991-03-13 00:00:00 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_754a3a9de6d949f3bfde51609386c0c8.setContent(html_232c5d9d178f4705a984d821c9916e8c);
+        
+
+        circle_marker_99c6fd06fb7843739d59a5959dade128.bindPopup(popup_754a3a9de6d949f3bfde51609386c0c8)
+        ;
+
+        
+    
+    
+            var circle_marker_e259381152cb4c539a9d4c3367f9b189 = L.circleMarker(
+                [11.033333, -85.408334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_8e80d5fe494944d4985f42f0888bb73f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b3679e9e93444418f109752649f5c3c = $(`<div id="html_8b3679e9e93444418f109752649f5c3c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Pitilla. Sendero El Mismo, Finca La Pasmompa. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1990-12-09 00:00:00 <strong>Recolectores:</strong> Petrona Ríos Castro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_8e80d5fe494944d4985f42f0888bb73f.setContent(html_8b3679e9e93444418f109752649f5c3c);
+        
+
+        circle_marker_e259381152cb4c539a9d4c3367f9b189.bindPopup(popup_8e80d5fe494944d4985f42f0888bb73f)
+        ;
+
+        
+    
+    
+            var circle_marker_3be0ede778d646daa72a97932d9ca9bd = L.circleMarker(
+                [10.990556, -85.427779],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_5c5d8138de844e2390bc14ab2e760ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1946e433bb0c458681214a1f4a0d2c86 = $(`<div id="html_1946e433bb0c458681214a1f4a0d2c86" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Pitilla. Fila Orosilito y Sendero El Mismo. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-03-02 00:00:00 <strong>Recolectores:</strong> Petrona Ríos Castro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_5c5d8138de844e2390bc14ab2e760ce4.setContent(html_1946e433bb0c458681214a1f4a0d2c86);
+        
+
+        circle_marker_3be0ede778d646daa72a97932d9ca9bd.bindPopup(popup_5c5d8138de844e2390bc14ab2e760ce4)
+        ;
+
+        
+    
+    
+            var circle_marker_cebff47b9d24484eb71ede0ab77b62b7 = L.circleMarker(
+                [10.990556, -85.42778100000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_fa880805cb3b42009eae33304dedd601 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_389616843a3a430fa439f098ea6c90e5 = $(`<div id="html_389616843a3a430fa439f098ea6c90e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Pitilla, Sedero los Memos. Colecta en bosque primario y secundario. <strong>Elevación:</strong> 740.0 m  <strong>Fecha:</strong> 1995-04-15 00:00:00 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_fa880805cb3b42009eae33304dedd601.setContent(html_389616843a3a430fa439f098ea6c90e5);
+        
+
+        circle_marker_cebff47b9d24484eb71ede0ab77b62b7.bindPopup(popup_fa880805cb3b42009eae33304dedd601)
+        ;
+
+        
+    
+    
+            var circle_marker_cd290357654e4e0eac5d5ba87e9b4a5a = L.circleMarker(
+                [10.608333, -85.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_ef6082a4d58548b099a62d4132d3cfcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_587c96891e724abcb27666988c31282d = $(`<div id="html_587c96891e724abcb27666988c31282d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas. Rio San Lorenzo. Bosque primario, secundario y potreros. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1991-03-24 00:00:00 <strong>Recolectores:</strong> Celso Alvarado <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_ef6082a4d58548b099a62d4132d3cfcd.setContent(html_587c96891e724abcb27666988c31282d);
+        
+
+        circle_marker_cd290357654e4e0eac5d5ba87e9b4a5a.bindPopup(popup_ef6082a4d58548b099a62d4132d3cfcd)
+        ;
+
+        
+    
+    
+            var circle_marker_771b1b5b31b24d0dbbbfef714897889b = L.circleMarker(
+                [10.880556, -85.401389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_1b8299424fbe4ca8a59e87527865dcbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df96f56bb5ae4889a0dff099da100ef9 = $(`<div id="html_df96f56bb5ae4889a0dff099da100ef9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion San Ramon. Sendero El Nispero. Dos Rios. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1994-03-23 00:00:00 <strong>Recolectores:</strong> Dunia Garcia <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_1b8299424fbe4ca8a59e87527865dcbe.setContent(html_df96f56bb5ae4889a0dff099da100ef9);
+        
+
+        circle_marker_771b1b5b31b24d0dbbbfef714897889b.bindPopup(popup_1b8299424fbe4ca8a59e87527865dcbe)
+        ;
+
+        
+    
+    
+            var circle_marker_d24233c0c7c841ceaa96fb7376c1ea00 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+        
+    
+        var popup_aaeedb43271f40eb980d71e838f84e26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_935f2239bb0948bb9e717f9c16be7e6b = $(`<div id="html_935f2239bb0948bb9e717f9c16be7e6b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-12-09 00:00:00 <strong>Recolectores:</strong> P. Rios <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aaeedb43271f40eb980d71e838f84e26.setContent(html_935f2239bb0948bb9e717f9c16be7e6b);
+        
+
+        circle_marker_d24233c0c7c841ceaa96fb7376c1ea00.bindPopup(popup_aaeedb43271f40eb980d71e838f84e26)
+        ;
+
+        
+    
+    
+            var layer_control_7d52cf40edb24d65924b6651e29475a6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9d7f5e36a831454390d94421e4c0e958,
+                    "ESRI World Imagery" : tile_layer_f912308133154c25b9b7c5babb66916e,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_7d52cf40edb24d65924b6651e29475a6.base_layers,
+                layer_control_7d52cf40edb24d65924b6651e29475a6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1c7c05cac7cf4c7482dea6c9cbc4066d);
+            tile_layer_f912308133154c25b9b7c5babb66916e.remove();
+        
+</script>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b1c12c7ae52478bb79d1578975ab6cd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0b1c12c7ae52478bb79d1578975ab6cd" ></div>
+        
+</body>
+<script>    
+    
+            var map_0b1c12c7ae52478bb79d1578975ab6cd = L.map(
+                "map_0b1c12c7ae52478bb79d1578975ab6cd",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0b1c12c7ae52478bb79d1578975ab6cd);
+
+            
+
+        
+    
+            var tile_layer_62a877a459ca438bbdaa3e19eac67e0b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b1c12c7ae52478bb79d1578975ab6cd);
+        
+    
+            var tile_layer_2721713eb40c4f38a91b70d442111d02 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b1c12c7ae52478bb79d1578975ab6cd);
+        
+    
+            var marker_cluster_804736fd23fd4988b7c1fa7a735361f7 = L.markerClusterGroup(
+                {}
+            );
+            map_0b1c12c7ae52478bb79d1578975ab6cd.addLayer(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+            var marker_a45efab747b945c887c98017f5c66c4f = L.marker(
+                [8.85, -82.75],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_d13b5cb50f48423bbd07090e44fb7e4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12cab8d4658a40f094960328f26cf6ce = $(`<div id="html_12cab8d4658a40f094960328f26cf6ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1520.0 m  <strong>Fecha:</strong> 1987-06-16 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d13b5cb50f48423bbd07090e44fb7e4b.setContent(html_12cab8d4658a40f094960328f26cf6ce);
+        
+
+        marker_a45efab747b945c887c98017f5c66c4f.bindPopup(popup_d13b5cb50f48423bbd07090e44fb7e4b)
+        ;
+
+        
+    
+    
+            var marker_e88b72b68ed44c7f9b1c03e2a53449f8 = L.marker(
+                [8.78, -82.95],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_a75beecf6b8c41afb610f404c49eff00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa4b2e9135d84636a74997023924596b = $(`<div id="html_aa4b2e9135d84636a74997023924596b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1140.0 m  <strong>Fecha:</strong> 2005-03-11 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_a75beecf6b8c41afb610f404c49eff00.setContent(html_aa4b2e9135d84636a74997023924596b);
+        
+
+        marker_e88b72b68ed44c7f9b1c03e2a53449f8.bindPopup(popup_a75beecf6b8c41afb610f404c49eff00)
+        ;
+
+        
+    
+    
+            var marker_3b6b4822df8b46fa93d8054562eddc8c = L.marker(
+                [8.89, -82.78],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_4de640c07bc74b7d84fb00361c348368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cf0af304824474aab0c2bddd328cd79 = $(`<div id="html_6cf0af304824474aab0c2bddd328cd79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1280.0 m  <strong>Fecha:</strong> 1983-08-01 <strong>Recolectores:</strong> Luis Diego Gómez P.|Rafael Chacón|Isidro A. Chacón G.|Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_4de640c07bc74b7d84fb00361c348368.setContent(html_6cf0af304824474aab0c2bddd328cd79);
+        
+
+        marker_3b6b4822df8b46fa93d8054562eddc8c.bindPopup(popup_4de640c07bc74b7d84fb00361c348368)
+        ;
+
+        
+    
+    
+            var marker_3e03b522a361445c9d36c43b1b75d8bc = L.marker(
+                [8.9, -82.79],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_9dcb34c2c1e34b1fb4631aca0d4ddba8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f9b83bdf5c249cb899ef2febae21019 = $(`<div id="html_8f9b83bdf5c249cb899ef2febae21019" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1220.0 m  <strong>Fecha:</strong> 1996-03-12 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_9dcb34c2c1e34b1fb4631aca0d4ddba8.setContent(html_8f9b83bdf5c249cb899ef2febae21019);
+        
+
+        marker_3e03b522a361445c9d36c43b1b75d8bc.bindPopup(popup_9dcb34c2c1e34b1fb4631aca0d4ddba8)
+        ;
+
+        
+    
+    
+            var marker_5699ab43ab39470db45e366013952c89 = L.marker(
+                [8.85, -82.77],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_5f38095dc67b4b31a152dc6ed7c658f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ea7816942854894bec0b6c10d3f4c94 = $(`<div id="html_3ea7816942854894bec0b6c10d3f4c94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1981-10-14 <strong>Recolectores:</strong> Sandy Knapp <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5f38095dc67b4b31a152dc6ed7c658f7.setContent(html_3ea7816942854894bec0b6c10d3f4c94);
+        
+
+        marker_5699ab43ab39470db45e366013952c89.bindPopup(popup_5f38095dc67b4b31a152dc6ed7c658f7)
+        ;
+
+        
+    
+    
+            var marker_99f43a579fa946cba483155523166824 = L.marker(
+                [8.91, -82.78],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_e94205d4edc14309b8a876ac131ac7ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_033b589ffc8f470fa939bef2511f1149 = $(`<div id="html_033b589ffc8f470fa939bef2511f1149" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-04-10 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_e94205d4edc14309b8a876ac131ac7ce.setContent(html_033b589ffc8f470fa939bef2511f1149);
+        
+
+        marker_99f43a579fa946cba483155523166824.bindPopup(popup_e94205d4edc14309b8a876ac131ac7ce)
+        ;
+
+        
+    
+    
+            var marker_2ece289b2a704280809895fc072b6a02 = L.marker(
+                [8.91, -82.8],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_08df567c6639404a9af5df4516cc7fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90dbd754a2994fc3bd029c458dcecec9 = $(`<div id="html_90dbd754a2994fc3bd029c458dcecec9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2003-12-29 <strong>Recolectores:</strong> Daniel Solano|Ricardo Kriebel <strong>Identificadores:</strong> B. Hammel</div>`)[0];
+            popup_08df567c6639404a9af5df4516cc7fe0.setContent(html_90dbd754a2994fc3bd029c458dcecec9);
+        
+
+        marker_2ece289b2a704280809895fc072b6a02.bindPopup(popup_08df567c6639404a9af5df4516cc7fe0)
+        ;
+
+        
+    
+    
+            var marker_3cccafe9ef5c41dfad84eed81ccd97af = L.marker(
+                [8.9, -82.77],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_05386296c1764d66b5e1f4653fb87126 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4cf91b423014674b3d71340e0f4ec7b = $(`<div id="html_d4cf91b423014674b3d71340e0f4ec7b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_05386296c1764d66b5e1f4653fb87126.setContent(html_d4cf91b423014674b3d71340e0f4ec7b);
+        
+
+        marker_3cccafe9ef5c41dfad84eed81ccd97af.bindPopup(popup_05386296c1764d66b5e1f4653fb87126)
+        ;
+
+        
+    
+    
+            var marker_cd987db2d1d94d48b050b9083a5526d0 = L.marker(
+                [8.91, -82.8],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_c50e993b0de540468914e91711ea4301 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc3eae1436c44e018253589422946ce2 = $(`<div id="html_dc3eae1436c44e018253589422946ce2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Protected due to name conservation status <strong>Elevación:</strong> 1242.0 m  <strong>Fecha:</strong> 2002-03-27 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> C.M. Taylor, TYPE</div>`)[0];
+            popup_c50e993b0de540468914e91711ea4301.setContent(html_dc3eae1436c44e018253589422946ce2);
+        
+
+        marker_cd987db2d1d94d48b050b9083a5526d0.bindPopup(popup_c50e993b0de540468914e91711ea4301)
+        ;
+
+        
+    
+    
+            var marker_93e4fce5124b4149bbeb465e10cf2c06 = L.marker(
+                [8.9168, -82.79650500000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_e5899cc1c03d49f9bd662344a6125f34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5f04ad0817f416398af469c37a02b82 = $(`<div id="html_c5f04ad0817f416398af469c37a02b82" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Las Tablas, camino a los Portones por el tajo. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1998-10-06 <strong>Recolectores:</strong> Enia Navarro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e5899cc1c03d49f9bd662344a6125f34.setContent(html_c5f04ad0817f416398af469c37a02b82);
+        
+
+        marker_93e4fce5124b4149bbeb465e10cf2c06.bindPopup(popup_e5899cc1c03d49f9bd662344a6125f34)
+        ;
+
+        
+    
+    
+            var marker_9d3b2ff0d894428d8b754b964c6c5664 = L.marker(
+                [8.912291999999999, -82.801979],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_4d2cd90cb54242909cf64971bc0488c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc4631dd4cb4ca69f267bc762c41def = $(`<div id="html_9fc4631dd4cb4ca69f267bc762c41def" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, 1 Km NNE. de Escuela Progreso <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2003-12-29 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4d2cd90cb54242909cf64971bc0488c2.setContent(html_9fc4631dd4cb4ca69f267bc762c41def);
+        
+
+        marker_9d3b2ff0d894428d8b754b964c6c5664.bindPopup(popup_4d2cd90cb54242909cf64971bc0488c2)
+        ;
+
+        
+    
+    
+            var marker_7624500b647f4f80bbc59f6a845b0d79 = L.marker(
+                [8.912291999999999, -82.801979],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_c1c67f0d0f7140298f606efb34e55258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7181bd4fd2ab421bb82744c75d48fd44 = $(`<div id="html_7181bd4fd2ab421bb82744c75d48fd44" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, 1 Km NNE. de Escuela Progreso <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2003-12-29 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c1c67f0d0f7140298f606efb34e55258.setContent(html_7181bd4fd2ab421bb82744c75d48fd44);
+        
+
+        marker_7624500b647f4f80bbc59f6a845b0d79.bindPopup(popup_c1c67f0d0f7140298f606efb34e55258)
+        ;
+
+        
+    
+    
+            var marker_a70d69adf6cf4d4aad4c0ab11e5dae0a = L.marker(
+                [8.912291999999999, -82.801979],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_c0c5c0a912e74c0296c7842a3c8dbd72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e874151988674a04b784186988a84cf9 = $(`<div id="html_e874151988674a04b784186988a84cf9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, 1 Km NNE. de Escuela Progreso <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2003-12-29 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c0c5c0a912e74c0296c7842a3c8dbd72.setContent(html_e874151988674a04b784186988a84cf9);
+        
+
+        marker_a70d69adf6cf4d4aad4c0ab11e5dae0a.bindPopup(popup_c0c5c0a912e74c0296c7842a3c8dbd72)
+        ;
+
+        
+    
+    
+            var marker_2fcd87f119264207b2c01e902cf4b269 = L.marker(
+                [8.951113000000001, -82.77641700000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_4be8e3699dd046709f0b2fddf2a434d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcfd2c498463478a96de66496c28f7db = $(`<div id="html_fcfd2c498463478a96de66496c28f7db" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Cotoncito. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-05-08 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4be8e3699dd046709f0b2fddf2a434d4.setContent(html_fcfd2c498463478a96de66496c28f7db);
+        
+
+        marker_2fcd87f119264207b2c01e902cf4b269.bindPopup(popup_4be8e3699dd046709f0b2fddf2a434d4)
+        ;
+
+        
+    
+    
+            var marker_dbcc6b1b3a2440ed80f02060035a028d = L.marker(
+                [8.951113000000001, -82.77641700000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_191b409e75594e39bb524160fa5b4436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b523e3eddeb346adacece3c79db2176d = $(`<div id="html_b523e3eddeb346adacece3c79db2176d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Cotoncito. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-05-08 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_191b409e75594e39bb524160fa5b4436.setContent(html_b523e3eddeb346adacece3c79db2176d);
+        
+
+        marker_dbcc6b1b3a2440ed80f02060035a028d.bindPopup(popup_191b409e75594e39bb524160fa5b4436)
+        ;
+
+        
+    
+    
+            var marker_4dcaebfb1ebe43d3b0a0163e56e4d512 = L.marker(
+                [8.951113000000001, -82.77641700000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_ac198c0875564f4dbb3dfdbc640bc2a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed4828915f974e3ba8f4c6924a0cf826 = $(`<div id="html_ed4828915f974e3ba8f4c6924a0cf826" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a Cotoncito. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-05-08 <strong>Recolectores:</strong> Ricardo Kriebel; Daniel Solano <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_ac198c0875564f4dbb3dfdbc640bc2a3.setContent(html_ed4828915f974e3ba8f4c6924a0cf826);
+        
+
+        marker_4dcaebfb1ebe43d3b0a0163e56e4d512.bindPopup(popup_ac198c0875564f4dbb3dfdbc640bc2a3)
+        ;
+
+        
+    
+    
+            var marker_a61b524bbf60426ebd5698633277c133 = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_02747b5de19e435e8e36297e885612d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_134860f430f7426688fdd27130c1ef01 = $(`<div id="html_134860f430f7426688fdd27130c1ef01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_02747b5de19e435e8e36297e885612d3.setContent(html_134860f430f7426688fdd27130c1ef01);
+        
+
+        marker_a61b524bbf60426ebd5698633277c133.bindPopup(popup_02747b5de19e435e8e36297e885612d3)
+        ;
+
+        
+    
+    
+            var marker_8b3980e2dba04847a151092eb5c8884b = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_dd9a509e39be43278a004bc4d695eb58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c25fef6aa184a63bc79169ca428902a = $(`<div id="html_3c25fef6aa184a63bc79169ca428902a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_dd9a509e39be43278a004bc4d695eb58.setContent(html_3c25fef6aa184a63bc79169ca428902a);
+        
+
+        marker_8b3980e2dba04847a151092eb5c8884b.bindPopup(popup_dd9a509e39be43278a004bc4d695eb58)
+        ;
+
+        
+    
+    
+            var marker_7018602a17b24fb5b9e77a421341fd39 = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_29c43858e4da48b7b4a35946cf551384 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1488c68585144a1785ebd8dee4f6fe83 = $(`<div id="html_1488c68585144a1785ebd8dee4f6fe83" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_29c43858e4da48b7b4a35946cf551384.setContent(html_1488c68585144a1785ebd8dee4f6fe83);
+        
+
+        marker_7018602a17b24fb5b9e77a421341fd39.bindPopup(popup_29c43858e4da48b7b4a35946cf551384)
+        ;
+
+        
+    
+    
+            var marker_4068a67050c9438a8c7fd067cf6b9491 = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_07777149cc4843cf9c1c3eb1db11aa51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50424d62d061424d8ee060942996fcb9 = $(`<div id="html_50424d62d061424d8ee060942996fcb9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_07777149cc4843cf9c1c3eb1db11aa51.setContent(html_50424d62d061424d8ee060942996fcb9);
+        
+
+        marker_4068a67050c9438a8c7fd067cf6b9491.bindPopup(popup_07777149cc4843cf9c1c3eb1db11aa51)
+        ;
+
+        
+    
+    
+            var marker_89e942c05dda422b8af5e36aa1c426fd = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_dd89ac3c7d494fbe9ea062751e31161d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a13652fc84e64e7e80f6ce6cb4f12e8b = $(`<div id="html_a13652fc84e64e7e80f6ce6cb4f12e8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_dd89ac3c7d494fbe9ea062751e31161d.setContent(html_a13652fc84e64e7e80f6ce6cb4f12e8b);
+        
+
+        marker_89e942c05dda422b8af5e36aa1c426fd.bindPopup(popup_dd89ac3c7d494fbe9ea062751e31161d)
+        ;
+
+        
+    
+    
+            var marker_3f6022c5d7204d13bad8639fc0c40783 = L.marker(
+                [8.899998, -82.76563900000001],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_d5011080db054d0282f693b1006a018b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4db0be87fe774f7e88331851ac9a0bb1 = $(`<div id="html_4db0be87fe774f7e88331851ac9a0bb1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Zona Prot Las Tablas, Camino Fca Santa Martha <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2002-04-05 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d5011080db054d0282f693b1006a018b.setContent(html_4db0be87fe774f7e88331851ac9a0bb1);
+        
+
+        marker_3f6022c5d7204d13bad8639fc0c40783.bindPopup(popup_d5011080db054d0282f693b1006a018b)
+        ;
+
+        
+    
+    
+            var marker_e7ecca9c6fb346e5b432a996b227ebf2 = L.marker(
+                [8.912276, -82.795606],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_dd634e5fed084e8c99c084a390f9c2f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31e12615b3604470872f05f0e2865207 = $(`<div id="html_31e12615b3604470872f05f0e2865207" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Progreso. Río Negro. <strong>Elevación:</strong> 1242.0 m  <strong>Fecha:</strong> 2002-03-27 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_dd634e5fed084e8c99c084a390f9c2f9.setContent(html_31e12615b3604470872f05f0e2865207);
+        
+
+        marker_e7ecca9c6fb346e5b432a996b227ebf2.bindPopup(popup_dd634e5fed084e8c99c084a390f9c2f9)
+        ;
+
+        
+    
+    
+            var marker_cfa6b18534514a128b7cb5982d3ee4c5 = L.marker(
+                [8.912276, -82.795606],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_5fad6727067e40b08336a6a634e493c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e571508377d419ebd5d35c7e8f3079a = $(`<div id="html_2e571508377d419ebd5d35c7e8f3079a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Progreso. Río Negro. <strong>Elevación:</strong> 1242.0 m  <strong>Fecha:</strong> 2002-03-27 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5fad6727067e40b08336a6a634e493c3.setContent(html_2e571508377d419ebd5d35c7e8f3079a);
+        
+
+        marker_cfa6b18534514a128b7cb5982d3ee4c5.bindPopup(popup_5fad6727067e40b08336a6a634e493c3)
+        ;
+
+        
+    
+    
+            var marker_7156c29dc1ad4ae49849e3a84d9233e9 = L.marker(
+                [8.912276, -82.795606],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_c246c5107c074cd994ca0470fae91d89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4afbea05fb84473880134c559224689c = $(`<div id="html_4afbea05fb84473880134c559224689c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Progreso. Río Negro. <strong>Elevación:</strong> 1242.0 m  <strong>Fecha:</strong> 2002-03-27 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c246c5107c074cd994ca0470fae91d89.setContent(html_4afbea05fb84473880134c559224689c);
+        
+
+        marker_7156c29dc1ad4ae49849e3a84d9233e9.bindPopup(popup_c246c5107c074cd994ca0470fae91d89)
+        ;
+
+        
+    
+    
+            var marker_547e5399116342dab4dc3e7084f883d9 = L.marker(
+                [8.912276, -82.795606],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_1d12c9dd18514a94ab30ca16e180fcf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79f9635a9e5b41fba92e4253adbee7c4 = $(`<div id="html_79f9635a9e5b41fba92e4253adbee7c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Progreso. Río Negro. <strong>Elevación:</strong> 1242.0 m  <strong>Fecha:</strong> 2002-03-27 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1d12c9dd18514a94ab30ca16e180fcf4.setContent(html_79f9635a9e5b41fba92e4253adbee7c4);
+        
+
+        marker_547e5399116342dab4dc3e7084f883d9.bindPopup(popup_1d12c9dd18514a94ab30ca16e180fcf4)
+        ;
+
+        
+    
+    
+            var marker_ea04af33cedc4f85a579a255ef8e8d35 = L.marker(
+                [8.910872, -82.775159],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_bb2243bd98464d7d9131d3f86e71775b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e68a0cfce75b4c10820aa8605b2ee11c = $(`<div id="html_e68a0cfce75b4c10820aa8605b2ee11c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sitio Tinieblas, 2 KM. NE. de la Tigra <strong>Elevación:</strong> 1440.0 m  <strong>Fecha:</strong> 1999-05-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_bb2243bd98464d7d9131d3f86e71775b.setContent(html_e68a0cfce75b4c10820aa8605b2ee11c);
+        
+
+        marker_ea04af33cedc4f85a579a255ef8e8d35.bindPopup(popup_bb2243bd98464d7d9131d3f86e71775b)
+        ;
+
+        
+    
+    
+            var marker_357e38960d934cdabe83487a147ca1ae = L.marker(
+                [8.910872, -82.775159],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_2f135287800d4a47920f262b0919314f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_096d107e48a04ce7805c037f32a160ec = $(`<div id="html_096d107e48a04ce7805c037f32a160ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sitio Tinieblas, 2 KM. NE. de la Tigra <strong>Elevación:</strong> 1440.0 m  <strong>Fecha:</strong> 1999-05-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2f135287800d4a47920f262b0919314f.setContent(html_096d107e48a04ce7805c037f32a160ec);
+        
+
+        marker_357e38960d934cdabe83487a147ca1ae.bindPopup(popup_2f135287800d4a47920f262b0919314f)
+        ;
+
+        
+    
+    
+            var marker_3b2e23ca780d47459b98113b2d06f176 = L.marker(
+                [8.910872, -82.775159],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_cc22cf3a08c34aa783c73b5454f69531 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f265dd1ec7949f8ac057f5ca8f6b131 = $(`<div id="html_7f265dd1ec7949f8ac057f5ca8f6b131" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sitio Tinieblas, 2 KM. NE. de la Tigra <strong>Elevación:</strong> 1440.0 m  <strong>Fecha:</strong> 1999-05-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_cc22cf3a08c34aa783c73b5454f69531.setContent(html_7f265dd1ec7949f8ac057f5ca8f6b131);
+        
+
+        marker_3b2e23ca780d47459b98113b2d06f176.bindPopup(popup_cc22cf3a08c34aa783c73b5454f69531)
+        ;
+
+        
+    
+    
+            var marker_c392125d09e84286bab54a7976196d34 = L.marker(
+                [8.920833, -82.779167],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_7b7a19d7188c48068c75bf736def4ba6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a373e9ab04849a1bee0d99a02f9ca2c = $(`<div id="html_6a373e9ab04849a1bee0d99a02f9ca2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1999-02-16 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_7b7a19d7188c48068c75bf736def4ba6.setContent(html_6a373e9ab04849a1bee0d99a02f9ca2c);
+        
+
+        marker_c392125d09e84286bab54a7976196d34.bindPopup(popup_7b7a19d7188c48068c75bf736def4ba6)
+        ;
+
+        
+    
+    
+            var marker_90e972048ade42d9b647d3aecadbc762 = L.marker(
+                [8.920833, -82.779167],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_8ed30605a6b04cf18926bccfc910b46c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8fc321f70b64c08b37aee8327aff7e2 = $(`<div id="html_e8fc321f70b64c08b37aee8327aff7e2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1999-02-16 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_8ed30605a6b04cf18926bccfc910b46c.setContent(html_e8fc321f70b64c08b37aee8327aff7e2);
+        
+
+        marker_90e972048ade42d9b647d3aecadbc762.bindPopup(popup_8ed30605a6b04cf18926bccfc910b46c)
+        ;
+
+        
+    
+    
+            var marker_76113c8b1bc24dac8ff87c9952e296bf = L.marker(
+                [8.920833, -82.779167],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_39bc066c6f4745e7a3d4d2735e67790c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37cf10cc1390442d9bbab681fa7917e1 = $(`<div id="html_37cf10cc1390442d9bbab681fa7917e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque primario. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1999-02-16 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_39bc066c6f4745e7a3d4d2735e67790c.setContent(html_37cf10cc1390442d9bbab681fa7917e1);
+        
+
+        marker_76113c8b1bc24dac8ff87c9952e296bf.bindPopup(popup_39bc066c6f4745e7a3d4d2735e67790c)
+        ;
+
+        
+    
+    
+            var marker_6df9c7f93c494d75a0128f7b4d907962 = L.marker(
+                [8.913153, -82.783792],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_9bec4e4bda2a4c9da4a04c27d59543c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9f0c184b11a4ef797d3cbaadfc43000 = $(`<div id="html_f9f0c184b11a4ef797d3cbaadfc43000" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Quebrada Pizote. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-04-10 <strong>Recolectores:</strong> Enia Navarro; Annia Picado <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_9bec4e4bda2a4c9da4a04c27d59543c2.setContent(html_f9f0c184b11a4ef797d3cbaadfc43000);
+        
+
+        marker_6df9c7f93c494d75a0128f7b4d907962.bindPopup(popup_9bec4e4bda2a4c9da4a04c27d59543c2)
+        ;
+
+        
+    
+    
+            var marker_ce76c32f16cd44929b4ce70ed5a416c9 = L.marker(
+                [8.913153, -82.783792],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_f444151de70242fd9bab2b037a0fe25b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5114a5c0430e4db3b5f9ed2639660fc8 = $(`<div id="html_5114a5c0430e4db3b5f9ed2639660fc8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Quebrada Pizote. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-04-10 <strong>Recolectores:</strong> Enia Navarro; Annia Picado <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f444151de70242fd9bab2b037a0fe25b.setContent(html_5114a5c0430e4db3b5f9ed2639660fc8);
+        
+
+        marker_ce76c32f16cd44929b4ce70ed5a416c9.bindPopup(popup_f444151de70242fd9bab2b037a0fe25b)
+        ;
+
+        
+    
+    
+            var marker_2391a0650d064e21983cdc2719e2bc9f = L.marker(
+                [8.913153, -82.783792],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_06c6f6753fd942689aef0c95fc7b88e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73314e6b8d664cdaa61efafd8b2c5ef1 = $(`<div id="html_73314e6b8d664cdaa61efafd8b2c5ef1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Quebrada Pizote. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1997-04-10 <strong>Recolectores:</strong> Enia Navarro; Annia Picado <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_06c6f6753fd942689aef0c95fc7b88e6.setContent(html_73314e6b8d664cdaa61efafd8b2c5ef1);
+        
+
+        marker_2391a0650d064e21983cdc2719e2bc9f.bindPopup(popup_06c6f6753fd942689aef0c95fc7b88e6)
+        ;
+
+        
+    
+    
+            var marker_2fcbe9faae064ebda1cbab8b570ea938 = L.marker(
+                [8.9, -82.793056],
+                {}
+            ).addTo(marker_cluster_804736fd23fd4988b7c1fa7a735361f7);
+        
+    
+        var popup_ed4c0116e0864652a4e0fd1e16d83039 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e9660f801f441b4af4c12ecfc8a3cbe = $(`<div id="html_0e9660f801f441b4af4c12ecfc8a3cbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus. Finca Cafrosa. Bosque primario. <strong>Elevación:</strong> 1220.0 m  <strong>Fecha:</strong> 1996-03-12 <strong>Recolectores:</strong> Enia Navarro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ed4c0116e0864652a4e0fd1e16d83039.setContent(html_0e9660f801f441b4af4c12ecfc8a3cbe);
+        
+
+        marker_2fcbe9faae064ebda1cbab8b570ea938.bindPopup(popup_ed4c0116e0864652a4e0fd1e16d83039)
+        ;
+
+        
+    
+    
+            var layer_control_f8f6dbc58654426dbbd4e8abbe795b7a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_62a877a459ca438bbdaa3e19eac67e0b,
+                    "ESRI World Imagery" : tile_layer_2721713eb40c4f38a91b70d442111d02,
+                },
+                overlays :  {
+                    "macro_element_804736fd23fd4988b7c1fa7a735361f7" : marker_cluster_804736fd23fd4988b7c1fa7a735361f7,
+                },
+            };
+            L.control.layers(
+                layer_control_f8f6dbc58654426dbbd4e8abbe795b7a.base_layers,
+                layer_control_f8f6dbc58654426dbbd4e8abbe795b7a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0b1c12c7ae52478bb79d1578975ab6cd);
+            tile_layer_2721713eb40c4f38a91b70d442111d02.remove();
+        
+</script>

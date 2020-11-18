@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7678ca7a17074ed783090ad95782464a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7678ca7a17074ed783090ad95782464a" ></div>
+        
+</body>
+<script>    
+    
+            var map_7678ca7a17074ed783090ad95782464a = L.map(
+                "map_7678ca7a17074ed783090ad95782464a",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7678ca7a17074ed783090ad95782464a);
+
+            
+
+        
+    
+            var tile_layer_d429df6035b5470b8b84e3e30d4a1cfa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+            var tile_layer_7617f440c1e94fecbfd1f3423c4ec4c1 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+            var circle_marker_5232dee2ae2c4d56805fa9816f79abcf = L.circleMarker(
+                [8.678333, -83.528611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_5e7efe5be3bb42ee8dc01832a23aa1cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f556901c5b8476d935e6924c5b0afd9 = $(`<div id="html_6f556901c5b8476d935e6924c5b0afd9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce. Banegas. Camino al pueblo de Baneguitas, Orillas del camino y quebrada. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2012-03-26 <strong>Recolectores:</strong> Daniel Santamaría|Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5e7efe5be3bb42ee8dc01832a23aa1cd.setContent(html_6f556901c5b8476d935e6924c5b0afd9);
+        
+
+        circle_marker_5232dee2ae2c4d56805fa9816f79abcf.bindPopup(popup_5e7efe5be3bb42ee8dc01832a23aa1cd)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d4cd6df7ed4f38a5b7c1102fd0565d = L.circleMarker(
+                [9.2983, -83.7722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_49e090ab8b794b0c8543087819af0107 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4862c1d2a4bd442f92129c898b6bb3cf = $(`<div id="html_4862c1d2a4bd442f92129c898b6bb3cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pérez Zeledón. Tinamaste. Finca de los Suizos. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1998-08-20 <strong>Recolectores:</strong> A. Estrada & O. Valverde <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_49e090ab8b794b0c8543087819af0107.setContent(html_4862c1d2a4bd442f92129c898b6bb3cf);
+        
+
+        circle_marker_e8d4cd6df7ed4f38a5b7c1102fd0565d.bindPopup(popup_49e090ab8b794b0c8543087819af0107)
+        ;
+
+        
+    
+    
+            var circle_marker_bea0758bd3db4e7da43f39c011c81de2 = L.circleMarker(
+                [9.7139, -84.3917],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_5fdb7b2d25224cfe881c006bf6b0a597 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3ab5e30ef20444da08c9c4ed233cf07 = $(`<div id="html_e3ab5e30ef20444da08c9c4ed233cf07" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca de Tulin. Santa Rosa de Puriscal. En las margenes del Río Negro, falds SE de la Fila La Congreja <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> J. F. Morales Quirós <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5fdb7b2d25224cfe881c006bf6b0a597.setContent(html_e3ab5e30ef20444da08c9c4ed233cf07);
+        
+
+        circle_marker_bea0758bd3db4e7da43f39c011c81de2.bindPopup(popup_5fdb7b2d25224cfe881c006bf6b0a597)
+        ;
+
+        
+    
+    
+            var circle_marker_20f33590fb15426da73a4d2919db94b2 = L.circleMarker(
+                [9.49, -84.02],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_dc4dae707b8645938f061f7ef023b759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b1a98e090b241da8f62100ec9d38d43 = $(`<div id="html_9b1a98e090b241da8f62100ec9d38d43" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Tarrazu. Zona Protectora Cerro Nara. <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 1997-05-13 <strong>Recolectores:</strong> Estrada, A.; Sanchez, J. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_dc4dae707b8645938f061f7ef023b759.setContent(html_9b1a98e090b241da8f62100ec9d38d43);
+        
+
+        circle_marker_20f33590fb15426da73a4d2919db94b2.bindPopup(popup_dc4dae707b8645938f061f7ef023b759)
+        ;
+
+        
+    
+    
+            var circle_marker_f5b8af30f697421c9541e9e2ff669e63 = L.circleMarker(
+                [9.3, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_1412d94e8cb04142a00183d825ab5fc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1e55e5ba98246859b534dcc1feec416 = $(`<div id="html_d1e55e5ba98246859b534dcc1feec416" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose, Perez Zeledon. San Cristobal. Finca de los Suizos. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-06-01 <strong>Recolectores:</strong> Cascante, A.; Estrada, A.; Sanchez, J. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1412d94e8cb04142a00183d825ab5fc9.setContent(html_d1e55e5ba98246859b534dcc1feec416);
+        
+
+        circle_marker_f5b8af30f697421c9541e9e2ff669e63.bindPopup(popup_1412d94e8cb04142a00183d825ab5fc9)
+        ;
+
+        
+    
+    
+            var circle_marker_3c7422999ed34ebfa8cad6f5605180d0 = L.circleMarker(
+                [9.3, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_457cc20b73ac4ea3a40f4506549d6040 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3ae6799a7d74be0a43509f0cad97410 = $(`<div id="html_e3ae6799a7d74be0a43509f0cad97410" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: San Isidro de Peres Zeledon. San Cristobal. Finca Tinamaste. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1997-04-23 <strong>Recolectores:</strong> Estrada, A. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_457cc20b73ac4ea3a40f4506549d6040.setContent(html_e3ae6799a7d74be0a43509f0cad97410);
+        
+
+        circle_marker_3c7422999ed34ebfa8cad6f5605180d0.bindPopup(popup_457cc20b73ac4ea3a40f4506549d6040)
+        ;
+
+        
+    
+    
+            var circle_marker_89cecf2f4b8e4b658a9c51d4c791c709 = L.circleMarker(
+                [8.54, -83.52],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_f064f98e0e0d4b6da3a9a63b99460ba6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ec040512df47fe873b115e5ecf27de = $(`<div id="html_05ec040512df47fe873b115e5ecf27de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Corcovado; Península de Osa. Bosques alterados en el camino a Sirena, por el Cedral (Río). <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1995-03-20 <strong>Recolectores:</strong> J. F. Morales|Marcos Moraga <strong>Identificadores:</strong> F.R. Barrie, 2000 (MO)</div>`)[0];
+            popup_f064f98e0e0d4b6da3a9a63b99460ba6.setContent(html_05ec040512df47fe873b115e5ecf27de);
+        
+
+        circle_marker_89cecf2f4b8e4b658a9c51d4c791c709.bindPopup(popup_f064f98e0e0d4b6da3a9a63b99460ba6)
+        ;
+
+        
+    
+    
+            var circle_marker_46674b748dbd42b5adc265fc89add5d3 = L.circleMarker(
+                [9.71, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_debf32638e0d40e3895f92a7c7478530 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36276fb74850478094f185c9aaa1b87a = $(`<div id="html_36276fb74850478094f185c9aaa1b87a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Cerros de Puriscal. Santa Rosa de Puriscal. Bosque primario en las márgenes del Río Negro, falda S.E de la Fila La Cangreja <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_debf32638e0d40e3895f92a7c7478530.setContent(html_36276fb74850478094f185c9aaa1b87a);
+        
+
+        circle_marker_46674b748dbd42b5adc265fc89add5d3.bindPopup(popup_debf32638e0d40e3895f92a7c7478530)
+        ;
+
+        
+    
+    
+            var circle_marker_6fbcba7dbf5144678c9611af34b3b8ba = L.circleMarker(
+                [8.74, -83.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_4373b17da5dc4851b59e88e96b8b0ccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ba7c6f3d0f443e28411f20abb9f97d6 = $(`<div id="html_4ba7c6f3d0f443e28411f20abb9f97d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Rincón, fila circundante a las cabeceras de Quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_4373b17da5dc4851b59e88e96b8b0ccc.setContent(html_4ba7c6f3d0f443e28411f20abb9f97d6);
+        
+
+        circle_marker_6fbcba7dbf5144678c9611af34b3b8ba.bindPopup(popup_4373b17da5dc4851b59e88e96b8b0ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_228852118de847089d46224bf03fd91b = L.circleMarker(
+                [9.7, -84.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_ff43343573e14fc28a7b3c3719b0219d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70527d0b3e554993958aa2e5bfbcb832 = $(`<div id="html_70527d0b3e554993958aa2e5bfbcb832" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Faja Costeña del Valle de Parrita. Mastatal de Puriscal, bosque primario camino al abra vieja, por el río. <strong>Elevación:</strong> 312.5 m  <strong>Fecha:</strong> 1994-08-30 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ff43343573e14fc28a7b3c3719b0219d.setContent(html_70527d0b3e554993958aa2e5bfbcb832);
+        
+
+        circle_marker_228852118de847089d46224bf03fd91b.bindPopup(popup_ff43343573e14fc28a7b3c3719b0219d)
+        ;
+
+        
+    
+    
+            var circle_marker_ff752d12fe7d4957aa4ee14d672a880e = L.circleMarker(
+                [9.7, -84.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_ab5e9ab808024d7b98b158faf391d4c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_142186a36a3a4a4784c8ae1d55592086 = $(`<div id="html_142186a36a3a4a4784c8ae1d55592086" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Faja Costeña del Valle de Parrita. Mastatal de Puriscal; bosque primario en las filas adyacentes al Río Negro. <strong>Elevación:</strong> 305.0 m  <strong>Fecha:</strong> 1994-03-03 <strong>Recolectores:</strong> J. F. Morales|Damon A. Smith|S. Galen Smith <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_ab5e9ab808024d7b98b158faf391d4c4.setContent(html_142186a36a3a4a4784c8ae1d55592086);
+        
+
+        circle_marker_ff752d12fe7d4957aa4ee14d672a880e.bindPopup(popup_ab5e9ab808024d7b98b158faf391d4c4)
+        ;
+
+        
+    
+    
+            var circle_marker_85837ee4395d457d91043afcd4a5f68d = L.circleMarker(
+                [9.7, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_405ee2c2d62c42509116e23bab159c26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_016bf7f051944567b76043282b31767d = $(`<div id="html_016bf7f051944567b76043282b31767d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. La Cangreja. Santa Rosa de Puriscal. Bosque primario en las márgenes del río Negro. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1992-08-10 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F.R. Barrie (MO)</div>`)[0];
+            popup_405ee2c2d62c42509116e23bab159c26.setContent(html_016bf7f051944567b76043282b31767d);
+        
+
+        circle_marker_85837ee4395d457d91043afcd4a5f68d.bindPopup(popup_405ee2c2d62c42509116e23bab159c26)
+        ;
+
+        
+    
+    
+            var circle_marker_c11ab243f77741ec8a033d2febb23022 = L.circleMarker(
+                [9.70166, -84.39305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_fad9a3f39c29470f8e5f18da1a2b8474 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f9819d2eebc4f62a808f393b2a2e551 = $(`<div id="html_3f9819d2eebc4f62a808f393b2a2e551" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. La Cangreja. Santa Rosa de Puriscal. Bosque primario y secundario en las márgenes del río Negro. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-07-29 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F. R. Barrie</div>`)[0];
+            popup_fad9a3f39c29470f8e5f18da1a2b8474.setContent(html_3f9819d2eebc4f62a808f393b2a2e551);
+        
+
+        circle_marker_c11ab243f77741ec8a033d2febb23022.bindPopup(popup_fad9a3f39c29470f8e5f18da1a2b8474)
+        ;
+
+        
+    
+    
+            var circle_marker_30479e5bef0a47938abee84c5e26f087 = L.circleMarker(
+                [9.7, -84.39166],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_43b437d672a34faeb5f3022a3301c6b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_347e58e6b8fd47ba8e5aebbd6bf0f3a2 = $(`<div id="html_347e58e6b8fd47ba8e5aebbd6bf0f3a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, forests along Río Negro, ca. 1.5 km east of Santa Rosa de Puriscal <strong>Elevación:</strong> 320.0 m  <strong>Fecha:</strong> 1987-05-14 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Gina Umaña Dodero|Nelson Zamora <strong>Identificadores:</strong> F. Barrie</div>`)[0];
+            popup_43b437d672a34faeb5f3022a3301c6b0.setContent(html_347e58e6b8fd47ba8e5aebbd6bf0f3a2);
+        
+
+        circle_marker_30479e5bef0a47938abee84c5e26f087.bindPopup(popup_43b437d672a34faeb5f3022a3301c6b0)
+        ;
+
+        
+    
+    
+            var circle_marker_39ae8d8914a248a285f21ec16ea57966 = L.circleMarker(
+                [9.70166, -84.39305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_e5f147aab051474fb1337b4673c8daab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_011cece84b5c44f0b5c3c7a614a8d31c = $(`<div id="html_011cece84b5c44f0b5c3c7a614a8d31c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. La Cangreja, Sta. Rosa de Puriscal. bosque 1º y 2º en las márgenes del Río Negro. <strong>Elevación:</strong> 35.0 m  <strong>Fecha:</strong> 1992-07-29 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_e5f147aab051474fb1337b4673c8daab.setContent(html_011cece84b5c44f0b5c3c7a614a8d31c);
+        
+
+        circle_marker_39ae8d8914a248a285f21ec16ea57966.bindPopup(popup_e5f147aab051474fb1337b4673c8daab)
+        ;
+
+        
+    
+    
+            var circle_marker_38582b4cbb874c139973d1d2c6a00ae8 = L.circleMarker(
+                [9.494439999999999, -84.01666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_b9a60d1c1dae454e97e931564b4ae7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6f6f3f11da2408ca804ad2ccafd9f49 = $(`<div id="html_b6f6f3f11da2408ca804ad2ccafd9f49" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Cerro Nara. <strong>Elevación:</strong> 84.0 m  <strong>Fecha:</strong> 1997-05-13 <strong>Recolectores:</strong> Armando Estrada <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_b9a60d1c1dae454e97e931564b4ae7a9.setContent(html_b6f6f3f11da2408ca804ad2ccafd9f49);
+        
+
+        circle_marker_38582b4cbb874c139973d1d2c6a00ae8.bindPopup(popup_b9a60d1c1dae454e97e931564b4ae7a9)
+        ;
+
+        
+    
+    
+            var circle_marker_aa9025bad24240e8a73b3e68f0e75824 = L.circleMarker(
+                [9.29833, -83.77221999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_e359777246464f61b4fcaf24b50f515a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5afbfaeeefd4ad0a7c4e1a1e09110f1 = $(`<div id="html_e5afbfaeeefd4ad0a7c4e1a1e09110f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Cristobal, Finca Tinamaste. reforestation mixta <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1997-04-23 <strong>Recolectores:</strong> Armando Estrada <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_e359777246464f61b4fcaf24b50f515a.setContent(html_e5afbfaeeefd4ad0a7c4e1a1e09110f1);
+        
+
+        circle_marker_aa9025bad24240e8a73b3e68f0e75824.bindPopup(popup_e359777246464f61b4fcaf24b50f515a)
+        ;
+
+        
+    
+    
+            var circle_marker_034ffdf36d4944cd83250b2591cc8cb3 = L.circleMarker(
+                [9.7, -84.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_68c4681335214ce692722b9045e44368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e26bc3cd14c4b038201c13692f7099d = $(`<div id="html_5e26bc3cd14c4b038201c13692f7099d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Cangreja, Faja Costeña del Valle de Parrita, Mastatal de Puriscal, bosque primario en las filas adyacentes al Río Negro <strong>Elevación:</strong> 305.0 m  <strong>Fecha:</strong> 1994-03-03 <strong>Recolectores:</strong> J. F. Morales|Damon A. Smith|S. Galen Smith <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_68c4681335214ce692722b9045e44368.setContent(html_5e26bc3cd14c4b038201c13692f7099d);
+        
+
+        circle_marker_034ffdf36d4944cd83250b2591cc8cb3.bindPopup(popup_68c4681335214ce692722b9045e44368)
+        ;
+
+        
+    
+    
+            var circle_marker_b4f1256a070c4b699b46db78faa8b238 = L.circleMarker(
+                [9.7, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_4af48fcdf0e440e1849d7c4791abcf58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23776b496ef54dc1b9ea42c708228028 = $(`<div id="html_23776b496ef54dc1b9ea42c708228028" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja. Santa Rosa de Puriscal. En las margenes del rio Negro. Bosque primario. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1992-08-10 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> F. Barrie</div>`)[0];
+            popup_4af48fcdf0e440e1849d7c4791abcf58.setContent(html_23776b496ef54dc1b9ea42c708228028);
+        
+
+        circle_marker_b4f1256a070c4b699b46db78faa8b238.bindPopup(popup_4af48fcdf0e440e1849d7c4791abcf58)
+        ;
+
+        
+    
+    
+            var circle_marker_70f6d214cd1e4e9a9f8177d207bf6b07 = L.circleMarker(
+                [9.484421000000001, -84.00471],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_e6678b5496e948c09a402e5ed455d2bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6572600849db44f7ad693584378a121b = $(`<div id="html_6572600849db44f7ad693584378a121b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Nara. <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 2008-03-08 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e6678b5496e948c09a402e5ed455d2bf.setContent(html_6572600849db44f7ad693584378a121b);
+        
+
+        circle_marker_70f6d214cd1e4e9a9f8177d207bf6b07.bindPopup(popup_e6678b5496e948c09a402e5ed455d2bf)
+        ;
+
+        
+    
+    
+            var circle_marker_79c2abe5b3cd4443ab05e35b37ce32cb = L.circleMarker(
+                [9.705556, -84.365278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_00be853fc7bf4c2d9423422a9f6006b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0139298ec70a41bf9c191fd2c540470b = $(`<div id="html_0139298ec70a41bf9c191fd2c540470b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Concepción, Quebrada Grande. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 2003-09-13 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_00be853fc7bf4c2d9423422a9f6006b4.setContent(html_0139298ec70a41bf9c191fd2c540470b);
+        
+
+        circle_marker_79c2abe5b3cd4443ab05e35b37ce32cb.bindPopup(popup_00be853fc7bf4c2d9423422a9f6006b4)
+        ;
+
+        
+    
+    
+            var circle_marker_91aee6f2f0b54bfeaee49e7471422c2a = L.circleMarker(
+                [9.705556, -84.365278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_11e4636483a24bbeaac6fcc7520b3f85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7d08d298c2b46678b6b15df238c5ff4 = $(`<div id="html_d7d08d298c2b46678b6b15df238c5ff4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alto Concepción, Quebrada Grande. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 2003-09-13 <strong>Recolectores:</strong> Juan Francisco Morales Quirós; Jose González <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_11e4636483a24bbeaac6fcc7520b3f85.setContent(html_d7d08d298c2b46678b6b15df238c5ff4);
+        
+
+        circle_marker_91aee6f2f0b54bfeaee49e7471422c2a.bindPopup(popup_11e4636483a24bbeaac6fcc7520b3f85)
+        ;
+
+        
+    
+    
+            var circle_marker_8b8bbb57228a44469f6973794c17df16 = L.circleMarker(
+                [9.718611, -84.204167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_96dac5800af3429a96c17d7d00425d3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd73b5fa42f346cebbce69666ea7b7b3 = $(`<div id="html_dd73b5fa42f346cebbce69666ea7b7b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tiquires, bosque primario cerca del paso por la Quebrada Los Ayarales, camino al Cornelio. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2005-04-07 <strong>Recolectores:</strong> Daniel Santamaría; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_96dac5800af3429a96c17d7d00425d3b.setContent(html_dd73b5fa42f346cebbce69666ea7b7b3);
+        
+
+        circle_marker_8b8bbb57228a44469f6973794c17df16.bindPopup(popup_96dac5800af3429a96c17d7d00425d3b)
+        ;
+
+        
+    
+    
+            var circle_marker_3bb02b0015bc4bbdbebc5ca085e967db = L.circleMarker(
+                [9.718611, -84.204167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_bccb622d07bd4218a13d5e9369da1715 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3bd11b6411a483891534488d79874cd = $(`<div id="html_f3bd11b6411a483891534488d79874cd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tiquires, bosque primario cerca del paso por la Quebrada Los Ayarales, camino al Cornelio. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2005-04-07 <strong>Recolectores:</strong> Daniel Santamaría; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bccb622d07bd4218a13d5e9369da1715.setContent(html_f3bd11b6411a483891534488d79874cd);
+        
+
+        circle_marker_3bb02b0015bc4bbdbebc5ca085e967db.bindPopup(popup_bccb622d07bd4218a13d5e9369da1715)
+        ;
+
+        
+    
+    
+            var circle_marker_b8d4eb15cc9646b485c2c8965bd311b0 = L.circleMarker(
+                [9.718611, -84.204167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_b92aec59ec914a24b130edf8a784ee3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4419149908f4bf8b47f170b19f27f1e = $(`<div id="html_f4419149908f4bf8b47f170b19f27f1e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tiquires, bosque primario cerca del paso por la Quebrada Los Ayarales, camino al Cornelio. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2005-04-07 <strong>Recolectores:</strong> Daniel Santamaría; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b92aec59ec914a24b130edf8a784ee3f.setContent(html_f4419149908f4bf8b47f170b19f27f1e);
+        
+
+        circle_marker_b8d4eb15cc9646b485c2c8965bd311b0.bindPopup(popup_b92aec59ec914a24b130edf8a784ee3f)
+        ;
+
+        
+    
+    
+            var circle_marker_fa4c85a5554b4b0394de28cf5f7ed12f = L.circleMarker(
+                [9.713889, -84.391667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_1159807d58dd45c5ba3af41a5bb97066 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9048c616d5524ffd8fe74e19eab6c528 = $(`<div id="html_9048c616d5524ffd8fe74e19eab6c528" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario en las margenes del Rio Negro, falda S.E de la Fila La Cangreja <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_1159807d58dd45c5ba3af41a5bb97066.setContent(html_9048c616d5524ffd8fe74e19eab6c528);
+        
+
+        circle_marker_fa4c85a5554b4b0394de28cf5f7ed12f.bindPopup(popup_1159807d58dd45c5ba3af41a5bb97066)
+        ;
+
+        
+    
+    
+            var circle_marker_58b26069913743e388967d48aabf8eed = L.circleMarker(
+                [9.713889, -84.391667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_a21fa63ffe5e49c99984ebc8c3580fe3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7700da51b11f41fb9981e815d5c353ed = $(`<div id="html_7700da51b11f41fb9981e815d5c353ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario en las margenes del Rio Negro, falda S.E de la Fila La Cangreja <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_a21fa63ffe5e49c99984ebc8c3580fe3.setContent(html_7700da51b11f41fb9981e815d5c353ed);
+        
+
+        circle_marker_58b26069913743e388967d48aabf8eed.bindPopup(popup_a21fa63ffe5e49c99984ebc8c3580fe3)
+        ;
+
+        
+    
+    
+            var circle_marker_ab7678d2d8b84582afece35048b53874 = L.circleMarker(
+                [9.702778, -84.334722],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_50bbcaa224a6489da4faa5e5da1b9d75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc5d081e9ed04ac6bc08c812f209405d = $(`<div id="html_cc5d081e9ed04ac6bc08c812f209405d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal de Puriscal; bosque primario en las filas adyacentes al Rio Negro. <strong>Elevación:</strong> 305.0 m  <strong>Fecha:</strong> 1994-03-03 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_50bbcaa224a6489da4faa5e5da1b9d75.setContent(html_cc5d081e9ed04ac6bc08c812f209405d);
+        
+
+        circle_marker_ab7678d2d8b84582afece35048b53874.bindPopup(popup_50bbcaa224a6489da4faa5e5da1b9d75)
+        ;
+
+        
+    
+    
+            var circle_marker_28b13f715fe04d4ba85d973ad6088b6c = L.circleMarker(
+                [9.706667, -84.393056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_37639ebfcf344e51b6a5a4c520561ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97b64b2f895a4454989d1853f84f07da = $(`<div id="html_97b64b2f895a4454989d1853f84f07da" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario en las margenes del rio Negro. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1992-08-10 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_37639ebfcf344e51b6a5a4c520561ad6.setContent(html_97b64b2f895a4454989d1853f84f07da);
+        
+
+        circle_marker_28b13f715fe04d4ba85d973ad6088b6c.bindPopup(popup_37639ebfcf344e51b6a5a4c520561ad6)
+        ;
+
+        
+    
+    
+            var circle_marker_6a35d7c015d844bfb56d1031d3dff7f9 = L.circleMarker(
+                [9.701667, -84.393056],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_7247d77fe5d94130911b5a0677683465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38f3cf3f8e7a453ebf295b6d43198997 = $(`<div id="html_38f3cf3f8e7a453ebf295b6d43198997" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa de Puriscal. Bosque primario y secundario en las margenes del rio Negro. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-07-29 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_7247d77fe5d94130911b5a0677683465.setContent(html_38f3cf3f8e7a453ebf295b6d43198997);
+        
+
+        circle_marker_6a35d7c015d844bfb56d1031d3dff7f9.bindPopup(popup_7247d77fe5d94130911b5a0677683465)
+        ;
+
+        
+    
+    
+            var circle_marker_4f23baa3b5bb463c977ac7b05496dc63 = L.circleMarker(
+                [8.545556, -83.526944],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_c563623260304cd5bf73d9f84d3b8b21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1de0b77a751f4f50ad4313f6e8fbbe65 = $(`<div id="html_1de0b77a751f4f50ad4313f6e8fbbe65" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosques alterados en el camino a Sirena, por el Cedral (Rio). <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1995-03-20 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_c563623260304cd5bf73d9f84d3b8b21.setContent(html_1de0b77a751f4f50ad4313f6e8fbbe65);
+        
+
+        circle_marker_4f23baa3b5bb463c977ac7b05496dc63.bindPopup(popup_c563623260304cd5bf73d9f84d3b8b21)
+        ;
+
+        
+    
+    
+            var circle_marker_b4319fe19c50483197e97345219a05f7 = L.circleMarker(
+                [8.743056, -83.590278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_256b0ba5b6da45acb137af0c274b281d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbae7fb781af49c58e36d4d4f1b89eaa = $(`<div id="html_dbae7fb781af49c58e36d4d4f1b89eaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincon, fila circundante a las cabeceras de Quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_256b0ba5b6da45acb137af0c274b281d.setContent(html_dbae7fb781af49c58e36d4d4f1b89eaa);
+        
+
+        circle_marker_b4319fe19c50483197e97345219a05f7.bindPopup(popup_256b0ba5b6da45acb137af0c274b281d)
+        ;
+
+        
+    
+    
+            var circle_marker_5a2e2a5d9a0848c19acaaef6ed612832 = L.circleMarker(
+                [9.701389, -84.336111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_e09a8f9e4ee1476f9eccd32fcc24a215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66be7160b12c4557ae49e4f2b1f38f9f = $(`<div id="html_66be7160b12c4557ae49e4f2b1f38f9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mastatal de Puriscal, bosque primario camino al abra vieja, por el rio. <strong>Elevación:</strong> 312.5 m  <strong>Fecha:</strong> 1994-08-30 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_e09a8f9e4ee1476f9eccd32fcc24a215.setContent(html_66be7160b12c4557ae49e4f2b1f38f9f);
+        
+
+        circle_marker_5a2e2a5d9a0848c19acaaef6ed612832.bindPopup(popup_e09a8f9e4ee1476f9eccd32fcc24a215)
+        ;
+
+        
+    
+    
+            var circle_marker_d31b487a3b31479c8767898c8bf22e78 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_a4930ebe89864cd3b7c8c6e24bcf19f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b894596c93ea459aac95534a7e8e79b7 = $(`<div id="html_b894596c93ea459aac95534a7e8e79b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a4930ebe89864cd3b7c8c6e24bcf19f8.setContent(html_b894596c93ea459aac95534a7e8e79b7);
+        
+
+        circle_marker_d31b487a3b31479c8767898c8bf22e78.bindPopup(popup_a4930ebe89864cd3b7c8c6e24bcf19f8)
+        ;
+
+        
+    
+    
+            var circle_marker_c1939876007543cda12998e142bc9028 = L.circleMarker(
+                [9.29, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_b074e19c891b4283be4bab2810da61dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5754ca9879ca403d8595bafef707f4ea = $(`<div id="html_5754ca9879ca403d8595bafef707f4ea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Cristobal. Finca de los Suizos. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-06-01 <strong>Recolectores:</strong> Sánchez, Joaquín <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_b074e19c891b4283be4bab2810da61dd.setContent(html_5754ca9879ca403d8595bafef707f4ea);
+        
+
+        circle_marker_c1939876007543cda12998e142bc9028.bindPopup(popup_b074e19c891b4283be4bab2810da61dd)
+        ;
+
+        
+    
+    
+            var circle_marker_9d0eac121fce4af4a03cec4b6e2a177b = L.circleMarker(
+                [9.29, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_24599710b3b04e1f96ddf0b0feb3cbe5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74429b2785b9434d9c3f275d5bbe4e95 = $(`<div id="html_74429b2785b9434d9c3f275d5bbe4e95" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tinamaste, finca de los Suizos. <strong>Elevación:</strong> 680.0 m  <strong>Fecha:</strong> 1998-08-30 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_24599710b3b04e1f96ddf0b0feb3cbe5.setContent(html_74429b2785b9434d9c3f275d5bbe4e95);
+        
+
+        circle_marker_9d0eac121fce4af4a03cec4b6e2a177b.bindPopup(popup_24599710b3b04e1f96ddf0b0feb3cbe5)
+        ;
+
+        
+    
+    
+            var circle_marker_7eb3b0b78e284e8b93fd2c0dde72d3db = L.circleMarker(
+                [9.7, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_30b91fc11d034a43954a14858801e98d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f57f831f993e4eb0b177f22670ea64ef = $(`<div id="html_f57f831f993e4eb0b177f22670ea64ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa de Puriscal. Bosque primario y secundario en los márgenes del río Negro. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 1992-07-29 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_30b91fc11d034a43954a14858801e98d.setContent(html_f57f831f993e4eb0b177f22670ea64ef);
+        
+
+        circle_marker_7eb3b0b78e284e8b93fd2c0dde72d3db.bindPopup(popup_30b91fc11d034a43954a14858801e98d)
+        ;
+
+        
+    
+    
+            var circle_marker_3cc4f26991e94f10b3ccc60f1cb5136c = L.circleMarker(
+                [9.7, -84.33],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_d0d8cf60f669499687491c5a66c27406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bd0aba0678443339e3adc35e674c5c7 = $(`<div id="html_0bd0aba0678443339e3adc35e674c5c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Faja Costeña del Valle de Parrita.Mastatal de Puriscal, bosque primario en las filas adyascentes al río Negro. <strong>Elevación:</strong> 305.0 m  <strong>Fecha:</strong> 1994-03-03 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_d0d8cf60f669499687491c5a66c27406.setContent(html_0bd0aba0678443339e3adc35e674c5c7);
+        
+
+        circle_marker_3cc4f26991e94f10b3ccc60f1cb5136c.bindPopup(popup_d0d8cf60f669499687491c5a66c27406)
+        ;
+
+        
+    
+    
+            var circle_marker_19c4460b2e4241f899460ffeb0344598 = L.circleMarker(
+                [9.49, -84.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_b43e4325174f497287f60f42ad71e586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c47de3572ac646f4894d8172e67d9d83 = $(`<div id="html_c47de3572ac646f4894d8172e67d9d83" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro Nara <strong>Elevación:</strong> 840.0 m  <strong>Fecha:</strong> 1997-05-13 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_b43e4325174f497287f60f42ad71e586.setContent(html_c47de3572ac646f4894d8172e67d9d83);
+        
+
+        circle_marker_19c4460b2e4241f899460ffeb0344598.bindPopup(popup_b43e4325174f497287f60f42ad71e586)
+        ;
+
+        
+    
+    
+            var circle_marker_b2ae7cf79e314954ba662020f86f63ab = L.circleMarker(
+                [9.29, -83.77],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_ebd7be9a413245188e7e23c83530d120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c5bf45d15c349098ab539bd38f55865 = $(`<div id="html_3c5bf45d15c349098ab539bd38f55865" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Cristóbal. Finca Tinamaste. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1997-04-23 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_ebd7be9a413245188e7e23c83530d120.setContent(html_3c5bf45d15c349098ab539bd38f55865);
+        
+
+        circle_marker_b2ae7cf79e314954ba662020f86f63ab.bindPopup(popup_ebd7be9a413245188e7e23c83530d120)
+        ;
+
+        
+    
+    
+            var circle_marker_ed4b3598dc02425b8c4f16ea15cb52f7 = L.circleMarker(
+                [8.74, -83.59],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_c62344154f8141fea502b081bfc1d90e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a5964042bb24d49993716566ab5dfc4 = $(`<div id="html_6a5964042bb24d49993716566ab5dfc4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rincón, fila circundante a las cabeceras de quebrada Salto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1990-06-24 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_c62344154f8141fea502b081bfc1d90e.setContent(html_6a5964042bb24d49993716566ab5dfc4);
+        
+
+        circle_marker_ed4b3598dc02425b8c4f16ea15cb52f7.bindPopup(popup_c62344154f8141fea502b081bfc1d90e)
+        ;
+
+        
+    
+    
+            var circle_marker_47bef0d5d80b4c439fba430f57938855 = L.circleMarker(
+                [9.71, -84.39],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+        
+    
+        var popup_b72b99007cae4cc0b9cc96bfafb92f96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b661638791ab4cb5826068bf4246313c = $(`<div id="html_b661638791ab4cb5826068bf4246313c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja Santa Rosa de Puriscal. Márjenes del Río Negro. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1993-05-08 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_b72b99007cae4cc0b9cc96bfafb92f96.setContent(html_b661638791ab4cb5826068bf4246313c);
+        
+
+        circle_marker_47bef0d5d80b4c439fba430f57938855.bindPopup(popup_b72b99007cae4cc0b9cc96bfafb92f96)
+        ;
+
+        
+    
+    
+            var layer_control_ac0a196aef40432a8fd8b42b1ba180d3 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d429df6035b5470b8b84e3e30d4a1cfa,
+                    "ESRI World Imagery" : tile_layer_7617f440c1e94fecbfd1f3423c4ec4c1,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_ac0a196aef40432a8fd8b42b1ba180d3.base_layers,
+                layer_control_ac0a196aef40432a8fd8b42b1ba180d3.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7678ca7a17074ed783090ad95782464a);
+            tile_layer_7617f440c1e94fecbfd1f3423c4ec4c1.remove();
+        
+</script>

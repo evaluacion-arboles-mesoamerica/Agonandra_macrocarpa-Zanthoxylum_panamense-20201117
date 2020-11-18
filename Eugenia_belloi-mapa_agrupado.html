@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb5d4c51a8cd4648a0ec3a6c33636676 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bb5d4c51a8cd4648a0ec3a6c33636676" ></div>
+        
+</body>
+<script>    
+    
+            var map_bb5d4c51a8cd4648a0ec3a6c33636676 = L.map(
+                "map_bb5d4c51a8cd4648a0ec3a6c33636676",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_bb5d4c51a8cd4648a0ec3a6c33636676);
+
+            
+
+        
+    
+            var tile_layer_fffc4dc3cf70405abb83115ccafbbb14 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bb5d4c51a8cd4648a0ec3a6c33636676);
+        
+    
+            var tile_layer_fef084dcc68b4f0f932034a2df9d0ab7 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bb5d4c51a8cd4648a0ec3a6c33636676);
+        
+    
+            var marker_cluster_f2dc347a69354cbeaf8d5217392ca934 = L.markerClusterGroup(
+                {}
+            );
+            map_bb5d4c51a8cd4648a0ec3a6c33636676.addLayer(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+            var marker_fde3c23caa8e4093bcd2359865d3a301 = L.marker(
+                [10.4, -84.77],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_8228cc04e612402eb7decc5f998aff60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6735924dae964493ba2cc7cb7f838792 = $(`<div id="html_6735924dae964493ba2cc7cb7f838792" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cord. de Tilarán. Palmital, Quebrada Malanga, Río Caño Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_8228cc04e612402eb7decc5f998aff60.setContent(html_6735924dae964493ba2cc7cb7f838792);
+        
+
+        marker_fde3c23caa8e4093bcd2359865d3a301.bindPopup(popup_8228cc04e612402eb7decc5f998aff60)
+        ;
+
+        
+    
+    
+            var marker_974428f7fc884ca58ecfc22ca300e913 = L.marker(
+                [10.311111, -84.833889],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_570582d4af6044a5b75de54695b288f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af19810c049b49afbe205526e37e46a9 = $(`<div id="html_af19810c049b49afbe205526e37e46a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. San Gerardo Abajo, Río Caño Negro. Fincas Quesada y Arce. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1991-12-05 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_570582d4af6044a5b75de54695b288f1.setContent(html_af19810c049b49afbe205526e37e46a9);
+        
+
+        marker_974428f7fc884ca58ecfc22ca300e913.bindPopup(popup_570582d4af6044a5b75de54695b288f1)
+        ;
+
+        
+    
+    
+            var marker_2702788056584318bd01847577293546 = L.marker(
+                [10.36, -84.8],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_3fa2d10586b84bc28b0ba16566071a3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f867597c080e4d61bed0236d1834458a = $(`<div id="html_f867597c080e4d61bed0236d1834458a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Arenal; Cordillera de Tilarán. Queb. San Gerardo, Río Caño Negro. Finca de Enrique Quesada y Ceferino González. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-19 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_3fa2d10586b84bc28b0ba16566071a3b.setContent(html_f867597c080e4d61bed0236d1834458a);
+        
+
+        marker_2702788056584318bd01847577293546.bindPopup(popup_3fa2d10586b84bc28b0ba16566071a3b)
+        ;
+
+        
+    
+    
+            var marker_a48c6b364402405f85f80c6c287bc1e1 = L.marker(
+                [10.41666, -84.83333],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_1fde6fabea5b416bb1901e1319fe6866 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d91ea2a6516341a6b5d97266feaed1af = $(`<div id="html_d91ea2a6516341a6b5d97266feaed1af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Río Chiquito valley, 5 km N of Santa Elena, Atlantic slope rain forest. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1986-04-13 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|L. Lierheimer <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1fde6fabea5b416bb1901e1319fe6866.setContent(html_d91ea2a6516341a6b5d97266feaed1af);
+        
+
+        marker_a48c6b364402405f85f80c6c287bc1e1.bindPopup(popup_1fde6fabea5b416bb1901e1319fe6866)
+        ;
+
+        
+    
+    
+            var marker_f2c94e2728704911bb2965069847085c = L.marker(
+                [10.40833, -84.775],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_4194afbe3cc54976898abd7f60c7e68c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6df6af330464e319169ddbc05be4739 = $(`<div id="html_c6df6af330464e319169ddbc05be4739" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Palmital, Quebrada Malanga, Río Caño Negro protrero <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1993-03-12 <strong>Recolectores:</strong> Erick Bello C.|Eladio Cruz L. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_4194afbe3cc54976898abd7f60c7e68c.setContent(html_c6df6af330464e319169ddbc05be4739);
+        
+
+        marker_f2c94e2728704911bb2965069847085c.bindPopup(popup_4194afbe3cc54976898abd7f60c7e68c)
+        ;
+
+        
+    
+    
+            var marker_2447ed069b49475f9548ae4ab08ea734 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_7f0ef8346a7a45d0add55a74b3c8d995 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38f61c6e888c4931911e05e8b2a5f101 = $(`<div id="html_38f61c6e888c4931911e05e8b2a5f101" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida, Cuenca del San Carlos, 3 km northwest of La Tigra, San Carlos, south bank of Río Peñas Blancas on steep slope above river in primary forest patch, Nene castro farm <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_7f0ef8346a7a45d0add55a74b3c8d995.setContent(html_38f61c6e888c4931911e05e8b2a5f101);
+        
+
+        marker_2447ed069b49475f9548ae4ab08ea734.bindPopup(popup_7f0ef8346a7a45d0add55a74b3c8d995)
+        ;
+
+        
+    
+    
+            var marker_b85ec5a3e151446dade600a45825948d = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_be61ff4a4a9e4a458de41ad73de6bd9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de6d969bbfd84bb097c45641428cab20 = $(`<div id="html_de6d969bbfd84bb097c45641428cab20" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_be61ff4a4a9e4a458de41ad73de6bd9c.setContent(html_de6d969bbfd84bb097c45641428cab20);
+        
+
+        marker_b85ec5a3e151446dade600a45825948d.bindPopup(popup_be61ff4a4a9e4a458de41ad73de6bd9c)
+        ;
+
+        
+    
+    
+            var marker_f706e100c02145f0861b7d09f8890b31 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_c90ac200470d471088414fdf0ec683b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01d2e9cff0af4009a54086b0537e9f2f = $(`<div id="html_01d2e9cff0af4009a54086b0537e9f2f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_c90ac200470d471088414fdf0ec683b9.setContent(html_01d2e9cff0af4009a54086b0537e9f2f);
+        
+
+        marker_f706e100c02145f0861b7d09f8890b31.bindPopup(popup_c90ac200470d471088414fdf0ec683b9)
+        ;
+
+        
+    
+    
+            var marker_114f61fcc63c46c294861d2dd788ed93 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_8c2c1f01a2d241f2af37cc3d30217951 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fd57ebada8140f09ec2826d44ad6db6 = $(`<div id="html_8fd57ebada8140f09ec2826d44ad6db6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_8c2c1f01a2d241f2af37cc3d30217951.setContent(html_8fd57ebada8140f09ec2826d44ad6db6);
+        
+
+        marker_114f61fcc63c46c294861d2dd788ed93.bindPopup(popup_8c2c1f01a2d241f2af37cc3d30217951)
+        ;
+
+        
+    
+    
+            var marker_be2d19a2fc4c439eb059a0317c137be1 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_13b40abc7e524e9c96fe61b1fb76b937 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5f67c45fdaf483b9a1bd2227b0d12c5 = $(`<div id="html_f5f67c45fdaf483b9a1bd2227b0d12c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_13b40abc7e524e9c96fe61b1fb76b937.setContent(html_f5f67c45fdaf483b9a1bd2227b0d12c5);
+        
+
+        marker_be2d19a2fc4c439eb059a0317c137be1.bindPopup(popup_13b40abc7e524e9c96fe61b1fb76b937)
+        ;
+
+        
+    
+    
+            var marker_f9e98d7213c544bda46d26f3502708d4 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_e63986e566214ea481d734006b98b60b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e8b8b84c0364c9c87aa848644f55cfe = $(`<div id="html_1e8b8b84c0364c9c87aa848644f55cfe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_e63986e566214ea481d734006b98b60b.setContent(html_1e8b8b84c0364c9c87aa848644f55cfe);
+        
+
+        marker_f9e98d7213c544bda46d26f3502708d4.bindPopup(popup_e63986e566214ea481d734006b98b60b)
+        ;
+
+        
+    
+    
+            var marker_ffb82831c3474ba39ad918a86129a688 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_57dc77c87620478698a5dcb2e84c43f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b19430a2d4c46fe9e72c3fda4127637 = $(`<div id="html_0b19430a2d4c46fe9e72c3fda4127637" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_57dc77c87620478698a5dcb2e84c43f4.setContent(html_0b19430a2d4c46fe9e72c3fda4127637);
+        
+
+        marker_ffb82831c3474ba39ad918a86129a688.bindPopup(popup_57dc77c87620478698a5dcb2e84c43f4)
+        ;
+
+        
+    
+    
+            var marker_39f7376eeb46448089944d8f02d65a86 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_8bd3f30f93a24f20909bf9e95dfedb2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c234b2670ba48dbad086476ee800569 = $(`<div id="html_2c234b2670ba48dbad086476ee800569" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_8bd3f30f93a24f20909bf9e95dfedb2f.setContent(html_2c234b2670ba48dbad086476ee800569);
+        
+
+        marker_39f7376eeb46448089944d8f02d65a86.bindPopup(popup_8bd3f30f93a24f20909bf9e95dfedb2f)
+        ;
+
+        
+    
+    
+            var marker_a6862bad185246ba909d6710371ef8fb = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_1b8c923c368a4098beb5380941b9f094 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5b80d9af9b54170a4ad9745e23ae5a7 = $(`<div id="html_e5b80d9af9b54170a4ad9745e23ae5a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_1b8c923c368a4098beb5380941b9f094.setContent(html_e5b80d9af9b54170a4ad9745e23ae5a7);
+        
+
+        marker_a6862bad185246ba909d6710371ef8fb.bindPopup(popup_1b8c923c368a4098beb5380941b9f094)
+        ;
+
+        
+    
+    
+            var marker_4d910849ab634143b09c2e8e148fdeb5 = L.marker(
+                [10.366667, -84.616667],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_e907c0002dcd4013a768bfdc3e0d8ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dd0223f5f104031b12c1b0b565079e1 = $(`<div id="html_4dd0223f5f104031b12c1b0b565079e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas canyon, Nene Castro farm, 4 km NW of La Tigra. lowland wet forest. <strong>Elevación:</strong> 450.0 m  <strong>Fecha:</strong> 1995-04-25 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_e907c0002dcd4013a768bfdc3e0d8ff4.setContent(html_4dd0223f5f104031b12c1b0b565079e1);
+        
+
+        marker_4d910849ab634143b09c2e8e148fdeb5.bindPopup(popup_e907c0002dcd4013a768bfdc3e0d8ff4)
+        ;
+
+        
+    
+    
+            var marker_afc4b28146644dc6a7c7bcd619743a2b = L.marker(
+                [10.408333, -84.775],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_310c1f8c71d34ab6b31659df61ab134c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dce60aaa1e247058e9ce2ad666f664c = $(`<div id="html_9dce60aaa1e247058e9ce2ad666f664c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Palmital, Quebrada Malanga, Rio Cano Negro. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1993-03-12 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_310c1f8c71d34ab6b31659df61ab134c.setContent(html_9dce60aaa1e247058e9ce2ad666f664c);
+        
+
+        marker_afc4b28146644dc6a7c7bcd619743a2b.bindPopup(popup_310c1f8c71d34ab6b31659df61ab134c)
+        ;
+
+        
+    
+    
+            var marker_95d77d10d4384b17bfba8c7938b534f9 = L.marker(
+                [10.311111, -84.833889],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_9b3547beb71e409b9640ddbd47a90c57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_690800ebc80f4d86bcb131474201516a = $(`<div id="html_690800ebc80f4d86bcb131474201516a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo Abajo, Rio Cano Negro. Fincas Quesada y Arce. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1991-12-05 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_9b3547beb71e409b9640ddbd47a90c57.setContent(html_690800ebc80f4d86bcb131474201516a);
+        
+
+        marker_95d77d10d4384b17bfba8c7938b534f9.bindPopup(popup_9b3547beb71e409b9640ddbd47a90c57)
+        ;
+
+        
+    
+    
+            var marker_310914378b93453f9302d01c7ec335cd = L.marker(
+                [10.366667, -84.8],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_a427e35f851647c7ae33e4ac0af34cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29a6a23f74684b5b94753cb015ae8116 = $(`<div id="html_29a6a23f74684b5b94753cb015ae8116" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Queb. San Gerardo, Rio Cano Negro. Finca de Enrique Quesada y Ceferino Gonzalez. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-19 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_a427e35f851647c7ae33e4ac0af34cd5.setContent(html_29a6a23f74684b5b94753cb015ae8116);
+        
+
+        marker_310914378b93453f9302d01c7ec335cd.bindPopup(popup_a427e35f851647c7ae33e4ac0af34cd5)
+        ;
+
+        
+    
+    
+            var marker_dcaa026e9c3a460a8d1e4298cc825f50 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_aa9849e75c5746d988918cee8d5d9d0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5d902b41c744b3797237d77453e1273 = $(`<div id="html_f5d902b41c744b3797237d77453e1273" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-02-19 <strong>Recolectores:</strong> E. Bello C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_aa9849e75c5746d988918cee8d5d9d0e.setContent(html_f5d902b41c744b3797237d77453e1273);
+        
+
+        marker_dcaa026e9c3a460a8d1e4298cc825f50.bindPopup(popup_aa9849e75c5746d988918cee8d5d9d0e)
+        ;
+
+        
+    
+    
+            var marker_ef0d5a8e66f94b7b9fd55fd5b4e096dd = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_f2dc347a69354cbeaf8d5217392ca934);
+        
+    
+        var popup_e28d132cda1343088ed571424fd6a13c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa73c074a9d54751b4228f9a4c369683 = $(`<div id="html_fa73c074a9d54751b4228f9a4c369683" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-02-19 <strong>Recolectores:</strong> E. Bello C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e28d132cda1343088ed571424fd6a13c.setContent(html_fa73c074a9d54751b4228f9a4c369683);
+        
+
+        marker_ef0d5a8e66f94b7b9fd55fd5b4e096dd.bindPopup(popup_e28d132cda1343088ed571424fd6a13c)
+        ;
+
+        
+    
+    
+            var layer_control_f55d752932b942d4a58dd9187527f4df = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fffc4dc3cf70405abb83115ccafbbb14,
+                    "ESRI World Imagery" : tile_layer_fef084dcc68b4f0f932034a2df9d0ab7,
+                },
+                overlays :  {
+                    "macro_element_f2dc347a69354cbeaf8d5217392ca934" : marker_cluster_f2dc347a69354cbeaf8d5217392ca934,
+                },
+            };
+            L.control.layers(
+                layer_control_f55d752932b942d4a58dd9187527f4df.base_layers,
+                layer_control_f55d752932b942d4a58dd9187527f4df.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bb5d4c51a8cd4648a0ec3a6c33636676);
+            tile_layer_fef084dcc68b4f0f932034a2df9d0ab7.remove();
+        
+</script>

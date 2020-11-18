@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ab634bcfdbec42179c2a4966e400056f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ab634bcfdbec42179c2a4966e400056f" ></div>
+        
+</body>
+<script>    
+    
+            var map_ab634bcfdbec42179c2a4966e400056f = L.map(
+                "map_ab634bcfdbec42179c2a4966e400056f",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_ab634bcfdbec42179c2a4966e400056f);
+
+            
+
+        
+    
+            var tile_layer_e7cb641d790e4ed3bc92e3b961343d79 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ab634bcfdbec42179c2a4966e400056f);
+        
+    
+            var tile_layer_4066a3b9b9784978a58d8bb98c604ce4 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ab634bcfdbec42179c2a4966e400056f);
+        
+    
+            var marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d = L.markerClusterGroup(
+                {}
+            );
+            map_ab634bcfdbec42179c2a4966e400056f.addLayer(marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d);
+        
+    
+            var marker_0f3e3c4e28f24eb89c6bee949d2135b0 = L.marker(
+                [10.29166, -84.58610999999999],
+                {}
+            ).addTo(marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d);
+        
+    
+        var popup_7458a1df307e494abcd5f720738fb8ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_136a0ee243f04569b7187e28be1e65a1 = $(`<div id="html_136a0ee243f04569b7187e28be1e65a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Rocas, camino a la Reserva Biológica Alberto Manuel Brenes, límite Este <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2006-10-13 <strong>Recolectores:</strong> Alexánder Rodríguez|et al. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_7458a1df307e494abcd5f720738fb8ab.setContent(html_136a0ee243f04569b7187e28be1e65a1);
+        
+
+        marker_0f3e3c4e28f24eb89c6bee949d2135b0.bindPopup(popup_7458a1df307e494abcd5f720738fb8ab)
+        ;
+
+        
+    
+    
+            var marker_b8338142514d48faa38b7fd3390811de = L.marker(
+                [11.65, -84.033333],
+                {}
+            ).addTo(marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d);
+        
+    
+        var popup_e79c74518df4431b8283a7c30e92dbde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b84c18232d1148ad95ad3b26b4eb72ac = $(`<div id="html_b84c18232d1148ad95ad3b26b4eb72ac" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Atlanta, Caño El Tigrillo (La Picada) <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1982-11-08 <strong>Recolectores:</strong> A. Laguna <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_e79c74518df4431b8283a7c30e92dbde.setContent(html_b84c18232d1148ad95ad3b26b4eb72ac);
+        
+
+        marker_b8338142514d48faa38b7fd3390811de.bindPopup(popup_e79c74518df4431b8283a7c30e92dbde)
+        ;
+
+        
+    
+    
+            var marker_98553d73d46d48b1ba863ca417cfeb92 = L.marker(
+                [11.683333, -84.43333299999999],
+                {}
+            ).addTo(marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d);
+        
+    
+        var popup_ea11d970241a44589c1499dc0ef197c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e66c706877084f53a72cd2181e270d68 = $(`<div id="html_e66c706877084f53a72cd2181e270d68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río El Zapote; bosque muy húmedo premontano, transición cálida <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1982-09-03 <strong>Recolectores:</strong> A. Laguna <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ea11d970241a44589c1499dc0ef197c0.setContent(html_e66c706877084f53a72cd2181e270d68);
+        
+
+        marker_98553d73d46d48b1ba863ca417cfeb92.bindPopup(popup_ea11d970241a44589c1499dc0ef197c0)
+        ;
+
+        
+    
+    
+            var layer_control_667ce2b6b56b4f70a290adbe726ce4ea = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e7cb641d790e4ed3bc92e3b961343d79,
+                    "ESRI World Imagery" : tile_layer_4066a3b9b9784978a58d8bb98c604ce4,
+                },
+                overlays :  {
+                    "macro_element_3df9dea3a7ee45d485ee295ab16ce92d" : marker_cluster_3df9dea3a7ee45d485ee295ab16ce92d,
+                },
+            };
+            L.control.layers(
+                layer_control_667ce2b6b56b4f70a290adbe726ce4ea.base_layers,
+                layer_control_667ce2b6b56b4f70a290adbe726ce4ea.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ab634bcfdbec42179c2a4966e400056f);
+            tile_layer_4066a3b9b9784978a58d8bb98c604ce4.remove();
+        
+</script>

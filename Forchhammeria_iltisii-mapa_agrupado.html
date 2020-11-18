@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f6245c1501764a8e88eb17558679c49d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f6245c1501764a8e88eb17558679c49d" ></div>
+        
+</body>
+<script>    
+    
+            var map_f6245c1501764a8e88eb17558679c49d = L.map(
+                "map_f6245c1501764a8e88eb17558679c49d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f6245c1501764a8e88eb17558679c49d);
+
+            
+
+        
+    
+            var tile_layer_24cb9cf3b155410f92934006cc13ed00 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f6245c1501764a8e88eb17558679c49d);
+        
+    
+            var tile_layer_b2773368101642e98c421024661f2f4c = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f6245c1501764a8e88eb17558679c49d);
+        
+    
+            var marker_cluster_abed5ce984b04a0b908b61b39d368be5 = L.markerClusterGroup(
+                {}
+            );
+            map_f6245c1501764a8e88eb17558679c49d.addLayer(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+            var marker_a4fde97cc60f4591a5efb6155e09e197 = L.marker(
+                [10.466667, -85.358333],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_9e5ea94e704a487ab93ee4e94c8ce5a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0a0bf18da824d19a69a72de20b845e7 = $(`<div id="html_c0a0bf18da824d19a69a72de20b845e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Lomas Barbudal; Valle del Tempisque. Lomas Barbudal. Río Barbudal. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1994-02-03 <strong>Recolectores:</strong> Ulises Chavarría <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_9e5ea94e704a487ab93ee4e94c8ce5a9.setContent(html_c0a0bf18da824d19a69a72de20b845e7);
+        
+
+        marker_a4fde97cc60f4591a5efb6155e09e197.bindPopup(popup_9e5ea94e704a487ab93ee4e94c8ce5a9)
+        ;
+
+        
+    
+    
+            var marker_5f93bc8282464c23b9e1070969447103 = L.marker(
+                [10.593055999999999, -85.665278],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_57f6c4107c6c4f5d836abb8cc726e0c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7c2e42edaf446e5bd9edb3f0e2693e8 = $(`<div id="html_b7c2e42edaf446e5bd9edb3f0e2693e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faja Costeña del Golfo de Papagayo. Playa Bonita, Golfo Papagayo , antes de llegar a Playa Panamá. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1994-02-07 <strong>Recolectores:</strong> Ulises Chavarría <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_57f6c4107c6c4f5d836abb8cc726e0c6.setContent(html_b7c2e42edaf446e5bd9edb3f0e2693e8);
+        
+
+        marker_5f93bc8282464c23b9e1070969447103.bindPopup(popup_57f6c4107c6c4f5d836abb8cc726e0c6)
+        ;
+
+        
+    
+    
+            var marker_f9919273a43947ba9104e7a963df4b7b = L.marker(
+                [9.938889, -84.969444],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_0f5c613cd9b84b65847434ed6564bf36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc9d069cafaa4da5bfd84cff9a0f8d4e = $(`<div id="html_fc9d069cafaa4da5bfd84cff9a0f8d4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Península de Nicoya. Playa Naranjo; en fila a la par del mar; bosque y potrero. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1993-02-21 <strong>Recolectores:</strong> Barry E. Hammel|Omar Garita <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_0f5c613cd9b84b65847434ed6564bf36.setContent(html_fc9d069cafaa4da5bfd84cff9a0f8d4e);
+        
+
+        marker_f9919273a43947ba9104e7a963df4b7b.bindPopup(popup_0f5c613cd9b84b65847434ed6564bf36)
+        ;
+
+        
+    
+    
+            var marker_81185e698dbe476fb0fcf0984c7a8c74 = L.marker(
+                [10.593055999999999, -85.665278],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_254f4b3d1c35495d9a03fcaecf33379c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44fc9ab3a756459a9e6f0d31be487f2c = $(`<div id="html_44fc9ab3a756459a9e6f0d31be487f2c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pacífica Norte; Golfo de Papagayo. Bahía Panamá, bosque primarío en acantilados de Loma Corral. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1993-12-11 <strong>Recolectores:</strong> J. F. Morales|R. J. Abarca|A. Chinchilla|Mario Chinchilla <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_254f4b3d1c35495d9a03fcaecf33379c.setContent(html_44fc9ab3a756459a9e6f0d31be487f2c);
+        
+
+        marker_81185e698dbe476fb0fcf0984c7a8c74.bindPopup(popup_254f4b3d1c35495d9a03fcaecf33379c)
+        ;
+
+        
+    
+    
+            var marker_1a9d965b1b1b468ead5dc514848ca736 = L.marker(
+                [10.573611, -85.694722],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_d90a18b3549341cf9f13796d9ddf982f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0dfd10359a243fcbf8197c20df41516 = $(`<div id="html_f0dfd10359a243fcbf8197c20df41516" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pacífico Norte; Punta Cacique, Sur de Playa Hermosa. <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1993-12-23 <strong>Recolectores:</strong> Quírico Jiménez|I. Hernández|C. García <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_d90a18b3549341cf9f13796d9ddf982f.setContent(html_f0dfd10359a243fcbf8197c20df41516);
+        
+
+        marker_1a9d965b1b1b468ead5dc514848ca736.bindPopup(popup_d90a18b3549341cf9f13796d9ddf982f)
+        ;
+
+        
+    
+    
+            var marker_4db9789a7d8b401aacf4429bffe92465 = L.marker(
+                [10.477778, -85.780556],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_5d8d7e2d0e5a49b28080630ce7f28cbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2781cdaca4a94acf85b6e8cad510fc50 = $(`<div id="html_2781cdaca4a94acf85b6e8cad510fc50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 7 km N Potrero, Playa Pan de Azúcar <strong>Elevación:</strong> 2.0 m  <strong>Fecha:</strong> 1989-11-23 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_5d8d7e2d0e5a49b28080630ce7f28cbf.setContent(html_2781cdaca4a94acf85b6e8cad510fc50);
+        
+
+        marker_4db9789a7d8b401aacf4429bffe92465.bindPopup(popup_5d8d7e2d0e5a49b28080630ce7f28cbf)
+        ;
+
+        
+    
+    
+            var marker_aac7103918a74374b14d648ac84253b9 = L.marker(
+                [10.433333, -85.8],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_b8b93b3adb934ad39aad26dea2f895f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f81413e803549f48d633120af423fb0 = $(`<div id="html_8f81413e803549f48d633120af423fb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playita Blanca, Playas del Coco . <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1985-10-24 <strong>Recolectores:</strong> Nelson Zamora|Quírico Jiménez|Karl Eymert <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_b8b93b3adb934ad39aad26dea2f895f4.setContent(html_8f81413e803549f48d633120af423fb0);
+        
+
+        marker_aac7103918a74374b14d648ac84253b9.bindPopup(popup_b8b93b3adb934ad39aad26dea2f895f4)
+        ;
+
+        
+    
+    
+            var marker_01b01c174e174da5b28cd8ab35a6b3e9 = L.marker(
+                [10.433333, -85.8],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_b40271c8b5104ccf829715827b17cdd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0c98ea8a0b344d293766444e5e99a4e = $(`<div id="html_f0c98ea8a0b344d293766444e5e99a4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playita Blanca, Playas del Coco <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1985-10-24 <strong>Recolectores:</strong> Nelson Zamora|Quírico Jiménez|Karl Eymert <strong>Identificadores:</strong> Nelson Zamora V.</div>`)[0];
+            popup_b40271c8b5104ccf829715827b17cdd6.setContent(html_f0c98ea8a0b344d293766444e5e99a4e);
+        
+
+        marker_01b01c174e174da5b28cd8ab35a6b3e9.bindPopup(popup_b40271c8b5104ccf829715827b17cdd6)
+        ;
+
+        
+    
+    
+            var marker_29d86324ff6d4281b3befd2fefc658d3 = L.marker(
+                [10.545278, -85.723889],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_63baef50146145db9708c2875078042b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9627f837f624542b7910a7095893d0f = $(`<div id="html_a9627f837f624542b7910a7095893d0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Ocotal. <strong>Elevación:</strong> 25.0 m  <strong>Fecha:</strong> 1984-02-24 <strong>Recolectores:</strong> Pablo E. Sánchez V.|Gerardo Herrera Ch. <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_63baef50146145db9708c2875078042b.setContent(html_a9627f837f624542b7910a7095893d0f);
+        
+
+        marker_29d86324ff6d4281b3befd2fefc658d3.bindPopup(popup_63baef50146145db9708c2875078042b)
+        ;
+
+        
+    
+    
+            var marker_1512e2b1e66a4fe0b5243d43e65f5da6 = L.marker(
+                [10.59, -85.659722],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_72a7568845164422b0b77d107f2eed5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45c8976967234d4392b2db0530578ef2 = $(`<div id="html_45c8976967234d4392b2db0530578ef2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Panamá, Bahía Culebra. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-05-17 <strong>Recolectores:</strong> Jorge Gómez-Laurito <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_72a7568845164422b0b77d107f2eed5a.setContent(html_45c8976967234d4392b2db0530578ef2);
+        
+
+        marker_1512e2b1e66a4fe0b5243d43e65f5da6.bindPopup(popup_72a7568845164422b0b77d107f2eed5a)
+        ;
+
+        
+    
+    
+            var marker_b4216f198bea428b9cd4fb9db331e4fc = L.marker(
+                [10.555556, -85.693611],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_ae214e820f244dd8806f1e15e56c9fba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9e43e987e18453eaa8776b0cd01b950 = $(`<div id="html_f9e43e987e18453eaa8776b0cd01b950" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Propiedad de los Dada, Playas del Coco; nivel del mar <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-01-27 <strong>Recolectores:</strong> Jorge Gómez-Laurito <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_ae214e820f244dd8806f1e15e56c9fba.setContent(html_f9e43e987e18453eaa8776b0cd01b950);
+        
+
+        marker_b4216f198bea428b9cd4fb9db331e4fc.bindPopup(popup_ae214e820f244dd8806f1e15e56c9fba)
+        ;
+
+        
+    
+    
+            var marker_6d9569fac12a41b9a181b1162c6d5aaf = L.marker(
+                [10.574444999999999, -85.679167],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_fd2af627aaf4485fa04646089c4a1004 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d55b7cb1fce4b48b8421d045cc7877c = $(`<div id="html_2d55b7cb1fce4b48b8421d045cc7877c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playa Hermosa. Crece espontáneamente en Narcite, Naranjo, Ceco, etc. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1976-01-11 <strong>Recolectores:</strong> Luis J. Poveda Álvarez|J. F. Cicció <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_fd2af627aaf4485fa04646089c4a1004.setContent(html_2d55b7cb1fce4b48b8421d045cc7877c);
+        
+
+        marker_6d9569fac12a41b9a181b1162c6d5aaf.bindPopup(popup_fd2af627aaf4485fa04646089c4a1004)
+        ;
+
+        
+    
+    
+            var marker_443117c82bab41c68d0f0d8cdd474529 = L.marker(
+                [10.554444, -85.693611],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_af1697c77a9f4ac5a12ed56c3c1914c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e117f384aaa64851ae43804f6e86e966 = $(`<div id="html_e117f384aaa64851ae43804f6e86e966" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Playas del Coco. 0.5 km E of the beach at the edge of town. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1976-07-16 <strong>Recolectores:</strong> James C. Solomon <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_af1697c77a9f4ac5a12ed56c3c1914c7.setContent(html_e117f384aaa64851ae43804f6e86e966);
+        
+
+        marker_443117c82bab41c68d0f0d8cdd474529.bindPopup(popup_af1697c77a9f4ac5a12ed56c3c1914c7)
+        ;
+
+        
+    
+    
+            var marker_42d27d5a6e874d28a722ec09fbb85654 = L.marker(
+                [10.791667, -84.655556],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_39187298978f4b8aa67f82ab8b47f0be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b924ed8a21c4bce9fb6a157d6320891 = $(`<div id="html_6b924ed8a21c4bce9fb6a157d6320891" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa. De Bahía Salinas a Santa Cecilia. Santa Rosa. Sector Naranjo. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1994-05-26 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_39187298978f4b8aa67f82ab8b47f0be.setContent(html_6b924ed8a21c4bce9fb6a157d6320891);
+        
+
+        marker_42d27d5a6e874d28a722ec09fbb85654.bindPopup(popup_39187298978f4b8aa67f82ab8b47f0be)
+        ;
+
+        
+    
+    
+            var marker_56b6a48811094e20b7566663f4402adb = L.marker(
+                [10.556944, -85.7125],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_973776e317844176888c071fa9647ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bae482572ef479c820622ebcaf10f44 = $(`<div id="html_0bae482572ef479c820622ebcaf10f44" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Península de Nicoya. Sardinal, Playas del Coco, Playita Blanca, suroeste de orillas de El Coco. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1995-05-24 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_973776e317844176888c071fa9647ee5.setContent(html_0bae482572ef479c820622ebcaf10f44);
+        
+
+        marker_56b6a48811094e20b7566663f4402adb.bindPopup(popup_973776e317844176888c071fa9647ee5)
+        ;
+
+        
+    
+    
+            var marker_7d5532d88d744cbdb6b1d6d24d8e2165 = L.marker(
+                [10.58, -85.67],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_978c051d535546fba5aceec092265b3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4475ca820a1a42bebdde2dbbf7d70da7 = $(`<div id="html_4475ca820a1a42bebdde2dbbf7d70da7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Golfo de Papagayo, Cerro Corral. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1996-12-30 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J. Francisco Morales</div>`)[0];
+            popup_978c051d535546fba5aceec092265b3f.setContent(html_4475ca820a1a42bebdde2dbbf7d70da7);
+        
+
+        marker_7d5532d88d744cbdb6b1d6d24d8e2165.bindPopup(popup_978c051d535546fba5aceec092265b3f)
+        ;
+
+        
+    
+    
+            var marker_84a394ca4f8842d7994d1a5cbc36a46e = L.marker(
+                [9.935556, -84.92639],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_a112c5391a17416a997d3c7e0813eb16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86a22496caaf4fd3801724ab576b7bee = $(`<div id="html_86a22496caaf4fd3801724ab576b7bee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Golfo de Nicoya Externo.  Islas Cocineras, Isla Este (la más grande). <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 2005-11-29 <strong>Recolectores:</strong> J. F. Morales|Armando Soto|J. Castro <strong>Identificadores:</strong> J. Francisco Morales</div>`)[0];
+            popup_a112c5391a17416a997d3c7e0813eb16.setContent(html_86a22496caaf4fd3801724ab576b7bee);
+        
+
+        marker_84a394ca4f8842d7994d1a5cbc36a46e.bindPopup(popup_a112c5391a17416a997d3c7e0813eb16)
+        ;
+
+        
+    
+    
+            var marker_be3e75a2401243eebc77896a2ab0edf0 = L.marker(
+                [9.926389, -84.90194],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_a1db5f7c2fb34dd88c464e81febfddfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09e96f1cfbf24074b8f8cacac5dfc287 = $(`<div id="html_09e96f1cfbf24074b8f8cacac5dfc287" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida.  Golfo de Nicoya Externo.  Isla Pan de Azucar. <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 2005-11-29 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J. Francisco Morales</div>`)[0];
+            popup_a1db5f7c2fb34dd88c464e81febfddfb.setContent(html_09e96f1cfbf24074b8f8cacac5dfc287);
+        
+
+        marker_be3e75a2401243eebc77896a2ab0edf0.bindPopup(popup_a1db5f7c2fb34dd88c464e81febfddfb)
+        ;
+
+        
+    
+    
+            var marker_6a983d77816e44c388ab638f29d8029c = L.marker(
+                [9.926389, -84.90194],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_c5cb1d548a974b829f5a05a8c56a7623 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c393d1d4e1f4c6abeae52a9fd1f6503 = $(`<div id="html_7c393d1d4e1f4c6abeae52a9fd1f6503" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Golfo de Nicoya, Isla Pan de Azucar. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 2005-11-29 <strong>Recolectores:</strong> Armando Soto <strong>Identificadores:</strong> J. Francisco Morales</div>`)[0];
+            popup_c5cb1d548a974b829f5a05a8c56a7623.setContent(html_7c393d1d4e1f4c6abeae52a9fd1f6503);
+        
+
+        marker_6a983d77816e44c388ab638f29d8029c.bindPopup(popup_c5cb1d548a974b829f5a05a8c56a7623)
+        ;
+
+        
+    
+    
+            var marker_9ebc05442a7844a4bf30eb2fbb4cf35e = L.marker(
+                [10.83, -85.61],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_3466f8885cfc48d38d34648563ca9a13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1034de37e0143e5a525c09f419c13a4 = $(`<div id="html_a1034de37e0143e5a525c09f419c13a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Santa Rosa. De Bahía Salinas a Santa Cecilia. Estación Santa Rosa. Area Administrativa. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1993-08-07 <strong>Recolectores:</strong> Roberto Espinoza <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3466f8885cfc48d38d34648563ca9a13.setContent(html_a1034de37e0143e5a525c09f419c13a4);
+        
+
+        marker_9ebc05442a7844a4bf30eb2fbb4cf35e.bindPopup(popup_3466f8885cfc48d38d34648563ca9a13)
+        ;
+
+        
+    
+    
+            var marker_9931274a346e477b8658e4f3eade4876 = L.marker(
+                [9.935556, -84.926389],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_aee7d0423c06422395ac41b8ef072573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4466cc2a55744af38f36c4b92330ec8f = $(`<div id="html_4466cc2a55744af38f36c4b92330ec8f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Islas Cocineras, Isla Oeste (la mas pequeña). <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 2005-11-29 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J. Francisco Morales</div>`)[0];
+            popup_aee7d0423c06422395ac41b8ef072573.setContent(html_4466cc2a55744af38f36c4b92330ec8f);
+        
+
+        marker_9931274a346e477b8658e4f3eade4876.bindPopup(popup_aee7d0423c06422395ac41b8ef072573)
+        ;
+
+        
+    
+    
+            var marker_91bd841984f948669575c9cda98f089a = L.marker(
+                [10.477778, -85.780556],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_b8c071098514455fbe7fd182255eb30b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0f388544c194240a8b305021eddbf05 = $(`<div id="html_b0f388544c194240a8b305021eddbf05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Península de Nicoya. Playa Danta, 3 km NW de Potrero. <strong>Elevación:</strong> 2.0 m  <strong>Fecha:</strong> 1998-10-11 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_b8c071098514455fbe7fd182255eb30b.setContent(html_b0f388544c194240a8b305021eddbf05);
+        
+
+        marker_91bd841984f948669575c9cda98f089a.bindPopup(popup_b8c071098514455fbe7fd182255eb30b)
+        ;
+
+        
+    
+    
+            var marker_d82e2ee79fca471abdc5a7a127e1eade = L.marker(
+                [10.591667, -85.665278],
+                {}
+            ).addTo(marker_cluster_abed5ce984b04a0b908b61b39d368be5);
+        
+    
+        var popup_b0ed77ee134c423782a709aa5c3ef139 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c04ee8593a548e9960c54de1a97c5de = $(`<div id="html_4c04ee8593a548e9960c54de1a97c5de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bahia Panama, bosque primario en acantilados de Loma Corral. <strong>Elevación:</strong> 5.0 m  <strong>Fecha:</strong> 1993-12-11 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b0ed77ee134c423782a709aa5c3ef139.setContent(html_4c04ee8593a548e9960c54de1a97c5de);
+        
+
+        marker_d82e2ee79fca471abdc5a7a127e1eade.bindPopup(popup_b0ed77ee134c423782a709aa5c3ef139)
+        ;
+
+        
+    
+    
+            var layer_control_f5647abdf162443faf0defb56f0b7b16 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_24cb9cf3b155410f92934006cc13ed00,
+                    "ESRI World Imagery" : tile_layer_b2773368101642e98c421024661f2f4c,
+                },
+                overlays :  {
+                    "macro_element_abed5ce984b04a0b908b61b39d368be5" : marker_cluster_abed5ce984b04a0b908b61b39d368be5,
+                },
+            };
+            L.control.layers(
+                layer_control_f5647abdf162443faf0defb56f0b7b16.base_layers,
+                layer_control_f5647abdf162443faf0defb56f0b7b16.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f6245c1501764a8e88eb17558679c49d);
+            tile_layer_b2773368101642e98c421024661f2f4c.remove();
+        
+</script>

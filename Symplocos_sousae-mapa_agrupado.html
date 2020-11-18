@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_30e7a5c95c3143739de8a300a1c0dd96 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_30e7a5c95c3143739de8a300a1c0dd96" ></div>
+        
+</body>
+<script>    
+    
+            var map_30e7a5c95c3143739de8a300a1c0dd96 = L.map(
+                "map_30e7a5c95c3143739de8a300a1c0dd96",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_30e7a5c95c3143739de8a300a1c0dd96);
+
+            
+
+        
+    
+            var tile_layer_79f87dc420fc4081afb7882cda81cd60 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_30e7a5c95c3143739de8a300a1c0dd96);
+        
+    
+            var tile_layer_952bbf04abcc481eabe4a6a9e72623ec = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_30e7a5c95c3143739de8a300a1c0dd96);
+        
+    
+            var marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b = L.markerClusterGroup(
+                {}
+            );
+            map_30e7a5c95c3143739de8a300a1c0dd96.addLayer(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+            var marker_d25d4155824147598a86d026bbb48aff = L.marker(
+                [17.501110999999998, -99.990833],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_b87fd453e8a8488990531e8952f2f6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bde421d6e8e84da09ba8e49cb56ce4ee = $(`<div id="html_bde421d6e8e84da09ba8e49cb56ce4ee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Yerba Santa, 7 km adelante, camino a Puerto del Gallo <strong>Elevación:</strong> 2090.0 m  <strong>Fecha:</strong> 1984-07-24 <strong>Recolectores:</strong> R.M. Fonseca J. <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_b87fd453e8a8488990531e8952f2f6c2.setContent(html_bde421d6e8e84da09ba8e49cb56ce4ee);
+        
+
+        marker_d25d4155824147598a86d026bbb48aff.bindPopup(popup_b87fd453e8a8488990531e8952f2f6c2)
+        ;
+
+        
+    
+    
+            var marker_b55bac81ab1e4b0f8fe5c8732b8bbc5f = L.marker(
+                [17.489444, -100.20055500000001],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_c7c78f9aa2964f84ac99d439f9fc1a64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e41d7da29f204d84ad2b268a5b20346e = $(`<div id="html_e41d7da29f204d84ad2b268a5b20346e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto del Gallo, cercanías <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1983-03-13 <strong>Recolectores:</strong> F.G. Lorea H. <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_c7c78f9aa2964f84ac99d439f9fc1a64.setContent(html_e41d7da29f204d84ad2b268a5b20346e);
+        
+
+        marker_b55bac81ab1e4b0f8fe5c8732b8bbc5f.bindPopup(popup_c7c78f9aa2964f84ac99d439f9fc1a64)
+        ;
+
+        
+    
+    
+            var marker_136cd318df90480b9606e31a532a2907 = L.marker(
+                [19.558219, -104.15499200000001],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_94bb9a3e23e74e1fa6d83e1291ab8672 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f26c787bdd244d069ef1bef175b6c674 = $(`<div id="html_f26c787bdd244d069ef1bef175b6c674" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 0.5 km due WNW of Cerro La Capilla, 18.5 km SSE of El Chante, Sierra de Manantlán Oriental, along lumber road to Cerro Las Cumbres <strong>Elevación:</strong> 2760.0 m  <strong>Fecha:</strong> 1980-01-06 <strong>Recolectores:</strong> H.H. Iltis; G.E. Schatz; P.D. Sorensen; P. Matekaitis <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_94bb9a3e23e74e1fa6d83e1291ab8672.setContent(html_f26c787bdd244d069ef1bef175b6c674);
+        
+
+        marker_136cd318df90480b9606e31a532a2907.bindPopup(popup_94bb9a3e23e74e1fa6d83e1291ab8672)
+        ;
+
+        
+    
+    
+            var marker_1579e3b13f8b4209935bf8e8fc60438b = L.marker(
+                [17.35, -98.233333],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_d8b001cdd4cb4fcfb5a3247ad47b3ca7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4aae74a2bd0342c292b6f4c2386aafda = $(`<div id="html_4aae74a2bd0342c292b6f4c2386aafda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Desviación a Zochiquilazala, antes de la Y a San Martín Peras-Coicoyan <strong>Elevación:</strong> 2740.0 m  <strong>Fecha:</strong> 1993-02-06 <strong>Recolectores:</strong> M. Cházaro B.; M. Kimnach; J.I. Calzada; A. Campos V.; M. Negrete A. <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_d8b001cdd4cb4fcfb5a3247ad47b3ca7.setContent(html_4aae74a2bd0342c292b6f4c2386aafda);
+        
+
+        marker_1579e3b13f8b4209935bf8e8fc60438b.bindPopup(popup_d8b001cdd4cb4fcfb5a3247ad47b3ca7)
+        ;
+
+        
+    
+    
+            var marker_391cead07d314b6090f4edcfa3c870e7 = L.marker(
+                [19.555556, -104.154167],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_6cd90cb2358a454e8c1b65a847221863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f121b2945576418197c3f08ee9913a5a = $(`<div id="html_f121b2945576418197c3f08ee9913a5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW-facing, steep rocky wooded arroyo near top of Sierra de Manantlán Oriental along lumber road to Cerro Las Cumbres, 0.5 km due WNW of Cerro Las Capillas, 18.5 km SSE of the Chante <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1980-01-06 <strong>Recolectores:</strong> Hugh H. Iltis <strong>Identificadores:</strong> NO DISPONIBLE</div>`)[0];
+            popup_6cd90cb2358a454e8c1b65a847221863.setContent(html_f121b2945576418197c3f08ee9913a5a);
+        
+
+        marker_391cead07d314b6090f4edcfa3c870e7.bindPopup(popup_6cd90cb2358a454e8c1b65a847221863)
+        ;
+
+        
+    
+    
+            var marker_8b90f92459e14b86b5c22323c0dcfcf9 = L.marker(
+                [17.2, -97.883333],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_630e5e79ee2c49a2811c8442fc3e64fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76b2818fd0034100afb7ebb6c5328e56 = $(`<div id="html_76b2818fd0034100afb7ebb6c5328e56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Mun. San Andres Chicahuaxtla.  Loc. Dto. Tlaxiaco.  1 Km al E de San Andres Chicahuaxtla, carr. a Tlaxiaco <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1992-12-01 <strong>Recolectores:</strong> Campos V., Alvaro; Torres, R.; Calzada, I. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_630e5e79ee2c49a2811c8442fc3e64fb.setContent(html_76b2818fd0034100afb7ebb6c5328e56);
+        
+
+        marker_8b90f92459e14b86b5c22323c0dcfcf9.bindPopup(popup_630e5e79ee2c49a2811c8442fc3e64fb)
+        ;
+
+        
+    
+    
+            var marker_2912f082587a43c4a02e534ee0e419b0 = L.marker(
+                [19.388889000000002, -104.154167],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_9c98046ad7e845cbae7b0396700b9ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bebc1adb117a49a0878c1d6fab956eda = $(`<div id="html_bebc1adb117a49a0878c1d6fab956eda" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Edo. JALISCO.  NW-facing steep rocky wooded arroyo near top of Sierra de Manantlán Oriental, along lumber road to Cerro las Cumbres 0.5 km due WNW of Cerro las Capillas, 18.5 km SSE of El Chante <strong>Elevación:</strong> 2760.0 m  <strong>Fecha:</strong> 1980-01-01 <strong>Recolectores:</strong> Iltis, H. H.; Schatz, G. E.; Sorensen, P.; Matekaitis, P. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9c98046ad7e845cbae7b0396700b9ea0.setContent(html_bebc1adb117a49a0878c1d6fab956eda);
+        
+
+        marker_2912f082587a43c4a02e534ee0e419b0.bindPopup(popup_9c98046ad7e845cbae7b0396700b9ea0)
+        ;
+
+        
+    
+    
+            var marker_65ccec7c285a46c8ac72a8d16da5775c = L.marker(
+                [17.287882999999997, -98.176203],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_167451ba1ce34c67aec6ee0e12bf3067 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d2e01fda1d0409abcbcfb536e094978 = $(`<div id="html_8d2e01fda1d0409abcbcfb536e094978" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Despúes de la desv a Zochiquilazala y antes de la Y a San Martín Peras y Coycoyan <strong>Elevación:</strong> 1370.0 m  <strong>Fecha:</strong> 1993-02-06 <strong>Recolectores:</strong> M. Cházaro B.; B. M. Kimnach; J. I. Calzada; A. Campos V. ; M. Negrete A. <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_167451ba1ce34c67aec6ee0e12bf3067.setContent(html_8d2e01fda1d0409abcbcfb536e094978);
+        
+
+        marker_65ccec7c285a46c8ac72a8d16da5775c.bindPopup(popup_167451ba1ce34c67aec6ee0e12bf3067)
+        ;
+
+        
+    
+    
+            var marker_1a65a1c592a24c658c8c9d29f43ab7eb = L.marker(
+                [19.561111, -104.161111],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_867d3b5b03ba4d44a6d9cbbf5b3fd527 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55879ede28e943b0af2abe9cdf972faf = $(`<div id="html_55879ede28e943b0af2abe9cdf972faf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km al O de Las Capillas <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1987-03-10 <strong>Recolectores:</strong> Hugh Iltis; Bruce Benz; José Antonio Vázquez García; Miguel Cházaro Basáñez <strong>Identificadores:</strong> Luz María González Villarreal</div>`)[0];
+            popup_867d3b5b03ba4d44a6d9cbbf5b3fd527.setContent(html_55879ede28e943b0af2abe9cdf972faf);
+        
+
+        marker_1a65a1c592a24c658c8c9d29f43ab7eb.bindPopup(popup_867d3b5b03ba4d44a6d9cbbf5b3fd527)
+        ;
+
+        
+    
+    
+            var marker_372a49960b4b468491e79903c8425b9f = L.marker(
+                [19.555556, -104.154167],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_369da558f87548949c7bc5c365ff199f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af84db4140ed4c3980f2de3e961bf821 = $(`<div id="html_af84db4140ed4c3980f2de3e961bf821" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 18.5 km al SSE de El Chante, 0.5 km al ONO de Las Capillas <strong>Elevación:</strong> 1380.0 m  <strong>Fecha:</strong> 1980-10-10 <strong>Recolectores:</strong> Hugh Iltis; Rafael Guzmán Mejía <strong>Identificadores:</strong> Luz María González Villarreal</div>`)[0];
+            popup_369da558f87548949c7bc5c365ff199f.setContent(html_af84db4140ed4c3980f2de3e961bf821);
+        
+
+        marker_372a49960b4b468491e79903c8425b9f.bindPopup(popup_369da558f87548949c7bc5c365ff199f)
+        ;
+
+        
+    
+    
+            var marker_495b6b637c6d4a109efa2db24cca0693 = L.marker(
+                [19.555556, -104.154167],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_c00337fbd2244eb6a1e716fb8edb1a7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fce3a20eff084a88a8feaf9136e501d1 = $(`<div id="html_fce3a20eff084a88a8feaf9136e501d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 18.5 km al SSE de El Chante, 0.5 km al ONO de Las Capillas <strong>Elevación:</strong> 1380.0 m  <strong>Fecha:</strong> 1980-01-06 <strong>Recolectores:</strong> Hugh Iltis; George Schatz; Paul Sorensen <strong>Identificadores:</strong> Luz María González Villarreal</div>`)[0];
+            popup_c00337fbd2244eb6a1e716fb8edb1a7f.setContent(html_fce3a20eff084a88a8feaf9136e501d1);
+        
+
+        marker_495b6b637c6d4a109efa2db24cca0693.bindPopup(popup_c00337fbd2244eb6a1e716fb8edb1a7f)
+        ;
+
+        
+    
+    
+            var marker_06370774a3fb4fd899815253aaa40fac = L.marker(
+                [17.358333, -98.24],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_cb1e3c786dc14b8eadd3d33a58f23c18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecacab69d3be42698432e9dd4d658fb0 = $(`<div id="html_ecacab69d3be42698432e9dd4d658fb0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> DESPUES DE LA DESVIACION A ZOCHIQUILAZALA, ANTES DE LLEGAR A LA Y A SAN MARTIN PERAS <strong>Elevación:</strong> 1370.0 m  <strong>Fecha:</strong> 1993-02-06 <strong>Recolectores:</strong> M. Cházaro B.; et al. <strong>Identificadores:</strong> M. Cházaro B.</div>`)[0];
+            popup_cb1e3c786dc14b8eadd3d33a58f23c18.setContent(html_ecacab69d3be42698432e9dd4d658fb0);
+        
+
+        marker_06370774a3fb4fd899815253aaa40fac.bindPopup(popup_cb1e3c786dc14b8eadd3d33a58f23c18)
+        ;
+
+        
+    
+    
+            var marker_729b0805e056434fa3fbc819eff0f670 = L.marker(
+                [19.555556, -104.154167],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_65d6cad2308840f6955fefa7da7181a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc10bf65c184407398b4c9e2c631fa0a = $(`<div id="html_cc10bf65c184407398b4c9e2c631fa0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW-facing, steep rocky wooded arroyo near top of Sierra de Manantlán Oriental, along lumber road to Cerro Las Cumbres 0.5 km due WNW of Cerro Las Capillas, 18.5 km SSE of El Chante. <strong>Elevación:</strong> 2760.0 m  <strong>Fecha:</strong> 1980-01-06 <strong>Recolectores:</strong> Hugh H. Iltis <strong>Identificadores:</strong> Larry Kelly (MEXU)</div>`)[0];
+            popup_65d6cad2308840f6955fefa7da7181a0.setContent(html_cc10bf65c184407398b4c9e2c631fa0a);
+        
+
+        marker_729b0805e056434fa3fbc819eff0f670.bindPopup(popup_65d6cad2308840f6955fefa7da7181a0)
+        ;
+
+        
+    
+    
+            var marker_d7aaaad52cf14e898914be8abd64a332 = L.marker(
+                [17.0, -96.5],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_b6b36c9ce50f4906bf8ff4ee5c912162 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1e2cac8b9d346398c635350f064fc5d = $(`<div id="html_a1e2cac8b9d346398c635350f064fc5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-01-28 <strong>Recolectores:</strong> M. C. Carlson <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_b6b36c9ce50f4906bf8ff4ee5c912162.setContent(html_a1e2cac8b9d346398c635350f064fc5d);
+        
+
+        marker_d7aaaad52cf14e898914be8abd64a332.bindPopup(popup_b6b36c9ce50f4906bf8ff4ee5c912162)
+        ;
+
+        
+    
+    
+            var marker_4db304cb06c14393ab158dc4d300f5e3 = L.marker(
+                [17.283333, -98.15],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_49816ee9504a468685e747c44a27f40e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80ea28f6e9494281b5148e801e6a59d1 = $(`<div id="html_80ea28f6e9494281b5148e801e6a59d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escopeta, La, a 1 km de la desviación al poblado, km24 carretera de San Sebastián Tecomoxtlahuaca <strong>Elevación:</strong> 2665.0 m  <strong>Fecha:</strong> 1994-11-30 <strong>Recolectores:</strong> Calzada, Juan Ismael <strong>Identificadores:</strong> Kelly, Larry M., 2002</div>`)[0];
+            popup_49816ee9504a468685e747c44a27f40e.setContent(html_80ea28f6e9494281b5148e801e6a59d1);
+        
+
+        marker_4db304cb06c14393ab158dc4d300f5e3.bindPopup(popup_49816ee9504a468685e747c44a27f40e)
+        ;
+
+        
+    
+    
+            var marker_a4c305a69ab34dada3891fd62511e978 = L.marker(
+                [17.283333, -99.65],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_d5c03dd4838b499ba40283c65ba17aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba148630e3b0428e8a7402740f5f53a3 = $(`<div id="html_ba148630e3b0428e8a7402740f5f53a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Escopeta, La, a 1 km de la desviación al poblado, carretera Coicoyan de las Flores-Santiago Juxtlahuaca <strong>Elevación:</strong> 2655.0 m  <strong>Fecha:</strong> 1995-08-31 <strong>Recolectores:</strong> Calzada, Juan Ismael con C. Clevinger <strong>Identificadores:</strong> kelly, Larry M., 2002</div>`)[0];
+            popup_d5c03dd4838b499ba40283c65ba17aa5.setContent(html_ba148630e3b0428e8a7402740f5f53a3);
+        
+
+        marker_a4c305a69ab34dada3891fd62511e978.bindPopup(popup_d5c03dd4838b499ba40283c65ba17aa5)
+        ;
+
+        
+    
+    
+            var marker_856805d5c5a74d57a7c13fda74163647 = L.marker(
+                [19.55556, -104.15417],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_c511217369ba4812aa1a71d215b3a23b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3e85a637e4349ff9b42f8b968512f74 = $(`<div id="html_a3e85a637e4349ff9b42f8b968512f74" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW-facing near top of Sierra de Manantlan Oriental, along lumber road to Cerro <strong>Elevación:</strong> 2760.0 m  <strong>Fecha:</strong> 1980-01-29 <strong>Recolectores:</strong> H.H. Iltis <strong>Identificadores:</strong> Lawrence Kelly</div>`)[0];
+            popup_c511217369ba4812aa1a71d215b3a23b.setContent(html_a3e85a637e4349ff9b42f8b968512f74);
+        
+
+        marker_856805d5c5a74d57a7c13fda74163647.bindPopup(popup_c511217369ba4812aa1a71d215b3a23b)
+        ;
+
+        
+    
+    
+            var marker_ad41199f99b649c0b9840ca17b17b4cb = L.marker(
+                [17.2, -97.88333],
+                {}
+            ).addTo(marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b);
+        
+    
+        var popup_6ea248451f1949b785b43280a35a44eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aaa13d7a65cc4239b4a92acb3ade27e6 = $(`<div id="html_aaa13d7a65cc4239b4a92acb3ade27e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dto. Tlaxiaco, 1 km al E de San Andres Chicahuaxtla carr. a Tlaxiaco <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1992-12-01 <strong>Recolectores:</strong> Alvaro Campos Villanueva <strong>Identificadores:</strong> Lawrence Kelly</div>`)[0];
+            popup_6ea248451f1949b785b43280a35a44eb.setContent(html_aaa13d7a65cc4239b4a92acb3ade27e6);
+        
+
+        marker_ad41199f99b649c0b9840ca17b17b4cb.bindPopup(popup_6ea248451f1949b785b43280a35a44eb)
+        ;
+
+        
+    
+    
+            var layer_control_116d64123a7c47e285257992ee15fa17 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_79f87dc420fc4081afb7882cda81cd60,
+                    "ESRI World Imagery" : tile_layer_952bbf04abcc481eabe4a6a9e72623ec,
+                },
+                overlays :  {
+                    "macro_element_db15ce72f2c34eb0ab02c0a371cfeb2b" : marker_cluster_db15ce72f2c34eb0ab02c0a371cfeb2b,
+                },
+            };
+            L.control.layers(
+                layer_control_116d64123a7c47e285257992ee15fa17.base_layers,
+                layer_control_116d64123a7c47e285257992ee15fa17.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_30e7a5c95c3143739de8a300a1c0dd96);
+            tile_layer_952bbf04abcc481eabe4a6a9e72623ec.remove();
+        
+</script>

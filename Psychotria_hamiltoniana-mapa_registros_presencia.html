@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_33b81c8bd6664796b625cb44f7247fe7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_33b81c8bd6664796b625cb44f7247fe7" ></div>
+        
+</body>
+<script>    
+    
+            var map_33b81c8bd6664796b625cb44f7247fe7 = L.map(
+                "map_33b81c8bd6664796b625cb44f7247fe7",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+
+            
+
+        
+    
+            var tile_layer_8f063813aeac47c3abddc37a412c7477 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+            var tile_layer_a17d8866421b4444a53a1ed5da71eb3c = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+            var circle_marker_79716a663dab48248220500a75f9e83b = L.circleMarker(
+                [9.810917, -83.069694],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_bf867d3e691744c4abe24222e28e4ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e6fe2540067439b859bf9741a24edc8 = $(`<div id="html_7e6fe2540067439b859bf9741a24edc8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle La Estrella, Cuenca del río Bananito. Propiedad de Selva Bananito Lodge, sendero a Fila Muchilla, estribaciones NE. <strong>Elevación:</strong> 85.0 m  <strong>Fecha:</strong> 2011-11-23 <strong>Recolectores:</strong> Joaquín Sánchez González|Armando Estrada|Armando Ruiz Boyer|Rafael Chacón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bf867d3e691744c4abe24222e28e4ba0.setContent(html_7e6fe2540067439b859bf9741a24edc8);
+        
+
+        circle_marker_79716a663dab48248220500a75f9e83b.bindPopup(popup_bf867d3e691744c4abe24222e28e4ba0)
+        ;
+
+        
+    
+    
+            var circle_marker_59b211ec8f254d0293d1cafeeca9d329 = L.circleMarker(
+                [10.0, -83.408333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_bac43d545d96436a967d6be0c0403eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7063d25b9494e03bf73dc56c1cb7cca = $(`<div id="html_a7063d25b9494e03bf73dc56c1cb7cca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca Along ridge between Quebrada Camagre and Río Barbilla. <strong>Elevación:</strong> 330.0 m  <strong>Fecha:</strong> 1988-09-09 <strong>Recolectores:</strong> Michael H. Grayum|Gerardo Herrera Ch.|Rafael Robles|Ángel Martínez <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_bac43d545d96436a967d6be0c0403eb8.setContent(html_a7063d25b9494e03bf73dc56c1cb7cca);
+        
+
+        circle_marker_59b211ec8f254d0293d1cafeeca9d329.bindPopup(popup_bac43d545d96436a967d6be0c0403eb8)
+        ;
+
+        
+    
+    
+            var circle_marker_d14d8274ae814abf88afad899d381595 = L.circleMarker(
+                [9.79, -83.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_6694e5f4993e4413a3d65e8569a82d69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_628340e0e59c43dc943163e806f01dd1 = $(`<div id="html_628340e0e59c43dc943163e806f01dd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón El Progreso, entre Cerro Muchilla y Cerro Avioneta, cabeceras de Río Suruy. Fila Matama, Valle de la Estrella. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-04-16 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6694e5f4993e4413a3d65e8569a82d69.setContent(html_628340e0e59c43dc943163e806f01dd1);
+        
+
+        circle_marker_d14d8274ae814abf88afad899d381595.bindPopup(popup_6694e5f4993e4413a3d65e8569a82d69)
+        ;
+
+        
+    
+    
+            var circle_marker_0c0f48102a584b5b8c6e6fa88a8becf8 = L.circleMarker(
+                [10.01, -83.41],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_30e543ad15c14e75a5ce36f5e41f28cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f6eea8513274f49bc2b0dee7bc3094a = $(`<div id="html_5f6eea8513274f49bc2b0dee7bc3094a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca Cantón de Matina. 0.5 Km aguas arriba de la desembocadura de la Quebrada Cañabral en Río Barbilla, margen izquierda. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1988-10-29 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_30e543ad15c14e75a5ce36f5e41f28cd.setContent(html_5f6eea8513274f49bc2b0dee7bc3094a);
+        
+
+        circle_marker_0c0f48102a584b5b8c6e6fa88a8becf8.bindPopup(popup_30e543ad15c14e75a5ce36f5e41f28cd)
+        ;
+
+        
+    
+    
+            var circle_marker_e212e0000fab4d53804dc20655f39a6c = L.circleMarker(
+                [11.10083, -84.28027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_41fad4e2486e4181aae733cfbdf8f0aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aaf09aa895824d98a7327db1dd5df6f3 = $(`<div id="html_aaf09aa895824d98a7327db1dd5df6f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio El Castillo, Comunidad Nueva Samaria, 1 km adentro en la R.B.I.M. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2004-11-13 <strong>Recolectores:</strong> R. Loredo <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_41fad4e2486e4181aae733cfbdf8f0aa.setContent(html_aaf09aa895824d98a7327db1dd5df6f3);
+        
+
+        circle_marker_e212e0000fab4d53804dc20655f39a6c.bindPopup(popup_41fad4e2486e4181aae733cfbdf8f0aa)
+        ;
+
+        
+    
+    
+            var circle_marker_f2c4e31b67dd4a508eaae6e875745068 = L.circleMarker(
+                [11.10083, -84.28027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_6fe18021db0b477ab7bffaf3ac2982bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e63409ad912347c2b332af21298c6f6e = $(`<div id="html_e63409ad912347c2b332af21298c6f6e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio El Castillo, Comunidad Nueva Samaria, en los alrededores del Puesto de guardaparques, en los alrededores del parque <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 2005-01-09 <strong>Recolectores:</strong> N. Toval|F. Guido <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6fe18021db0b477ab7bffaf3ac2982bb.setContent(html_e63409ad912347c2b332af21298c6f6e);
+        
+
+        circle_marker_f2c4e31b67dd4a508eaae6e875745068.bindPopup(popup_6fe18021db0b477ab7bffaf3ac2982bb)
+        ;
+
+        
+    
+    
+            var circle_marker_e153484837ff409fa27979c3e04d59e8 = L.circleMarker(
+                [9.97222, -83.45277],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_b213b1ff47a44998a2b16eac62cf95d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d361d35be8c4169ae0a5b90b4fc8daf = $(`<div id="html_2d361d35be8c4169ae0a5b90b4fc8daf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Barbilla, Cuenca del Matina, Sendero Quebrada, saliendo por el sendero El Felino <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Edgar Mora Castro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_b213b1ff47a44998a2b16eac62cf95d1.setContent(html_2d361d35be8c4169ae0a5b90b4fc8daf);
+        
+
+        circle_marker_e153484837ff409fa27979c3e04d59e8.bindPopup(popup_b213b1ff47a44998a2b16eac62cf95d1)
+        ;
+
+        
+    
+    
+            var circle_marker_dde1298b2f5040df913f54802529e43b = L.circleMarker(
+                [9.97333, -83.45055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_6c28f9c278a44c08b045af0b510830e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_502de9a6b9d64c829bbc703745e6c763 = $(`<div id="html_502de9a6b9d64c829bbc703745e6c763" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Barbilla, Cuenca del Matina, Sendero que lleva a Río Danta <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1996-07-16 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6c28f9c278a44c08b045af0b510830e8.setContent(html_502de9a6b9d64c829bbc703745e6c763);
+        
+
+        circle_marker_dde1298b2f5040df913f54802529e43b.bindPopup(popup_6c28f9c278a44c08b045af0b510830e8)
+        ;
+
+        
+    
+    
+            var circle_marker_91a9fb8639704281aab848313f21a591 = L.circleMarker(
+                [9.991660000000001, -83.37777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_240fe0e7d595411c9d634151940dc3f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f06073c970d4e8aa879798a989a7b72 = $(`<div id="html_0f06073c970d4e8aa879798a989a7b72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Barbilla. Cuenca del Matina. Sector Colonia Puriscaleña. Sendero Azul hasta Río Surubres. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-05-22 <strong>Recolectores:</strong> Edgar Mora Castro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_240fe0e7d595411c9d634151940dc3f5.setContent(html_0f06073c970d4e8aa879798a989a7b72);
+        
+
+        circle_marker_91a9fb8639704281aab848313f21a591.bindPopup(popup_240fe0e7d595411c9d634151940dc3f5)
+        ;
+
+        
+    
+    
+            var circle_marker_31b881457a1b4485bce3da95e90e15a8 = L.circleMarker(
+                [11.01666, -84.21666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_f58200a04c64407c8e714b39b2846164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40a4871b6aca4c5e845ecced43940b9e = $(`<div id="html_40a4871b6aca4c5e845ecced43940b9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio el Castillo, Reserva Indio-Maiz; Cerro el Diablo. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1998-12-07 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|F. Flores|W. Velásquez|O. Caballero <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_f58200a04c64407c8e714b39b2846164.setContent(html_40a4871b6aca4c5e845ecced43940b9e);
+        
+
+        circle_marker_31b881457a1b4485bce3da95e90e15a8.bindPopup(popup_f58200a04c64407c8e714b39b2846164)
+        ;
+
+        
+    
+    
+            var circle_marker_bdfba05cccb242afabd698eeb5871bec = L.circleMarker(
+                [10.91666, -84.28333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_02c0f79b65c84fc0a02b9477112ace30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c73ad81b362045648edbb686dbcfc522 = $(`<div id="html_c73ad81b362045648edbb686dbcfc522" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio el Castillo, Reserva biológica "Indio-Maiz", Caño el Sarnoso <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1998-12-03 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|F. Flores|W. Velásquez|O. Caballero <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_02c0f79b65c84fc0a02b9477112ace30.setContent(html_c73ad81b362045648edbb686dbcfc522);
+        
+
+        circle_marker_bdfba05cccb242afabd698eeb5871bec.bindPopup(popup_02c0f79b65c84fc0a02b9477112ace30)
+        ;
+
+        
+    
+    
+            var circle_marker_c1ff370468304886bac10338ddc296f9 = L.circleMarker(
+                [11.01666, -84.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_688d3c7e2ecd46c895c2b24bbf41ceb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1894779ec7dc4f66852eb8d611f14d4f = $(`<div id="html_1894779ec7dc4f66852eb8d611f14d4f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, Cerro el Diablo. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1997-01-09 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_688d3c7e2ecd46c895c2b24bbf41ceb7.setContent(html_1894779ec7dc4f66852eb8d611f14d4f);
+        
+
+        circle_marker_c1ff370468304886bac10338ddc296f9.bindPopup(popup_688d3c7e2ecd46c895c2b24bbf41ceb7)
+        ;
+
+        
+    
+    
+            var circle_marker_31ad948f5dca4a439e151703314b7da8 = L.circleMarker(
+                [11.116660000000001, -84.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_cdf16517fbd949169e302d7d89b1df35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_426cf0c9f35946068a1390a70d93b85f = $(`<div id="html_426cf0c9f35946068a1390a70d93b85f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del Caño Chontaleño. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1997-02-15 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor, Paratype</div>`)[0];
+            popup_cdf16517fbd949169e302d7d89b1df35.setContent(html_426cf0c9f35946068a1390a70d93b85f);
+        
+
+        circle_marker_31ad948f5dca4a439e151703314b7da8.bindPopup(popup_cdf16517fbd949169e302d7d89b1df35)
+        ;
+
+        
+    
+    
+            var circle_marker_55ce41ec0b5b47819121feb22604a49a = L.circleMarker(
+                [11.016667, -84.233333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_3334dd80c9bf47b8a79d831621e72c75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f279bbd593dc463ba30074f453adfd94 = $(`<div id="html_f279bbd593dc463ba30074f453adfd94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a 8 km de la cabecera del Río Bartola, en dirección hacia el Cerro el Diablo. <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1997-01-03 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_3334dd80c9bf47b8a79d831621e72c75.setContent(html_f279bbd593dc463ba30074f453adfd94);
+        
+
+        circle_marker_55ce41ec0b5b47819121feb22604a49a.bindPopup(popup_3334dd80c9bf47b8a79d831621e72c75)
+        ;
+
+        
+    
+    
+            var circle_marker_713def8107fc4910974de96511f815b2 = L.circleMarker(
+                [11.016667, -84.266667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_506d038711e9455e88f335c0ec4caca3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51a9f78c75ea4dd099d87a94d718c2cb = $(`<div id="html_51a9f78c75ea4dd099d87a94d718c2cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a lo largo del caño el Pavon, a 3 km de su desembocadura en el Río Bartola. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1996-12-31 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor, Paratype</div>`)[0];
+            popup_506d038711e9455e88f335c0ec4caca3.setContent(html_51a9f78c75ea4dd099d87a94d718c2cb);
+        
+
+        circle_marker_713def8107fc4910974de96511f815b2.bindPopup(popup_506d038711e9455e88f335c0ec4caca3)
+        ;
+
+        
+    
+    
+            var circle_marker_738455aa7d9e4e15bb1cace338d701b8 = L.circleMarker(
+                [11.01666, -84.23333000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_e41afee0ae6e43ec99d64f29ec26494f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cef082e2715497097e4456ce0bebd11 = $(`<div id="html_8cef082e2715497097e4456ce0bebd11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Indio-Maíz, Municipio de el Castillo, a 8 km de la cabecera del Río Bartola, en dirección hacia el Cerro el Diablo. <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1997-01-03 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|O. Aráuz|F. Flores <strong>Identificadores:</strong> C.M. Taylor, Paratype</div>`)[0];
+            popup_e41afee0ae6e43ec99d64f29ec26494f.setContent(html_8cef082e2715497097e4456ce0bebd11);
+        
+
+        circle_marker_738455aa7d9e4e15bb1cace338d701b8.bindPopup(popup_e41afee0ae6e43ec99d64f29ec26494f)
+        ;
+
+        
+    
+    
+            var circle_marker_f7c2a0ea17c24ac6b42bc2fca47cc8b5 = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_1ff67ee344df468686a2418151fde7cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5eb8d368a3643e2af001b142e3df736 = $(`<div id="html_e5eb8d368a3643e2af001b142e3df736" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Barbilla. Cuenca del Matina. Sendero El Felino. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-04-25 <strong>Recolectores:</strong> Edgar Mora Castro|W. Arana U.|Elías Rojas <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1ff67ee344df468686a2418151fde7cb.setContent(html_e5eb8d368a3643e2af001b142e3df736);
+        
+
+        circle_marker_f7c2a0ea17c24ac6b42bc2fca47cc8b5.bindPopup(popup_1ff67ee344df468686a2418151fde7cb)
+        ;
+
+        
+    
+    
+            var circle_marker_17cbc7e66bfc44bdba501cb6452310af = L.circleMarker(
+                [10.700682, -84.218884],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_11d34efb5b634959bfb53ec3617c76ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2c62f0bd4ce4697ac5eccd35e29ae6c = $(`<div id="html_f2c62f0bd4ce4697ac5eccd35e29ae6c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos, 1.5 Km SO de Isla Santa Rita. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 2005-07-06 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría ; Armando Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_11d34efb5b634959bfb53ec3617c76ae.setContent(html_f2c62f0bd4ce4697ac5eccd35e29ae6c);
+        
+
+        circle_marker_17cbc7e66bfc44bdba501cb6452310af.bindPopup(popup_11d34efb5b634959bfb53ec3617c76ae)
+        ;
+
+        
+    
+    
+            var circle_marker_97eb831d6f074b5b85da0cd073317dd1 = L.circleMarker(
+                [10.700682, -84.218884],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_3f53192c1f1e46ea86a2a015165f01ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43276e8fdd8b4c6599a4dd2f1942300e = $(`<div id="html_43276e8fdd8b4c6599a4dd2f1942300e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Carlos, 1.5 Km SO de Isla Santa Rita. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 2005-07-06 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría ; Armando Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3f53192c1f1e46ea86a2a015165f01ba.setContent(html_43276e8fdd8b4c6599a4dd2f1942300e);
+        
+
+        circle_marker_97eb831d6f074b5b85da0cd073317dd1.bindPopup(popup_3f53192c1f1e46ea86a2a015165f01ba)
+        ;
+
+        
+    
+    
+            var circle_marker_a51258ddd53543db9f0f2a3f6dc47f60 = L.circleMarker(
+                [10.700795, -84.219104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_bec9d4146b3f487e9e1ee4b4629072a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7af0808b0f09483d8a3220ad3a0dc1a2 = $(`<div id="html_7af0808b0f09483d8a3220ad3a0dc1a2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital.  Boca Tapada.  Finca Daniel Murillo, Parcela # 9. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2005-07-06 <strong>Recolectores:</strong> Armando Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_bec9d4146b3f487e9e1ee4b4629072a3.setContent(html_7af0808b0f09483d8a3220ad3a0dc1a2);
+        
+
+        circle_marker_a51258ddd53543db9f0f2a3f6dc47f60.bindPopup(popup_bec9d4146b3f487e9e1ee4b4629072a3)
+        ;
+
+        
+    
+    
+            var circle_marker_544dd6e8f4a64c96859a10e1e747c900 = L.circleMarker(
+                [10.700795, -84.219104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_b4f0e22db1a74b49acc28061a216dcd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28ab2f297e0a4de2bf31325f8aad7328 = $(`<div id="html_28ab2f297e0a4de2bf31325f8aad7328" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital.  Boca Tapada.  Finca Daniel Murillo, Parcela # 9. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2005-07-06 <strong>Recolectores:</strong> Armando Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_b4f0e22db1a74b49acc28061a216dcd1.setContent(html_28ab2f297e0a4de2bf31325f8aad7328);
+        
+
+        circle_marker_544dd6e8f4a64c96859a10e1e747c900.bindPopup(popup_b4f0e22db1a74b49acc28061a216dcd1)
+        ;
+
+        
+    
+    
+            var circle_marker_ad322f55767c42fa863a0d29b22ba443 = L.circleMarker(
+                [9.825, -83.063889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_c30517eba91a4e0fb9f1d4da8ba04791 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_006f2e249e754024b5ec953cb1ad34c5 = $(`<div id="html_006f2e249e754024b5ec953cb1ad34c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama, Cerro Muchilla, Falda NW. Ro Bananito, Selva Bananito Lodge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2001-03-24 <strong>Recolectores:</strong> Barry Hammel; Juan Francisco Morales Quirós <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_c30517eba91a4e0fb9f1d4da8ba04791.setContent(html_006f2e249e754024b5ec953cb1ad34c5);
+        
+
+        circle_marker_ad322f55767c42fa863a0d29b22ba443.bindPopup(popup_c30517eba91a4e0fb9f1d4da8ba04791)
+        ;
+
+        
+    
+    
+            var circle_marker_0b47ff38297e4477a3b1f08ab494f423 = L.circleMarker(
+                [10.011111, -83.383333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_81f868555c1f47379f8579e439e8e188 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c6fbea487e7449683f4cd8c8e95cfe1 = $(`<div id="html_5c6fbea487e7449683f4cd8c8e95cfe1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_81f868555c1f47379f8579e439e8e188.setContent(html_5c6fbea487e7449683f4cd8c8e95cfe1);
+        
+
+        circle_marker_0b47ff38297e4477a3b1f08ab494f423.bindPopup(popup_81f868555c1f47379f8579e439e8e188)
+        ;
+
+        
+    
+    
+            var circle_marker_6052dde558ca495f83fb7ad8bd96f37c = L.circleMarker(
+                [10.011111, -83.383333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_01a96068279e49fc97a4e68b4d3772fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_455a0845026e4b7ab0511404ee21b750 = $(`<div id="html_455a0845026e4b7ab0511404ee21b750" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puriscaleña. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 2000-08-02 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Edgar Mora ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_01a96068279e49fc97a4e68b4d3772fe.setContent(html_455a0845026e4b7ab0511404ee21b750);
+        
+
+        circle_marker_6052dde558ca495f83fb7ad8bd96f37c.bindPopup(popup_01a96068279e49fc97a4e68b4d3772fe)
+        ;
+
+        
+    
+    
+            var circle_marker_f18fd5e157ae4106afb52880c6b01318 = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_178aea49264c41349c59ba5db0fc76f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ec32fe058e46f0a42c33b376eca763 = $(`<div id="html_91ec32fe058e46f0a42c33b376eca763" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-04-25 <strong>Recolectores:</strong> Edgar Mora; Wilfredo Arana Ugalde ; Elias Rojas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_178aea49264c41349c59ba5db0fc76f3.setContent(html_91ec32fe058e46f0a42c33b376eca763);
+        
+
+        circle_marker_f18fd5e157ae4106afb52880c6b01318.bindPopup(popup_178aea49264c41349c59ba5db0fc76f3)
+        ;
+
+        
+    
+    
+            var circle_marker_82bb11b3e0d4415495cafc19b831e44e = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_f73cbaf73c3648a2b0794b89b7afa1ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9ca4216e2294cdfb240d74397d74e78 = $(`<div id="html_a9ca4216e2294cdfb240d74397d74e78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2001-04-25 <strong>Recolectores:</strong> Edgar Mora; Wilfredo Arana Ugalde ; Elias Rojas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f73cbaf73c3648a2b0794b89b7afa1ee.setContent(html_a9ca4216e2294cdfb240d74397d74e78);
+        
+
+        circle_marker_82bb11b3e0d4415495cafc19b831e44e.bindPopup(popup_f73cbaf73c3648a2b0794b89b7afa1ee)
+        ;
+
+        
+    
+    
+            var circle_marker_4775d295f1804687a7aba11aa9de449d = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_e3d6251b28bf49d4970b0b46b367a1ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79aeaa480c0f4d348f5823999a341d26 = $(`<div id="html_79aeaa480c0f4d348f5823999a341d26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e3d6251b28bf49d4970b0b46b367a1ee.setContent(html_79aeaa480c0f4d348f5823999a341d26);
+        
+
+        circle_marker_4775d295f1804687a7aba11aa9de449d.bindPopup(popup_e3d6251b28bf49d4970b0b46b367a1ee)
+        ;
+
+        
+    
+    
+            var circle_marker_1e38ffeba4cb4d0c882919e16d43b44f = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_020674e016fa46599ab8dbc2177996dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6727c30823b44cc0b1cddeceba027ad6 = $(`<div id="html_6727c30823b44cc0b1cddeceba027ad6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_020674e016fa46599ab8dbc2177996dd.setContent(html_6727c30823b44cc0b1cddeceba027ad6);
+        
+
+        circle_marker_1e38ffeba4cb4d0c882919e16d43b44f.bindPopup(popup_020674e016fa46599ab8dbc2177996dd)
+        ;
+
+        
+    
+    
+            var circle_marker_76b7b45e21ac474783e2fcee65175a45 = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_432dc705ac61494e930d1cbce5019916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_120ea2001d5e42f18a755cf7f971dc8a = $(`<div id="html_120ea2001d5e42f18a755cf7f971dc8a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_432dc705ac61494e930d1cbce5019916.setContent(html_120ea2001d5e42f18a755cf7f971dc8a);
+        
+
+        circle_marker_76b7b45e21ac474783e2fcee65175a45.bindPopup(popup_432dc705ac61494e930d1cbce5019916)
+        ;
+
+        
+    
+    
+            var circle_marker_812221e426c34942943eef78043f5bc0 = L.circleMarker(
+                [9.972222, -83.45277800000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_d8569ce905e14745a378fb3f4b06bad7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e133da9f546542cc820fcd7eec393172 = $(`<div id="html_e133da9f546542cc820fcd7eec393172" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Barbilla. Sendero Principal, colecta junto al Río Dantas <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-08-23 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d8569ce905e14745a378fb3f4b06bad7.setContent(html_e133da9f546542cc820fcd7eec393172);
+        
+
+        circle_marker_812221e426c34942943eef78043f5bc0.bindPopup(popup_d8569ce905e14745a378fb3f4b06bad7)
+        ;
+
+        
+    
+    
+            var circle_marker_6dbf15a42c21474c8535700a8a6e54f9 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_7af6c7a331d4425db1c85ea184eb8cf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3bf4ac39cec414c93287463c7799b49 = $(`<div id="html_f3bf4ac39cec414c93287463c7799b49" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-05-22 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7af6c7a331d4425db1c85ea184eb8cf6.setContent(html_f3bf4ac39cec414c93287463c7799b49);
+        
+
+        circle_marker_6dbf15a42c21474c8535700a8a6e54f9.bindPopup(popup_7af6c7a331d4425db1c85ea184eb8cf6)
+        ;
+
+        
+    
+    
+            var circle_marker_fadbf3df22d249cc9e04cb9412c86716 = L.circleMarker(
+                [9.991667, -83.377778],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_7ee6fe7ef2f74ea4968855443a8eab20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaf2a4872f4e439ebfb0a1276931ebc5 = $(`<div id="html_eaf2a4872f4e439ebfb0a1276931ebc5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Brisas de Pacuarito. Sendero principal, colecta junto al Río Dantas. <strong>Elevación:</strong> 350.0 m  <strong>Fecha:</strong> 2000-05-22 <strong>Recolectores:</strong> Edgar Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7ee6fe7ef2f74ea4968855443a8eab20.setContent(html_eaf2a4872f4e439ebfb0a1276931ebc5);
+        
+
+        circle_marker_fadbf3df22d249cc9e04cb9412c86716.bindPopup(popup_7ee6fe7ef2f74ea4968855443a8eab20)
+        ;
+
+        
+    
+    
+            var circle_marker_a8053731a6404fbebc0290ec54dc34e9 = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_501e63acdae84e848d3a04dd49431759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02dc0e1db07d45c396e041cdc823e284 = $(`<div id="html_02dc0e1db07d45c396e041cdc823e284" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_501e63acdae84e848d3a04dd49431759.setContent(html_02dc0e1db07d45c396e041cdc823e284);
+        
+
+        circle_marker_a8053731a6404fbebc0290ec54dc34e9.bindPopup(popup_501e63acdae84e848d3a04dd49431759)
+        ;
+
+        
+    
+    
+            var circle_marker_18fbe84cd5664dc5976f183e3152c8eb = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_5ba115a53490404bbefe2b9a83eefd13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14cb9273416246599ebdc1aff8d9594d = $(`<div id="html_14cb9273416246599ebdc1aff8d9594d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5ba115a53490404bbefe2b9a83eefd13.setContent(html_14cb9273416246599ebdc1aff8d9594d);
+        
+
+        circle_marker_18fbe84cd5664dc5976f183e3152c8eb.bindPopup(popup_5ba115a53490404bbefe2b9a83eefd13)
+        ;
+
+        
+    
+    
+            var circle_marker_1e21637750ab4667b8cc5d159f7bd73e = L.circleMarker(
+                [9.973333, -83.450556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_f5dc95af7c1745238528d3bc214a23b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb661bb8dcba4ba19e4428d826b852dd = $(`<div id="html_fb661bb8dcba4ba19e4428d826b852dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero que lleva a Rio Danta. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-16 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Luis Diego Vargas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f5dc95af7c1745238528d3bc214a23b8.setContent(html_fb661bb8dcba4ba19e4428d826b852dd);
+        
+
+        circle_marker_1e21637750ab4667b8cc5d159f7bd73e.bindPopup(popup_f5dc95af7c1745238528d3bc214a23b8)
+        ;
+
+        
+    
+    
+            var circle_marker_2a8baf972f7f4ae1b1c02453ef528b99 = L.circleMarker(
+                [9.790278, -83.108333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_f4388617efcb49d8b26f1ae419b1ad3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b81a5f544155442d8072568c60660c47 = $(`<div id="html_b81a5f544155442d8072568c60660c47" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso, entre Cerro Muchilla y Cerro Avioneta, cabeceras de Rio Suruy. Fila Matama. <strong>Elevación:</strong> 550.0 m  <strong>Fecha:</strong> 1989-04-16 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f4388617efcb49d8b26f1ae419b1ad3b.setContent(html_b81a5f544155442d8072568c60660c47);
+        
+
+        circle_marker_2a8baf972f7f4ae1b1c02453ef528b99.bindPopup(popup_f4388617efcb49d8b26f1ae419b1ad3b)
+        ;
+
+        
+    
+    
+            var circle_marker_61d5429e70314fc1ba9ef69bebebe6dc = L.circleMarker(
+                [10.0, -83.8667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_7b94ceff052649608b2cd0ca7145e42c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03778c406ffb46548e85f8bb62cd2779 = $(`<div id="html_03778c406ffb46548e85f8bb62cd2779" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-09-09 <strong>Recolectores:</strong> M. H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7b94ceff052649608b2cd0ca7145e42c.setContent(html_03778c406ffb46548e85f8bb62cd2779);
+        
+
+        circle_marker_61d5429e70314fc1ba9ef69bebebe6dc.bindPopup(popup_7b94ceff052649608b2cd0ca7145e42c)
+        ;
+
+        
+    
+    
+            var circle_marker_6e39a8852c274e8498f2afd0986d6e1b = L.circleMarker(
+                [10.0, -83.8667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_ec2bf0d02c7646c0aa7993461ead7a20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06a4a47df3324a1884a2083b8a1ce882 = $(`<div id="html_06a4a47df3324a1884a2083b8a1ce882" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1988-10-29 <strong>Recolectores:</strong> G. Herrera C. <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_ec2bf0d02c7646c0aa7993461ead7a20.setContent(html_06a4a47df3324a1884a2083b8a1ce882);
+        
+
+        circle_marker_6e39a8852c274e8498f2afd0986d6e1b.bindPopup(popup_ec2bf0d02c7646c0aa7993461ead7a20)
+        ;
+
+        
+    
+    
+            var circle_marker_f7d0052ac2404567b97c4278906544de = L.circleMarker(
+                [10.0, -83.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_91566aafb9bc4a77a940ac344a854206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c6caad5374945419a180c5b0889affa = $(`<div id="html_1c6caad5374945419a180c5b0889affa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Along ridge between Quebrada Camagre and Río Barbilla. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1988-09-09 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_91566aafb9bc4a77a940ac344a854206.setContent(html_1c6caad5374945419a180c5b0889affa);
+        
+
+        circle_marker_f7d0052ac2404567b97c4278906544de.bindPopup(popup_91566aafb9bc4a77a940ac344a854206)
+        ;
+
+        
+    
+    
+            var circle_marker_b7242f99b1ea41caba819290c5409f2a = L.circleMarker(
+                [10.01, -83.41],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_6fd0c13f4d91406ea4b25b2ba124061e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_063467155c424a89811ef40cf9f9781d = $(`<div id="html_063467155c424a89811ef40cf9f9781d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. 0.5 km aguas arriba de la desembocadura de la quebrada Cañabral en río Barbilla, margen izquierda. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1988-10-29 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6fd0c13f4d91406ea4b25b2ba124061e.setContent(html_063467155c424a89811ef40cf9f9781d);
+        
+
+        circle_marker_b7242f99b1ea41caba819290c5409f2a.bindPopup(popup_6fd0c13f4d91406ea4b25b2ba124061e)
+        ;
+
+        
+    
+    
+            var circle_marker_7c273c9b3a3444c9b2fd60d53fd5176e = L.circleMarker(
+                [9.79, -83.1],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+        
+    
+        var popup_3b9b7885a92946549782a449cf267ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8979b6ac4dac4c648f94fd27396e6598 = $(`<div id="html_8979b6ac4dac4c648f94fd27396e6598" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso, entre Cerro Muchilla y Cerro Avioneta. Siguiendo la Fila Matama. Valle de la Estrella. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1989-04-10 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3b9b7885a92946549782a449cf267ea6.setContent(html_8979b6ac4dac4c648f94fd27396e6598);
+        
+
+        circle_marker_7c273c9b3a3444c9b2fd60d53fd5176e.bindPopup(popup_3b9b7885a92946549782a449cf267ea6)
+        ;
+
+        
+    
+    
+            var layer_control_66f3d3dda5d1498e9ee7f17d4540aed9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8f063813aeac47c3abddc37a412c7477,
+                    "ESRI World Imagery" : tile_layer_a17d8866421b4444a53a1ed5da71eb3c,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_66f3d3dda5d1498e9ee7f17d4540aed9.base_layers,
+                layer_control_66f3d3dda5d1498e9ee7f17d4540aed9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_33b81c8bd6664796b625cb44f7247fe7);
+            tile_layer_a17d8866421b4444a53a1ed5da71eb3c.remove();
+        
+</script>

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_04008c9d63974409a2cb39bcdb7e3644 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_04008c9d63974409a2cb39bcdb7e3644" ></div>
+        
+</body>
+<script>    
+    
+            var map_04008c9d63974409a2cb39bcdb7e3644 = L.map(
+                "map_04008c9d63974409a2cb39bcdb7e3644",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_04008c9d63974409a2cb39bcdb7e3644);
+
+            
+
+        
+    
+            var tile_layer_6429892f14064f2fa454e29ddb9f6c2d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_04008c9d63974409a2cb39bcdb7e3644);
+        
+    
+            var tile_layer_224dfdf09dd94f678a8b81e2651baa7b = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_04008c9d63974409a2cb39bcdb7e3644);
+        
+    
+            var marker_cluster_de1e40245f064e77bd1c7c4ad5370963 = L.markerClusterGroup(
+                {}
+            );
+            map_04008c9d63974409a2cb39bcdb7e3644.addLayer(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+            var marker_920b0141a45d43dea9db8a05b92412e6 = L.marker(
+                [11.9, -83.916667],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_9c88c3db6a5b4b0395939d964409985e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b35d23dc051488ba7b4d1761bc90400 = $(`<div id="html_9b35d23dc051488ba7b4d1761bc90400" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bluefields, Río Kukra, margen sur, Finca La Bodega, bosque primario, UTM: 17P JP 7613 <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 2001-02-19 <strong>Recolectores:</strong> Í. Granzow|R. Garth|J.P. Vandermeer <strong>Identificadores:</strong> W.D. Stevens</div>`)[0];
+            popup_9c88c3db6a5b4b0395939d964409985e.setContent(html_9b35d23dc051488ba7b4d1761bc90400);
+        
+
+        marker_920b0141a45d43dea9db8a05b92412e6.bindPopup(popup_9c88c3db6a5b4b0395939d964409985e)
+        ;
+
+        
+    
+    
+            var marker_445f20d13b03458783a6670362171433 = L.marker(
+                [10.75, -84.866667],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_bbad6e1e39ad4aafab5e2b83c523ac27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6ef7ce1f86544ad8bebd1980222c8cf = $(`<div id="html_f6ef7ce1f86544ad8bebd1980222c8cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guatuso.  Asentamiento campesino La Garroba <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1987-11-01 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bbad6e1e39ad4aafab5e2b83c523ac27.setContent(html_f6ef7ce1f86544ad8bebd1980222c8cf);
+        
+
+        marker_445f20d13b03458783a6670362171433.bindPopup(popup_bbad6e1e39ad4aafab5e2b83c523ac27)
+        ;
+
+        
+    
+    
+            var marker_7fbe428f3656463ca10fdf9781439755 = L.marker(
+                [10.210833000000001, -84.1125],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_f5a00ebca554441d803e60d1cb546a66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62285366eb6645e798385611e5bc354e = $(`<div id="html_62285366eb6645e798385611e5bc354e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Barva La Legua, Finca Montreal.  Ridge between headwatersof Río Volcán and Río San Fernando, just above trail to refugio <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1992-10-01 <strong>Recolectores:</strong> Boyle, Brad; Boyle, A.; Nelson, H. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f5a00ebca554441d803e60d1cb546a66.setContent(html_62285366eb6645e798385611e5bc354e);
+        
+
+        marker_7fbe428f3656463ca10fdf9781439755.bindPopup(popup_f5a00ebca554441d803e60d1cb546a66)
+        ;
+
+        
+    
+    
+            var marker_13c509a5f3d84cf0ac06db951aed76c0 = L.marker(
+                [9.797222, -83.091667],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_34c636d87983434c8389b44819114d7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64d6ab806d2e417f97daed20d2e81146 = $(`<div id="html_64d6ab806d2e417f97daed20d2e81146" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Limón Cerro Muchilla, Fila Matama.  Valle de la Estrella <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1989-04-01 <strong>Recolectores:</strong> Herrera, Gerardo; Sanabria, Pastor; Solís, Manuel <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_34c636d87983434c8389b44819114d7a.setContent(html_64d6ab806d2e417f97daed20d2e81146);
+        
+
+        marker_13c509a5f3d84cf0ac06db951aed76c0.bindPopup(popup_34c636d87983434c8389b44819114d7a)
+        ;
+
+        
+    
+    
+            var marker_5829ed570a8248b5af55e42b9a7faac5 = L.marker(
+                [10.7158, -84.1742],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_4186b1d5e8ee4ebabf26c4448107536a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d61f35ef05864ea79129f3764346649d = $(`<div id="html_d61f35ef05864ea79129f3764346649d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada; Finca San Jorge. Ruta al Río San Juan <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> A. Rodríguez González <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4186b1d5e8ee4ebabf26c4448107536a.setContent(html_d61f35ef05864ea79129f3764346649d);
+        
+
+        marker_5829ed570a8248b5af55e42b9a7faac5.bindPopup(popup_4186b1d5e8ee4ebabf26c4448107536a)
+        ;
+
+        
+    
+    
+            var marker_8caab4f8debf4d038bcedccdd6a2ea69 = L.marker(
+                [10.76, -84.18],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_e2d1ab6649fa4454bb49fe3eab09a3c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6418a1748e0456689937e6a0f17bb67 = $(`<div id="html_f6418a1748e0456689937e6a0f17bb67" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos, Pital Finca Hiloba, 18 km N Boca Tapada <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-04-01 <strong>Recolectores:</strong> Quírico Jiménez|R. Quesada <strong>Identificadores:</strong> R. Kriebel (INB) & N. Zamora (INB)</div>`)[0];
+            popup_e2d1ab6649fa4454bb49fe3eab09a3c3.setContent(html_f6418a1748e0456689937e6a0f17bb67);
+        
+
+        marker_8caab4f8debf4d038bcedccdd6a2ea69.bindPopup(popup_e2d1ab6649fa4454bb49fe3eab09a3c3)
+        ;
+
+        
+    
+    
+            var marker_55939947f7c74aadb8c9212ff639b8af = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_3c233df09d2e4e32ae94600444b959af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66e4e5ac0d384b5b8e2447eb4e650ab1 = $(`<div id="html_66e4e5ac0d384b5b8e2447eb4e650ab1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Placa #8811 creciendo en la arboleda <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> N. Zamora, 7/6/</div>`)[0];
+            popup_3c233df09d2e4e32ae94600444b959af.setContent(html_66e4e5ac0d384b5b8e2447eb4e650ab1);
+        
+
+        marker_55939947f7c74aadb8c9212ff639b8af.bindPopup(popup_3c233df09d2e4e32ae94600444b959af)
+        ;
+
+        
+    
+    
+            var marker_a52eeef3accb4a8cb260b3432e29f4c8 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_8b40cb08b46b44b386c9a470d58b72da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4331076938e34076a4649fbd899e534a = $(`<div id="html_4331076938e34076a4649fbd899e534a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Arboleda, Placa# 881 <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-07-09 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> O. Vargas, 7/9/</div>`)[0];
+            popup_8b40cb08b46b44b386c9a470d58b72da.setContent(html_4331076938e34076a4649fbd899e534a);
+        
+
+        marker_a52eeef3accb4a8cb260b3432e29f4c8.bindPopup(popup_8b40cb08b46b44b386c9a470d58b72da)
+        ;
+
+        
+    
+    
+            var marker_1dc11bdaafa643c29fec521e15679c7d = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_205a1d1583b64ef1b97a77e383369f49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbd2b29356824482962b029bbc6100aa = $(`<div id="html_dbd2b29356824482962b029bbc6100aa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Sendero: SSA 550m. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-12-11 <strong>Recolectores:</strong> Orlando Vargas <strong>Identificadores:</strong> O. Vargas, 12/11/</div>`)[0];
+            popup_205a1d1583b64ef1b97a77e383369f49.setContent(html_dbd2b29356824482962b029bbc6100aa);
+        
+
+        marker_1dc11bdaafa643c29fec521e15679c7d.bindPopup(popup_205a1d1583b64ef1b97a77e383369f49)
+        ;
+
+        
+    
+    
+            var marker_a2cbfa750bd44e91858d505abd8a505a = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_a1776c4318dc4315bb31931de897bd4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a07fcda701493d9b41c89e44b0b232 = $(`<div id="html_f1a07fcda701493d9b41c89e44b0b232" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1979-07-09 <strong>Recolectores:</strong> John Sperry <strong>Identificadores:</strong> F. Almeda XI 2005 CAS</div>`)[0];
+            popup_a1776c4318dc4315bb31931de897bd4f.setContent(html_f1a07fcda701493d9b41c89e44b0b232);
+        
+
+        marker_a2cbfa750bd44e91858d505abd8a505a.bindPopup(popup_a1776c4318dc4315bb31931de897bd4f)
+        ;
+
+        
+    
+    
+            var marker_e9ab2177911d4966a2b14585a930a009 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_56791c1b4902446d995a4aaba622d9bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74d0808c645648cbaa619fdf25c3a61e = $(`<div id="html_74d0808c645648cbaa619fdf25c3a61e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-05-13 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> Grayum or Zamora</div>`)[0];
+            popup_56791c1b4902446d995a4aaba622d9bb.setContent(html_74d0808c645648cbaa619fdf25c3a61e);
+        
+
+        marker_e9ab2177911d4966a2b14585a930a009.bindPopup(popup_56791c1b4902446d995a4aaba622d9bb)
+        ;
+
+        
+    
+    
+            var marker_48d77571bc9149e888c73dbc81920842 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_cd97eec73c384bb08c5a7a4f8b35c7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bef8a22bd8b46358a2ad547dc9773ba = $(`<div id="html_4bef8a22bd8b46358a2ad547dc9773ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, Puerto Viejo de Sarapiquí, Loop Trail <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1979-07-06 <strong>Recolectores:</strong> John Sperry <strong>Identificadores:</strong> R. Kriebel</div>`)[0];
+            popup_cd97eec73c384bb08c5a7a4f8b35c7e6.setContent(html_4bef8a22bd8b46358a2ad547dc9773ba);
+        
+
+        marker_48d77571bc9149e888c73dbc81920842.bindPopup(popup_cd97eec73c384bb08c5a7a4f8b35c7e6)
+        ;
+
+        
+    
+    
+            var marker_43f169d1588042e2be70ae387db4d954 = L.marker(
+                [10.43138, -84.00361],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_b054272ec1184653963bc455a62e4329 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_455a5b0acf9f4f6d8104725ca6456eaa = $(`<div id="html_455a5b0acf9f4f6d8104725ca6456eaa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1981-09-03 <strong>Recolectores:</strong> Damon A. Smith <strong>Identificadores:</strong> N. Zamora INB VI</div>`)[0];
+            popup_b054272ec1184653963bc455a62e4329.setContent(html_455a5b0acf9f4f6d8104725ca6456eaa);
+        
+
+        marker_43f169d1588042e2be70ae387db4d954.bindPopup(popup_b054272ec1184653963bc455a62e4329)
+        ;
+
+        
+    
+    
+            var marker_35d53e1e8a10413fb325ea47ed397f1f = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_73ddb2efbea24b9a8eb7b9002b7a303a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6325d8c35c594b25a89bbaa0337f2e5e = $(`<div id="html_6325d8c35c594b25a89bbaa0337f2e5e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-07-15 <strong>Recolectores:</strong> Barry E. Hammel|Jill Trainer <strong>Identificadores:</strong> M.H. Grayum</div>`)[0];
+            popup_73ddb2efbea24b9a8eb7b9002b7a303a.setContent(html_6325d8c35c594b25a89bbaa0337f2e5e);
+        
+
+        marker_35d53e1e8a10413fb325ea47ed397f1f.bindPopup(popup_73ddb2efbea24b9a8eb7b9002b7a303a)
+        ;
+
+        
+    
+    
+            var marker_09bd85dc75df440789374d5bc0c3bcae = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_1e55f73948f048449937cff09d7d6e37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b92b73f7aab54f499115f6e0b79cf01c = $(`<div id="html_b92b73f7aab54f499115f6e0b79cf01c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1980-07-19 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> D. Santamaria (INB)</div>`)[0];
+            popup_1e55f73948f048449937cff09d7d6e37.setContent(html_b92b73f7aab54f499115f6e0b79cf01c);
+        
+
+        marker_09bd85dc75df440789374d5bc0c3bcae.bindPopup(popup_1e55f73948f048449937cff09d7d6e37)
+        ;
+
+        
+    
+    
+            var marker_07d1ccee95dc44b3bbae5575100c8b90 = L.marker(
+                [10.431389, -84.00361099999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_4568d4828e994c81b126176f2156fd5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e9672fea404a75949fe5efb8fdc0fd = $(`<div id="html_a8e9672fea404a75949fe5efb8fdc0fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Selva Biological Station. Sendero Sura on steep slope leading down to stream on trail to the Lindero Occidental. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1995-01-18 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> D. Santamaria (INB)</div>`)[0];
+            popup_4568d4828e994c81b126176f2156fd5c.setContent(html_a8e9672fea404a75949fe5efb8fdc0fd);
+        
+
+        marker_07d1ccee95dc44b3bbae5575100c8b90.bindPopup(popup_4568d4828e994c81b126176f2156fd5c)
+        ;
+
+        
+    
+    
+            var marker_def8b798f7f44bf48fb4cb37a8e274a7 = L.marker(
+                [10.433333, -84.016667],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_ecb50f3e2b6845b3889e5834c45cb43b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c74a52292a674f76bc2f31591c330078 = $(`<div id="html_c74a52292a674f76bc2f31591c330078" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva. Puerto Viejo. Vargas clearing along the West boundary <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1974-12-05 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_ecb50f3e2b6845b3889e5834c45cb43b.setContent(html_c74a52292a674f76bc2f31591c330078);
+        
+
+        marker_def8b798f7f44bf48fb4cb37a8e274a7.bindPopup(popup_ecb50f3e2b6845b3889e5834c45cb43b)
+        ;
+
+        
+    
+    
+            var marker_2c991e4caf7d42158489f20d62b052fb = L.marker(
+                [10.74, -84.16],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_9e669e2dff724232943ec94c6d6b84a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27da8eda6c3a44c79dd26e81a166e3e7 = $(`<div id="html_27da8eda6c3a44c79dd26e81a166e3e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanura de San Carlos, Pital, Boca Tapada, Finca Aserradero San Jorge <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1996-01-21 <strong>Recolectores:</strong> Nelson Zamora|A. Zeledón <strong>Identificadores:</strong> R. Kriebel (INB) & N. Zamora (INB)</div>`)[0];
+            popup_9e669e2dff724232943ec94c6d6b84a6.setContent(html_27da8eda6c3a44c79dd26e81a166e3e7);
+        
+
+        marker_2c991e4caf7d42158489f20d62b052fb.bindPopup(popup_9e669e2dff724232943ec94c6d6b84a6)
+        ;
+
+        
+    
+    
+            var marker_c1becca158fd4f1991d9df78550e43ea = L.marker(
+                [10.75, -84.86],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_3dba940916db4e3687ed57b38b1585fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b21b677df5b34ad6980bf1bf1edf26d1 = $(`<div id="html_b21b677df5b34ad6980bf1bf1edf26d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Asentamiento campesino La Garroba <strong>Elevación:</strong> 90.0 m  <strong>Fecha:</strong> 1987-11-10 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_3dba940916db4e3687ed57b38b1585fa.setContent(html_b21b677df5b34ad6980bf1bf1edf26d1);
+        
+
+        marker_c1becca158fd4f1991d9df78550e43ea.bindPopup(popup_3dba940916db4e3687ed57b38b1585fa)
+        ;
+
+        
+    
+    
+            var marker_2ff37817e2a3413a84d29c7a49ed2bb6 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_eb732de3b9844e368c420316715dce93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72ab5c9f29d9457f8485c080feed73af = $(`<div id="html_72ab5c9f29d9457f8485c080feed73af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boca Tapada; finca San Jorge. Ruta al río San Juan. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> R. Kreibel (INB)</div>`)[0];
+            popup_eb732de3b9844e368c420316715dce93.setContent(html_72ab5c9f29d9457f8485c080feed73af);
+        
+
+        marker_2ff37817e2a3413a84d29c7a49ed2bb6.bindPopup(popup_eb732de3b9844e368c420316715dce93)
+        ;
+
+        
+    
+    
+            var marker_312867c168d14713876ce94c18f4b626 = L.marker(
+                [10.433333, -83.983333],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_c2894eae0989419a95b3b28f8ca73062 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb429f61023949359f4e8212f5b464a6 = $(`<div id="html_cb429f61023949359f4e8212f5b464a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biol. La Selva <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_c2894eae0989419a95b3b28f8ca73062.setContent(html_cb429f61023949359f4e8212f5b464a6);
+        
+
+        marker_312867c168d14713876ce94c18f4b626.bindPopup(popup_c2894eae0989419a95b3b28f8ca73062)
+        ;
+
+        
+    
+    
+            var marker_c2d8b97f5f8a45cbbc2b472757510437 = L.marker(
+                [10.433333, -83.983333],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_31290ef1de43476ba2bbcd3adfcf9407 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5a74d7f3ac346af862462b43b707146 = $(`<div id="html_c5a74d7f3ac346af862462b43b707146" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biol. La Selva <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_31290ef1de43476ba2bbcd3adfcf9407.setContent(html_c5a74d7f3ac346af862462b43b707146);
+        
+
+        marker_c2d8b97f5f8a45cbbc2b472757510437.bindPopup(popup_31290ef1de43476ba2bbcd3adfcf9407)
+        ;
+
+        
+    
+    
+            var marker_8f1f2ba586ce46889f5600fa14361baa = L.marker(
+                [10.433333, -83.983333],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_4ba2433b9d934f5bae95319917200ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b17482cdd2674932ae9083d01d0c3183 = $(`<div id="html_b17482cdd2674932ae9083d01d0c3183" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biol. La Selva <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_4ba2433b9d934f5bae95319917200ff4.setContent(html_b17482cdd2674932ae9083d01d0c3183);
+        
+
+        marker_8f1f2ba586ce46889f5600fa14361baa.bindPopup(popup_4ba2433b9d934f5bae95319917200ff4)
+        ;
+
+        
+    
+    
+            var marker_d0672139535248289d92d237a5fd99de = L.marker(
+                [10.433333, -83.983333],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_789b5d00152948449a431deb7d2f10bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58df430093dd45d48477ef034ded4e31 = $(`<div id="html_58df430093dd45d48477ef034ded4e31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biol. La Selva <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_789b5d00152948449a431deb7d2f10bb.setContent(html_58df430093dd45d48477ef034ded4e31);
+        
+
+        marker_d0672139535248289d92d237a5fd99de.bindPopup(popup_789b5d00152948449a431deb7d2f10bb)
+        ;
+
+        
+    
+    
+            var marker_440082b0e2c348d69d46b4e63075c307 = L.marker(
+                [10.433333, -83.983333],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_57f6a4fe0df04b409257cd93dc1b7577 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf988cee03cc4c1eaee9826a268e4ec7 = $(`<div id="html_cf988cee03cc4c1eaee9826a268e4ec7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Est. Biol. La Selva <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2006-07-06 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_57f6a4fe0df04b409257cd93dc1b7577.setContent(html_cf988cee03cc4c1eaee9826a268e4ec7);
+        
+
+        marker_440082b0e2c348d69d46b4e63075c307.bindPopup(popup_57f6a4fe0df04b409257cd93dc1b7577)
+        ;
+
+        
+    
+    
+            var marker_d2ef6123b437402f9a22dce78518b408 = L.marker(
+                [10.45, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_7fad145a98cc4c7198367ea80c9f6dbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11cb4c018bb84d3f81d4fae2e9aa0b92 = $(`<div id="html_11cb4c018bb84d3f81d4fae2e9aa0b92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS Field Station on the Rio Puerto Viejo. <strong>Elevación:</strong> 80.0 m  <strong>Fecha:</strong> 1979-07-06 <strong>Recolectores:</strong> John Sperry <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_7fad145a98cc4c7198367ea80c9f6dbc.setContent(html_11cb4c018bb84d3f81d4fae2e9aa0b92);
+        
+
+        marker_d2ef6123b437402f9a22dce78518b408.bindPopup(popup_7fad145a98cc4c7198367ea80c9f6dbc)
+        ;
+
+        
+    
+    
+            var marker_053173480b5d42bd94a690ca2a353e94 = L.marker(
+                [10.766667, -84.18333299999999],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_f80d2157368444cfb51c538726099500 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcbb0a4ed8f347e29fd3fee8dc7dc55f = $(`<div id="html_dcbb0a4ed8f347e29fd3fee8dc7dc55f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital Finca Hiloba. 18 Km N. Boca Tapada <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1995-04-01 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_f80d2157368444cfb51c538726099500.setContent(html_dcbb0a4ed8f347e29fd3fee8dc7dc55f);
+        
+
+        marker_053173480b5d42bd94a690ca2a353e94.bindPopup(popup_f80d2157368444cfb51c538726099500)
+        ;
+
+        
+    
+    
+            var marker_8349d0ded7714bfeb59510a212389ee6 = L.marker(
+                [10.602778, -83.788889],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_d71a080b0e444534a9369dccf4576858 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d57ca89780f84246a86eadfec4ad05b9 = $(`<div id="html_d57ca89780f84246a86eadfec4ad05b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiporrisito. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1995-01-30 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_d71a080b0e444534a9369dccf4576858.setContent(html_d57ca89780f84246a86eadfec4ad05b9);
+        
+
+        marker_8349d0ded7714bfeb59510a212389ee6.bindPopup(popup_d71a080b0e444534a9369dccf4576858)
+        ;
+
+        
+    
+    
+            var marker_0da9c05f9c6e40ba88a41908118c5a5a = L.marker(
+                [10.748333, -84.168611],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_4e72f22ed5f44e768e7cfb69bcfec797 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_626685e7839b48719b6786f7b32c3e0b = $(`<div id="html_626685e7839b48719b6786f7b32c3e0b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Pital, Boca Tapada, Finca Aserradero San Jorge. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1996-01-21 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_4e72f22ed5f44e768e7cfb69bcfec797.setContent(html_626685e7839b48719b6786f7b32c3e0b);
+        
+
+        marker_0da9c05f9c6e40ba88a41908118c5a5a.bindPopup(popup_4e72f22ed5f44e768e7cfb69bcfec797)
+        ;
+
+        
+    
+    
+            var marker_649254e7a7eb429cbbe3d97860f2de23 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_875bc78a36724c2c8fe8d91b95dcb686 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c8519ea5c4341889b990e67fd3ecfe1 = $(`<div id="html_2c8519ea5c4341889b990e67fd3ecfe1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_875bc78a36724c2c8fe8d91b95dcb686.setContent(html_2c8519ea5c4341889b990e67fd3ecfe1);
+        
+
+        marker_649254e7a7eb429cbbe3d97860f2de23.bindPopup(popup_875bc78a36724c2c8fe8d91b95dcb686)
+        ;
+
+        
+    
+    
+            var marker_9a4fff4360014aa1811f3a7f1af0ddd9 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_f8317c226abb4443b9147cadfdb47025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fbece4928b9454790f855ef51c52f27 = $(`<div id="html_6fbece4928b9454790f855ef51c52f27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_f8317c226abb4443b9147cadfdb47025.setContent(html_6fbece4928b9454790f855ef51c52f27);
+        
+
+        marker_9a4fff4360014aa1811f3a7f1af0ddd9.bindPopup(popup_f8317c226abb4443b9147cadfdb47025)
+        ;
+
+        
+    
+    
+            var marker_182639bf3508431fa4af11879ef8cfb5 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_0b4e26d4d2a74a11b40c8841d4c3ecc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8b24671e6e540e9bf064e3e9f7d7399 = $(`<div id="html_b8b24671e6e540e9bf064e3e9f7d7399" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_0b4e26d4d2a74a11b40c8841d4c3ecc8.setContent(html_b8b24671e6e540e9bf064e3e9f7d7399);
+        
+
+        marker_182639bf3508431fa4af11879ef8cfb5.bindPopup(popup_0b4e26d4d2a74a11b40c8841d4c3ecc8)
+        ;
+
+        
+    
+    
+            var marker_e5fb116ce3844bafbe94174344c4555c = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_92860aad467a41f1b357fd8a3a880e85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd34e8accc534f93aca450a2753d7306 = $(`<div id="html_bd34e8accc534f93aca450a2753d7306" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_92860aad467a41f1b357fd8a3a880e85.setContent(html_bd34e8accc534f93aca450a2753d7306);
+        
+
+        marker_e5fb116ce3844bafbe94174344c4555c.bindPopup(popup_92860aad467a41f1b357fd8a3a880e85)
+        ;
+
+        
+    
+    
+            var marker_71769cd832b247a5a4df2ecb075b4dad = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_15c9a4728b9c4667a8e70710f2abcc12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c069bbf2af540fc88f9554b04c12719 = $(`<div id="html_0c069bbf2af540fc88f9554b04c12719" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_15c9a4728b9c4667a8e70710f2abcc12.setContent(html_0c069bbf2af540fc88f9554b04c12719);
+        
+
+        marker_71769cd832b247a5a4df2ecb075b4dad.bindPopup(popup_15c9a4728b9c4667a8e70710f2abcc12)
+        ;
+
+        
+    
+    
+            var marker_3ed878c28f0348118a08d78453b966f3 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_f1fc4daa8e814fd09fad1f029ed9c2ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_154f622828f34700808f570e5c27f92e = $(`<div id="html_154f622828f34700808f570e5c27f92e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_f1fc4daa8e814fd09fad1f029ed9c2ed.setContent(html_154f622828f34700808f570e5c27f92e);
+        
+
+        marker_3ed878c28f0348118a08d78453b966f3.bindPopup(popup_f1fc4daa8e814fd09fad1f029ed9c2ed)
+        ;
+
+        
+    
+    
+            var marker_20a44cf50cb644178a545cc442df71c1 = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_34e1b3786d1d47d3b1e0a7f510ab40aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_609f04213fbb4809b98b834d3074e76f = $(`<div id="html_609f04213fbb4809b98b834d3074e76f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_34e1b3786d1d47d3b1e0a7f510ab40aa.setContent(html_609f04213fbb4809b98b834d3074e76f);
+        
+
+        marker_20a44cf50cb644178a545cc442df71c1.bindPopup(popup_34e1b3786d1d47d3b1e0a7f510ab40aa)
+        ;
+
+        
+    
+    
+            var marker_a093c257fac4486093197eaeed5a2edd = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_ff10e08f135e40d48b21ef67c79fd0c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c81356729e2422a83e8993ccb10da54 = $(`<div id="html_5c81356729e2422a83e8993ccb10da54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_ff10e08f135e40d48b21ef67c79fd0c4.setContent(html_5c81356729e2422a83e8993ccb10da54);
+        
+
+        marker_a093c257fac4486093197eaeed5a2edd.bindPopup(popup_ff10e08f135e40d48b21ef67c79fd0c4)
+        ;
+
+        
+    
+    
+            var marker_f65ea2c4998548fea2801ce8a1b118ee = L.marker(
+                [10.715833, -84.17416700000001],
+                {}
+            ).addTo(marker_cluster_de1e40245f064e77bd1c7c4ad5370963);
+        
+    
+        var popup_5511adf1d2b241b3b7a15b329dcb8e11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72ed2f25b79f48318d076a11f2e3e585 = $(`<div id="html_72ed2f25b79f48318d076a11f2e3e585" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ca. 10 km NE de Boca Tapada; Finca aserradero San Jorge. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1996-06-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Barry Hammel ; Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_5511adf1d2b241b3b7a15b329dcb8e11.setContent(html_72ed2f25b79f48318d076a11f2e3e585);
+        
+
+        marker_f65ea2c4998548fea2801ce8a1b118ee.bindPopup(popup_5511adf1d2b241b3b7a15b329dcb8e11)
+        ;
+
+        
+    
+    
+            var layer_control_5143ae09f4d240cb8271e56c1aa9e75a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6429892f14064f2fa454e29ddb9f6c2d,
+                    "ESRI World Imagery" : tile_layer_224dfdf09dd94f678a8b81e2651baa7b,
+                },
+                overlays :  {
+                    "macro_element_de1e40245f064e77bd1c7c4ad5370963" : marker_cluster_de1e40245f064e77bd1c7c4ad5370963,
+                },
+            };
+            L.control.layers(
+                layer_control_5143ae09f4d240cb8271e56c1aa9e75a.base_layers,
+                layer_control_5143ae09f4d240cb8271e56c1aa9e75a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_04008c9d63974409a2cb39bcdb7e3644);
+            tile_layer_224dfdf09dd94f678a8b81e2651baa7b.remove();
+        
+</script>

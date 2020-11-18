@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85c9de7dfd2b49919d50ae9fbdf55599 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_85c9de7dfd2b49919d50ae9fbdf55599" ></div>
+        
+</body>
+<script>    
+    
+            var map_85c9de7dfd2b49919d50ae9fbdf55599 = L.map(
+                "map_85c9de7dfd2b49919d50ae9fbdf55599",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+
+            
+
+        
+    
+            var tile_layer_b96fb8bf45e14c0c9d46b38901b8ecf8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+            var tile_layer_8c68ffa8966b44c28d4d3ad651b6902b = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+            var circle_marker_b6e1ef39d0ef4c5a8e0598f2462177af = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_d75e9a81e11d4c92968d4309282e8f20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35f7b48432cb4ef09fe3fc6ff2b069d5 = $(`<div id="html_35f7b48432cb4ef09fe3fc6ff2b069d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas: Canton de Puntarenas, Monteverde, Bullpen on John Campbell farm <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-12-15 <strong>Recolectores:</strong> Atwood, J.; Haber, W. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d75e9a81e11d4c92968d4309282e8f20.setContent(html_35f7b48432cb4ef09fe3fc6ff2b069d5);
+        
+
+        circle_marker_b6e1ef39d0ef4c5a8e0598f2462177af.bindPopup(popup_d75e9a81e11d4c92968d4309282e8f20)
+        ;
+
+        
+    
+    
+            var circle_marker_139e3b9cbd2c4a219769ebca225eb29c = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_beacf89f1ece4f26b4c6b33ce409032d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6d1cb702e4744f68964a655af0b4308 = $(`<div id="html_d6d1cb702e4744f68964a655af0b4308" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde, upper community on farms of Wolf Guindon & John Campbell, Pacific slope. <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 1992-01-14 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski|Jason R. Grant <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_beacf89f1ece4f26b4c6b33ce409032d.setContent(html_d6d1cb702e4744f68964a655af0b4308);
+        
+
+        circle_marker_139e3b9cbd2c4a219769ebca225eb29c.bindPopup(popup_beacf89f1ece4f26b4c6b33ce409032d)
+        ;
+
+        
+    
+    
+            var circle_marker_6db1811edd644678b4e252c9b0a6526f = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_abd16c0f939f4863998067b252741ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65c1ca6ad6264e7f807357d29a281b09 = $(`<div id="html_65c1ca6ad6264e7f807357d29a281b09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde, upper community near Reserve, Pacific slope wet forest, Bullpen <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1991-04-05 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_abd16c0f939f4863998067b252741ea6.setContent(html_65c1ca6ad6264e7f807357d29a281b09);
+        
+
+        circle_marker_6db1811edd644678b4e252c9b0a6526f.bindPopup(popup_abd16c0f939f4863998067b252741ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_cbd251b3f97e44b98b0c5a6a8dd6fc07 = L.circleMarker(
+                [10.27, -84.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_43966dc489534614aadbe270582404d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5f3460448bd4e39a928b31e0c870659 = $(`<div id="html_a5f3460448bd4e39a928b31e0c870659" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. San Luis. Camino a Veracruz. Monteverde. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1992-10-16 <strong>Recolectores:</strong> Álvaro Fernández <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_43966dc489534614aadbe270582404d4.setContent(html_a5f3460448bd4e39a928b31e0c870659);
+        
+
+        circle_marker_cbd251b3f97e44b98b0c5a6a8dd6fc07.bindPopup(popup_43966dc489534614aadbe270582404d4)
+        ;
+
+        
+    
+    
+            var circle_marker_5b618e63a23546d6ae2d8c3581b1568c = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_7eb4eb8f76d746c081a7dd82d2d02d1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23f1a6c5747041ba9aa8b8598658fea6 = $(`<div id="html_23f1a6c5747041ba9aa8b8598658fea6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Pacific slope, upper community, lower montane wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-04-04 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_7eb4eb8f76d746c081a7dd82d2d02d1f.setContent(html_23f1a6c5747041ba9aa8b8598658fea6);
+        
+
+        circle_marker_5b618e63a23546d6ae2d8c3581b1568c.bindPopup(popup_7eb4eb8f76d746c081a7dd82d2d02d1f)
+        ;
+
+        
+    
+    
+            var circle_marker_1dd0508ac758495298d5ccb5169c62c8 = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_468416b38b624e9594e7ecbaf6794121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4e3e2e786cf498a807e59dbdccd8e92 = $(`<div id="html_f4e3e2e786cf498a807e59dbdccd8e92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Puntarenas Monteverde, Bullpen on John Campbell farm.  Monteverde, Bullpen on John Campbell farm.     10.18N 84.48W      1500 m 15 December 1989 William Haber & John Atwood <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-12-15 <strong>Recolectores:</strong> William A. Haber|John T. Atwood <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_468416b38b624e9594e7ecbaf6794121.setContent(html_f4e3e2e786cf498a807e59dbdccd8e92);
+        
+
+        circle_marker_1dd0508ac758495298d5ccb5169c62c8.bindPopup(popup_468416b38b624e9594e7ecbaf6794121)
+        ;
+
+        
+    
+    
+            var circle_marker_aa64f0dd5cf441c6aea869c82d5adb59 = L.circleMarker(
+                [10.25, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_380db343f570464e83d5f7cbc03f134a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0519b8890d5342d59e425f141d7b2a78 = $(`<div id="html_0519b8890d5342d59e425f141d7b2a78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Puntarenas Guacimal, Altos de Río Veracruz. Finca Brenes. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-01-12 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_380db343f570464e83d5f7cbc03f134a.setContent(html_0519b8890d5342d59e425f141d7b2a78);
+        
+
+        circle_marker_aa64f0dd5cf441c6aea869c82d5adb59.bindPopup(popup_380db343f570464e83d5f7cbc03f134a)
+        ;
+
+        
+    
+    
+            var circle_marker_5330c23179d942b39e8bade6120ab5ad = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_cfd3727c760c4d1d82464be1a59e2355 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_807d0f46e0b64e8283c213bcb2672f36 = $(`<div id="html_807d0f46e0b64e8283c213bcb2672f36" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Monteverde, Cordillera de Tilarán, En faja de bosque perturbado <strong>Elevación:</strong> 1530.0 m  <strong>Fecha:</strong> 1977-05-18 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_cfd3727c760c4d1d82464be1a59e2355.setContent(html_807d0f46e0b64e8283c213bcb2672f36);
+        
+
+        circle_marker_5330c23179d942b39e8bade6120ab5ad.bindPopup(popup_cfd3727c760c4d1d82464be1a59e2355)
+        ;
+
+        
+    
+    
+            var circle_marker_80be0f91eccc4bb2aa06854875174685 = L.circleMarker(
+                [10.309439999999999, -84.80416],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_2899897601e947a1965e63469ca087e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_609a2b62a55b4d2fbafa886029946442 = $(`<div id="html_609a2b62a55b4d2fbafa886029946442" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper community <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1979-03-26 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_2899897601e947a1965e63469ca087e5.setContent(html_609a2b62a55b4d2fbafa886029946442);
+        
+
+        circle_marker_80be0f91eccc4bb2aa06854875174685.bindPopup(popup_2899897601e947a1965e63469ca087e5)
+        ;
+
+        
+    
+    
+            var circle_marker_3a984f1d6bcf486492ffe126f566072c = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_5b4774dc15454ca0ac58efc21a099eea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25b19b0ac82d4470b4ad0f11012baf12 = $(`<div id="html_25b19b0ac82d4470b4ad0f11012baf12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuencas del Lagarto y Guacimal. Monterverde Preserve, near entry. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_5b4774dc15454ca0ac58efc21a099eea.setContent(html_25b19b0ac82d4470b4ad0f11012baf12);
+        
+
+        circle_marker_3a984f1d6bcf486492ffe126f566072c.bindPopup(popup_5b4774dc15454ca0ac58efc21a099eea)
+        ;
+
+        
+    
+    
+            var circle_marker_58217cad17704a28ba735e4e14b96eb4 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_ac4011563ebd45ffb1a15d2f1c4e17ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85ca2d506f7b4d9dbd3df4fa4fb00807 = $(`<div id="html_85ca2d506f7b4d9dbd3df4fa4fb00807" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_ac4011563ebd45ffb1a15d2f1c4e17ab.setContent(html_85ca2d506f7b4d9dbd3df4fa4fb00807);
+        
+
+        circle_marker_58217cad17704a28ba735e4e14b96eb4.bindPopup(popup_ac4011563ebd45ffb1a15d2f1c4e17ab)
+        ;
+
+        
+    
+    
+            var circle_marker_111d2e76e1144e67ac94bb343ee7dabd = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_a84c479c73654039b17f56e82969ed6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66f7ac3abff54af589ca9832a5929fab = $(`<div id="html_66f7ac3abff54af589ca9832a5929fab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a84c479c73654039b17f56e82969ed6d.setContent(html_66f7ac3abff54af589ca9832a5929fab);
+        
+
+        circle_marker_111d2e76e1144e67ac94bb343ee7dabd.bindPopup(popup_a84c479c73654039b17f56e82969ed6d)
+        ;
+
+        
+    
+    
+            var circle_marker_4f85617173104f60becbf481d84adb71 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_e0f04ed3ca64414db4c219ee69aae8c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9180aa37eb374f52a72ef0cb5548f75c = $(`<div id="html_9180aa37eb374f52a72ef0cb5548f75c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_e0f04ed3ca64414db4c219ee69aae8c3.setContent(html_9180aa37eb374f52a72ef0cb5548f75c);
+        
+
+        circle_marker_4f85617173104f60becbf481d84adb71.bindPopup(popup_e0f04ed3ca64414db4c219ee69aae8c3)
+        ;
+
+        
+    
+    
+            var circle_marker_cf7e530669ea4ee1afc9ca9c8e248840 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_de3f2e799d1d4b6ea3165a196354cefd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aff9fd4cc7746db835b3486bb903d60 = $(`<div id="html_6aff9fd4cc7746db835b3486bb903d60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_de3f2e799d1d4b6ea3165a196354cefd.setContent(html_6aff9fd4cc7746db835b3486bb903d60);
+        
+
+        circle_marker_cf7e530669ea4ee1afc9ca9c8e248840.bindPopup(popup_de3f2e799d1d4b6ea3165a196354cefd)
+        ;
+
+        
+    
+    
+            var circle_marker_8c410a4ef0f141cb864dccf659ecfb79 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_88fe1eee6965478690cef29c4029a835 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d726dae4b5fb4f2da796b2aae1ebc17c = $(`<div id="html_d726dae4b5fb4f2da796b2aae1ebc17c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_88fe1eee6965478690cef29c4029a835.setContent(html_d726dae4b5fb4f2da796b2aae1ebc17c);
+        
+
+        circle_marker_8c410a4ef0f141cb864dccf659ecfb79.bindPopup(popup_88fe1eee6965478690cef29c4029a835)
+        ;
+
+        
+    
+    
+            var circle_marker_e0329dbb19814dc0b67bd352f4e241b8 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_d5a4931d7c4f4658add0b70aa6499f89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2b0ce73ca324229bc1138e45483d73f = $(`<div id="html_c2b0ce73ca324229bc1138e45483d73f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_d5a4931d7c4f4658add0b70aa6499f89.setContent(html_c2b0ce73ca324229bc1138e45483d73f);
+        
+
+        circle_marker_e0329dbb19814dc0b67bd352f4e241b8.bindPopup(popup_d5a4931d7c4f4658add0b70aa6499f89)
+        ;
+
+        
+    
+    
+            var circle_marker_6d69aedd35bf4352a2c22601d1c29a98 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_aad8c84c47504a47b8dfdaec361cb6e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52e2d8c4a2174a62a7be1327281d3d0c = $(`<div id="html_52e2d8c4a2174a62a7be1327281d3d0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_aad8c84c47504a47b8dfdaec361cb6e9.setContent(html_52e2d8c4a2174a62a7be1327281d3d0c);
+        
+
+        circle_marker_6d69aedd35bf4352a2c22601d1c29a98.bindPopup(popup_aad8c84c47504a47b8dfdaec361cb6e9)
+        ;
+
+        
+    
+    
+            var circle_marker_a7ebac5aa73c4635a555c7d096308dd6 = L.circleMarker(
+                [10.3, -84.80001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_15d86eeb7d4944b4977399e8b15c9e1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c46e800532184c35a18dbe601cf2bc0e = $(`<div id="html_c46e800532184c35a18dbe601cf2bc0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, Eston Rockwell farm on ridge above Rio Guacimal. Pacific slope moist forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1998-03-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_15d86eeb7d4944b4977399e8b15c9e1d.setContent(html_c46e800532184c35a18dbe601cf2bc0e);
+        
+
+        circle_marker_a7ebac5aa73c4635a555c7d096308dd6.bindPopup(popup_15d86eeb7d4944b4977399e8b15c9e1d)
+        ;
+
+        
+    
+    
+            var circle_marker_232eb3bae45748b9b92a22fe0b574906 = L.circleMarker(
+                [10.3, -84.80000600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_b80715a9583f45618ffbde326713e043 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b44921d0d61f4aca8374b6ca5636d2f1 = $(`<div id="html_b44921d0d61f4aca8374b6ca5636d2f1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper community near Reserve, Pacific slope wet forest, Bullpen <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1991-04-05 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_b80715a9583f45618ffbde326713e043.setContent(html_b44921d0d61f4aca8374b6ca5636d2f1);
+        
+
+        circle_marker_232eb3bae45748b9b92a22fe0b574906.bindPopup(popup_b80715a9583f45618ffbde326713e043)
+        ;
+
+        
+    
+    
+            var circle_marker_fb59ba9fe5b145aea794f4d5024b0ebe = L.circleMarker(
+                [10.3, -84.80000600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_143040d0165c450c88ef7de7c62ca3bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d49057521a84a108f596ba366ef7679 = $(`<div id="html_3d49057521a84a108f596ba366ef7679" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Pacific slope, upper community, lower montane wet forest. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1990-04-04 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_143040d0165c450c88ef7de7c62ca3bf.setContent(html_3d49057521a84a108f596ba366ef7679);
+        
+
+        circle_marker_fb59ba9fe5b145aea794f4d5024b0ebe.bindPopup(popup_143040d0165c450c88ef7de7c62ca3bf)
+        ;
+
+        
+    
+    
+            var circle_marker_5c6d761462dc4ebfad0040d43c07d04e = L.circleMarker(
+                [10.3, -84.800005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_8b50c169ccf4443c92baeb68c22b071a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bf7582351e948c59c44e07857bcdf5b = $(`<div id="html_1bf7582351e948c59c44e07857bcdf5b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper community on farms of Wolf Guindon & John Campbell, Pacific slope. <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 1992-01-14 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_8b50c169ccf4443c92baeb68c22b071a.setContent(html_1bf7582351e948c59c44e07857bcdf5b);
+        
+
+        circle_marker_5c6d761462dc4ebfad0040d43c07d04e.bindPopup(popup_8b50c169ccf4443c92baeb68c22b071a)
+        ;
+
+        
+    
+    
+            var circle_marker_1fceafee66b94b12858c7b17f1ba72ba = L.circleMarker(
+                [10.3, -84.80000600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_fd6969c9502242168cb3e63181f1c824 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_248c2082ba704612b6aebeaa74cae008 = $(`<div id="html_248c2082ba704612b6aebeaa74cae008" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, Bullpen on John Campbell farm. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-12-15 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_fd6969c9502242168cb3e63181f1c824.setContent(html_248c2082ba704612b6aebeaa74cae008);
+        
+
+        circle_marker_1fceafee66b94b12858c7b17f1ba72ba.bindPopup(popup_fd6969c9502242168cb3e63181f1c824)
+        ;
+
+        
+    
+    
+            var circle_marker_20e53e629f04499da7975383ad800b40 = L.circleMarker(
+                [10.25, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_81666fa1345d498591a505ac641fe3d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80158a4e466840d7bfdab648e56483b7 = $(`<div id="html_80158a4e466840d7bfdab648e56483b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guacimal, Altos de Rio Veracruz. Finca Brenes. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-01-12 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_81666fa1345d498591a505ac641fe3d4.setContent(html_80158a4e466840d7bfdab648e56483b7);
+        
+
+        circle_marker_20e53e629f04499da7975383ad800b40.bindPopup(popup_81666fa1345d498591a505ac641fe3d4)
+        ;
+
+        
+    
+    
+            var circle_marker_3aac5e4355284f6394a057ca609b1a48 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_4f962c3487004acabe1c7c409d9437b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e743528c70347498d0ec4ad6e3b36a5 = $(`<div id="html_8e743528c70347498d0ec4ad6e3b36a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-04-04 <strong>Recolectores:</strong> W. A. Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_4f962c3487004acabe1c7c409d9437b3.setContent(html_8e743528c70347498d0ec4ad6e3b36a5);
+        
+
+        circle_marker_3aac5e4355284f6394a057ca609b1a48.bindPopup(popup_4f962c3487004acabe1c7c409d9437b3)
+        ;
+
+        
+    
+    
+            var circle_marker_b6eaef37056d4ecab6266783ea352c29 = L.circleMarker(
+                [10.27, -84.79],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_a58b249b59b04f6b82a3358e00b38610 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b060a1821574437b9f5d0c7a7ba4dd08 = $(`<div id="html_b060a1821574437b9f5d0c7a7ba4dd08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis. Monteverde. Camino a Veracruz. <strong>Elevación:</strong> 1050.0 m  <strong>Fecha:</strong> 1992-10-16 <strong>Recolectores:</strong> Fernández, Alvaro <strong>Identificadores:</strong> Lobo, Silvia</div>`)[0];
+            popup_a58b249b59b04f6b82a3358e00b38610.setContent(html_b060a1821574437b9f5d0c7a7ba4dd08);
+        
+
+        circle_marker_b6eaef37056d4ecab6266783ea352c29.bindPopup(popup_a58b249b59b04f6b82a3358e00b38610)
+        ;
+
+        
+    
+    
+            var circle_marker_292b2d631b2d43ada40bd4ddd7c8d0e1 = L.circleMarker(
+                [10.25, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+        
+    
+        var popup_ae55c1a6e45648659c3e1096323def60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7ab1ebf638c461f832bff71754d1b45 = $(`<div id="html_e7ab1ebf638c461f832bff71754d1b45" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Guacimal, Altos de Río Veracruz. Finca Brenes. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1990-01-12 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> Lobo, Silvia</div>`)[0];
+            popup_ae55c1a6e45648659c3e1096323def60.setContent(html_e7ab1ebf638c461f832bff71754d1b45);
+        
+
+        circle_marker_292b2d631b2d43ada40bd4ddd7c8d0e1.bindPopup(popup_ae55c1a6e45648659c3e1096323def60)
+        ;
+
+        
+    
+    
+            var layer_control_daf300efac924d9b89949bce569600eb = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b96fb8bf45e14c0c9d46b38901b8ecf8,
+                    "ESRI World Imagery" : tile_layer_8c68ffa8966b44c28d4d3ad651b6902b,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_daf300efac924d9b89949bce569600eb.base_layers,
+                layer_control_daf300efac924d9b89949bce569600eb.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_85c9de7dfd2b49919d50ae9fbdf55599);
+            tile_layer_8c68ffa8966b44c28d4d3ad651b6902b.remove();
+        
+</script>

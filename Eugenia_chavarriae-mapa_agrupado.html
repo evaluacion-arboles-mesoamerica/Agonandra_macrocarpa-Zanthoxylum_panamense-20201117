@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2eece00f53b14f3e90bdf22823df3bbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2eece00f53b14f3e90bdf22823df3bbf" ></div>
+        
+</body>
+<script>    
+    
+            var map_2eece00f53b14f3e90bdf22823df3bbf = L.map(
+                "map_2eece00f53b14f3e90bdf22823df3bbf",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2eece00f53b14f3e90bdf22823df3bbf);
+
+            
+
+        
+    
+            var tile_layer_992e820b83594841adcbd04d4626a000 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2eece00f53b14f3e90bdf22823df3bbf);
+        
+    
+            var tile_layer_674884a3392f4c7f94676e958b8b5758 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2eece00f53b14f3e90bdf22823df3bbf);
+        
+    
+            var marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536 = L.markerClusterGroup(
+                {}
+            );
+            map_2eece00f53b14f3e90bdf22823df3bbf.addLayer(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+            var marker_ecae5f82cdb846658bc4715d9e22c491 = L.marker(
+                [10.49, -85.37],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_f78f0bbe3fe34d47880f32fdd707610e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97aa865235bd4362a6e345f01fbb5748 = $(`<div id="html_97aa865235bd4362a6e345f01fbb5748" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Lomas Barbudal; Valle del Tempisque, borde de camino al Ref. Rafael Lucas y orilla del Río Cabuyo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-03-25 <strong>Recolectores:</strong> Ulises Chavarría <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_f78f0bbe3fe34d47880f32fdd707610e.setContent(html_97aa865235bd4362a6e345f01fbb5748);
+        
+
+        marker_ecae5f82cdb846658bc4715d9e22c491.bindPopup(popup_f78f0bbe3fe34d47880f32fdd707610e)
+        ;
+
+        
+    
+    
+            var marker_ceab016d58ea44a2ae6d43480defed10 = L.marker(
+                [10.66666, -85.48333000000001],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_640eb409a37d483495c034501909afd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12bd3d97f44a4afea85a205aeb62753d = $(`<div id="html_12bd3d97f44a4afea85a205aeb62753d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dry forest on lower slopes of Volcán Rincón de la Vieja, along Rio Colorado. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1964-01-04 <strong>Recolectores:</strong> Louis O. Williams|Antonio Molina R.|Terua P. Williams <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_640eb409a37d483495c034501909afd1.setContent(html_12bd3d97f44a4afea85a205aeb62753d);
+        
+
+        marker_ceab016d58ea44a2ae6d43480defed10.bindPopup(popup_640eb409a37d483495c034501909afd1)
+        ;
+
+        
+    
+    
+            var marker_8e3487dfb8974d9f8cac2b4de096abd3 = L.marker(
+                [10.83333, -85.58333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_321a53b4f15b423280e406eca1df062d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_610f2f39f9c3444795a21a97f819010f = $(`<div id="html_610f2f39f9c3444795a21a97f819010f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sta. Rosa NP; 30 km NW of Liberia streamside <strong>Elevación:</strong> 32.0 m  <strong>Fecha:</strong> 1982-01-12 <strong>Recolectores:</strong> Daniel H. Janzen <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_321a53b4f15b423280e406eca1df062d.setContent(html_610f2f39f9c3444795a21a97f819010f);
+        
+
+        marker_8e3487dfb8974d9f8cac2b4de096abd3.bindPopup(popup_321a53b4f15b423280e406eca1df062d)
+        ;
+
+        
+    
+    
+            var marker_bae737ae618f43e09f63d377f30c4848 = L.marker(
+                [10.83333, -85.58333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_191cca00d0e8413999f5226fa6861a6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72223cf301874d56a9e4a056a7a6c9e7 = $(`<div id="html_72223cf301874d56a9e4a056a7a6c9e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sta. Rosa NP; 30 km NW of Liberia <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1985-01-12 <strong>Recolectores:</strong> Daniel H. Janzen <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_191cca00d0e8413999f5226fa6861a6f.setContent(html_72223cf301874d56a9e4a056a7a6c9e7);
+        
+
+        marker_bae737ae618f43e09f63d377f30c4848.bindPopup(popup_191cca00d0e8413999f5226fa6861a6f)
+        ;
+
+        
+    
+    
+            var marker_c58f44543c3442f7bd694300d30e58dd = L.marker(
+                [10.53333, -85.31666],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_f8064ab136564e61b5f08814f3352486 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24f9f42dcdcf4c20bb6bd59f079f650d = $(`<div id="html_24f9f42dcdcf4c20bb6bd59f079f650d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Comelco property near Bagaces, Area E, Transect R2 riparian forest <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1972-01-15 <strong>Recolectores:</strong> Paul A. Opler <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_f8064ab136564e61b5f08814f3352486.setContent(html_24f9f42dcdcf4c20bb6bd59f079f650d);
+        
+
+        marker_c58f44543c3442f7bd694300d30e58dd.bindPopup(popup_f8064ab136564e61b5f08814f3352486)
+        ;
+
+        
+    
+    
+            var marker_5359a57c066d468786f3fcd39360e243 = L.marker(
+                [10.53333, -85.31666],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_ae1ef7f429e34c648612ea999cc13bbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5dcf43d23b4b4a188b682478c3050f68 = $(`<div id="html_5dcf43d23b4b4a188b682478c3050f68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Comelco property near Bagaces, riparian forest <strong>Elevación:</strong> 75.0 m  <strong>Fecha:</strong> 1973-12-15 <strong>Recolectores:</strong> K. S. Bawa <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ae1ef7f429e34c648612ea999cc13bbe.setContent(html_5dcf43d23b4b4a188b682478c3050f68);
+        
+
+        marker_5359a57c066d468786f3fcd39360e243.bindPopup(popup_ae1ef7f429e34c648612ea999cc13bbe)
+        ;
+
+        
+    
+    
+            var marker_f3dd4938225d45cb9e592be8657a199a = L.marker(
+                [10.83333, -85.61666],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_65952a90362742e8ae25f782546ca418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8558e43a206d4315a8d25795d81690d5 = $(`<div id="html_8558e43a206d4315a8d25795d81690d5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Hist. Nacional de Santa Rosa <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1972-09-28 <strong>Recolectores:</strong> Luis J. Poveda Álvarez <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_65952a90362742e8ae25f782546ca418.setContent(html_8558e43a206d4315a8d25795d81690d5);
+        
+
+        marker_f3dd4938225d45cb9e592be8657a199a.bindPopup(popup_65952a90362742e8ae25f782546ca418)
+        ;
+
+        
+    
+    
+            var marker_a02eebcfa1a3412e8d2754d7decc143c = L.marker(
+                [10.33, -85.3],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_0335449703e046dcb91cf5882641f2bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35e09075861842b486262a6b66f66908 = $(`<div id="html_35e09075861842b486262a6b66f66908" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> OTS Research areas A, E; Stewart property (28-33 km N Canas) <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1969-08-23 <strong>Recolectores:</strong> G. W. Frankie <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_0335449703e046dcb91cf5882641f2bb.setContent(html_35e09075861842b486262a6b66f66908);
+        
+
+        marker_a02eebcfa1a3412e8d2754d7decc143c.bindPopup(popup_0335449703e046dcb91cf5882641f2bb)
+        ;
+
+        
+    
+    
+            var marker_2b6c0ea80861444388e64d3fe86a4115 = L.marker(
+                [10.83333, -85.58333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_affc4021a4a64901a41f74033b5aa52d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70b423207075466784819bd7ec18bd8f = $(`<div id="html_70b423207075466784819bd7ec18bd8f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sta. Rosa NP; 30 km NW of Liberia bosque húmedo, understory <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1979-07-16 <strong>Recolectores:</strong> Daniel H. Janzen <strong>Identificadores:</strong> ??</div>`)[0];
+            popup_affc4021a4a64901a41f74033b5aa52d.setContent(html_70b423207075466784819bd7ec18bd8f);
+        
+
+        marker_2b6c0ea80861444388e64d3fe86a4115.bindPopup(popup_affc4021a4a64901a41f74033b5aa52d)
+        ;
+
+        
+    
+    
+            var marker_5814833b1cde464bb2ebfb887f07d43a = L.marker(
+                [10.83333, -85.58333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_19e91e2beb2d41b3b7d01ca91e8ae156 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78cf713f27dc4374bbfaa70e404e920c = $(`<div id="html_78cf713f27dc4374bbfaa70e404e920c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa National Park, 30 km northwest of Liberia <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1978-06-26 <strong>Recolectores:</strong> Daniel H. Janzen <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_19e91e2beb2d41b3b7d01ca91e8ae156.setContent(html_78cf713f27dc4374bbfaa70e404e920c);
+        
+
+        marker_5814833b1cde464bb2ebfb887f07d43a.bindPopup(popup_19e91e2beb2d41b3b7d01ca91e8ae156)
+        ;
+
+        
+    
+    
+            var marker_ddd5ce7972374ecd880b1e2f7de135bd = L.marker(
+                [10.83333, -85.58333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_873e10d102de458591f47115feadbb17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91a9954290eb483ca6147e312fc2cd97 = $(`<div id="html_91a9954290eb483ca6147e312fc2cd97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sta. Rosa NP; 30 km NW of Liberia river bed <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1979-06-27 <strong>Recolectores:</strong> Daniel H. Janzen <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_873e10d102de458591f47115feadbb17.setContent(html_91a9954290eb483ca6147e312fc2cd97);
+        
+
+        marker_ddd5ce7972374ecd880b1e2f7de135bd.bindPopup(popup_873e10d102de458591f47115feadbb17)
+        ;
+
+        
+    
+    
+            var marker_77e8e6d792af42b8ad118c934681336c = L.marker(
+                [10.83333, -85.61666],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_a37f13c5cbc84eb6a7742f74777ef9ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311d76f69c1844f99660bf729f937fb1 = $(`<div id="html_311d76f69c1844f99660bf729f937fb1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa National Park, Siempre Verde <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1976-02-29 <strong>Recolectores:</strong> G. Schofield <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_a37f13c5cbc84eb6a7742f74777ef9ea.setContent(html_311d76f69c1844f99660bf729f937fb1);
+        
+
+        marker_77e8e6d792af42b8ad118c934681336c.bindPopup(popup_a37f13c5cbc84eb6a7742f74777ef9ea)
+        ;
+
+        
+    
+    
+            var marker_fa83aac17858433f8cb50745a11de154 = L.marker(
+                [10.85, -85.61666],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_4d43af8f628e4a64b0e448e67823c101 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fd6299579be49db8b5861152b52b3c3 = $(`<div id="html_9fd6299579be49db8b5861152b52b3c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Santa Rosa National Park. Evergreen forest (Bosque Humido) 2 km E of park headquarters. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1978-01-20 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_4d43af8f628e4a64b0e448e67823c101.setContent(html_9fd6299579be49db8b5861152b52b3c3);
+        
+
+        marker_fa83aac17858433f8cb50745a11de154.bindPopup(popup_4d43af8f628e4a64b0e448e67823c101)
+        ;
+
+        
+    
+    
+            var marker_94ebf100b4ee40bea9b91959d6ee106b = L.marker(
+                [10.852778, -85.608333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_0f9c9a4343dc404780fb358e1798f930 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11884dc8bed94be7bd22a0ee15296cee = $(`<div id="html_11884dc8bed94be7bd22a0ee15296cee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque humedo al borde de la carretera de entrada al Parque Nacional Santa Rosa <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2014-08-04 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Li De-Zhu ; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_0f9c9a4343dc404780fb358e1798f930.setContent(html_11884dc8bed94be7bd22a0ee15296cee);
+        
+
+        marker_94ebf100b4ee40bea9b91959d6ee106b.bindPopup(popup_0f9c9a4343dc404780fb358e1798f930)
+        ;
+
+        
+    
+    
+            var marker_cc04e5371df444c18041e1b86a500011 = L.marker(
+                [10.852778, -85.608333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_d7f3609f95e24ec5bf94e24c3a5cb53c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50cf3d26de744360a3a391aae77e793e = $(`<div id="html_50cf3d26de744360a3a391aae77e793e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque humedo al borde de la carretera de entrada al Parque Nacional Santa Rosa <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2014-08-04 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Li De-Zhu ; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_d7f3609f95e24ec5bf94e24c3a5cb53c.setContent(html_50cf3d26de744360a3a391aae77e793e);
+        
+
+        marker_cc04e5371df444c18041e1b86a500011.bindPopup(popup_d7f3609f95e24ec5bf94e24c3a5cb53c)
+        ;
+
+        
+    
+    
+            var marker_534a3f76dcb34450a4a9dc6a5a8f03f6 = L.marker(
+                [10.852778, -85.608333],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_06e1c47924ad441d8b82c4c14bbb18f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1211e6127f174536926cf44afae6a715 = $(`<div id="html_1211e6127f174536926cf44afae6a715" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque humedo al borde de la carretera de entrada al Parque Nacional Santa Rosa <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2014-08-04 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Li De-Zhu ; Jie Cai ; Yu Min Shui ; G. Lianming ; M. Pengfei ; Roberto Espinoza ; Enia Navarro <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_06e1c47924ad441d8b82c4c14bbb18f2.setContent(html_1211e6127f174536926cf44afae6a715);
+        
+
+        marker_534a3f76dcb34450a4a9dc6a5a8f03f6.bindPopup(popup_06e1c47924ad441d8b82c4c14bbb18f2)
+        ;
+
+        
+    
+    
+            var marker_1d02d07fbd4f4a24bda4a586ba0fd5fb = L.marker(
+                [10.495833, -85.376389],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_c72e4dffb0f346c8a37905d727ee6c10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0a998e150c84d60899e5c0462b47d2e = $(`<div id="html_e0a998e150c84d60899e5c0462b47d2e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Colegio de Bagaces <strong>Elevación:</strong> 40.0 m  <strong>Fecha:</strong> 2000-05-11 <strong>Recolectores:</strong> Ulises Chavarría <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_c72e4dffb0f346c8a37905d727ee6c10.setContent(html_e0a998e150c84d60899e5c0462b47d2e);
+        
+
+        marker_1d02d07fbd4f4a24bda4a586ba0fd5fb.bindPopup(popup_c72e4dffb0f346c8a37905d727ee6c10)
+        ;
+
+        
+    
+    
+            var marker_3eff846de03e4cfc8c243b4c38140936 = L.marker(
+                [10.495833, -85.37916700000001],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_41d3d30d8668470aa104e9969126dcc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d99b98698d34ae1b6229e300a7ae27c = $(`<div id="html_2d99b98698d34ae1b6229e300a7ae27c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lomas Barbudal, borde de camino al Ref. Rafael Lucas y orilla del Rio Cabuyo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1993-03-25 <strong>Recolectores:</strong> Ulises Chavarría <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_41d3d30d8668470aa104e9969126dcc9.setContent(html_2d99b98698d34ae1b6229e300a7ae27c);
+        
+
+        marker_3eff846de03e4cfc8c243b4c38140936.bindPopup(popup_41d3d30d8668470aa104e9969126dcc9)
+        ;
+
+        
+    
+    
+            var marker_7179bb4a0e2b4aef8227d140fa214e52 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_d691de3ba0914f5f96f32429e08a79d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aacf44c6b78f46349a20348f741988c5 = $(`<div id="html_aacf44c6b78f46349a20348f741988c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-03-25 <strong>Recolectores:</strong> U. Chavarría <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d691de3ba0914f5f96f32429e08a79d5.setContent(html_aacf44c6b78f46349a20348f741988c5);
+        
+
+        marker_7179bb4a0e2b4aef8227d140fa214e52.bindPopup(popup_d691de3ba0914f5f96f32429e08a79d5)
+        ;
+
+        
+    
+    
+            var marker_e3af4397c82f496c8ffc6365c2e02931 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536);
+        
+    
+        var popup_29d859e5d981449db4d6162e8edf9900 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fd783757e114e408cb0564f60398a17 = $(`<div id="html_8fd783757e114e408cb0564f60398a17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-03-25 <strong>Recolectores:</strong> U. Chavarría <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_29d859e5d981449db4d6162e8edf9900.setContent(html_8fd783757e114e408cb0564f60398a17);
+        
+
+        marker_e3af4397c82f496c8ffc6365c2e02931.bindPopup(popup_29d859e5d981449db4d6162e8edf9900)
+        ;
+
+        
+    
+    
+            var layer_control_21b37aaae0d84dcf89315c6816625065 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_992e820b83594841adcbd04d4626a000,
+                    "ESRI World Imagery" : tile_layer_674884a3392f4c7f94676e958b8b5758,
+                },
+                overlays :  {
+                    "macro_element_bb69fc7bdfb946f98b50c9570d4cf536" : marker_cluster_bb69fc7bdfb946f98b50c9570d4cf536,
+                },
+            };
+            L.control.layers(
+                layer_control_21b37aaae0d84dcf89315c6816625065.base_layers,
+                layer_control_21b37aaae0d84dcf89315c6816625065.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2eece00f53b14f3e90bdf22823df3bbf);
+            tile_layer_674884a3392f4c7f94676e958b8b5758.remove();
+        
+</script>

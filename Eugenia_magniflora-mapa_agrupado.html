@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_661c8de64cbe40a6ac122ac05f89c746 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_661c8de64cbe40a6ac122ac05f89c746" ></div>
+        
+</body>
+<script>    
+    
+            var map_661c8de64cbe40a6ac122ac05f89c746 = L.map(
+                "map_661c8de64cbe40a6ac122ac05f89c746",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_661c8de64cbe40a6ac122ac05f89c746);
+
+            
+
+        
+    
+            var tile_layer_1aa18127878746f4b36db355359e27df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_661c8de64cbe40a6ac122ac05f89c746);
+        
+    
+            var tile_layer_e5f7e3cc4cce4d9c871945fa95620097 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_661c8de64cbe40a6ac122ac05f89c746);
+        
+    
+            var marker_cluster_0144d150f0f643829f4a52406c125020 = L.markerClusterGroup(
+                {}
+            );
+            map_661c8de64cbe40a6ac122ac05f89c746.addLayer(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+            var marker_c66a3802d5db4558afe53a33ab85c9d5 = L.marker(
+                [10.3, -84.016667],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_c3ed236fff6043b98de2800880f0567c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ec015443d5041d5b7c2d585ea543570 = $(`<div id="html_4ec015443d5041d5b7c2d585ea543570" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along trail through forest between Finca Bella Vista (also known as "Plástico"), on the Quebrada Tigre, and Las Horquetas, ca. 6 km SW of Las Horquetas. Elev. ca. 400 m. 10º18'N, 84º01'W. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1985-02-03 <strong>Recolectores:</strong> Michael H. Grayum|Pamela J. Sleeper|Nancy Machado <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_c3ed236fff6043b98de2800880f0567c.setContent(html_4ec015443d5041d5b7c2d585ea543570);
+        
+
+        marker_c66a3802d5db4558afe53a33ab85c9d5.bindPopup(popup_c3ed236fff6043b98de2800880f0567c)
+        ;
+
+        
+    
+    
+            var marker_64f0132bbbe14063b45bca88ae1c637e = L.marker(
+                [10.64, -83.73],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_1929502d8df14c0fb3b35aaf72ef40a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4ff8757c87f414ebb3fa138248bce18 = $(`<div id="html_e4ff8757c87f414ebb3fa138248bce18" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Nacional F.S. Barra del Colorado.  Llanura de Tortuguero. Sardinas <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> Flor Araya <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1929502d8df14c0fb3b35aaf72ef40a9.setContent(html_e4ff8757c87f414ebb3fa138248bce18);
+        
+
+        marker_64f0132bbbe14063b45bca88ae1c637e.bindPopup(popup_1929502d8df14c0fb3b35aaf72ef40a9)
+        ;
+
+        
+    
+    
+            var marker_b24a6df4c50d4af0b33c99497ae17d00 = L.marker(
+                [10.35, -84.06666],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_ce1d597d1f2b4c07b7d1a2db5b6e587e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a651e5fd05f41a0a607d3af92b91d56 = $(`<div id="html_2a651e5fd05f41a0a607d3af92b91d56" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora La Selva, 6 km by road from Río Peje crossing, 5 km south-southeast of Magsasay, along picada through primary forest southeast of basecamp eventually doubling back on Quebrada Cantarana <strong>Elevación:</strong> 340.0 m  <strong>Fecha:</strong> 1983-01-17 <strong>Recolectores:</strong> George E. Schatz|Michael H. Grayum <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ce1d597d1f2b4c07b7d1a2db5b6e587e.setContent(html_2a651e5fd05f41a0a607d3af92b91d56);
+        
+
+        marker_b24a6df4c50d4af0b33c99497ae17d00.bindPopup(popup_ce1d597d1f2b4c07b7d1a2db5b6e587e)
+        ;
+
+        
+    
+    
+            var marker_2ea508998e2f490bae08217335ea62ed = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_faa5660cdae544b0872217e71111a3de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eeec692a7ab4d22a13f738ec81c0dea = $(`<div id="html_5eeec692a7ab4d22a13f738ec81c0dea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_faa5660cdae544b0872217e71111a3de.setContent(html_5eeec692a7ab4d22a13f738ec81c0dea);
+        
+
+        marker_2ea508998e2f490bae08217335ea62ed.bindPopup(popup_faa5660cdae544b0872217e71111a3de)
+        ;
+
+        
+    
+    
+            var marker_c2b3172bbbce4395b96c6358cd83880f = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_6c7adc7636324bdf823a80d181411574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_773c346ee41e400290270cb334bd90f4 = $(`<div id="html_773c346ee41e400290270cb334bd90f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_6c7adc7636324bdf823a80d181411574.setContent(html_773c346ee41e400290270cb334bd90f4);
+        
+
+        marker_c2b3172bbbce4395b96c6358cd83880f.bindPopup(popup_6c7adc7636324bdf823a80d181411574)
+        ;
+
+        
+    
+    
+            var marker_68c62ad626be46acb5b2b13a99b8511e = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_e8b89bd24ed548ddb4cb268a7ba19443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3628a3446124506aba36a693550a333 = $(`<div id="html_d3628a3446124506aba36a693550a333" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_e8b89bd24ed548ddb4cb268a7ba19443.setContent(html_d3628a3446124506aba36a693550a333);
+        
+
+        marker_68c62ad626be46acb5b2b13a99b8511e.bindPopup(popup_e8b89bd24ed548ddb4cb268a7ba19443)
+        ;
+
+        
+    
+    
+            var marker_a42f4e19680e4fb78a0ba64a547659c8 = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_f455740373e4420a90abd7d4dd4f9681 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c372b70628ff4f2a8b758d04a2848fc1 = $(`<div id="html_c372b70628ff4f2a8b758d04a2848fc1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_f455740373e4420a90abd7d4dd4f9681.setContent(html_c372b70628ff4f2a8b758d04a2848fc1);
+        
+
+        marker_a42f4e19680e4fb78a0ba64a547659c8.bindPopup(popup_f455740373e4420a90abd7d4dd4f9681)
+        ;
+
+        
+    
+    
+            var marker_69be4300db594c82a5aa2592c6957fed = L.marker(
+                [10.643889, -83.736112],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_30972bc7ee584401ac3632d0803480e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d86f9e0b4a63484ea8131ac3966b745d = $(`<div id="html_d86f9e0b4a63484ea8131ac3966b745d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sardinas. <strong>Elevación:</strong> 17.5 m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_30972bc7ee584401ac3632d0803480e6.setContent(html_d86f9e0b4a63484ea8131ac3966b745d);
+        
+
+        marker_69be4300db594c82a5aa2592c6957fed.bindPopup(popup_30972bc7ee584401ac3632d0803480e6)
+        ;
+
+        
+    
+    
+            var marker_77fe85316f394cdfbd256a71e7cb36fd = L.marker(
+                [10.0, -83.8667],
+                {}
+            ).addTo(marker_cluster_0144d150f0f643829f4a52406c125020);
+        
+    
+        var popup_2fd8dffa2c574d81bb18ad915e144f06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c362a67103614f849ce32d67e59863e3 = $(`<div id="html_c362a67103614f849ce32d67e59863e3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1995-01-01 <strong>Recolectores:</strong> F. Araya <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_2fd8dffa2c574d81bb18ad915e144f06.setContent(html_c362a67103614f849ce32d67e59863e3);
+        
+
+        marker_77fe85316f394cdfbd256a71e7cb36fd.bindPopup(popup_2fd8dffa2c574d81bb18ad915e144f06)
+        ;
+
+        
+    
+    
+            var layer_control_38bdf2a8af8d46b8aa7664bc3a2e1c38 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1aa18127878746f4b36db355359e27df,
+                    "ESRI World Imagery" : tile_layer_e5f7e3cc4cce4d9c871945fa95620097,
+                },
+                overlays :  {
+                    "macro_element_0144d150f0f643829f4a52406c125020" : marker_cluster_0144d150f0f643829f4a52406c125020,
+                },
+            };
+            L.control.layers(
+                layer_control_38bdf2a8af8d46b8aa7664bc3a2e1c38.base_layers,
+                layer_control_38bdf2a8af8d46b8aa7664bc3a2e1c38.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_661c8de64cbe40a6ac122ac05f89c746);
+            tile_layer_e5f7e3cc4cce4d9c871945fa95620097.remove();
+        
+</script>

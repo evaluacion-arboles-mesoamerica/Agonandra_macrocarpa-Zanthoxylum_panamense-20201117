@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92ba182120d14b368830a2967ddc72a1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_92ba182120d14b368830a2967ddc72a1" ></div>
+        
+</body>
+<script>    
+    
+            var map_92ba182120d14b368830a2967ddc72a1 = L.map(
+                "map_92ba182120d14b368830a2967ddc72a1",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_92ba182120d14b368830a2967ddc72a1);
+
+            
+
+        
+    
+            var tile_layer_cac31669c22e4c139af7e3ce4ab55802 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92ba182120d14b368830a2967ddc72a1);
+        
+    
+            var tile_layer_5d1f0813f2ac4a2ebf5345cf3732cc87 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92ba182120d14b368830a2967ddc72a1);
+        
+    
+            var marker_cluster_b7f677b26af4431ba4d4a30bbe16d753 = L.markerClusterGroup(
+                {}
+            );
+            map_92ba182120d14b368830a2967ddc72a1.addLayer(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+            var marker_c7e041c9d137458ba9d741ebd72ca74f = L.marker(
+                [9.116667, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_ddee684a924e49b0a9d11beeffe3dfa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ef400e2d1bc48b18234740bd9fe899a = $(`<div id="html_0ef400e2d1bc48b18234740bd9fe899a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Foothills of the Cordillera de Talamanca, around Tres Colinas. <strong>Elevación:</strong> 1825.0 m  <strong>Fecha:</strong> 1984-03-20 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch.|Richard H. Warner <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_ddee684a924e49b0a9d11beeffe3dfa3.setContent(html_0ef400e2d1bc48b18234740bd9fe899a);
+        
+
+        marker_c7e041c9d137458ba9d741ebd72ca74f.bindPopup(popup_ddee684a924e49b0a9d11beeffe3dfa3)
+        ;
+
+        
+    
+    
+            var marker_c1d5ab1727a14b66ae512ebd1d803989 = L.marker(
+                [9.124167, -83.074722],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_33e02de8efd748998ebcc145115ca5fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c92e85a6a73842bb86b8d7329165b541 = $(`<div id="html_c92e85a6a73842bb86b8d7329165b541" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca Térraba-Sierpe.  Puesto Tres Colinas.  Colecta a orilla del Río Guineo. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 <strong>Recolectores:</strong> Billen Gamboa R.|Annia Picado <strong>Identificadores:</strong> Eliana Ramos (IAC)</div>`)[0];
+            popup_33e02de8efd748998ebcc145115ca5fe.setContent(html_c92e85a6a73842bb86b8d7329165b541);
+        
+
+        marker_c1d5ab1727a14b66ae512ebd1d803989.bindPopup(popup_33e02de8efd748998ebcc145115ca5fe)
+        ;
+
+        
+    
+    
+            var marker_d315c96f51224c9d83d810665de183bc = L.marker(
+                [9.124111, -83.07183],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_583c6d46a0e042dc9e510eb5bb1226d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d128e2a2287425e84b5656837d15901 = $(`<div id="html_9d128e2a2287425e84b5656837d15901" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Amistad. Cuenca Térraba-Sierpe. La Amistad National Park. Tres Colinas sector. Guineal river edge. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas|G. Villalobos <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_583c6d46a0e042dc9e510eb5bb1226d3.setContent(html_9d128e2a2287425e84b5656837d15901);
+        
+
+        marker_d315c96f51224c9d83d810665de183bc.bindPopup(popup_583c6d46a0e042dc9e510eb5bb1226d3)
+        ;
+
+        
+    
+    
+            var marker_dd9d0c6244134d469ad2b01409119df3 = L.marker(
+                [9.141286000000001, -83.06981],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_0c5a123e72c14c6fa7408a474ca39b44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86af40bb9eb544c89ea9e9113e77f723 = $(`<div id="html_86af40bb9eb544c89ea9e9113e77f723" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Buenos Aires, Potrero Grande, Tres Colinas. PILA. Bosque denso de 20-25 m. predominado por Magnolia sororum, Alfaroa costaricensis, Ticodendron incognitum, Calatola costaricensis, Guarea sp. y Quercus sp. sotobosque ralo con Urera, Boehmeria, Meliosma y Meriania phlomoides.                                                                                                                                                                                                                                " <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_0c5a123e72c14c6fa7408a474ca39b44.setContent(html_86af40bb9eb544c89ea9e9113e77f723);
+        
+
+        marker_dd9d0c6244134d469ad2b01409119df3.bindPopup(popup_0c5a123e72c14c6fa7408a474ca39b44)
+        ;
+
+        
+    
+    
+            var marker_23e2316a03704bfc88cff66d97a7e0e1 = L.marker(
+                [9.107413000000001, -83.09626999999999],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_6cb6e970e6c24832b112d17e2b163a28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc22f6380cf94935987b07eaf57c164c = $(`<div id="html_cc22f6380cf94935987b07eaf57c164c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Buenos Aires, Potrero Grande, La Lucha. Faldas de Cerro Amuo. Bosque denso de 5-25 m. Predominado por Ruagea glabra, Hampea appendiculata, Heliocarpus americanus, Cecropia sp. y Ocotea spp. El sotobosque con gran presencia de helechos arborescentes.                                                                                                                                                                                                                                                         " <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-02-20 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_6cb6e970e6c24832b112d17e2b163a28.setContent(html_cc22f6380cf94935987b07eaf57c164c);
+        
+
+        marker_23e2316a03704bfc88cff66d97a7e0e1.bindPopup(popup_6cb6e970e6c24832b112d17e2b163a28)
+        ;
+
+        
+    
+    
+            var marker_2ab2a4fbaf79429aa3d380b6efb7f4db = L.marker(
+                [9.141276, -83.06938000000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_d85adad03a774808b031091ea5b6e6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41d4ef0f87a24453a999414f6e56a2d0 = $(`<div id="html_41d4ef0f87a24453a999414f6e56a2d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, Tres Colinas. 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kamuk. Bosque denso con predominio de arboles de Quercus sp. Guarea sp. Lauraceae, Magnolia sororum; sotobosque ralo con Urera sp., Boehmeria, Meriania phlomoides, Meliosma sp. 5-25 m x35-100 cm DAP. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_d85adad03a774808b031091ea5b6e6d9.setContent(html_41d4ef0f87a24453a999414f6e56a2d0);
+        
+
+        marker_2ab2a4fbaf79429aa3d380b6efb7f4db.bindPopup(popup_d85adad03a774808b031091ea5b6e6d9)
+        ;
+
+        
+    
+    
+            var marker_bafb29f8e1ce43c3aee7d432e5ff6fca = L.marker(
+                [9.119889, -83.08881],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_7ee6bff52cfa479586bc5aa2effbe5d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44457d29c4e8488a9c58433ce5e50d03 = $(`<div id="html_44457d29c4e8488a9c58433ce5e50d03" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. Bosque denso de 5-25 m. Predominado por Cedrela tonduzii, Sloanea ampla, Quercus, Magnolia sororum; sotobosque con Geonoma sp. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Santamaría <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_7ee6bff52cfa479586bc5aa2effbe5d9.setContent(html_44457d29c4e8488a9c58433ce5e50d03);
+        
+
+        marker_bafb29f8e1ce43c3aee7d432e5ff6fca.bindPopup(popup_7ee6bff52cfa479586bc5aa2effbe5d9)
+        ;
+
+        
+    
+    
+            var marker_c31a544dd21d4693a000850d5b4a9f80 = L.marker(
+                [9.138805, -83.0666],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_610e8c49dfec4d8db04f535a58ce80da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b042c5d6a706453a84072148f647e267 = $(`<div id="html_b042c5d6a706453a84072148f647e267" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. P. I. La Amistad. Sector Tres Colinas. Punto de muestreo 19. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson Zamora <strong>Identificadores:</strong> J. Morales</div>`)[0];
+            popup_610e8c49dfec4d8db04f535a58ce80da.setContent(html_b042c5d6a706453a84072148f647e267);
+        
+
+        marker_c31a544dd21d4693a000850d5b4a9f80.bindPopup(popup_610e8c49dfec4d8db04f535a58ce80da)
+        ;
+
+        
+    
+    
+            var marker_22891f3b2b4c48e58048a105cfb741f3 = L.marker(
+                [9.124167, -83.074722],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_f34869c0a4b5400a82c9eb9c2df61907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64d30d54d92f465bbee2ee02ec1b87cb = $(`<div id="html_64d30d54d92f465bbee2ee02ec1b87cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca Térraba-Sierpe. Estación Tres Colinas, Finca Benito Acuna. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_f34869c0a4b5400a82c9eb9c2df61907.setContent(html_64d30d54d92f465bbee2ee02ec1b87cb);
+        
+
+        marker_22891f3b2b4c48e58048a105cfb741f3.bindPopup(popup_f34869c0a4b5400a82c9eb9c2df61907)
+        ;
+
+        
+    
+    
+            var marker_2d85ca38298348ad96c7da491049002a = L.marker(
+                [9.136611, -83.06505600000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_0745a4a905464eee98cfaa2b76dbf9e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_375b66702c024d34ac95d953201d69a8 = $(`<div id="html_375b66702c024d34ac95d953201d69a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Buenos Aires. Área de Conservación Amistad Pacífico, Potrero Grande, Estación Tres Colinas. <strong>Elevación:</strong> 2075.0 m  <strong>Fecha:</strong> 2015-06-10 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_0745a4a905464eee98cfaa2b76dbf9e4.setContent(html_375b66702c024d34ac95d953201d69a8);
+        
+
+        marker_2d85ca38298348ad96c7da491049002a.bindPopup(popup_0745a4a905464eee98cfaa2b76dbf9e4)
+        ;
+
+        
+    
+    
+            var marker_1abcc9bee7a0440f895da426966b6059 = L.marker(
+                [9.136611, -83.06505600000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_44f34805bb8b40b9a7dc07c10eaad92b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35a5fb77f49c43819087dffafc5e532b = $(`<div id="html_35a5fb77f49c43819087dffafc5e532b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Buenos Aires. Área de Conservación Amistad Pacífico, Potrero Grande, Estación Tres Colinas. <strong>Elevación:</strong> 2075.0 m  <strong>Fecha:</strong> 2015-06-10 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_44f34805bb8b40b9a7dc07c10eaad92b.setContent(html_35a5fb77f49c43819087dffafc5e532b);
+        
+
+        marker_1abcc9bee7a0440f895da426966b6059.bindPopup(popup_44f34805bb8b40b9a7dc07c10eaad92b)
+        ;
+
+        
+    
+    
+            var marker_f7319a55252946408906428e4a11116e = L.marker(
+                [9.136611, -83.06505600000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_4917d300783e4b8c8d55e361a6322207 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a20365355e204a36a500cb67a2d1ab01 = $(`<div id="html_a20365355e204a36a500cb67a2d1ab01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Buenos Aires. Área de Conservación Amistad Pacífico, Potrero Grande, Estación Tres Colinas. <strong>Elevación:</strong> 2075.0 m  <strong>Fecha:</strong> 2015-06-10 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Soo-Yong Kim ; Jose Antonio Azofeifa Zuñiga <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_4917d300783e4b8c8d55e361a6322207.setContent(html_a20365355e204a36a500cb67a2d1ab01);
+        
+
+        marker_f7319a55252946408906428e4a11116e.bindPopup(popup_4917d300783e4b8c8d55e361a6322207)
+        ;
+
+        
+    
+    
+            var marker_ac51bad524bf43dd9901d5d277f9b92f = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_498064302cac422b9cae64b6cc1cf1df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a53ae34d4f74929a453a6ae09b5923a = $(`<div id="html_6a53ae34d4f74929a453a6ae09b5923a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_498064302cac422b9cae64b6cc1cf1df.setContent(html_6a53ae34d4f74929a453a6ae09b5923a);
+        
+
+        marker_ac51bad524bf43dd9901d5d277f9b92f.bindPopup(popup_498064302cac422b9cae64b6cc1cf1df)
+        ;
+
+        
+    
+    
+            var marker_0ea7192c02df4786af076f33e570c525 = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_1183dea0a929402d9cd45c16fd98eb21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15028a4575d44f0eaa24b6a5fda38fad = $(`<div id="html_15028a4575d44f0eaa24b6a5fda38fad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_1183dea0a929402d9cd45c16fd98eb21.setContent(html_15028a4575d44f0eaa24b6a5fda38fad);
+        
+
+        marker_0ea7192c02df4786af076f33e570c525.bindPopup(popup_1183dea0a929402d9cd45c16fd98eb21)
+        ;
+
+        
+    
+    
+            var marker_6e0c8b28d0054c5fb4a8f42db37dd083 = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_4a6d1cde18bc494a833a5d338dfe47fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53171e25a18d4827844270fa3b167c17 = $(`<div id="html_53171e25a18d4827844270fa3b167c17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_4a6d1cde18bc494a833a5d338dfe47fc.setContent(html_53171e25a18d4827844270fa3b167c17);
+        
+
+        marker_6e0c8b28d0054c5fb4a8f42db37dd083.bindPopup(popup_4a6d1cde18bc494a833a5d338dfe47fc)
+        ;
+
+        
+    
+    
+            var marker_3466c8017d5944a2b827ff33ff38d748 = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_14dee6386afe4301855b562820c5ef11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ab383f0544a4b88a8838449168397ed = $(`<div id="html_4ab383f0544a4b88a8838449168397ed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_14dee6386afe4301855b562820c5ef11.setContent(html_4ab383f0544a4b88a8838449168397ed);
+        
+
+        marker_3466c8017d5944a2b827ff33ff38d748.bindPopup(popup_14dee6386afe4301855b562820c5ef11)
+        ;
+
+        
+    
+    
+            var marker_3e3925f03ecc49078b93fb6fea128981 = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_6dcbe436231242c79e150c59398f96ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e50e91190e294c8b870ad373741bd11c = $(`<div id="html_e50e91190e294c8b870ad373741bd11c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_6dcbe436231242c79e150c59398f96ce.setContent(html_e50e91190e294c8b870ad373741bd11c);
+        
+
+        marker_3e3925f03ecc49078b93fb6fea128981.bindPopup(popup_6dcbe436231242c79e150c59398f96ce)
+        ;
+
+        
+    
+    
+            var marker_2ee41788b194487d9dac67c414aaaf72 = L.marker(
+                [9.124111, -83.071833],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_95a6f23b7c6141c4a1adcc8ff3907f8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8205ea2e4fc840449133cbad482470f5 = $(`<div id="html_8205ea2e4fc840449133cbad482470f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad, Tres Colinas. Orillas del Río Guineal. <strong>Elevación:</strong> 1771.0 m  <strong>Fecha:</strong> 2010-03-04 <strong>Recolectores:</strong> Luis Diego Vargas; Guillermo Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_95a6f23b7c6141c4a1adcc8ff3907f8f.setContent(html_8205ea2e4fc840449133cbad482470f5);
+        
+
+        marker_2ee41788b194487d9dac67c414aaaf72.bindPopup(popup_95a6f23b7c6141c4a1adcc8ff3907f8f)
+        ;
+
+        
+    
+    
+            var marker_51640cc98b504125a9ab8760e50facb4 = L.marker(
+                [9.138805, -83.066572],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_a0f8ee16d5a84e1d849c653f023df6b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d69cd79df0442bfbf76692d769c3042 = $(`<div id="html_9d69cd79df0442bfbf76692d769c3042" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, Tres Colinas. Punto de muestreo # 19. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_a0f8ee16d5a84e1d849c653f023df6b5.setContent(html_9d69cd79df0442bfbf76692d769c3042);
+        
+
+        marker_51640cc98b504125a9ab8760e50facb4.bindPopup(popup_a0f8ee16d5a84e1d849c653f023df6b5)
+        ;
+
+        
+    
+    
+            var marker_3fb85f1726f042b1b5b9945f7ea9c446 = L.marker(
+                [9.138805, -83.066572],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_68ae96ed886d4da0a4716a81e89a037d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b11684306f6544c182bcfd6df164e314 = $(`<div id="html_b11684306f6544c182bcfd6df164e314" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, Tres Colinas. Punto de muestreo # 19. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_68ae96ed886d4da0a4716a81e89a037d.setContent(html_b11684306f6544c182bcfd6df164e314);
+        
+
+        marker_3fb85f1726f042b1b5b9945f7ea9c446.bindPopup(popup_68ae96ed886d4da0a4716a81e89a037d)
+        ;
+
+        
+    
+    
+            var marker_00af030ddea44b958cc1638ecb12bab1 = L.marker(
+                [9.138805, -83.066572],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_805015a789e8420b8b510f35b7660b18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbedd88f43dc47cc94ae961a959e89f5 = $(`<div id="html_fbedd88f43dc47cc94ae961a959e89f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, Tres Colinas. Punto de muestreo # 19. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_805015a789e8420b8b510f35b7660b18.setContent(html_fbedd88f43dc47cc94ae961a959e89f5);
+        
+
+        marker_00af030ddea44b958cc1638ecb12bab1.bindPopup(popup_805015a789e8420b8b510f35b7660b18)
+        ;
+
+        
+    
+    
+            var marker_3a3388b6e41b4044852954964e4ee1cd = L.marker(
+                [9.138805, -83.066572],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_f4f13f8b6d3144098c06a2f62e731732 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55efc8c8424044cd93a8e3f400566ae2 = $(`<div id="html_55efc8c8424044cd93a8e3f400566ae2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, Tres Colinas. Punto de muestreo # 19. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_f4f13f8b6d3144098c06a2f62e731732.setContent(html_55efc8c8424044cd93a8e3f400566ae2);
+        
+
+        marker_3a3388b6e41b4044852954964e4ee1cd.bindPopup(popup_f4f13f8b6d3144098c06a2f62e731732)
+        ;
+
+        
+    
+    
+            var marker_887e8282c8274d4c85ba0111114fb4eb = L.marker(
+                [9.141286000000001, -83.069808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_bb3e47b3547140849da0851a99df6f3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5d2d23ae1d3422f86a72ace6c4dffbe = $(`<div id="html_f5d2d23ae1d3422f86a72ace6c4dffbe" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande Tres Colinas. PILA. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bb3e47b3547140849da0851a99df6f3d.setContent(html_f5d2d23ae1d3422f86a72ace6c4dffbe);
+        
+
+        marker_887e8282c8274d4c85ba0111114fb4eb.bindPopup(popup_bb3e47b3547140849da0851a99df6f3d)
+        ;
+
+        
+    
+    
+            var marker_88ece5cfbfd04c5ca3e145358d99ea57 = L.marker(
+                [9.141286000000001, -83.069808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_9f8fd8c2e62d47bfbbb7c1df3011b4d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ac971fa171747599bbb8e754db39018 = $(`<div id="html_0ac971fa171747599bbb8e754db39018" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande Tres Colinas. PILA. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_9f8fd8c2e62d47bfbbb7c1df3011b4d3.setContent(html_0ac971fa171747599bbb8e754db39018);
+        
+
+        marker_88ece5cfbfd04c5ca3e145358d99ea57.bindPopup(popup_9f8fd8c2e62d47bfbbb7c1df3011b4d3)
+        ;
+
+        
+    
+    
+            var marker_22a4f43392d34208908168d0d54dddde = L.marker(
+                [9.141286000000001, -83.069808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_7aa1d5380ca040abbee008cc4ac1984b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf75463fa87a4adea7aa4d0bcc6c7b0c = $(`<div id="html_cf75463fa87a4adea7aa4d0bcc6c7b0c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande Tres Colinas. PILA. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7aa1d5380ca040abbee008cc4ac1984b.setContent(html_cf75463fa87a4adea7aa4d0bcc6c7b0c);
+        
+
+        marker_22a4f43392d34208908168d0d54dddde.bindPopup(popup_7aa1d5380ca040abbee008cc4ac1984b)
+        ;
+
+        
+    
+    
+            var marker_b7e213963f984b728c2477b8aa439026 = L.marker(
+                [9.141286000000001, -83.069808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_999247e41c544dec96b49063fca4651c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77026f6ff33d4fa7816e8cfa4f862c51 = $(`<div id="html_77026f6ff33d4fa7816e8cfa4f862c51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande Tres Colinas. PILA. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_999247e41c544dec96b49063fca4651c.setContent(html_77026f6ff33d4fa7816e8cfa4f862c51);
+        
+
+        marker_b7e213963f984b728c2477b8aa439026.bindPopup(popup_999247e41c544dec96b49063fca4651c)
+        ;
+
+        
+    
+    
+            var marker_452abd88dc37447fb2c758a886b4073e = L.marker(
+                [9.141286000000001, -83.069808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_5e9ce45cd5ad4ee48c012f12f3a1ac2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9928722e64344d1b4e9116065f1720e = $(`<div id="html_c9928722e64344d1b4e9116065f1720e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande Tres Colinas. PILA. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_5e9ce45cd5ad4ee48c012f12f3a1ac2f.setContent(html_c9928722e64344d1b4e9116065f1720e);
+        
+
+        marker_452abd88dc37447fb2c758a886b4073e.bindPopup(popup_5e9ce45cd5ad4ee48c012f12f3a1ac2f)
+        ;
+
+        
+    
+    
+            var marker_a1d7a9b3887942ee9f41c851a6183005 = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_18877c7f540d42e5b9bb276f7595b241 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b259d5f15d66414ca1217643a0d771ff = $(`<div id="html_b259d5f15d66414ca1217643a0d771ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_18877c7f540d42e5b9bb276f7595b241.setContent(html_b259d5f15d66414ca1217643a0d771ff);
+        
+
+        marker_a1d7a9b3887942ee9f41c851a6183005.bindPopup(popup_18877c7f540d42e5b9bb276f7595b241)
+        ;
+
+        
+    
+    
+            var marker_fa2dcb0bee2c4a0396874922bbb97c22 = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_e08afa89d5f8463894c4459439dae1c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a8703a94f2245a8a17a3ad203e4fd8b = $(`<div id="html_4a8703a94f2245a8a17a3ad203e4fd8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e08afa89d5f8463894c4459439dae1c4.setContent(html_4a8703a94f2245a8a17a3ad203e4fd8b);
+        
+
+        marker_fa2dcb0bee2c4a0396874922bbb97c22.bindPopup(popup_e08afa89d5f8463894c4459439dae1c4)
+        ;
+
+        
+    
+    
+            var marker_173417e7c9e5400aaad5106dd35ff792 = L.marker(
+                [9.117811, -83.089512],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_05364be6655446669d6d5048c3c5016a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc924ec44194b81a6de1948fde1a766 = $(`<div id="html_5fc924ec44194b81a6de1948fde1a766" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, La Lucha. PILA. Punto 4. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; William Gamboa ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_05364be6655446669d6d5048c3c5016a.setContent(html_5fc924ec44194b81a6de1948fde1a766);
+        
+
+        marker_173417e7c9e5400aaad5106dd35ff792.bindPopup(popup_05364be6655446669d6d5048c3c5016a)
+        ;
+
+        
+    
+    
+            var marker_ae6bf2418b9742efbeb9145a7590c48d = L.marker(
+                [9.117811, -83.089512],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_0ffb4ac11f9d42c28d46314406994695 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_195ac83fca9f42a8930a7f20b669e52e = $(`<div id="html_195ac83fca9f42a8930a7f20b669e52e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, La Lucha. PILA. Punto 4. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; William Gamboa ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0ffb4ac11f9d42c28d46314406994695.setContent(html_195ac83fca9f42a8930a7f20b669e52e);
+        
+
+        marker_ae6bf2418b9742efbeb9145a7590c48d.bindPopup(popup_0ffb4ac11f9d42c28d46314406994695)
+        ;
+
+        
+    
+    
+            var marker_307f6b4b2bf04d5780d91a059206ce13 = L.marker(
+                [9.117811, -83.089512],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_ec82d5007f924f16a1445cee3d6ee922 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b43a5f1876d4df38517a617e07b1561 = $(`<div id="html_0b43a5f1876d4df38517a617e07b1561" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Potrero Grande, La Lucha. PILA. Punto 4. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; William Gamboa ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ec82d5007f924f16a1445cee3d6ee922.setContent(html_0b43a5f1876d4df38517a617e07b1561);
+        
+
+        marker_307f6b4b2bf04d5780d91a059206ce13.bindPopup(popup_ec82d5007f924f16a1445cee3d6ee922)
+        ;
+
+        
+    
+    
+            var marker_bd5290d0209e4717befcaf4b59de097e = L.marker(
+                [9.107413000000001, -83.09626800000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_eba1d6a80b7c48a7ac9e15297ee6fa2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1bb0cf9b1f049fc8105003fe48ffba9 = $(`<div id="html_c1bb0cf9b1f049fc8105003fe48ffba9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Lucha, Potrero Grande. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2008-02-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_eba1d6a80b7c48a7ac9e15297ee6fa2b.setContent(html_c1bb0cf9b1f049fc8105003fe48ffba9);
+        
+
+        marker_bd5290d0209e4717befcaf4b59de097e.bindPopup(popup_eba1d6a80b7c48a7ac9e15297ee6fa2b)
+        ;
+
+        
+    
+    
+            var marker_b0499cb5e2e34f58823ec7c9ed529eb6 = L.marker(
+                [9.107413000000001, -83.09626800000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_b9e2d848533142b3973b51e56af265c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fe985285f034ebc9097ffe5872ba66e = $(`<div id="html_5fe985285f034ebc9097ffe5872ba66e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Lucha, Potrero Grande. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2008-02-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b9e2d848533142b3973b51e56af265c4.setContent(html_5fe985285f034ebc9097ffe5872ba66e);
+        
+
+        marker_b0499cb5e2e34f58823ec7c9ed529eb6.bindPopup(popup_b9e2d848533142b3973b51e56af265c4)
+        ;
+
+        
+    
+    
+            var marker_10fc4e0b295643bab439601ffafb5384 = L.marker(
+                [9.107413000000001, -83.09626800000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_b1d6f133cf0d43f5a69f974f8de4ad6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_977a9a543604478c8372c86233faa62b = $(`<div id="html_977a9a543604478c8372c86233faa62b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Lucha, Potrero Grande. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2008-02-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b1d6f133cf0d43f5a69f974f8de4ad6b.setContent(html_977a9a543604478c8372c86233faa62b);
+        
+
+        marker_10fc4e0b295643bab439601ffafb5384.bindPopup(popup_b1d6f133cf0d43f5a69f974f8de4ad6b)
+        ;
+
+        
+    
+    
+            var marker_bd9312eeeb7846c89a5035a76d8eaa53 = L.marker(
+                [9.107413000000001, -83.09626800000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_7b63188f95c346e69f0b988d5534d989 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0156c2574bc3462ab86dfa059081ab6d = $(`<div id="html_0156c2574bc3462ab86dfa059081ab6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Lucha, Potrero Grande. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 2008-02-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Audilio Rivera Cascante <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_7b63188f95c346e69f0b988d5534d989.setContent(html_0156c2574bc3462ab86dfa059081ab6d);
+        
+
+        marker_bd9312eeeb7846c89a5035a76d8eaa53.bindPopup(popup_7b63188f95c346e69f0b988d5534d989)
+        ;
+
+        
+    
+    
+            var marker_6f123fd27c744590a216bdb06a78bf34 = L.marker(
+                [9.118778, -83.085391],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_d8af0596ea07484aa450c7fe9b52715f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7171d6d5c3c642b2ba11d4f85c8aaf98 = $(`<div id="html_7171d6d5c3c642b2ba11d4f85c8aaf98" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Buenos Aires, Potrero Grande, La Lucha. PILA. Cabeceras del Río Guineal. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2008-02-24 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Daniel Solano ; Daniel Santamaría ; Nestor Veas Ayala ; Carlos Godínez ; William Gamboa ; Angel Solis ; Marcos Moraga ; Eduardo Boza <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d8af0596ea07484aa450c7fe9b52715f.setContent(html_7171d6d5c3c642b2ba11d4f85c8aaf98);
+        
+
+        marker_6f123fd27c744590a216bdb06a78bf34.bindPopup(popup_d8af0596ea07484aa450c7fe9b52715f)
+        ;
+
+        
+    
+    
+            var marker_5b3630b87a4a4151ac1e7ad7784d71f9 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_aeecec3c8ed943eab9df9150a7bf8c1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae079c8c06b74e4bbc459f96bad76d37 = $(`<div id="html_ae079c8c06b74e4bbc459f96bad76d37" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_aeecec3c8ed943eab9df9150a7bf8c1a.setContent(html_ae079c8c06b74e4bbc459f96bad76d37);
+        
+
+        marker_5b3630b87a4a4151ac1e7ad7784d71f9.bindPopup(popup_aeecec3c8ed943eab9df9150a7bf8c1a)
+        ;
+
+        
+    
+    
+            var marker_8e3b834dd7444555be6685ead06d0049 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_0bd7f1f39c1841eb8e72a4fb41c38095 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f83ecace3bb440078febbf08cc1eda05 = $(`<div id="html_f83ecace3bb440078febbf08cc1eda05" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0bd7f1f39c1841eb8e72a4fb41c38095.setContent(html_f83ecace3bb440078febbf08cc1eda05);
+        
+
+        marker_8e3b834dd7444555be6685ead06d0049.bindPopup(popup_0bd7f1f39c1841eb8e72a4fb41c38095)
+        ;
+
+        
+    
+    
+            var marker_57e8782f67c5427d8d91f03498709a4f = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_708280ad6f254f6fb1818fa9956bbaa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d93928e3b32498796298a92a6a52f3e = $(`<div id="html_9d93928e3b32498796298a92a6a52f3e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_708280ad6f254f6fb1818fa9956bbaa1.setContent(html_9d93928e3b32498796298a92a6a52f3e);
+        
+
+        marker_57e8782f67c5427d8d91f03498709a4f.bindPopup(popup_708280ad6f254f6fb1818fa9956bbaa1)
+        ;
+
+        
+    
+    
+            var marker_ab97980c70664735a1ed3f18883098bd = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_11dfca2b811e4be8837d5cd2aeb6b7e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3407e9248784fc6a2c8aa2b4c17e574 = $(`<div id="html_e3407e9248784fc6a2c8aa2b4c17e574" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_11dfca2b811e4be8837d5cd2aeb6b7e0.setContent(html_e3407e9248784fc6a2c8aa2b4c17e574);
+        
+
+        marker_ab97980c70664735a1ed3f18883098bd.bindPopup(popup_11dfca2b811e4be8837d5cd2aeb6b7e0)
+        ;
+
+        
+    
+    
+            var marker_4379af8748a84d83ae5cd6c7a41c3580 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_2f6152ef3e9a4fd89dd240e92a644df6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8114049a504d4fc8b3babe2cd1e303c2 = $(`<div id="html_8114049a504d4fc8b3babe2cd1e303c2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_2f6152ef3e9a4fd89dd240e92a644df6.setContent(html_8114049a504d4fc8b3babe2cd1e303c2);
+        
+
+        marker_4379af8748a84d83ae5cd6c7a41c3580.bindPopup(popup_2f6152ef3e9a4fd89dd240e92a644df6)
+        ;
+
+        
+    
+    
+            var marker_4294da61436e4e62babbe3fe844f3509 = L.marker(
+                [9.141276, -83.069379],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_294aaa82a077415bbe818aaf788ae9ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_155903e38f644c9c8c7b9813a7146bb9 = $(`<div id="html_155903e38f644c9c8c7b9813a7146bb9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km de Tres Colinas. Cercanias del sendero a Cerro Kámuk. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 2008-02-27 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Nelson A. Zamora Villalobos ; William Gamboa <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_294aaa82a077415bbe818aaf788ae9ff.setContent(html_155903e38f644c9c8c7b9813a7146bb9);
+        
+
+        marker_4294da61436e4e62babbe3fe844f3509.bindPopup(popup_294aaa82a077415bbe818aaf788ae9ff)
+        ;
+
+        
+    
+    
+            var marker_6d8891f1cbcf4aa881b8819a7ee2c82e = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_a429ebe2054048888672a8b3759f221d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6287b2d30384bfca182675b400adbba = $(`<div id="html_b6287b2d30384bfca182675b400adbba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Alexánder Francisco Rodríguez González ; William Gamboa ; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_a429ebe2054048888672a8b3759f221d.setContent(html_b6287b2d30384bfca182675b400adbba);
+        
+
+        marker_6d8891f1cbcf4aa881b8819a7ee2c82e.bindPopup(popup_a429ebe2054048888672a8b3759f221d)
+        ;
+
+        
+    
+    
+            var marker_507b8a0d065f4d379684de5d6382878b = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_aee251b6a13148ddbd3082862138e202 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eb344e46a464cca9707e31df83fe2cf = $(`<div id="html_6eb344e46a464cca9707e31df83fe2cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Alexánder Francisco Rodríguez González ; William Gamboa ; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_aee251b6a13148ddbd3082862138e202.setContent(html_6eb344e46a464cca9707e31df83fe2cf);
+        
+
+        marker_507b8a0d065f4d379684de5d6382878b.bindPopup(popup_aee251b6a13148ddbd3082862138e202)
+        ;
+
+        
+    
+    
+            var marker_cfe65edaaec641589676f71dca303bce = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_eef172c609aa4465bd09eb6d69041453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_434e67fc36c443868eb791be38ad8b12 = $(`<div id="html_434e67fc36c443868eb791be38ad8b12" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Alexánder Francisco Rodríguez González ; William Gamboa ; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_eef172c609aa4465bd09eb6d69041453.setContent(html_434e67fc36c443868eb791be38ad8b12);
+        
+
+        marker_cfe65edaaec641589676f71dca303bce.bindPopup(popup_eef172c609aa4465bd09eb6d69041453)
+        ;
+
+        
+    
+    
+            var marker_3711081ba3d94792b2b21adc4f407265 = L.marker(
+                [9.119889, -83.088808],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_0d6b2e57c53c42b5b03c8a56af49927d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a03808c9fa94c12a3b923f49556f101 = $(`<div id="html_1a03808c9fa94c12a3b923f49556f101" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila que va desde el albergue Rancho Amuo a Cerro Seno. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 2008-02-25 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Alexánder Francisco Rodríguez González ; William Gamboa ; Hugo Solano Arias <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_0d6b2e57c53c42b5b03c8a56af49927d.setContent(html_1a03808c9fa94c12a3b923f49556f101);
+        
+
+        marker_3711081ba3d94792b2b21adc4f407265.bindPopup(popup_0d6b2e57c53c42b5b03c8a56af49927d)
+        ;
+
+        
+    
+    
+            var marker_c398e08b1abb45df99aa3054481da972 = L.marker(
+                [9.119169, -83.09145],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_2b81483e3d114bfbafda6fddb0820b86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebbe56d5230f4a9092555efea36e15d2 = $(`<div id="html_ebbe56d5230f4a9092555efea36e15d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km Camino a Cerro Amuo desde el albergue. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; William Gamboa ; Audilio Rivera Cascante ; Alexánder Francisco Rodríguez González ; Angel Solis ; Marcos Moraga ; Carlos Viquez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_2b81483e3d114bfbafda6fddb0820b86.setContent(html_ebbe56d5230f4a9092555efea36e15d2);
+        
+
+        marker_c398e08b1abb45df99aa3054481da972.bindPopup(popup_2b81483e3d114bfbafda6fddb0820b86)
+        ;
+
+        
+    
+    
+            var marker_e7f99a3d419c41418747dbe2ae76e5aa = L.marker(
+                [9.119169, -83.09145],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_019abdd599b244cfa457e161f9234668 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1686a529134421e95d9ff73402f2e4a = $(`<div id="html_b1686a529134421e95d9ff73402f2e4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km Camino a Cerro Amuo desde el albergue. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; William Gamboa ; Audilio Rivera Cascante ; Alexánder Francisco Rodríguez González ; Angel Solis ; Marcos Moraga ; Carlos Viquez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_019abdd599b244cfa457e161f9234668.setContent(html_b1686a529134421e95d9ff73402f2e4a);
+        
+
+        marker_e7f99a3d419c41418747dbe2ae76e5aa.bindPopup(popup_019abdd599b244cfa457e161f9234668)
+        ;
+
+        
+    
+    
+            var marker_29c499eb337042ec8903068c40199424 = L.marker(
+                [9.119169, -83.09145],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_22fe519765fd4a33857e4e671d08c1da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8b019725a274cedb2e25a4b29d56289 = $(`<div id="html_c8b019725a274cedb2e25a4b29d56289" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3-4 km Camino a Cerro Amuo desde el albergue. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2008-02-22 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; William Gamboa ; Audilio Rivera Cascante ; Alexánder Francisco Rodríguez González ; Angel Solis ; Marcos Moraga ; Carlos Viquez <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_22fe519765fd4a33857e4e671d08c1da.setContent(html_c8b019725a274cedb2e25a4b29d56289);
+        
+
+        marker_29c499eb337042ec8903068c40199424.bindPopup(popup_22fe519765fd4a33857e4e671d08c1da)
+        ;
+
+        
+    
+    
+            var marker_e2f11ce168244d70aaa8542bf21e3c9b = L.marker(
+                [9.116667, -83.06666700000001],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_3083572cecc549cfa338c713c7614c11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6a1461ffe3c411f8a73a389fda0b319 = $(`<div id="html_c6a1461ffe3c411f8a73a389fda0b319" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Foothills of the Cordillera de Talamanca around Tres Colinas. <strong>Elevación:</strong> 1825.0 m  <strong>Fecha:</strong> 1984-03-20 <strong>Recolectores:</strong> Gerrit Davidse <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3083572cecc549cfa338c713c7614c11.setContent(html_c6a1461ffe3c411f8a73a389fda0b319);
+        
+
+        marker_e2f11ce168244d70aaa8542bf21e3c9b.bindPopup(popup_3083572cecc549cfa338c713c7614c11)
+        ;
+
+        
+    
+    
+            var marker_ff6383186ab94c24ad8fd3acdcda081c = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_3399b52ca9f144318e4a457a6d64d2ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_912980a02e0143e19d087323592a321e = $(`<div id="html_912980a02e0143e19d087323592a321e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_3399b52ca9f144318e4a457a6d64d2ee.setContent(html_912980a02e0143e19d087323592a321e);
+        
+
+        marker_ff6383186ab94c24ad8fd3acdcda081c.bindPopup(popup_3399b52ca9f144318e4a457a6d64d2ee)
+        ;
+
+        
+    
+    
+            var marker_4d59e85124324197b73b71b3ee167d5d = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_d16c616f255e49df9d425ef65709130a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6d4db4d56464327af31800d1489697a = $(`<div id="html_f6d4db4d56464327af31800d1489697a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d16c616f255e49df9d425ef65709130a.setContent(html_f6d4db4d56464327af31800d1489697a);
+        
+
+        marker_4d59e85124324197b73b71b3ee167d5d.bindPopup(popup_d16c616f255e49df9d425ef65709130a)
+        ;
+
+        
+    
+    
+            var marker_33036030044a40c69c0ae8fddad373aa = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_01f41ade6ec44cbcb0fa9ac33a414127 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc92c477e65a486eb866335dc1bfe0b8 = $(`<div id="html_cc92c477e65a486eb866335dc1bfe0b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_01f41ade6ec44cbcb0fa9ac33a414127.setContent(html_cc92c477e65a486eb866335dc1bfe0b8);
+        
+
+        marker_33036030044a40c69c0ae8fddad373aa.bindPopup(popup_01f41ade6ec44cbcb0fa9ac33a414127)
+        ;
+
+        
+    
+    
+            var marker_fc55438dd5ea4bb1b9cda47ea2e4f4d0 = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_5a595f3a528f49e28606cffc80517cd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22ce3fff70704598b1f96bb7ef4a50ca = $(`<div id="html_22ce3fff70704598b1f96bb7ef4a50ca" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-17 <strong>Recolectores:</strong> Billen Gamboa R.; Annia Picado <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_5a595f3a528f49e28606cffc80517cd9.setContent(html_22ce3fff70704598b1f96bb7ef4a50ca);
+        
+
+        marker_fc55438dd5ea4bb1b9cda47ea2e4f4d0.bindPopup(popup_5a595f3a528f49e28606cffc80517cd9)
+        ;
+
+        
+    
+    
+            var marker_64b49a54535c4d059f11c7df4ce1d6f2 = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_fe9bc205ee71484598e236f955cdd109 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d402f2dfd38b48dc8ab6e81e5e899d29 = $(`<div id="html_d402f2dfd38b48dc8ab6e81e5e899d29" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_fe9bc205ee71484598e236f955cdd109.setContent(html_d402f2dfd38b48dc8ab6e81e5e899d29);
+        
+
+        marker_64b49a54535c4d059f11c7df4ce1d6f2.bindPopup(popup_fe9bc205ee71484598e236f955cdd109)
+        ;
+
+        
+    
+    
+            var marker_3fa0ce6747384bc19f4e812e713b5f41 = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_b151bd14ca3f44c8a222cf09dd23d73c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d07755473a87466eac9803fa535ad35d = $(`<div id="html_d07755473a87466eac9803fa535ad35d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_b151bd14ca3f44c8a222cf09dd23d73c.setContent(html_d07755473a87466eac9803fa535ad35d);
+        
+
+        marker_3fa0ce6747384bc19f4e812e713b5f41.bindPopup(popup_b151bd14ca3f44c8a222cf09dd23d73c)
+        ;
+
+        
+    
+    
+            var marker_153e0a88f303485ea7b3ea33611e36e2 = L.marker(
+                [9.124422000000001, -83.074861],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_bcafd0854e1d47dc8404513cf4d3b9cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_976051be194c47d9b09e5d7d687d15a3 = $(`<div id="html_976051be194c47d9b09e5d7d687d15a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puesto Tres Colinas, Orillas del Rio Guineal. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1996-09-10 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bcafd0854e1d47dc8404513cf4d3b9cf.setContent(html_976051be194c47d9b09e5d7d687d15a3);
+        
+
+        marker_153e0a88f303485ea7b3ea33611e36e2.bindPopup(popup_bcafd0854e1d47dc8404513cf4d3b9cf)
+        ;
+
+        
+    
+    
+            var marker_9036929ab5b74e36b3b49963f658f459 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_b7f677b26af4431ba4d4a30bbe16d753);
+        
+    
+        var popup_5e349b68d5aa41f395c67c98ec26daad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ede7b3548db4dcd9e0c3e9941fd2417 = $(`<div id="html_3ede7b3548db4dcd9e0c3e9941fd2417" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-03-20 <strong>Recolectores:</strong> G. Davidse <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_5e349b68d5aa41f395c67c98ec26daad.setContent(html_3ede7b3548db4dcd9e0c3e9941fd2417);
+        
+
+        marker_9036929ab5b74e36b3b49963f658f459.bindPopup(popup_5e349b68d5aa41f395c67c98ec26daad)
+        ;
+
+        
+    
+    
+            var layer_control_a469d438896f472c9a0ad4e7678fee0c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cac31669c22e4c139af7e3ce4ab55802,
+                    "ESRI World Imagery" : tile_layer_5d1f0813f2ac4a2ebf5345cf3732cc87,
+                },
+                overlays :  {
+                    "macro_element_b7f677b26af4431ba4d4a30bbe16d753" : marker_cluster_b7f677b26af4431ba4d4a30bbe16d753,
+                },
+            };
+            L.control.layers(
+                layer_control_a469d438896f472c9a0ad4e7678fee0c.base_layers,
+                layer_control_a469d438896f472c9a0ad4e7678fee0c.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_92ba182120d14b368830a2967ddc72a1);
+            tile_layer_5d1f0813f2ac4a2ebf5345cf3732cc87.remove();
+        
+</script>

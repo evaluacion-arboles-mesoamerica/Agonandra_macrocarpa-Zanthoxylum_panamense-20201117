@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6620bbb01c624144a57cfa67aba7fcc7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6620bbb01c624144a57cfa67aba7fcc7" ></div>
+        
+</body>
+<script>    
+    
+            var map_6620bbb01c624144a57cfa67aba7fcc7 = L.map(
+                "map_6620bbb01c624144a57cfa67aba7fcc7",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6620bbb01c624144a57cfa67aba7fcc7);
+
+            
+
+        
+    
+            var tile_layer_43a7e59014584cd78f530d170191689d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6620bbb01c624144a57cfa67aba7fcc7);
+        
+    
+            var tile_layer_4db64ace91a34115802f4d24f585ceba = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6620bbb01c624144a57cfa67aba7fcc7);
+        
+    
+            var marker_cluster_c6030176405f45d1810eea46f60b549a = L.markerClusterGroup(
+                {}
+            );
+            map_6620bbb01c624144a57cfa67aba7fcc7.addLayer(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+            var marker_134e6cd4ac9f4102b5f3f97802ef9cb9 = L.marker(
+                [10.27, -84.79],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_a64d5cbfaacc4a2fb637a8d6dcd5238f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d1891662dd54d648c3cd11c076d90ba = $(`<div id="html_9d1891662dd54d648c3cd11c076d90ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. San Luis; Finca Buen Amigo. Monteverde. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1993-10-05 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_a64d5cbfaacc4a2fb637a8d6dcd5238f.setContent(html_9d1891662dd54d648c3cd11c076d90ba);
+        
+
+        marker_134e6cd4ac9f4102b5f3f97802ef9cb9.bindPopup(popup_a64d5cbfaacc4a2fb637a8d6dcd5238f)
+        ;
+
+        
+    
+    
+            var marker_843f10f91e644bbe83331f23a52b20ca = L.marker(
+                [10.48, -84.71],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_9c1a967cdc0241bda99b6930ac0deb41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c3850d348a491e91d1578371d730a3 = $(`<div id="html_09c3850d348a491e91d1578371d730a3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 13 km west of Fortuna on road to the Arenal Dam, near crossing of Río Tabacón, primary forest and roadside <strong>Elevación:</strong> 525.0 m  <strong>Fecha:</strong> 1983-04-29 <strong>Recolectores:</strong> Ronald L. Liesner|Emmet J. Judziewicz|Blanca Pérez G. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_9c1a967cdc0241bda99b6930ac0deb41.setContent(html_09c3850d348a491e91d1578371d730a3);
+        
+
+        marker_843f10f91e644bbe83331f23a52b20ca.bindPopup(popup_9c1a967cdc0241bda99b6930ac0deb41)
+        ;
+
+        
+    
+    
+            var marker_7af12273b2934efe96f8ec4692d8bdf9 = L.marker(
+                [9.8, -83.7],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_c5a860363ef34be9984272a25537d69f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9164e8b8190141a09e2915e5d3da774c = $(`<div id="html_9164e8b8190141a09e2915e5d3da774c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 12 km south of Turrialba by air, 4 km southeast of Pejibaye along Río Gato. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-04-16 <strong>Recolectores:</strong> Ronald L. Liesner <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_c5a860363ef34be9984272a25537d69f.setContent(html_9164e8b8190141a09e2915e5d3da774c);
+        
+
+        marker_7af12273b2934efe96f8ec4692d8bdf9.bindPopup(popup_c5a860363ef34be9984272a25537d69f)
+        ;
+
+        
+    
+    
+            var marker_4f050611b32f4f9ab513b151716e7982 = L.marker(
+                [10.299722000000001, -84.750833],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_2d42f0c95a644324a0f2fcd7ffd0ffdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a1b21535432428b95157df2b49f312d = $(`<div id="html_1a1b21535432428b95157df2b49f312d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Reserve, Atlantic slope, Río Peñas Blancas valley <strong>Elevación:</strong> 960.0 m  <strong>Fecha:</strong> 1984-10-27 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_2d42f0c95a644324a0f2fcd7ffd0ffdc.setContent(html_1a1b21535432428b95157df2b49f312d);
+        
+
+        marker_4f050611b32f4f9ab513b151716e7982.bindPopup(popup_2d42f0c95a644324a0f2fcd7ffd0ffdc)
+        ;
+
+        
+    
+    
+            var marker_cf401b397ace471c84bd0f94308c98d6 = L.marker(
+                [10.38, -84.39],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_60d17a03dada412090beb293a2f7f30b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d0b290f64a04718969d6785d65c410e = $(`<div id="html_4d0b290f64a04718969d6785d65c410e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Highway 15 between Naranjo and Aguas Zarcas, 8 km NE of Quesada <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1979-02-03 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_60d17a03dada412090beb293a2f7f30b.setContent(html_4d0b290f64a04718969d6785d65c410e);
+        
+
+        marker_cf401b397ace471c84bd0f94308c98d6.bindPopup(popup_60d17a03dada412090beb293a2f7f30b)
+        ;
+
+        
+    
+    
+            var marker_45b9b5bb34e24cedb336bf7f4838bbf1 = L.marker(
+                [10.079445, -84.44166700000001],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_d0ea85e9a49f492aa48d93136552a029 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_402075abe6cc411599b11fdd3bda706d = $(`<div id="html_402075abe6cc411599b11fdd3bda706d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Isidro de San Ramón. <strong>Elevación:</strong> 1259.0 m  <strong>Fecha:</strong> 1986-10-22 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_d0ea85e9a49f492aa48d93136552a029.setContent(html_402075abe6cc411599b11fdd3bda706d);
+        
+
+        marker_45b9b5bb34e24cedb336bf7f4838bbf1.bindPopup(popup_d0ea85e9a49f492aa48d93136552a029)
+        ;
+
+        
+    
+    
+            var marker_750a2be504cc49a6a608cadd778044cd = L.marker(
+                [8.858333, -82.59],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_9ce4af5e37834ea68099363ea7e2f8bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03edb8fe37fa4d40ad2fad4262322d81 = $(`<div id="html_03edb8fe37fa4d40ad2fad4262322d81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Nueva Suiza, open field along road to Cerro Punta. [Coordinates on orginal label: 82º40'W, 8º52'N, and elev. ca 1300 m.] <strong>Elevación:</strong> 1840.0 m  <strong>Fecha:</strong> 1982-08-21 <strong>Recolectores:</strong> Clem W. Hamilton|Henry Stockwell|Annette Aiello <strong>Identificadores:</strong> Ricardo Callejas P. (HUA)</div>`)[0];
+            popup_9ce4af5e37834ea68099363ea7e2f8bd.setContent(html_03edb8fe37fa4d40ad2fad4262322d81);
+        
+
+        marker_750a2be504cc49a6a608cadd778044cd.bindPopup(popup_9ce4af5e37834ea68099363ea7e2f8bd)
+        ;
+
+        
+    
+    
+            var marker_b9c85bc770414e1f9709aa5e641d434c = L.marker(
+                [10.391667, -83.80833299999999],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_33499745a1c1487b8c30b44853d831b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_996512c7cb7d46ca9a0698b9b2d89846 = $(`<div id="html_996512c7cb7d46ca9a0698b9b2d89846" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road between Puerto Viejo and Guapiles, along Río Puerto Viejo, 7 km N of Buenos Aires <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1987-10-02 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_33499745a1c1487b8c30b44853d831b0.setContent(html_996512c7cb7d46ca9a0698b9b2d89846);
+        
+
+        marker_b9c85bc770414e1f9709aa5e641d434c.bindPopup(popup_33499745a1c1487b8c30b44853d831b0)
+        ;
+
+        
+    
+    
+            var marker_8c39052fb95145c0b1d31234dfdaa610 = L.marker(
+                [10.26, -84.18],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_68c935ffda1e4368827009609d5cad26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfd8660fbcd04ee7941346dd5bfacf92 = $(`<div id="html_cfd8660fbcd04ee7941346dd5bfacf92" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Sarapiquí at bridge on road to Colonia Virgen del Socorro, 0.9 mi SE of San José-Puerto Viejo Highway. <strong>Elevación:</strong> 830.0 m  <strong>Fecha:</strong> 1987-10-01 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_68c935ffda1e4368827009609d5cad26.setContent(html_cfd8660fbcd04ee7941346dd5bfacf92);
+        
+
+        marker_8c39052fb95145c0b1d31234dfdaa610.bindPopup(popup_68c935ffda1e4368827009609d5cad26)
+        ;
+
+        
+    
+    
+            var marker_682a55a138cf40c3aff6015626609001 = L.marker(
+                [10.21, -84.26],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_42a58a2d0d57425fbd0fad61b40faca6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75c1e9ed22534b80994521ab9fb66bd6 = $(`<div id="html_75c1e9ed22534b80994521ab9fb66bd6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Along road from San Ramón to Bajo Rodríguez, at Río Cataratas [coordinates on original label 10.13N 84.16W] <strong>Elevación:</strong> 650.0 m  <strong>Fecha:</strong> 1987-09-27 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_42a58a2d0d57425fbd0fad61b40faca6.setContent(html_75c1e9ed22534b80994521ab9fb66bd6);
+        
+
+        marker_682a55a138cf40c3aff6015626609001.bindPopup(popup_42a58a2d0d57425fbd0fad61b40faca6)
+        ;
+
+        
+    
+    
+            var marker_d1babce1a0374081a52e7833586b441e = L.marker(
+                [10.208333, -84.533333],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_5249e114c9aa4fa1a5935e3c3c821a42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91f6983a5ad84264a7e35ab27cf44242 = $(`<div id="html_91f6983a5ad84264a7e35ab27cf44242" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Along road between San Ramón and Bajo Rodríguez, along old road through forest succession, near Río Cataratitas <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1987-09-27 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_5249e114c9aa4fa1a5935e3c3c821a42.setContent(html_91f6983a5ad84264a7e35ab27cf44242);
+        
+
+        marker_d1babce1a0374081a52e7833586b441e.bindPopup(popup_5249e114c9aa4fa1a5935e3c3c821a42)
+        ;
+
+        
+    
+    
+            var marker_4b5295f724634ea8987a01024b8b80b9 = L.marker(
+                [10.15, -84.49],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_3d69fb7ed8ea4ebd83959dff84a32e88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bacea7b85bb34a948a3577c5ed551b7f = $(`<div id="html_bacea7b85bb34a948a3577c5ed551b7f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 10 km N of San Ramón on Angeles Norte road, small wood with abundant mosses and other epiphytes <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1984-01-31 <strong>Recolectores:</strong> Ronaq Khan|M. C. Tebbs|A. R. Vickery <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_3d69fb7ed8ea4ebd83959dff84a32e88.setContent(html_bacea7b85bb34a948a3577c5ed551b7f);
+        
+
+        marker_4b5295f724634ea8987a01024b8b80b9.bindPopup(popup_3d69fb7ed8ea4ebd83959dff84a32e88)
+        ;
+
+        
+    
+    
+            var marker_ac4d5146a8424af19d446a30d005a2c1 = L.marker(
+                [10.16, -84.49],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_83acea9463364d499ebd57e4619aef2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdd6bc5c4d62474799a1e174bb41f0eb = $(`<div id="html_cdd6bc5c4d62474799a1e174bb41f0eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North of San Ramón on gravel road to Angeles Norte and Balsa, ca. 1.3 mi N of Angeles Norte. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1979-02-02 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_83acea9463364d499ebd57e4619aef2a.setContent(html_cdd6bc5c4d62474799a1e174bb41f0eb);
+        
+
+        marker_ac4d5146a8424af19d446a30d005a2c1.bindPopup(popup_83acea9463364d499ebd57e4619aef2a)
+        ;
+
+        
+    
+    
+            var marker_198b37ab05ef4cd38296d444356e04ee = L.marker(
+                [10.303056, -84.209722],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_d86bf34cbc8249529eb2b106cda9e816 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af0cee85a7744304a386d29200fac341 = $(`<div id="html_af0cee85a7744304a386d29200fac341" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Río Hule where it crosses the very rough road leading down from the overlook of Laguna Hule <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1995-06-06 <strong>Recolectores:</strong> Robert L. Wilbur <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_d86bf34cbc8249529eb2b106cda9e816.setContent(html_af0cee85a7744304a386d29200fac341);
+        
+
+        marker_198b37ab05ef4cd38296d444356e04ee.bindPopup(popup_d86bf34cbc8249529eb2b106cda9e816)
+        ;
+
+        
+    
+    
+            var marker_cfdea8582684427092915cf8e55c3ab1 = L.marker(
+                [10.43, -84.0],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_3ff9631268bd45928d9abcbc62509748 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1dc039cbed048bfa451755d43280181 = $(`<div id="html_d1dc039cbed048bfa451755d43280181" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-12 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_3ff9631268bd45928d9abcbc62509748.setContent(html_d1dc039cbed048bfa451755d43280181);
+        
+
+        marker_cfdea8582684427092915cf8e55c3ab1.bindPopup(popup_3ff9631268bd45928d9abcbc62509748)
+        ;
+
+        
+    
+    
+            var marker_bf05b2ad681d472bb2d77ba62ca5318b = L.marker(
+                [10.44, -84.01],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_9ddb39916f8c4a4d8af4dbcb92656e9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08e2e03aa2664b8f8b496fb68eb338eb = $(`<div id="html_08e2e03aa2664b8f8b496fb68eb338eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca La Selva, the OTS field station on the Río Puerto Viejo just E of its junction with the Río Sarapiquí. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1982-05-26 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_9ddb39916f8c4a4d8af4dbcb92656e9a.setContent(html_08e2e03aa2664b8f8b496fb68eb338eb);
+        
+
+        marker_bf05b2ad681d472bb2d77ba62ca5318b.bindPopup(popup_9ddb39916f8c4a4d8af4dbcb92656e9a)
+        ;
+
+        
+    
+    
+            var marker_4cbccd0fd08f4161b4c588f4bb1360ba = L.marker(
+                [10.3, -84.166667],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_124ad9dfc9344ff19c4b007e2552967c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4102501e1e2a40aab62373862db481e8 = $(`<div id="html_4102501e1e2a40aab62373862db481e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Evergreen premontane forest formations along the upper Rio Sarapiqui, near Cariblanco and along the road to Colonia Virgen del Socorro. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1982-02-19 <strong>Recolectores:</strong> William C. Burger|John Churchill|Nadine Churchill <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_124ad9dfc9344ff19c4b007e2552967c.setContent(html_4102501e1e2a40aab62373862db481e8);
+        
+
+        marker_4cbccd0fd08f4161b4c588f4bb1360ba.bindPopup(popup_124ad9dfc9344ff19c4b007e2552967c)
+        ;
+
+        
+    
+    
+            var marker_50b4e663f50d433093017b231e492928 = L.marker(
+                [10.46, -84.68],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_575bc421ca0043c18564c05617d8c49b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ba0076263984f87ac5fad450e12df88 = $(`<div id="html_5ba0076263984f87ac5fad450e12df88" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 3.5 km west of Fortuna, 2.5 km northwest of new Volcán Arenal along sloping base, stream edge vegetation and adjacent forest <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1972-08-05 <strong>Recolectores:</strong> Raymond John Taylor, Jr.|Connie E. S. Taylor <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_575bc421ca0043c18564c05617d8c49b.setContent(html_5ba0076263984f87ac5fad450e12df88);
+        
+
+        marker_50b4e663f50d433093017b231e492928.bindPopup(popup_575bc421ca0043c18564c05617d8c49b)
+        ;
+
+        
+    
+    
+            var marker_01c7df43e488422f86e7f5ec9a3cd1dd = L.marker(
+                [10.05, -83.96],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_0e5377fe19e34095ac7b4e6dc3da545c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22843e4666964b239a1e0808e5b6eeb7 = $(`<div id="html_22843e4666964b239a1e0808e5b6eeb7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along the Río Clara Valley (Bajo La Houndura) below La Palma northeast of San Jeronimo. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1975-10-23 <strong>Recolectores:</strong> William C. Burger|Richard A. Baker|John F. Utley <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_0e5377fe19e34095ac7b4e6dc3da545c.setContent(html_22843e4666964b239a1e0808e5b6eeb7);
+        
+
+        marker_01c7df43e488422f86e7f5ec9a3cd1dd.bindPopup(popup_0e5377fe19e34095ac7b4e6dc3da545c)
+        ;
+
+        
+    
+    
+            var marker_0671be4165f942de862c1f9f72cd8ec2 = L.marker(
+                [10.45, -84.0],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_4f189837e0d842cea0424c4f2ea66891 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fde381dbd124694a2aa550f3906bf90 = $(`<div id="html_1fde381dbd124694a2aa550f3906bf90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En bosque sobre terraza plana y elevada que bordea un rio afluente del Sarapiquí en Puerto Viejo. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1966-01-21 <strong>Recolectores:</strong> Alfonso Jiménez M. <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4f189837e0d842cea0424c4f2ea66891.setContent(html_1fde381dbd124694a2aa550f3906bf90);
+        
+
+        marker_0671be4165f942de862c1f9f72cd8ec2.bindPopup(popup_4f189837e0d842cea0424c4f2ea66891)
+        ;
+
+        
+    
+    
+            var marker_08f85c6c08fa4341b9cacf0bc7ebcb57 = L.marker(
+                [10.26, -84.45],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_ff5bd5687d7b478aa6b10323c1540df8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a68aaac2a8c40ea82b421293a9c7a02 = $(`<div id="html_9a68aaac2a8c40ea82b421293a9c7a02" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Los Ensayos, ca. 11 mi NW of Zarcero. Roadside and fencerows <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1977-08-15 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_ff5bd5687d7b478aa6b10323c1540df8.setContent(html_9a68aaac2a8c40ea82b421293a9c7a02);
+        
+
+        marker_08f85c6c08fa4341b9cacf0bc7ebcb57.bindPopup(popup_ff5bd5687d7b478aa6b10323c1540df8)
+        ;
+
+        
+    
+    
+            var marker_3082dceb88c44c14b5f88457944f5192 = L.marker(
+                [9.89, -83.65],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_444d26c95f5d47a79620b7f90ebdd4b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f42ddb1d7a764d8eb3f3d283cc663a2b = $(`<div id="html_f42ddb1d7a764d8eb3f3d283cc663a2b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Instituto Interamericano de Ciencia Agrícolas, Turrialba <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1958-02-24 <strong>Recolectores:</strong> José J. Córdoba <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_444d26c95f5d47a79620b7f90ebdd4b1.setContent(html_f42ddb1d7a764d8eb3f3d283cc663a2b);
+        
+
+        marker_3082dceb88c44c14b5f88457944f5192.bindPopup(popup_444d26c95f5d47a79620b7f90ebdd4b1)
+        ;
+
+        
+    
+    
+            var marker_6a3a7f0f3e45471fb911f0733351cdb7 = L.marker(
+                [9.75, -83.75],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_367a2150fb7547f3b39670f5ff52463d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9944a619f7d41749edaa9360c5faf3f = $(`<div id="html_d9944a619f7d41749edaa9360c5faf3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Selva on hillside above the Río Taus on north facing slope <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1972-08-02 <strong>Recolectores:</strong> Raymond John Taylor, Jr.|Connie E. S. Taylor <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_367a2150fb7547f3b39670f5ff52463d.setContent(html_d9944a619f7d41749edaa9360c5faf3f);
+        
+
+        marker_6a3a7f0f3e45471fb911f0733351cdb7.bindPopup(popup_367a2150fb7547f3b39670f5ff52463d)
+        ;
+
+        
+    
+    
+            var marker_a31b066b35434dacbbc387c0fcb5732f = L.marker(
+                [10.26, -84.45],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_73d43db584ef43e09559b7a3ffe419d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ff83d913670458eb62ed386d4d8c290 = $(`<div id="html_3ff83d913670458eb62ed386d4d8c290" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Los Ensayos, ca. 11 mi NW of Zarcero. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1977-08-15 <strong>Recolectores:</strong> Thomas B. Croat <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_73d43db584ef43e09559b7a3ffe419d3.setContent(html_3ff83d913670458eb62ed386d4d8c290);
+        
+
+        marker_a31b066b35434dacbbc387c0fcb5732f.bindPopup(popup_73d43db584ef43e09559b7a3ffe419d3)
+        ;
+
+        
+    
+    
+            var marker_58b5c6f1406e4998b709cf122d61a663 = L.marker(
+                [9.78, -83.34],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_88999e4d95c248979dd20c3578f42858 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d783c4957f645338631ecf2d8e57550 = $(`<div id="html_3d783c4957f645338631ecf2d8e57550" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Headwaters of Quebrada Kakebeta below divide between Rio Xikiari and Rio Boyei. <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1995-08-10 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_88999e4d95c248979dd20c3578f42858.setContent(html_3d783c4957f645338631ecf2d8e57550);
+        
+
+        marker_58b5c6f1406e4998b709cf122d61a663.bindPopup(popup_88999e4d95c248979dd20c3578f42858)
+        ;
+
+        
+    
+    
+            var marker_29e77415cc5e4cb08d1e792d76409d9a = L.marker(
+                [9.83, -83.57],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_8547e65412aa42d0961f3f170830e4d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f4439ef990b45ffacfe76aedfa62602 = $(`<div id="html_2f4439ef990b45ffacfe76aedfa62602" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Reventazón, Tuis, en las cercanias del caserio, Santa Gertrudis, a orilla de la calle.  [Original label coordinates 9°50'0"N   83°34'30"W]. <strong>Elevación:</strong> 770.0 m  <strong>Fecha:</strong> 1996-11-23 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> Ricardo Callejas (HUA)</div>`)[0];
+            popup_8547e65412aa42d0961f3f170830e4d4.setContent(html_2f4439ef990b45ffacfe76aedfa62602);
+        
+
+        marker_29e77415cc5e4cb08d1e792d76409d9a.bindPopup(popup_8547e65412aa42d0961f3f170830e4d4)
+        ;
+
+        
+    
+    
+            var marker_95e137119c3c496c867ab3ee06148db3 = L.marker(
+                [10.13, -84.48],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_3c7089fa05bf4b4d863d168e5175c8fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_365b0d8aafe24dd3acddb82924a6a52b = $(`<div id="html_365b0d8aafe24dd3acddb82924a6a52b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road from San Ramón northward through Balsa, ca. 5.7 km north of bridge over Quebrada Volio, southwest of road. <strong>Elevación:</strong> 1125.0 m  <strong>Fecha:</strong> 1979-09-10 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_3c7089fa05bf4b4d863d168e5175c8fd.setContent(html_365b0d8aafe24dd3acddb82924a6a52b);
+        
+
+        marker_95e137119c3c496c867ab3ee06148db3.bindPopup(popup_3c7089fa05bf4b4d863d168e5175c8fd)
+        ;
+
+        
+    
+    
+            var marker_1877551f8c0e46528ed7eb65d9e2e6f3 = L.marker(
+                [10.231945, -84.5175],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_9e47580ba61349b087cd752c519c8680 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_334db25c9eaa4fc58a3726d739314ad7 = $(`<div id="html_334db25c9eaa4fc58a3726d739314ad7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road from San Ramón northward through Balsa, ca. 16.7 km north of bridge over Quebrada Volio and ca. 7.5 km north of bridge over (apparently) Río Balsa, at bridge over stream (?Río Cataratas), cloud forest on steep slope between road and stream. [original label coordinates: 10º10-15'N, 84º30-35'W] <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1979-08-29 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_9e47580ba61349b087cd752c519c8680.setContent(html_334db25c9eaa4fc58a3726d739314ad7);
+        
+
+        marker_1877551f8c0e46528ed7eb65d9e2e6f3.bindPopup(popup_9e47580ba61349b087cd752c519c8680)
+        ;
+
+        
+    
+    
+            var marker_6609d651074d485c82046e3969cfbfde = L.marker(
+                [10.2, -84.51],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_4366cf2cce504bbc8741b7dc7e475bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0442522b678e4d59bd1fede16f8cc182 = $(`<div id="html_0442522b678e4d59bd1fede16f8cc182" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along road from San Ramón northward through Balsa, ca. 13.8 km north of bridge over Quebrada Volio and ca. 4.6 km north of bridge over (apparently) Río Balsa, at small stream (?Río San Luis). <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1979-08-29 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_4366cf2cce504bbc8741b7dc7e475bc3.setContent(html_0442522b678e4d59bd1fede16f8cc182);
+        
+
+        marker_6609d651074d485c82046e3969cfbfde.bindPopup(popup_4366cf2cce504bbc8741b7dc7e475bc3)
+        ;
+
+        
+    
+    
+            var marker_23657244039a4349a04e98d78ac3aec3 = L.marker(
+                [8.67446, -83.5194],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_2b779a91fc544e8c94358a249d5c0107 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25aa7753f4bc4a188e8e1fbdc68eccde = $(`<div id="html_25aa7753f4bc4a188e8e1fbdc68eccde" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Eastern Osa peninsula. Riverbank along a river running through actively grazed cattle pasture on the east coast of the Osa peninsula. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2001-07-01 <strong>Recolectores:</strong> Margaret M. Mayfield <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_2b779a91fc544e8c94358a249d5c0107.setContent(html_25aa7753f4bc4a188e8e1fbdc68eccde);
+        
+
+        marker_23657244039a4349a04e98d78ac3aec3.bindPopup(popup_2b779a91fc544e8c94358a249d5c0107)
+        ;
+
+        
+    
+    
+            var marker_eac928d267424fa5a33b28e839529668 = L.marker(
+                [10.19, -83.856944],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_844afe068d244725968f83b143041009 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e2426cdeff34aec9f1909418b3a9b1e = $(`<div id="html_6e2426cdeff34aec9f1909418b3a9b1e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Sarapiquí. Reserva Biológica Bosque Lluvioso. <strong>Elevación:</strong> 400.0 m  <strong>Fecha:</strong> 1999-09-23 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> R. Callejas (HUA)</div>`)[0];
+            popup_844afe068d244725968f83b143041009.setContent(html_6e2426cdeff34aec9f1909418b3a9b1e);
+        
+
+        marker_eac928d267424fa5a33b28e839529668.bindPopup(popup_844afe068d244725968f83b143041009)
+        ;
+
+        
+    
+    
+            var marker_d6ba2ab689af48729426e7b08a05db36 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_8b6b94cc369343d8a1b93770dabd3abe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ac29208a9fd46cabc5b82a96c0d0f90 = $(`<div id="html_1ac29208a9fd46cabc5b82a96c0d0f90" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Suerre, Llanos de Santa Clara <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Donnell Smith, J. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_8b6b94cc369343d8a1b93770dabd3abe.setContent(html_1ac29208a9fd46cabc5b82a96c0d0f90);
+        
+
+        marker_d6ba2ab689af48729426e7b08a05db36.bindPopup(popup_8b6b94cc369343d8a1b93770dabd3abe)
+        ;
+
+        
+    
+    
+            var marker_effd81ea21484a7e9cda9974660aee46 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_e2cc7855bc064bb691ea04df5beb9d08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0919515badc4cf1bf375568a3e16060 = $(`<div id="html_e0919515badc4cf1bf375568a3e16060" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Buissons à Las Vueltas Tucurrique. Alt. 650 m. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Tonduz, A. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_e2cc7855bc064bb691ea04df5beb9d08.setContent(html_e0919515badc4cf1bf375568a3e16060);
+        
+
+        marker_effd81ea21484a7e9cda9974660aee46.bindPopup(popup_e2cc7855bc064bb691ea04df5beb9d08)
+        ;
+
+        
+    
+    
+            var marker_30bb50f05cee47298d304b1df46405fe = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_5b29ff5e4958494f84f1d009de034e6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76283626fe314dd48830b9ecb3c673d4 = $(`<div id="html_76283626fe314dd48830b9ecb3c673d4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Forêts sur les bords du rio Yurquin <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Tonduz, A. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_5b29ff5e4958494f84f1d009de034e6a.setContent(html_76283626fe314dd48830b9ecb3c673d4);
+        
+
+        marker_30bb50f05cee47298d304b1df46405fe.bindPopup(popup_5b29ff5e4958494f84f1d009de034e6a)
+        ;
+
+        
+    
+    
+            var marker_4d93adf1b9b84d68b86d9c4cb7aa7146 = L.marker(
+                [15.652779999999998, -90.10639],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_c901edbd58a342d89fe70643d923dbd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82468a1697f7493d8798ab1878d45f41 = $(`<div id="html_82468a1697f7493d8798ab1878d45f41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alta Verapaz - Vicinity of Secanquim, Alta Verapaz; alt. 550 m./Departamento de Alta Verapaz <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1905-05-02 <strong>Recolectores:</strong> Pittier, H. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_c901edbd58a342d89fe70643d923dbd0.setContent(html_82468a1697f7493d8798ab1878d45f41);
+        
+
+        marker_4d93adf1b9b84d68b86d9c4cb7aa7146.bindPopup(popup_c901edbd58a342d89fe70643d923dbd0)
+        ;
+
+        
+    
+    
+            var marker_9f0b79496f4248c39088f12606ac7ef0 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_72bd910f5e134756b0dc13e703a56aff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc40994306cf424bbad8d5620cc1a2ec = $(`<div id="html_cc40994306cf424bbad8d5620cc1a2ec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Haie à Turrialba (200 m) <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Pittier, H. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_72bd910f5e134756b0dc13e703a56aff.setContent(html_cc40994306cf424bbad8d5620cc1a2ec);
+        
+
+        marker_9f0b79496f4248c39088f12606ac7ef0.bindPopup(popup_72bd910f5e134756b0dc13e703a56aff)
+        ;
+
+        
+    
+    
+            var marker_32d68af5164c4e418e4e6ea8fea666d3 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_c6030176405f45d1810eea46f60b549a);
+        
+    
+        var popup_ba46e13462ce4e10ae9641c1f924c046 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f729e4c71bd94a349113097e11c24d21 = $(`<div id="html_f729e4c71bd94a349113097e11c24d21" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Aguacaliente, ds les buissons <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1890-05-02 <strong>Recolectores:</strong> Pittier, H. <strong>Identificadores:</strong> CAT.HERB.PRODR. (2012)</div>`)[0];
+            popup_ba46e13462ce4e10ae9641c1f924c046.setContent(html_f729e4c71bd94a349113097e11c24d21);
+        
+
+        marker_32d68af5164c4e418e4e6ea8fea666d3.bindPopup(popup_ba46e13462ce4e10ae9641c1f924c046)
+        ;
+
+        
+    
+    
+            var layer_control_4d78dba57c93486d9a001a195e059a46 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_43a7e59014584cd78f530d170191689d,
+                    "ESRI World Imagery" : tile_layer_4db64ace91a34115802f4d24f585ceba,
+                },
+                overlays :  {
+                    "macro_element_c6030176405f45d1810eea46f60b549a" : marker_cluster_c6030176405f45d1810eea46f60b549a,
+                },
+            };
+            L.control.layers(
+                layer_control_4d78dba57c93486d9a001a195e059a46.base_layers,
+                layer_control_4d78dba57c93486d9a001a195e059a46.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6620bbb01c624144a57cfa67aba7fcc7);
+            tile_layer_4db64ace91a34115802f4d24f585ceba.remove();
+        
+</script>

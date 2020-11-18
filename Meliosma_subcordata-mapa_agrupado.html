@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cbbbceb68a6a47ebb551882865741b2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cbbbceb68a6a47ebb551882865741b2c" ></div>
+        
+</body>
+<script>    
+    
+            var map_cbbbceb68a6a47ebb551882865741b2c = L.map(
+                "map_cbbbceb68a6a47ebb551882865741b2c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_cbbbceb68a6a47ebb551882865741b2c);
+
+            
+
+        
+    
+            var tile_layer_c4afb71c0c53483394da0e81d4d0a379 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cbbbceb68a6a47ebb551882865741b2c);
+        
+    
+            var tile_layer_673189b6799f442fab848b3081e53252 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cbbbceb68a6a47ebb551882865741b2c);
+        
+    
+            var marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb = L.markerClusterGroup(
+                {}
+            );
+            map_cbbbceb68a6a47ebb551882865741b2c.addLayer(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+            var marker_e8fe6e4e39a148d09951727a0a2d0068 = L.marker(
+                [10.783333, -84.833333],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_85704b1187ae493492e93e9b56e396dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_655fcd0667904afca7662d2c7c336ab6 = $(`<div id="html_655fcd0667904afca7662d2c7c336ab6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas: Monteverde. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1984-08-21 <strong>Recolectores:</strong> Gentry AH; Haber B <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_85704b1187ae493492e93e9b56e396dd.setContent(html_655fcd0667904afca7662d2c7c336ab6);
+        
+
+        marker_e8fe6e4e39a148d09951727a0a2d0068.bindPopup(popup_85704b1187ae493492e93e9b56e396dd)
+        ;
+
+        
+    
+    
+            var marker_5b89583a5c6c47be8e9e8509a242cb48 = L.marker(
+                [10.323639, -84.811417],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_45a04d5a020745e7981cc4376ca0bcd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6ff349e4cb14f4683a91ea1d5cff103 = $(`<div id="html_f6ff349e4cb14f4683a91ea1d5cff103" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Ramon. Monteverde, in the cloud forest within the Centro Educativo Moderno's property. <strong>Elevación:</strong> 1607.0 m  <strong>Fecha:</strong> 2009-08-03 <strong>Recolectores:</strong> Jose D. Zúñiga, William Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_45a04d5a020745e7981cc4376ca0bcd0.setContent(html_f6ff349e4cb14f4683a91ea1d5cff103);
+        
+
+        marker_5b89583a5c6c47be8e9e8509a242cb48.bindPopup(popup_45a04d5a020745e7981cc4376ca0bcd0)
+        ;
+
+        
+    
+    
+            var marker_48e5ceabf58d4e22a120d816ab82a36f = L.marker(
+                [10.323639, -84.811417],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_40e23f8f14f94ae9a7b54cd23957051c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d6e6aa205a64a2a9f8c201b080e4c6a = $(`<div id="html_7d6e6aa205a64a2a9f8c201b080e4c6a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Ramon. Monteverde, in the cloud forest within the Centro Educativo Moderno's property. <strong>Elevación:</strong> 1607.0 m  <strong>Fecha:</strong> 2009-08-03 <strong>Recolectores:</strong> Jose D. Zúñiga, William Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_40e23f8f14f94ae9a7b54cd23957051c.setContent(html_7d6e6aa205a64a2a9f8c201b080e4c6a);
+        
+
+        marker_48e5ceabf58d4e22a120d816ab82a36f.bindPopup(popup_40e23f8f14f94ae9a7b54cd23957051c)
+        ;
+
+        
+    
+    
+            var marker_f3cf3b5e3fa744d3a70d4b3c5e446b6d = L.marker(
+                [10.323639, -84.811417],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_48fe9acaf5234f67be26f2f51a714627 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_891f5ae743164e1aa7e118378aa53821 = $(`<div id="html_891f5ae743164e1aa7e118378aa53821" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Ramon. Monteverde, in the cloud forest within the Centro Educativo Moderno's property. <strong>Elevación:</strong> 1607.0 m  <strong>Fecha:</strong> 2009-08-03 <strong>Recolectores:</strong> Jose D. Zúñiga, William Haber <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_48fe9acaf5234f67be26f2f51a714627.setContent(html_891f5ae743164e1aa7e118378aa53821);
+        
+
+        marker_f3cf3b5e3fa744d3a70d4b3c5e446b6d.bindPopup(popup_48fe9acaf5234f67be26f2f51a714627)
+        ;
+
+        
+    
+    
+            var marker_2a8256e852d6404d9fae6d19c4997fc7 = L.marker(
+                [10.501664, -84.692045],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_05b3f23275de46a49624a94ad75fd467 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ead1fa9ba8b4cad8ae7424f53671a54 = $(`<div id="html_2ead1fa9ba8b4cad8ae7424f53671a54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma de San Ramón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-10-26 <strong>Recolectores:</strong> A. M. Brenes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_05b3f23275de46a49624a94ad75fd467.setContent(html_2ead1fa9ba8b4cad8ae7424f53671a54);
+        
+
+        marker_2a8256e852d6404d9fae6d19c4997fc7.bindPopup(popup_05b3f23275de46a49624a94ad75fd467)
+        ;
+
+        
+    
+    
+            var marker_583828c5f54846578f02a09e190073d1 = L.marker(
+                [10.501664, -84.692045],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_680f2fe0ee0c4859a58929528e8dd3c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92e4667a432f4a32a325550f07c467d7 = $(`<div id="html_92e4667a432f4a32a325550f07c467d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma de San Ramón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1927-11-10 <strong>Recolectores:</strong> A. M. Brenes <strong>Identificadores:</strong> X. Cornejo</div>`)[0];
+            popup_680f2fe0ee0c4859a58929528e8dd3c9.setContent(html_92e4667a432f4a32a325550f07c467d7);
+        
+
+        marker_583828c5f54846578f02a09e190073d1.bindPopup(popup_680f2fe0ee0c4859a58929528e8dd3c9)
+        ;
+
+        
+    
+    
+            var marker_6fcbf3d563604955aba8602a300966ef = L.marker(
+                [10.33, -84.75],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_14a7d307ab0448328c1fb1f03b94545c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94afa03a47f94060910dfe53ce6dccaf = $(`<div id="html_94afa03a47f94060910dfe53ce6dccaf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, Peñas Blancas River Valley, Atlantic slope. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1986-08-09 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|April Clagget <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_14a7d307ab0448328c1fb1f03b94545c.setContent(html_94afa03a47f94060910dfe53ce6dccaf);
+        
+
+        marker_6fcbf3d563604955aba8602a300966ef.bindPopup(popup_14a7d307ab0448328c1fb1f03b94545c)
+        ;
+
+        
+    
+    
+            var marker_3bdcdd3dbfb449b0b5f7e85a756951ee = L.marker(
+                [10.308611, -84.8075],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_29115825adc34497b923e38f2f3e20e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b74e31fb583641cca836189522df749c = $(`<div id="html_b74e31fb583641cca836189522df749c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, forest edge in community <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1981-05-20 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_29115825adc34497b923e38f2f3e20e4.setContent(html_b74e31fb583641cca836189522df749c);
+        
+
+        marker_3bdcdd3dbfb449b0b5f7e85a756951ee.bindPopup(popup_29115825adc34497b923e38f2f3e20e4)
+        ;
+
+        
+    
+    
+            var marker_d5e4f0a6e89147dc9b5b61e4e19e8c66 = L.marker(
+                [10.300278, -84.786111],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_7905ad786e714c889e5dd672a39e48f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d79b6af70a3a40c8879418e7f0bc5eba = $(`<div id="html_d79b6af70a3a40c8879418e7f0bc5eba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En bosque perturbado ccerca de cumbre de loma. <strong>Elevación:</strong> 1555.0 m  <strong>Fecha:</strong> 1977-05-28 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_7905ad786e714c889e5dd672a39e48f3.setContent(html_d79b6af70a3a40c8879418e7f0bc5eba);
+        
+
+        marker_d5e4f0a6e89147dc9b5b61e4e19e8c66.bindPopup(popup_7905ad786e714c889e5dd672a39e48f3)
+        ;
+
+        
+    
+    
+            var marker_3d844cf21b614844ae9e9b822205cabb = L.marker(
+                [10.309444000000001, -84.804167],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_ed797f8299d34cceb32a27fe9f23a3ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9916ce54336d49d99246dd1c352fe10e = $(`<div id="html_9916ce54336d49d99246dd1c352fe10e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper community <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1979-06-25 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_ed797f8299d34cceb32a27fe9f23a3ca.setContent(html_9916ce54336d49d99246dd1c352fe10e);
+        
+
+        marker_3d844cf21b614844ae9e9b822205cabb.bindPopup(popup_ed797f8299d34cceb32a27fe9f23a3ca)
+        ;
+
+        
+    
+    
+            var marker_3b75da7f785b48bd8b94ef8ca1e25687 = L.marker(
+                [10.129719999999999, -84.55083],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_7b1c7a6a89534d7da722670902780cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c0a9b48bcac471783da3688c8006b54 = $(`<div id="html_4c0a9b48bcac471783da3688c8006b54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma de San Ramón <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-10-26 <strong>Recolectores:</strong> Alberto M. Brenes <strong>Identificadores:</strong> Alberto M. Brenes</div>`)[0];
+            popup_7b1c7a6a89534d7da722670902780cf4.setContent(html_4c0a9b48bcac471783da3688c8006b54);
+        
+
+        marker_3b75da7f785b48bd8b94ef8ca1e25687.bindPopup(popup_7b1c7a6a89534d7da722670902780cf4)
+        ;
+
+        
+    
+    
+            var marker_58df149cbe9d4e59be99fc51a775f4dc = L.marker(
+                [10.11305, -84.565],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_d75bf19b519a4f00a812ef1beb548a20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe70b135c71a41b29210564307da64f7 = $(`<div id="html_fe70b135c71a41b29210564307da64f7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "La Laguna" de San Ramon. <strong>Elevación:</strong> 1150.0 m  <strong>Fecha:</strong> 1922-11-28 <strong>Recolectores:</strong> Alberto M. Brenes <strong>Identificadores:</strong> Alberto M. Brenes</div>`)[0];
+            popup_d75bf19b519a4f00a812ef1beb548a20.setContent(html_fe70b135c71a41b29210564307da64f7);
+        
+
+        marker_58df149cbe9d4e59be99fc51a775f4dc.bindPopup(popup_d75bf19b519a4f00a812ef1beb548a20)
+        ;
+
+        
+    
+    
+            var marker_9325e6f7a3944d39afc9ecd11d77a03f = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_09fbb9e1860b40df916a69efb896d480 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_669d457c785c4307aaa074ec6712f73e = $(`<div id="html_669d457c785c4307aaa074ec6712f73e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Pacific slope wet forest <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1988-07-10 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_09fbb9e1860b40df916a69efb896d480.setContent(html_669d457c785c4307aaa074ec6712f73e);
+        
+
+        marker_9325e6f7a3944d39afc9ecd11d77a03f.bindPopup(popup_09fbb9e1860b40df916a69efb896d480)
+        ;
+
+        
+    
+    
+            var marker_62f03969518d4a06bce4232fd18f76b4 = L.marker(
+                [10.31, -84.79],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_a5fd4be9c13f46efb4f79ebe4ce1cd62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_292003d90bb14f1c84605651135889b8 = $(`<div id="html_292003d90bb14f1c84605651135889b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, road to TV Tower. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1985-08-24 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_a5fd4be9c13f46efb4f79ebe4ce1cd62.setContent(html_292003d90bb14f1c84605651135889b8);
+        
+
+        marker_62f03969518d4a06bce4232fd18f76b4.bindPopup(popup_a5fd4be9c13f46efb4f79ebe4ce1cd62)
+        ;
+
+        
+    
+    
+            var marker_c826deb0dfd9465d86ebfcb6de8ec6b2 = L.marker(
+                [10.31, -84.79],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_53cc56f3dcae4f0f8bf6b593f1027a27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba4020b763c448c7ab0b37caba310584 = $(`<div id="html_ba4020b763c448c7ab0b37caba310584" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, road to TV Tower. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1985-08-24 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_53cc56f3dcae4f0f8bf6b593f1027a27.setContent(html_ba4020b763c448c7ab0b37caba310584);
+        
+
+        marker_c826deb0dfd9465d86ebfcb6de8ec6b2.bindPopup(popup_53cc56f3dcae4f0f8bf6b593f1027a27)
+        ;
+
+        
+    
+    
+            var marker_eb6150ed0f214bf6b0c0aecbbaca59ee = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_073a35f61a44447284075b82466979d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54172e0289384534ab2d9c83a91ddfc6 = $(`<div id="html_54172e0289384534ab2d9c83a91ddfc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde community, lower montane wet forest in area of lower community. 10º20'N, 850'W <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1985-11-29 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_073a35f61a44447284075b82466979d0.setContent(html_54172e0289384534ab2d9c83a91ddfc6);
+        
+
+        marker_eb6150ed0f214bf6b0c0aecbbaca59ee.bindPopup(popup_073a35f61a44447284075b82466979d0)
+        ;
+
+        
+    
+    
+            var marker_6d9fe16ff2904d43aa715edee140ab02 = L.marker(
+                [10.783333, -84.833333],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_d7e5ef9b70c04a9e98ada6799bd8d33a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fafecd5beabc4b37bbcf69c06ea7d44a = $(`<div id="html_fafecd5beabc4b37bbcf69c06ea7d44a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1984-08-21 <strong>Recolectores:</strong> Alwyn H. Gentry|William A. Haber <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_d7e5ef9b70c04a9e98ada6799bd8d33a.setContent(html_fafecd5beabc4b37bbcf69c06ea7d44a);
+        
+
+        marker_6d9fe16ff2904d43aa715edee140ab02.bindPopup(popup_d7e5ef9b70c04a9e98ada6799bd8d33a)
+        ;
+
+        
+    
+    
+            var marker_4cb56955e6e74c6eab4e43c2c8a558f0 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_dfaf7126ccf143f5893841274834a325 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f37ab537672a4298942dcd8cbc4f818f = $(`<div id="html_f37ab537672a4298942dcd8cbc4f818f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cloud forest and swamp forest (premontane and lower montane rain forest formations) in and around the Monteverde Nature reserve, mostly on the Pacific watershed. Puntarenas and Alajuela Provinces. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1975-10-31 <strong>Recolectores:</strong> William C. Burger|Richard A. Baker <strong>Identificadores:</strong> Eliana Ramos</div>`)[0];
+            popup_dfaf7126ccf143f5893841274834a325.setContent(html_f37ab537672a4298942dcd8cbc4f818f);
+        
+
+        marker_4cb56955e6e74c6eab4e43c2c8a558f0.bindPopup(popup_dfaf7126ccf143f5893841274834a325)
+        ;
+
+        
+    
+    
+            var marker_bac5e60c945c4aac8576517af27fdc29 = L.marker(
+                [9.138805, -83.066576],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_27257813f49c4b83a1b7d825fcb41785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e11cd94fe7bd47dd88304abdafc0ad77 = $(`<div id="html_e11cd94fe7bd47dd88304abdafc0ad77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. La Amistad.  Cuenca Terraba-Sierpe.  Cordillera de Talamanca.  P. I. Amistad.  Sector Tres Colinas.  Punto de muestreo 19. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2008-02-26 <strong>Recolectores:</strong> Nelson Zamora|H. Solano Arias <strong>Identificadores:</strong> J. F. Morales</div>`)[0];
+            popup_27257813f49c4b83a1b7d825fcb41785.setContent(html_e11cd94fe7bd47dd88304abdafc0ad77);
+        
+
+        marker_bac5e60c945c4aac8576517af27fdc29.bindPopup(popup_27257813f49c4b83a1b7d825fcb41785)
+        ;
+
+        
+    
+    
+            var marker_ecf6f9bfe183417c8e15a391692be3a5 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_c123a7e3e17046b5a96be2c41776068b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62e9c757863745ff9f850d5bb3beb0c3 = $(`<div id="html_62e9c757863745ff9f850d5bb3beb0c3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cloud forest. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 1981-05-20 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_c123a7e3e17046b5a96be2c41776068b.setContent(html_62e9c757863745ff9f850d5bb3beb0c3);
+        
+
+        marker_ecf6f9bfe183417c8e15a391692be3a5.bindPopup(popup_c123a7e3e17046b5a96be2c41776068b)
+        ;
+
+        
+    
+    
+            var marker_f7d75e387d2043bf8aafbe0e024a1609 = L.marker(
+                [10.233333, -84.716667],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_faf3b33fcf3848c6a9a9ab8b1f55376f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd23dac1f3a947e9bfa09174e41095ba = $(`<div id="html_cd23dac1f3a947e9bfa09174e41095ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Arancibia, Leonel Hernandez. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1989-10-05 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_faf3b33fcf3848c6a9a9ab8b1f55376f.setContent(html_cd23dac1f3a947e9bfa09174e41095ba);
+        
+
+        marker_f7d75e387d2043bf8aafbe0e024a1609.bindPopup(popup_faf3b33fcf3848c6a9a9ab8b1f55376f)
+        ;
+
+        
+    
+    
+            var marker_7c781877750b4708843ea45810b4f631 = L.marker(
+                [10.3, -84.800003],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_27b70e6e8c6c4591a0bf320cf7d6a662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_534c159e5e964d18b43ce8fab6ed1c53 = $(`<div id="html_534c159e5e964d18b43ce8fab6ed1c53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Pacific slope wet forest. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1988-07-10 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_27b70e6e8c6c4591a0bf320cf7d6a662.setContent(html_534c159e5e964d18b43ce8fab6ed1c53);
+        
+
+        marker_7c781877750b4708843ea45810b4f631.bindPopup(popup_27b70e6e8c6c4591a0bf320cf7d6a662)
+        ;
+
+        
+    
+    
+            var marker_1410908e620a4d5a9569c8517429a233 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_01b147b77af54cc8886b62599bf682a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54d128cd24ff43ed99a6305c0b121f13 = $(`<div id="html_54d128cd24ff43ed99a6305c0b121f13" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-11-28 <strong>Recolectores:</strong> A. M. Brenes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_01b147b77af54cc8886b62599bf682a1.setContent(html_54d128cd24ff43ed99a6305c0b121f13);
+        
+
+        marker_1410908e620a4d5a9569c8517429a233.bindPopup(popup_01b147b77af54cc8886b62599bf682a1)
+        ;
+
+        
+    
+    
+            var marker_9905c863b4d44d7ca3cc161613bbf1d0 = L.marker(
+                [10.33, -84.83],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_704dfb2a3eb049d2aaa8ab9dfc71af59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5545cc3bff94fcf8aa287654974b415 = $(`<div id="html_c5545cc3bff94fcf8aa287654974b415" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde Community, lower montane wet forest in area of lower community. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1985-11-29 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_704dfb2a3eb049d2aaa8ab9dfc71af59.setContent(html_c5545cc3bff94fcf8aa287654974b415);
+        
+
+        marker_9905c863b4d44d7ca3cc161613bbf1d0.bindPopup(popup_704dfb2a3eb049d2aaa8ab9dfc71af59)
+        ;
+
+        
+    
+    
+            var marker_a0990fa743a74c5b82ebfd9a8327f0a3 = L.marker(
+                [10.78, -84.83],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_608c7a6e1a2c4195a8dfc745a04e6ec4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2be4f3ad74e941578a257d267e1c7fcd = $(`<div id="html_2be4f3ad74e941578a257d267e1c7fcd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1984-08-21 <strong>Recolectores:</strong> Gentry, Alwyn H. <strong>Identificadores:</strong> Gentry, Alwyn H.</div>`)[0];
+            popup_608c7a6e1a2c4195a8dfc745a04e6ec4.setContent(html_2be4f3ad74e941578a257d267e1c7fcd);
+        
+
+        marker_a0990fa743a74c5b82ebfd9a8327f0a3.bindPopup(popup_608c7a6e1a2c4195a8dfc745a04e6ec4)
+        ;
+
+        
+    
+    
+            var marker_1d1363c93ec74dceb9e4feaba9afa3db = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_85f9e3bcabd841daa57b295e773256d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c8c849a7c21443c9c24d9f20b24fbaf = $(`<div id="html_0c8c849a7c21443c9c24d9f20b24fbaf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde Cloud forest and swamp forest (premontane and lower montane rain forest formations) in and around the Monteverde Nature Reserve, mostly on the Pacific watershed. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1975-10-31 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Gentry, Alwyn H.</div>`)[0];
+            popup_85f9e3bcabd841daa57b295e773256d5.setContent(html_0c8c849a7c21443c9c24d9f20b24fbaf);
+        
+
+        marker_1d1363c93ec74dceb9e4feaba9afa3db.bindPopup(popup_85f9e3bcabd841daa57b295e773256d5)
+        ;
+
+        
+    
+    
+            var marker_4eb8652ca0504e85813769c02b96cf8a = L.marker(
+                [10.13, -84.55],
+                {}
+            ).addTo(marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb);
+        
+    
+        var popup_45462f0a40dd4a9dbab9febcfc93d627 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04f3b2705086477fbbff1571c11d26f0 = $(`<div id="html_04f3b2705086477fbbff1571c11d26f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Palma. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1922-10-24 <strong>Recolectores:</strong> Brenes, Alberto Manuel <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_45462f0a40dd4a9dbab9febcfc93d627.setContent(html_04f3b2705086477fbbff1571c11d26f0);
+        
+
+        marker_4eb8652ca0504e85813769c02b96cf8a.bindPopup(popup_45462f0a40dd4a9dbab9febcfc93d627)
+        ;
+
+        
+    
+    
+            var layer_control_c98da848e9634fb586f3dd0f34f1799f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c4afb71c0c53483394da0e81d4d0a379,
+                    "ESRI World Imagery" : tile_layer_673189b6799f442fab848b3081e53252,
+                },
+                overlays :  {
+                    "macro_element_d15e65fb6cd24e92a98f8a3dbd1178cb" : marker_cluster_d15e65fb6cd24e92a98f8a3dbd1178cb,
+                },
+            };
+            L.control.layers(
+                layer_control_c98da848e9634fb586f3dd0f34f1799f.base_layers,
+                layer_control_c98da848e9634fb586f3dd0f34f1799f.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cbbbceb68a6a47ebb551882865741b2c);
+            tile_layer_673189b6799f442fab848b3081e53252.remove();
+        
+</script>

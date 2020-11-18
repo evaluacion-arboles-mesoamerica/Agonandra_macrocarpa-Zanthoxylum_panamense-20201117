@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c7acd2ab73c40db87e942e3a0204c62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5c7acd2ab73c40db87e942e3a0204c62" ></div>
+        
+</body>
+<script>    
+    
+            var map_5c7acd2ab73c40db87e942e3a0204c62 = L.map(
+                "map_5c7acd2ab73c40db87e942e3a0204c62",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5c7acd2ab73c40db87e942e3a0204c62);
+
+            
+
+        
+    
+            var tile_layer_f1a1eafd6ace4bfa9b605a44d998dd1e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c7acd2ab73c40db87e942e3a0204c62);
+        
+    
+            var tile_layer_8c036c4aa4bf48cdad6348c44965a054 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c7acd2ab73c40db87e942e3a0204c62);
+        
+    
+            var marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a = L.markerClusterGroup(
+                {}
+            );
+            map_5c7acd2ab73c40db87e942e3a0204c62.addLayer(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+            var marker_cd5d80868872492380cec6a68469f4aa = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_1803d35180ec43e4b143b506b6afd6bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0307079a25743df89b89d4ea366691a = $(`<div id="html_c0307079a25743df89b89d4ea366691a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puntarenas Prov. Monteverde, upper San Luis valley on Pacific slope <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-10-20 00:00:00 <strong>Recolectores:</strong> Bello, E. <strong>Identificadores:</strong> R. Liesner 1988</div>`)[0];
+            popup_1803d35180ec43e4b143b506b6afd6bc.setContent(html_c0307079a25743df89b89d4ea366691a);
+        
+
+        marker_cd5d80868872492380cec6a68469f4aa.bindPopup(popup_1803d35180ec43e4b143b506b6afd6bc)
+        ;
+
+        
+    
+    
+            var marker_3a2c0c564c1845dd884f7ab256be90a4 = L.marker(
+                [10.305694, -84.784949],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_a7bd714bd88f460b9b35e656834712b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db76aecc4f8649518899cd1e9f6fdd9e = $(`<div id="html_db76aecc4f8649518899cd1e9f6fdd9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2005-05-07 17:26:00 <strong>Recolectores:</strong> Ruth Ripley <strong>Identificadores:</strong> Leonardo Álvarez</div>`)[0];
+            popup_a7bd714bd88f460b9b35e656834712b3.setContent(html_db76aecc4f8649518899cd1e9f6fdd9e);
+        
+
+        marker_3a2c0c564c1845dd884f7ab256be90a4.bindPopup(popup_a7bd714bd88f460b9b35e656834712b3)
+        ;
+
+        
+    
+    
+            var marker_7690453bb9644c88bb59f9dd2356c3c8 = L.marker(
+                [10.33, -84.72],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_2acf522ad8034641a5c385de5bffdc4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4386b84b3dc34ae597d00d802cbd19c5 = $(`<div id="html_4386b84b3dc34ae597d00d802cbd19c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Rancho Escondido hasta San Gerardo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00 <strong>Recolectores:</strong> E. Bello C. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2acf522ad8034641a5c385de5bffdc4c.setContent(html_4386b84b3dc34ae597d00d802cbd19c5);
+        
+
+        marker_7690453bb9644c88bb59f9dd2356c3c8.bindPopup(popup_2acf522ad8034641a5c385de5bffdc4c)
+        ;
+
+        
+    
+    
+            var marker_ab76f59a83d648158f96a58dcf2a1a95 = L.marker(
+                [10.216667, -84.6],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_fe6286a4a1cb427f94348276ddd4c07e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24254e7b02704ea593bf26ffa9775702 = $(`<div id="html_24254e7b02704ea593bf26ffa9775702" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Albero MI Brenes. <strong>Elevación:</strong> 1320.0 m  <strong>Fecha:</strong> 2000-08-01 00:00:00 <strong>Recolectores:</strong> Homeier, J.; Mora, V. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_fe6286a4a1cb427f94348276ddd4c07e.setContent(html_24254e7b02704ea593bf26ffa9775702);
+        
+
+        marker_ab76f59a83d648158f96a58dcf2a1a95.bindPopup(popup_fe6286a4a1cb427f94348276ddd4c07e)
+        ;
+
+        
+    
+    
+            var marker_dc4c6e69b5a54df5b5b7fd235116db9d = L.marker(
+                [10.766667, -85.81666700000001],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_f3a73309571b4414bc8849daf7bff005 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52aae0f736bd4d7e9ada971585899239 = $(`<div id="html_52aae0f736bd4d7e9ada971585899239" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Rincón de La Vieja.  Liberia.  Cabeceras de Quebrada Rancho Grande. <strong>Elevación:</strong> 1375.0 m  <strong>Fecha:</strong> 1987-12-01 00:00:00 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f3a73309571b4414bc8849daf7bff005.setContent(html_52aae0f736bd4d7e9ada971585899239);
+        
+
+        marker_dc4c6e69b5a54df5b5b7fd235116db9d.bindPopup(popup_f3a73309571b4414bc8849daf7bff005)
+        ;
+
+        
+    
+    
+            var marker_78b2af84c7314328ac6583ee8ac8e588 = L.marker(
+                [10.333333, -84.716667],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_0283826458d54b499ea58164eeec45a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3afbb78ffa74350aaca12f5e616511c = $(`<div id="html_b3afbb78ffa74350aaca12f5e616511c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas.  Rancho Escondido hasta San Gerardo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1988-11-01 00:00:00 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_0283826458d54b499ea58164eeec45a1.setContent(html_b3afbb78ffa74350aaca12f5e616511c);
+        
+
+        marker_78b2af84c7314328ac6583ee8ac8e588.bindPopup(popup_0283826458d54b499ea58164eeec45a1)
+        ;
+
+        
+    
+    
+            var marker_5e9b7e27559d4fc3a26f801ee088f92c = L.marker(
+                [10.3, -84.783333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_db441f587ed84cd09c3b919712f8f29b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b28788cc0d7e44e09307a64d0c4d68a5 = $(`<div id="html_b28788cc0d7e44e09307a64d0c4d68a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica MOnteverde Road to divide, Swamp on continental divide, Sendero Pantanoso and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-01 00:00:00 <strong>Recolectores:</strong> Haber, William; Zuchowski, Willow <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_db441f587ed84cd09c3b919712f8f29b.setContent(html_b28788cc0d7e44e09307a64d0c4d68a5);
+        
+
+        marker_5e9b7e27559d4fc3a26f801ee088f92c.bindPopup(popup_db441f587ed84cd09c3b919712f8f29b)
+        ;
+
+        
+    
+    
+            var marker_72116caa15eb4988941e53c6c56e1d9d = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_02778858d3da4e36bac96ceb86f4cd5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0112d312f8bb4de3890cfc18612b9836 = $(`<div id="html_0112d312f8bb4de3890cfc18612b9836" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, upper San Luis valley on Pacific slope. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1985-10-01 00:00:00 <strong>Recolectores:</strong> Bello C., Eric <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_02778858d3da4e36bac96ceb86f4cd5c.setContent(html_0112d312f8bb4de3890cfc18612b9836);
+        
+
+        marker_72116caa15eb4988941e53c6c56e1d9d.bindPopup(popup_02778858d3da4e36bac96ceb86f4cd5c)
+        ;
+
+        
+    
+    
+            var marker_894aa5aa0a554861a38e93f760cde0a0 = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_bbbddf7110d9461fae20939627a70741 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d9e67abe80b4647bf70045d80e9c0b8 = $(`<div id="html_1d9e67abe80b4647bf70045d80e9c0b8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Monteverde; Cordillera de Tilarán. Road to divide, swamp on continental divide (Sendero Pantanoso) and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_bbbddf7110d9461fae20939627a70741.setContent(html_1d9e67abe80b4647bf70045d80e9c0b8);
+        
+
+        marker_894aa5aa0a554861a38e93f760cde0a0.bindPopup(popup_bbbddf7110d9461fae20939627a70741)
+        ;
+
+        
+    
+    
+            var marker_00cd0e3a8b074c249983a77e210ca72f = L.marker(
+                [10.79, -85.32],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_7b6785cf06044439a7d3bf6ef58c533c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79ab7ac134e341c3afdaa24c371252c1 = $(`<div id="html_79ab7ac134e341c3afdaa24c371252c1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Rincón de La Vieja. Cabeceras de Quebrada Rancho Grande, bosque circundante a Meseta Aguacatales. [original label coordinates: 10º46'N, 85º49'W] <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1987-12-02 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_7b6785cf06044439a7d3bf6ef58c533c.setContent(html_79ab7ac134e341c3afdaa24c371252c1);
+        
+
+        marker_00cd0e3a8b074c249983a77e210ca72f.bindPopup(popup_7b6785cf06044439a7d3bf6ef58c533c)
+        ;
+
+        
+    
+    
+            var marker_d2e1aa135002434fb9a30fb8a9ed0c5d = L.marker(
+                [10.33333, -84.83333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_81ba155e18dc410085f258c099b8d7a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1fc3c4a33954a14983bd319dd7e690c = $(`<div id="html_e1fc3c4a33954a14983bd319dd7e690c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Peñas Blancas River Valley, Atlantic slope, rain forest <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1985-10-12 00:00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_81ba155e18dc410085f258c099b8d7a6.setContent(html_e1fc3c4a33954a14983bd319dd7e690c);
+        
+
+        marker_d2e1aa135002434fb9a30fb8a9ed0c5d.bindPopup(popup_81ba155e18dc410085f258c099b8d7a6)
+        ;
+
+        
+    
+    
+            var marker_56cb0b9787564142aff80fb294d72994 = L.marker(
+                [10.25, -84.766667],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_89ae8142b5bf4541bb55b01e14507219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c073f77b9ed8446daa2f01c5b5eb0ba2 = $(`<div id="html_c073f77b9ed8446daa2f01c5b5eb0ba2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde; Veracruz river valley south of Reserve; Pacific slope wet forest. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1986-08-22 00:00:00 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|April Clagget <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_89ae8142b5bf4541bb55b01e14507219.setContent(html_c073f77b9ed8446daa2f01c5b5eb0ba2);
+        
+
+        marker_56cb0b9787564142aff80fb294d72994.bindPopup(popup_89ae8142b5bf4541bb55b01e14507219)
+        ;
+
+        
+    
+    
+            var marker_10ed92ee548c4dc3b7a1a9505f3fbbde = L.marker(
+                [10.33, -84.71],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_d257607d1e594ca281014beca59f5463 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf84c5681b0845c5a865b92d2496f6c6 = $(`<div id="html_cf84c5681b0845c5a865b92d2496f6c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Rancho Escondido hasta San Gerardo. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_d257607d1e594ca281014beca59f5463.setContent(html_cf84c5681b0845c5a865b92d2496f6c6);
+        
+
+        marker_10ed92ee548c4dc3b7a1a9505f3fbbde.bindPopup(popup_d257607d1e594ca281014beca59f5463)
+        ;
+
+        
+    
+    
+            var marker_a74e18d7fbbd4b3fbca4ba45877469e6 = L.marker(
+                [10.066667, -84.083333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_f8d81dd73d7e45218ccfd6160bfff741 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b15d5c452a014a8690d09f9ada87b47a = $(`<div id="html_b15d5c452a014a8690d09f9ada87b47a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> At the margin of Río Patria, Monte de la Cruz. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-10-30 00:00:00 <strong>Recolectores:</strong> Luis J. Poveda Álvarez <strong>Identificadores:</strong> L.M. Kelly & F. Almeda</div>`)[0];
+            popup_f8d81dd73d7e45218ccfd6160bfff741.setContent(html_b15d5c452a014a8690d09f9ada87b47a);
+        
+
+        marker_a74e18d7fbbd4b3fbca4ba45877469e6.bindPopup(popup_f8d81dd73d7e45218ccfd6160bfff741)
+        ;
+
+        
+    
+    
+            var marker_728c50ad78d84a48a882615681c6ee31 = L.marker(
+                [10.35, -84.83],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_403ab066849c4ff59d6857de20f227b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a6855b775643c59087e981dac08f7c = $(`<div id="html_f1a6855b775643c59087e981dac08f7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biologica Monteverde, Cordillera de Tilarán, Sendero Caño Negro <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1994-11-18 00:00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_403ab066849c4ff59d6857de20f227b2.setContent(html_f1a6855b775643c59087e981dac08f7c);
+        
+
+        marker_728c50ad78d84a48a882615681c6ee31.bindPopup(popup_403ab066849c4ff59d6857de20f227b2)
+        ;
+
+        
+    
+    
+            var marker_1edaa4d5a701452d99615df3d92f764c = L.marker(
+                [10.28, -84.78],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_40405f78775543da89e274375bddd5f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0caa79a1571646b59c912d1a33dce28d = $(`<div id="html_0caa79a1571646b59c912d1a33dce28d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. Reserve cliff edge. Also in swamp. Likes exposed sites with wind-borne clouds <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1978-10-14 00:00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Larry Kelly (MEXU)</div>`)[0];
+            popup_40405f78775543da89e274375bddd5f5.setContent(html_0caa79a1571646b59c912d1a33dce28d);
+        
+
+        marker_1edaa4d5a701452d99615df3d92f764c.bindPopup(popup_40405f78775543da89e274375bddd5f5)
+        ;
+
+        
+    
+    
+            var marker_300db54c5c1144d8a974e1d1d9078733 = L.marker(
+                [10.058333, -84.016667],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_7fd8dc6d16e84676a7b87aa488fb4e25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a56eb1add40f48689887b50de9a80f26 = $(`<div id="html_a56eb1add40f48689887b50de9a80f26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Estacion Zurqui; 500 m antes del peaje. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-11-25 00:00:00 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_7fd8dc6d16e84676a7b87aa488fb4e25.setContent(html_a56eb1add40f48689887b50de9a80f26);
+        
+
+        marker_300db54c5c1144d8a974e1d1d9078733.bindPopup(popup_7fd8dc6d16e84676a7b87aa488fb4e25)
+        ;
+
+        
+    
+    
+            var marker_06234764015d4ccdb01cae52d7e01d99 = L.marker(
+                [10.333333, -84.716667],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_8205a4cd4a194e5bbdb143671d78ba6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9211aa17fca4ddc8bf93a5af276c923 = $(`<div id="html_c9211aa17fca4ddc8bf93a5af276c923" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas. Rancho Escondido hasta San Gerardo. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_8205a4cd4a194e5bbdb143671d78ba6a.setContent(html_c9211aa17fca4ddc8bf93a5af276c923);
+        
+
+        marker_06234764015d4ccdb01cae52d7e01d99.bindPopup(popup_8205a4cd4a194e5bbdb143671d78ba6a)
+        ;
+
+        
+    
+    
+            var marker_df5f393125cb4725801a02574ec5b438 = L.marker(
+                [10.766667, -85.31666700000001],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_a9955a8ad48440dfa675cc4cdae0d334 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebdcc96fe1744abc856f76dcb0fb7b11 = $(`<div id="html_ebdcc96fe1744abc856f76dcb0fb7b11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cabeceras de Quebrada Rancho Grande, bosque circundante a Meseta Aguacatales. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 1987-12-02 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_a9955a8ad48440dfa675cc4cdae0d334.setContent(html_ebdcc96fe1744abc856f76dcb0fb7b11);
+        
+
+        marker_df5f393125cb4725801a02574ec5b438.bindPopup(popup_a9955a8ad48440dfa675cc4cdae0d334)
+        ;
+
+        
+    
+    
+            var marker_a42bfb46724d4dbda90863173e3552f2 = L.marker(
+                [10.355556, -84.830556],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_f4d166f2b52f4f6995a70347e34142a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_938e3cc0c9fa442aaabc3152128031a0 = $(`<div id="html_938e3cc0c9fa442aaabc3152128031a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero Cano Negro <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1994-11-18 00:00:00 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_f4d166f2b52f4f6995a70347e34142a2.setContent(html_938e3cc0c9fa442aaabc3152128031a0);
+        
+
+        marker_a42bfb46724d4dbda90863173e3552f2.bindPopup(popup_f4d166f2b52f4f6995a70347e34142a2)
+        ;
+
+        
+    
+    
+            var marker_de355af4765b403f8d745d55b8a4b0f4 = L.marker(
+                [10.3, -84.783334],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_d315ce246abd40c09b381a826750a07f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae1c9431aa8c4174a3a723a43b15220c = $(`<div id="html_ae1c9431aa8c4174a3a723a43b15220c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road to divide, swamp on continental divide (Sendero Pantanoso) and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00 <strong>Recolectores:</strong> William Haber <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_d315ce246abd40c09b381a826750a07f.setContent(html_ae1c9431aa8c4174a3a723a43b15220c);
+        
+
+        marker_de355af4765b403f8d745d55b8a4b0f4.bindPopup(popup_d315ce246abd40c09b381a826750a07f)
+        ;
+
+        
+    
+    
+            var marker_943997db649c43fc841fd20a253492cb = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_1e33b021f638403990d72b9028e11657 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_faaa6214f1fe466baf1a6b87d7341cf7 = $(`<div id="html_faaa6214f1fe466baf1a6b87d7341cf7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-10-30 00:00:00 <strong>Recolectores:</strong> L. J. Poveda <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1e33b021f638403990d72b9028e11657.setContent(html_faaa6214f1fe466baf1a6b87d7341cf7);
+        
+
+        marker_943997db649c43fc841fd20a253492cb.bindPopup(popup_1e33b021f638403990d72b9028e11657)
+        ;
+
+        
+    
+    
+            var marker_4a323a2a7ae448fe8a80b396dac1838a = L.marker(
+                [10.3, -84.78333],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_4708459a723946e4903f8dd864bc3210 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c3707751033485e9fd06196aa31eef9 = $(`<div id="html_2c3707751033485e9fd06196aa31eef9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biologica Monteverde road to divide, swamp on continental divide <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-01 00:00:00 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Lawrence Kelly</div>`)[0];
+            popup_4708459a723946e4903f8dd864bc3210.setContent(html_2c3707751033485e9fd06196aa31eef9);
+        
+
+        marker_4a323a2a7ae448fe8a80b396dac1838a.bindPopup(popup_4708459a723946e4903f8dd864bc3210)
+        ;
+
+        
+    
+    
+            var marker_05b43c7765f147889d526690189717ba = L.marker(
+                [10.76667, -85.81667],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_ca2d6b72a42d46c2a13bf5ec1ad399bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a20659c690014d5580c743bfdd31a0a6 = $(`<div id="html_a20659c690014d5580c743bfdd31a0a6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Rincon de la Vieja Liberia, cabecera de Quebrada Rancho Grande <strong>Elevación:</strong> 1375.0 m  <strong>Fecha:</strong> 1987-12-01 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> Lawrence Kelly</div>`)[0];
+            popup_ca2d6b72a42d46c2a13bf5ec1ad399bd.setContent(html_a20659c690014d5580c743bfdd31a0a6);
+        
+
+        marker_05b43c7765f147889d526690189717ba.bindPopup(popup_ca2d6b72a42d46c2a13bf5ec1ad399bd)
+        ;
+
+        
+    
+    
+            var marker_85d0e69d9902478c910be18c149c5ea1 = L.marker(
+                [10.35, -84.83],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_6602698031714027948d326cf6d6e9d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1cb264e6de54727a4e57c7a993f441e = $(`<div id="html_d1cb264e6de54727a4e57c7a993f441e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Cordillera de Tilarán. Sendero Caño Negro. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1994-11-18 00:00:00 <strong>Recolectores:</strong> Fuentes, Zobeida <strong>Identificadores:</strong> González, José</div>`)[0];
+            popup_6602698031714027948d326cf6d6e9d8.setContent(html_d1cb264e6de54727a4e57c7a993f441e);
+        
+
+        marker_85d0e69d9902478c910be18c149c5ea1.bindPopup(popup_6602698031714027948d326cf6d6e9d8)
+        ;
+
+        
+    
+    
+            var marker_ba7d43fcf3be45898806edc52a03b02f = L.marker(
+                [10.3, -84.78],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_7df108545f764ab08f952eeb906a404f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15b7f9bc5ae64217aab73f87783180f3 = $(`<div id="html_15b7f9bc5ae64217aab73f87783180f3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Road to divide, swamp on continental divide (Sendero Pantanoso) and Sendero Chomogo. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-07-16 00:00:00 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_7df108545f764ab08f952eeb906a404f.setContent(html_15b7f9bc5ae64217aab73f87783180f3);
+        
+
+        marker_ba7d43fcf3be45898806edc52a03b02f.bindPopup(popup_7df108545f764ab08f952eeb906a404f)
+        ;
+
+        
+    
+    
+            var marker_ae68addb920746be8bc27f5b76d96c99 = L.marker(
+                [10.76, -85.81],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_201a5ae54c1c43b9846c68fbecd89fae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e962922d75e44498606f3dabd8c3ee7 = $(`<div id="html_6e962922d75e44498606f3dabd8c3ee7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Rincón de la Vieja Cabeceras de Quebrada Rancho Grande, bosque circundante a meseta Aguacatales. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Almeda, Frank</div>`)[0];
+            popup_201a5ae54c1c43b9846c68fbecd89fae.setContent(html_6e962922d75e44498606f3dabd8c3ee7);
+        
+
+        marker_ae68addb920746be8bc27f5b76d96c99.bindPopup(popup_201a5ae54c1c43b9846c68fbecd89fae)
+        ;
+
+        
+    
+    
+            var marker_3e83dcb28a4e4a86afe71bffc49196c9 = L.marker(
+                [10.33, -84.71],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_3acf6a21232e4a5b92eec7a634b68fc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fe8e5c64b2b4a148c05963bb827d191 = $(`<div id="html_9fe8e5c64b2b4a148c05963bb827d191" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Río Peñas blancas. Rancho escondido hasta San Gerardo. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1988-11-20 00:00:00 <strong>Recolectores:</strong> Bello, Erick <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_3acf6a21232e4a5b92eec7a634b68fc2.setContent(html_9fe8e5c64b2b4a148c05963bb827d191);
+        
+
+        marker_3e83dcb28a4e4a86afe71bffc49196c9.bindPopup(popup_3acf6a21232e4a5b92eec7a634b68fc2)
+        ;
+
+        
+    
+    
+            var marker_c3dda8d4b6b14434a1d61a22ea9b7bba = L.marker(
+                [10.33, -84.83],
+                {}
+            ).addTo(marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a);
+        
+    
+        var popup_8b11a5236cf24293968d32da715f9fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15285f1875db4174bb5388edbf87c93a = $(`<div id="html_15285f1875db4174bb5388edbf87c93a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Peñas Blancas River Valley. Atlantic slope, rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1985-10-12 00:00:00 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Haber, William</div>`)[0];
+            popup_8b11a5236cf24293968d32da715f9fa3.setContent(html_15285f1875db4174bb5388edbf87c93a);
+        
+
+        marker_c3dda8d4b6b14434a1d61a22ea9b7bba.bindPopup(popup_8b11a5236cf24293968d32da715f9fa3)
+        ;
+
+        
+    
+    
+            var layer_control_92c9df471aae48b5805aa9e20464e145 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f1a1eafd6ace4bfa9b605a44d998dd1e,
+                    "ESRI World Imagery" : tile_layer_8c036c4aa4bf48cdad6348c44965a054,
+                },
+                overlays :  {
+                    "macro_element_6de80f78e8d1454d99b65ef6d09ba62a" : marker_cluster_6de80f78e8d1454d99b65ef6d09ba62a,
+                },
+            };
+            L.control.layers(
+                layer_control_92c9df471aae48b5805aa9e20464e145.base_layers,
+                layer_control_92c9df471aae48b5805aa9e20464e145.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5c7acd2ab73c40db87e942e3a0204c62);
+            tile_layer_8c036c4aa4bf48cdad6348c44965a054.remove();
+        
+</script>

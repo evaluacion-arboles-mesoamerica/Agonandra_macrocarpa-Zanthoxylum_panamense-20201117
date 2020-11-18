@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_798f05f3e535401f9d7f6e3f9787fb23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_798f05f3e535401f9d7f6e3f9787fb23" ></div>
+        
+</body>
+<script>    
+    
+            var map_798f05f3e535401f9d7f6e3f9787fb23 = L.map(
+                "map_798f05f3e535401f9d7f6e3f9787fb23",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_798f05f3e535401f9d7f6e3f9787fb23);
+
+            
+
+        
+    
+            var tile_layer_95cdbf6be82e4a8790c70f3e8e9f2341 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_798f05f3e535401f9d7f6e3f9787fb23);
+        
+    
+            var tile_layer_f6ddb1c1c41841c89160381bbe4b81be = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_798f05f3e535401f9d7f6e3f9787fb23);
+        
+    
+            var marker_cluster_8178b5d304464b80a39fa309cee1ab20 = L.markerClusterGroup(
+                {}
+            );
+            map_798f05f3e535401f9d7f6e3f9787fb23.addLayer(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+            var marker_339235e602c94fe4bff351873c0dd9c3 = L.marker(
+                [9.6103, -83.8078],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_f63c56c64a884ab3977aee22b0cf6765 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fce557eb6a342dd9be92c27ef105537 = $(`<div id="html_6fce557eb6a342dd9be92c27ef105537" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José: Dota. R.F. Los Santos. Cuenca del Savegre. Ojo de Agua <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1999-04-18 <strong>Recolectores:</strong> M. Alfaro <strong>Identificadores:</strong> J.F. Morales</div>`)[0];
+            popup_f63c56c64a884ab3977aee22b0cf6765.setContent(html_6fce557eb6a342dd9be92c27ef105537);
+        
+
+        marker_339235e602c94fe4bff351873c0dd9c3.bindPopup(popup_f63c56c64a884ab3977aee22b0cf6765)
+        ;
+
+        
+    
+    
+            var marker_51b2ef7696644e8c86af5f7eb3044374 = L.marker(
+                [10.01, -83.75],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_692d34b3c57d4a948cc28b2be2becfac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_867b82e70cd14406820b8ed11888ee26 = $(`<div id="html_867b82e70cd14406820b8ed11888ee26" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Volcán Turrialba Alrededores del crater. <strong>Elevación:</strong> 3100.0 m  <strong>Fecha:</strong> 2004-03-29 <strong>Recolectores:</strong> Chacón, Rafael <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_692d34b3c57d4a948cc28b2be2becfac.setContent(html_867b82e70cd14406820b8ed11888ee26);
+        
+
+        marker_51b2ef7696644e8c86af5f7eb3044374.bindPopup(popup_692d34b3c57d4a948cc28b2be2becfac)
+        ;
+
+        
+    
+    
+            var marker_0e1f553279754b0bb8d2f888c2e30399 = L.marker(
+                [9.45, -83.5],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_ce9ec897fdd5449ab7585816da95d7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1250be44f85a4099b173315c3b8c28de = $(`<div id="html_1250be44f85a4099b173315c3b8c28de" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Chirripó Sendero de las Maquinas, Monte Sin Fé, Disturbed, open burned area of Quercus, now mostly Ericaceae. <strong>Elevación:</strong> 2590.0 m  <strong>Fecha:</strong> 1999-03-18 <strong>Recolectores:</strong> Luteyn, James L. <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_ce9ec897fdd5449ab7585816da95d7d3.setContent(html_1250be44f85a4099b173315c3b8c28de);
+        
+
+        marker_0e1f553279754b0bb8d2f888c2e30399.bindPopup(popup_ce9ec897fdd5449ab7585816da95d7d3)
+        ;
+
+        
+    
+    
+            var marker_edd7a9eda0844b8ab0c48b8596e535e7 = L.marker(
+                [9.45, -83.5],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_d5975bbe586543b2a31aa4e6a54337ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21b4076a4e8943c3b148ca4678af32e5 = $(`<div id="html_21b4076a4e8943c3b148ca4678af32e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Chirripó  Sendero de las Machinas <strong>Elevación:</strong> 2590.0 m  <strong>Fecha:</strong> 1999-03-18 <strong>Recolectores:</strong> Luteyn, James L. <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_d5975bbe586543b2a31aa4e6a54337ca.setContent(html_21b4076a4e8943c3b148ca4678af32e5);
+        
+
+        marker_edd7a9eda0844b8ab0c48b8596e535e7.bindPopup(popup_d5975bbe586543b2a31aa4e6a54337ca)
+        ;
+
+        
+    
+    
+            var marker_3830b999ad3e43c490ced661b94f736d = L.marker(
+                [9.52, -83.59],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_03aadfe4ca2144c29ff7ba1d754a5adb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f1395b59d7c477486a8580bc544eb77 = $(`<div id="html_6f1395b59d7c477486a8580bc544eb77" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Chirripó De Monte sin Fé a base crestones <strong>Elevación:</strong> 3300.0 m  <strong>Fecha:</strong> 1996-07-29 <strong>Recolectores:</strong> Alfaro, Evelio <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_03aadfe4ca2144c29ff7ba1d754a5adb.setContent(html_6f1395b59d7c477486a8580bc544eb77);
+        
+
+        marker_3830b999ad3e43c490ced661b94f736d.bindPopup(popup_03aadfe4ca2144c29ff7ba1d754a5adb)
+        ;
+
+        
+    
+    
+            var marker_9b167b4cffb54458b63b752b35f504ed = L.marker(
+                [9.56, -83.8],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_4567282abe754f7098c2263ee7697326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a06e5eccd9743a4875f59e676b791f6 = $(`<div id="html_8a06e5eccd9743a4875f59e676b791f6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos San Gerardo, R.F Los Santos. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> van Omme, Liz <strong>Identificadores:</strong> L. van omme</div>`)[0];
+            popup_4567282abe754f7098c2263ee7697326.setContent(html_8a06e5eccd9743a4875f59e676b791f6);
+        
+
+        marker_9b167b4cffb54458b63b752b35f504ed.bindPopup(popup_4567282abe754f7098c2263ee7697326)
+        ;
+
+        
+    
+    
+            var marker_bd841e2fad4645548700a2683717ef45 = L.marker(
+                [9.62, -83.85],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_c041c5db765d4336aa88db55d1b818a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d91777748b4d4c92b2943e1072f45c70 = $(`<div id="html_d91777748b4d4c92b2943e1072f45c70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos <strong>Elevación:</strong> 3159.0 m  <strong>Fecha:</strong> 1994-03-28 <strong>Recolectores:</strong> Vargas, Gustavo <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_c041c5db765d4336aa88db55d1b818a8.setContent(html_d91777748b4d4c92b2943e1072f45c70);
+        
+
+        marker_bd841e2fad4645548700a2683717ef45.bindPopup(popup_c041c5db765d4336aa88db55d1b818a8)
+        ;
+
+        
+    
+    
+            var marker_ebc6ae80b80840b5b2d0ab2b7f78887e = L.marker(
+                [9.57, -83.74],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_f6dec5955f6443768569eb36b2a25bfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21be0dd75054452ea3c985220b513768 = $(`<div id="html_21be0dd75054452ea3c985220b513768" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Villa Mills - Cerro de la Muerte. Near access road. <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1990-07-29 <strong>Recolectores:</strong> Mc Clintock, Tom <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_f6dec5955f6443768569eb36b2a25bfc.setContent(html_21be0dd75054452ea3c985220b513768);
+        
+
+        marker_ebc6ae80b80840b5b2d0ab2b7f78887e.bindPopup(popup_f6dec5955f6443768569eb36b2a25bfc)
+        ;
+
+        
+    
+    
+            var marker_1a8f9dcb28a14c529d22614b76f57245 = L.marker(
+                [9.55, -83.72],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_49c08f592f0647819e34870e9f02cea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_083741bbe8014f7780c2c97f01b2767d = $(`<div id="html_083741bbe8014f7780c2c97f01b2767d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos 96 km south of San Jose, on the Pan American Highway. Near the highest saddle of Cerro la Muerte. <strong>Elevación:</strong> 3100.0 m  <strong>Fecha:</strong> 1988-05-03 <strong>Recolectores:</strong> Wallace, B. J. <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_49c08f592f0647819e34870e9f02cea5.setContent(html_083741bbe8014f7780c2c97f01b2767d);
+        
+
+        marker_1a8f9dcb28a14c529d22614b76f57245.bindPopup(popup_49c08f592f0647819e34870e9f02cea5)
+        ;
+
+        
+    
+    
+            var marker_b733d04c773b41be8e85d19c01ae0b09 = L.marker(
+                [9.57, -83.75],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_f19b62bff5404e15921696018cad3548 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ab7cd75a2c347e1ae95291fd76abd50 = $(`<div id="html_4ab7cd75a2c347e1ae95291fd76abd50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de la Muerte, Cordillera de Talamanca <strong>Elevación:</strong> 3250.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Skutch, Alexánder F. <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_f19b62bff5404e15921696018cad3548.setContent(html_4ab7cd75a2c347e1ae95291fd76abd50);
+        
+
+        marker_b733d04c773b41be8e85d19c01ae0b09.bindPopup(popup_f19b62bff5404e15921696018cad3548)
+        ;
+
+        
+    
+    
+            var marker_2da53982b5534433949ba630533ca727 = L.marker(
+                [9.59, -83.75],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_56f415e288674058b153bc9d0ffcd25a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36059bbd71f041a3811203f66a23dc58 = $(`<div id="html_36059bbd71f041a3811203f66a23dc58" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Cerro de la Muerte, between Cerros Estaquero and Sákira, about km 84. <strong>Elevación:</strong> 3220.0 m  <strong>Fecha:</strong> 1985-04-21 <strong>Recolectores:</strong> Horn, Sally P. <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_56f415e288674058b153bc9d0ffcd25a.setContent(html_36059bbd71f041a3811203f66a23dc58);
+        
+
+        marker_2da53982b5534433949ba630533ca727.bindPopup(popup_56f415e288674058b153bc9d0ffcd25a)
+        ;
+
+        
+    
+    
+            var marker_38e5f6dd3f59491aa36be7169e126a02 = L.marker(
+                [9.2, -82.98],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_db50d41388e242e7af058c541b1f1f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3d6d8a85caf46b6a595c42b231147b3 = $(`<div id="html_f3d6d8a85caf46b6a595c42b231147b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Unnamend cordillera between the Río Terbí and the Río Siní <strong>Elevación:</strong> 2575.0 m  <strong>Fecha:</strong> 1984-09-13 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Vargas, Gustavo</div>`)[0];
+            popup_db50d41388e242e7af058c541b1f1f6d.setContent(html_f3d6d8a85caf46b6a595c42b231147b3);
+        
+
+        marker_38e5f6dd3f59491aa36be7169e126a02.bindPopup(popup_db50d41388e242e7af058c541b1f1f6d)
+        ;
+
+        
+    
+    
+            var marker_d5dc8459760e4ab793b31965bd14ccab = L.marker(
+                [9.08, -82.84],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_9ff1550db1b74f128e07b2ebbdc0a8ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0d39b67d7594dd589c3d144daf006dd = $(`<div id="html_a0d39b67d7594dd589c3d144daf006dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro. Cordillera de Talamanca. headwaters of the Río Culubre, 6 airline km NW of the peak of the Cerro Echandí on the Costa Rican Panamenian International  Border <strong>Elevación:</strong> 2525.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_9ff1550db1b74f128e07b2ebbdc0a8ba.setContent(html_a0d39b67d7594dd589c3d144daf006dd);
+        
+
+        marker_d5dc8459760e4ab793b31965bd14ccab.bindPopup(popup_9ff1550db1b74f128e07b2ebbdc0a8ba)
+        ;
+
+        
+    
+    
+            var marker_10450da3ea004845877498f6c761d283 = L.marker(
+                [9.56, -83.66],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_a1376ecf07984f66a042cd527d570edd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7389a710346e44fda91a2168ba4bda66 = $(`<div id="html_7389a710346e44fda91a2168ba4bda66" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San José-Cartago. Cordillera de Talamanca, upper slopes, western ridges of Cerros Cuericí. Trail along ridge through oak forest with bamboo (Chusquea) understory <strong>Elevación:</strong> 3160.0 m  <strong>Fecha:</strong> 1983-09-15 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Vargas, Gustavo</div>`)[0];
+            popup_a1376ecf07984f66a042cd527d570edd.setContent(html_7389a710346e44fda91a2168ba4bda66);
+        
+
+        marker_10450da3ea004845877498f6c761d283.bindPopup(popup_a1376ecf07984f66a042cd527d570edd)
+        ;
+
+        
+    
+    
+            var marker_7ad20a3cb85948c18b1c0ff9bc7809d2 = L.marker(
+                [9.56, -83.75],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_cca2635d292c4020a44dfec21e69edb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e423ea275db04747955509c56ad6165f = $(`<div id="html_e423ea275db04747955509c56ad6165f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Cerro de la Muerte, route 2. <strong>Elevación:</strong> 3230.0 m  <strong>Fecha:</strong> 1981-01-10 <strong>Recolectores:</strong> Zika, Peter F. <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_cca2635d292c4020a44dfec21e69edb0.setContent(html_e423ea275db04747955509c56ad6165f);
+        
+
+        marker_7ad20a3cb85948c18b1c0ff9bc7809d2.bindPopup(popup_cca2635d292c4020a44dfec21e69edb0)
+        ;
+
+        
+    
+    
+            var marker_2a618252303f4be08e1c012b1018681f = L.marker(
+                [9.61, -83.81],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_5971d793c4bd4949bf2d51707c7f166e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08d0730c257f441990a3d82d3dc6d94d = $(`<div id="html_08d0730c257f441990a3d82d3dc6d94d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ojo de Agua, Carretera Panamericana <strong>Elevación:</strong> 2800.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Todzia, Carol A. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_5971d793c4bd4949bf2d51707c7f166e.setContent(html_08d0730c257f441990a3d82d3dc6d94d);
+        
+
+        marker_2a618252303f4be08e1c012b1018681f.bindPopup(popup_5971d793c4bd4949bf2d51707c7f166e)
+        ;
+
+        
+    
+    
+            var marker_6b4208bf954048fda9f9972a3efcce95 = L.marker(
+                [9.68, -83.91],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_e3828989b57d474aa0dbefd29d2093d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ca9490290cc4554a60d15625c1baf5d = $(`<div id="html_2ca9490290cc4554a60d15625c1baf5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Del Empalme a unos 9 km más al Sur <strong>Elevación:</strong> 2530.0 m  <strong>Fecha:</strong> 1976-06-10 <strong>Recolectores:</strong> Poveda, Luis Jorge <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e3828989b57d474aa0dbefd29d2093d5.setContent(html_2ca9490290cc4554a60d15625c1baf5d);
+        
+
+        marker_6b4208bf954048fda9f9972a3efcce95.bindPopup(popup_e3828989b57d474aa0dbefd29d2093d5)
+        ;
+
+        
+    
+    
+            var marker_5ae00b46879f4da193791f55061ba09b = L.marker(
+                [9.66, -83.85],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_19e9ee90c53c45598b4a0889fd1e7ba1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6cdef8e151c4da18d1ba0f28040896c = $(`<div id="html_e6cdef8e151c4da18d1ba0f28040896c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cartago and San José. Along the Interamerican Hwy. ca. 15-20 km. SE by road from El Empalme. Roadsides and forest being cleraed for pasture. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1970-07-15 <strong>Recolectores:</strong> Lellinger, David B. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_19e9ee90c53c45598b4a0889fd1e7ba1.setContent(html_e6cdef8e151c4da18d1ba0f28040896c);
+        
+
+        marker_5ae00b46879f4da193791f55061ba09b.bindPopup(popup_19e9ee90c53c45598b4a0889fd1e7ba1)
+        ;
+
+        
+    
+    
+            var marker_5b5996d079624dad8dc5f97c3aa80cfb = L.marker(
+                [9.55, -83.73],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_8a79f801fa484aadbd169b7fcce61715 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b32071027be4f65a0a4a6e2463bc514 = $(`<div id="html_8b32071027be4f65a0a4a6e2463bc514" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos About 5 km east of the highest point on the Interamericana Hwy. ( west of Villa MIlls). <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1967-01-13 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> González, Luis</div>`)[0];
+            popup_8a79f801fa484aadbd169b7fcce61715.setContent(html_8b32071027be4f65a0a4a6e2463bc514);
+        
+
+        marker_5b5996d079624dad8dc5f97c3aa80cfb.bindPopup(popup_8a79f801fa484aadbd169b7fcce61715)
+        ;
+
+        
+    
+    
+            var marker_48932a06492d4f01b51346cca47cc2a6 = L.marker(
+                [9.56, -83.7],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_ef388820d06e40faaf6fdd00f87bc400 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_491742ba4c784a9db2ac7163dd390187 = $(`<div id="html_491742ba4c784a9db2ac7163dd390187" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Cerro de la Muerte, entre Villa Mills y División Carrtera Panamericana Sur. <strong>Elevación:</strong> 2900.0 m  <strong>Fecha:</strong> 1965-02-26 <strong>Recolectores:</strong> Jiménez, Alfonso <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ef388820d06e40faaf6fdd00f87bc400.setContent(html_491742ba4c784a9db2ac7163dd390187);
+        
+
+        marker_48932a06492d4f01b51346cca47cc2a6.bindPopup(popup_ef388820d06e40faaf6fdd00f87bc400)
+        ;
+
+        
+    
+    
+            var marker_208d90c513444d05a958812a4e4ae5f8 = L.marker(
+                [9.66, -83.88],
+                {}
+            ).addTo(marker_cluster_8178b5d304464b80a39fa309cee1ab20);
+        
+    
+        var popup_4fdb73bb56c1405cbdebcbcf2a0c7e69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a347c594e934d7f98bc7ee9a830227a = $(`<div id="html_0a347c594e934d7f98bc7ee9a830227a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En robledal de la Trinidad, al SE del Empalme <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1964-07-29 <strong>Recolectores:</strong> Jiménez, Alfonso <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_4fdb73bb56c1405cbdebcbcf2a0c7e69.setContent(html_0a347c594e934d7f98bc7ee9a830227a);
+        
+
+        marker_208d90c513444d05a958812a4e4ae5f8.bindPopup(popup_4fdb73bb56c1405cbdebcbcf2a0c7e69)
+        ;
+
+        
+    
+    
+            var layer_control_48ea574920a74a9bb24a8e7af619529a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_95cdbf6be82e4a8790c70f3e8e9f2341,
+                    "ESRI World Imagery" : tile_layer_f6ddb1c1c41841c89160381bbe4b81be,
+                },
+                overlays :  {
+                    "macro_element_8178b5d304464b80a39fa309cee1ab20" : marker_cluster_8178b5d304464b80a39fa309cee1ab20,
+                },
+            };
+            L.control.layers(
+                layer_control_48ea574920a74a9bb24a8e7af619529a.base_layers,
+                layer_control_48ea574920a74a9bb24a8e7af619529a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_798f05f3e535401f9d7f6e3f9787fb23);
+            tile_layer_f6ddb1c1c41841c89160381bbe4b81be.remove();
+        
+</script>

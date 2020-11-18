@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2a5541cfd8e4fbc9da84f2bb5d94daa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b2a5541cfd8e4fbc9da84f2bb5d94daa" ></div>
+        
+</body>
+<script>    
+    
+            var map_b2a5541cfd8e4fbc9da84f2bb5d94daa = L.map(
+                "map_b2a5541cfd8e4fbc9da84f2bb5d94daa",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+
+            
+
+        
+    
+            var tile_layer_0a2e420298fd4a2c9d928d41983c1615 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+            var tile_layer_0ed3459989664754a472f507137ed537 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+            var circle_marker_5f4f4b7bf7d343b8a43c4acd76a5ea5a = L.circleMarker(
+                [10.28333, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_a7c779f82b3441179972c96ef17d3d02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e09dead759e24609bc87db8a1b5e8384 = $(`<div id="html_e09dead759e24609bc87db8a1b5e8384" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ecolodge San Luis, Buenos Amigos Trail, ca. 2 km along trail. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-05-25 <strong>Recolectores:</strong> L. R. Landrum; A. Salywon, K. Bagstad, E. Gilbert, D. Damrel, R. Schoeninger, E. Makings <strong>Identificadores:</strong> P. W. Fritsch</div>`)[0];
+            popup_a7c779f82b3441179972c96ef17d3d02.setContent(html_e09dead759e24609bc87db8a1b5e8384);
+        
+
+        circle_marker_5f4f4b7bf7d343b8a43c4acd76a5ea5a.bindPopup(popup_a7c779f82b3441179972c96ef17d3d02)
+        ;
+
+        
+    
+    
+            var circle_marker_1638a28c8785449a92198426dd76fae1 = L.circleMarker(
+                [10.28333, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_01cfe153aec34cfcb2c045c8582f4692 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd3ba1add4df460795b68ad4a8981efc = $(`<div id="html_dd3ba1add4df460795b68ad4a8981efc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ecolodge San Luis, Buenos Amigos trail, ca. 2 km along trail. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2002-05-25 <strong>Recolectores:</strong> L. R. Landrum; A. Salywon, K. Bagstad, E. Gilbert, D. Damrel, R. Schoeninger, E. Makings <strong>Identificadores:</strong> P. W. Fritsch</div>`)[0];
+            popup_01cfe153aec34cfcb2c045c8582f4692.setContent(html_dd3ba1add4df460795b68ad4a8981efc);
+        
+
+        circle_marker_1638a28c8785449a92198426dd76fae1.bindPopup(popup_01cfe153aec34cfcb2c045c8582f4692)
+        ;
+
+        
+    
+    
+            var circle_marker_2e5743eea0414428907162fec6de533a = L.circleMarker(
+                [12.929096000000001, -85.486746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_81142d8696e547e1b4547050dd1a4de8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75e640e7edfa41d68f678b604f40df1f = $(`<div id="html_75e640e7edfa41d68f678b604f40df1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Darién, 28-31 mi NE of Sebaco <strong>Elevación:</strong> 630.0 m  <strong>Fecha:</strong> 1962-07-21 <strong>Recolectores:</strong> G. L. Webster; K. Miller; L. Miller <strong>Identificadores:</strong> P. Fritsch</div>`)[0];
+            popup_81142d8696e547e1b4547050dd1a4de8.setContent(html_75e640e7edfa41d68f678b604f40df1f);
+        
+
+        circle_marker_2e5743eea0414428907162fec6de533a.bindPopup(popup_81142d8696e547e1b4547050dd1a4de8)
+        ;
+
+        
+    
+    
+            var circle_marker_96c30b68c3e243de8b439c03c53cf06d = L.circleMarker(
+                [10.27, -84.82],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_f375980f3325434d8f765536ab942848 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d957f842aaa4fd297272a70f3054ace = $(`<div id="html_0d957f842aaa4fd297272a70f3054ace" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Buen Amigo. San Luis. Monteverde. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1993-03-14 <strong>Recolectores:</strong> Zobeida Fuentes <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_f375980f3325434d8f765536ab942848.setContent(html_0d957f842aaa4fd297272a70f3054ace);
+        
+
+        circle_marker_96c30b68c3e243de8b439c03c53cf06d.bindPopup(popup_f375980f3325434d8f765536ab942848)
+        ;
+
+        
+    
+    
+            var circle_marker_6381e3f533b0467dbfa12184ad583f1e = L.circleMarker(
+                [13.033333, -85.93333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_582a3d2e512a49728e636dff6a858f9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_071deb58152a4e69a7f125db5af418b5 = $(`<div id="html_071deb58152a4e69a7f125db5af418b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Km 146 Carretera Matagalpa-Jinotega. <strong>Elevación:</strong> 1475.0 m  <strong>Fecha:</strong> 1982-05-16 <strong>Recolectores:</strong> P. P. Moreno <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_582a3d2e512a49728e636dff6a858f9a.setContent(html_071deb58152a4e69a7f125db5af418b5);
+        
+
+        circle_marker_6381e3f533b0467dbfa12184ad583f1e.bindPopup(popup_582a3d2e512a49728e636dff6a858f9a)
+        ;
+
+        
+    
+    
+            var circle_marker_a3b05d27cfc641639b672790f22bcdc8 = L.circleMarker(
+                [13.0, -85.916667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_54b28baa8a0341bc9d9990c9021fa51b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02c07714b47249b1b37d8dbc3811fc8b = $(`<div id="html_02c07714b47249b1b37d8dbc3811fc8b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Behind La Selva Negra Hotel, slopes of Cerro Picacho, near the border with Dept. Jinotega. <strong>Elevación:</strong> 1370.0 m  <strong>Fecha:</strong> 1985-05-23 <strong>Recolectores:</strong> Gerrit Davidse|Alfredo Grijalva P.|Mario Sousa S. <strong>Identificadores:</strong> P.W. Fitsch</div>`)[0];
+            popup_54b28baa8a0341bc9d9990c9021fa51b.setContent(html_02c07714b47249b1b37d8dbc3811fc8b);
+        
+
+        circle_marker_a3b05d27cfc641639b672790f22bcdc8.bindPopup(popup_54b28baa8a0341bc9d9990c9021fa51b)
+        ;
+
+        
+    
+    
+            var circle_marker_6e8a90067b1c4414bddc84b760f8235b = L.circleMarker(
+                [10.916667, -85.466667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_48b0623fb35f4d26a4b64574ef52cae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d31fd8050a5248baa2a6fe3ae596363f = $(`<div id="html_d31fd8050a5248baa2a6fe3ae596363f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Guanacaste, Estación Mengo. Volcán Cacao. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-07-14 <strong>Recolectores:</strong> II INBio <strong>Identificadores:</strong> P. W. Fritsch (CAS)</div>`)[0];
+            popup_48b0623fb35f4d26a4b64574ef52cae7.setContent(html_d31fd8050a5248baa2a6fe3ae596363f);
+        
+
+        circle_marker_6e8a90067b1c4414bddc84b760f8235b.bindPopup(popup_48b0623fb35f4d26a4b64574ef52cae7)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0ed16ad5a74ae4a77c256b060881fb = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_9b1d879bcab54f249a5d5a5ea0dcc859 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb644acc9de4fef84f14cda2aed068b = $(`<div id="html_2bb644acc9de4fef84f14cda2aed068b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Guacimal. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1989-05-31 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_9b1d879bcab54f249a5d5a5ea0dcc859.setContent(html_2bb644acc9de4fef84f14cda2aed068b);
+        
+
+        circle_marker_7d0ed16ad5a74ae4a77c256b060881fb.bindPopup(popup_9b1d879bcab54f249a5d5a5ea0dcc859)
+        ;
+
+        
+    
+    
+            var circle_marker_b6e52345a823442a905ba3562550a286 = L.circleMarker(
+                [13.005, -85.90055600000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_a54e00cb7400469b80317c3f30920fa6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a66e721aa8a3446f8778967a58c31692 = $(`<div id="html_a66e721aa8a3446f8778967a58c31692" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Canal Trail on S side of Cerro Picacho, above Selva Negra hotel. <strong>Elevación:</strong> 1418.0 m  <strong>Fecha:</strong> 2008-06-16 <strong>Recolectores:</strong> W. D. Stevens|I. Coronado G.|O. M. Montiel J.|Christopher Davidson|Sharon R. Christoph|M. Salazar <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_a54e00cb7400469b80317c3f30920fa6.setContent(html_a66e721aa8a3446f8778967a58c31692);
+        
+
+        circle_marker_b6e52345a823442a905ba3562550a286.bindPopup(popup_a54e00cb7400469b80317c3f30920fa6)
+        ;
+
+        
+    
+    
+            var circle_marker_a8700fd8d9f14e9ea7eabced58f992c0 = L.circleMarker(
+                [13.983889000000001, -86.188055],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_bef08504b547414ba6ad3ec1634e9c98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45254735f4de42d8a11db1e8070629d0 = $(`<div id="html_45254735f4de42d8a11db1e8070629d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de Jalapa, subiendo y bajando la cima del cerro de Jesús. Sobre la linea fronteriza <strong>Elevación:</strong> 1487.5 m  <strong>Fecha:</strong> 2006-07-19 <strong>Recolectores:</strong> L.D. Paguaga|N. Toval <strong>Identificadores:</strong> W.D. Stevens</div>`)[0];
+            popup_bef08504b547414ba6ad3ec1634e9c98.setContent(html_45254735f4de42d8a11db1e8070629d0);
+        
+
+        circle_marker_a8700fd8d9f14e9ea7eabced58f992c0.bindPopup(popup_bef08504b547414ba6ad3ec1634e9c98)
+        ;
+
+        
+    
+    
+            var circle_marker_86861d5cdedf42d19fc2a1c795c5fe61 = L.circleMarker(
+                [10.305833, -84.808611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_5f81be9a42fd4e4fab33e705c29c6a2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a9b9a2572dc484bba0c5958ec9d690f = $(`<div id="html_1a9b9a2572dc484bba0c5958ec9d690f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde, community <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1978-11-13 <strong>Recolectores:</strong> William A. Haber <strong>Identificadores:</strong> Peter Fritsch, June 1995 (DUKE)</div>`)[0];
+            popup_5f81be9a42fd4e4fab33e705c29c6a2e.setContent(html_1a9b9a2572dc484bba0c5958ec9d690f);
+        
+
+        circle_marker_86861d5cdedf42d19fc2a1c795c5fe61.bindPopup(popup_5f81be9a42fd4e4fab33e705c29c6a2e)
+        ;
+
+        
+    
+    
+            var circle_marker_841100f935b64165ab107351ff6f9139 = L.circleMarker(
+                [10.300278, -84.786111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_ede8ea2dc2b841439cbf0bc841b8c5a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ea1c748e52e467da87b96e54bd4232e = $(`<div id="html_0ea1c748e52e467da87b96e54bd4232e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En orilla de bosque y potrero cerca de Reserva. Flores blancas con anteros amarillos. Hojas con envéz. Arbol. 12 m. <strong>Elevación:</strong> 1540.0 m  <strong>Fecha:</strong> 1977-07-25 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> P. W. Fritsch (CAS)</div>`)[0];
+            popup_ede8ea2dc2b841439cbf0bc841b8c5a6.setContent(html_0ea1c748e52e467da87b96e54bd4232e);
+        
+
+        circle_marker_841100f935b64165ab107351ff6f9139.bindPopup(popup_ede8ea2dc2b841439cbf0bc841b8c5a6)
+        ;
+
+        
+    
+    
+            var circle_marker_82029147c8e04990be7b4f8ce0a189d0 = L.circleMarker(
+                [13.033333, -85.93333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_f9106116716d4a4ab12278726df9770e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2276a951180c4272902f8e8223854438 = $(`<div id="html_2276a951180c4272902f8e8223854438" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 6 km N of Santa María de Ostuma, Cordillera Central de Nicaragua; cloud forest <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1963-01-15 <strong>Recolectores:</strong> Louis O. Williams|Antonio Molina R.|Terua P. Williams <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_f9106116716d4a4ab12278726df9770e.setContent(html_2276a951180c4272902f8e8223854438);
+        
+
+        circle_marker_82029147c8e04990be7b4f8ce0a189d0.bindPopup(popup_f9106116716d4a4ab12278726df9770e)
+        ;
+
+        
+    
+    
+            var circle_marker_2f0b0e07a8bb434687f0406c9c762e18 = L.circleMarker(
+                [13.01666, -85.91666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_13a4817a58844ffeb07ace781a7b3d9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cda1b3b2ad44d0bb39679ce6b6e41b7 = $(`<div id="html_0cda1b3b2ad44d0bb39679ce6b6e41b7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Carretera entre Matagalpa y Jinotega, Km 146 <strong>Elevación:</strong> 1320.0 m  <strong>Fecha:</strong> 1985-05-27 <strong>Recolectores:</strong> P. P. Moreno <strong>Identificadores:</strong> W.D. Stevens</div>`)[0];
+            popup_13a4817a58844ffeb07ace781a7b3d9d.setContent(html_0cda1b3b2ad44d0bb39679ce6b6e41b7);
+        
+
+        circle_marker_2f0b0e07a8bb434687f0406c9c762e18.bindPopup(popup_13a4817a58844ffeb07ace781a7b3d9d)
+        ;
+
+        
+    
+    
+            var circle_marker_b5e4b043ea7a4818955aa4886d33bf5d = L.circleMarker(
+                [13.25, -86.25],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_48fc56a040844e3d840120029dc0c359 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_370469e774364231a1666f73c72f134c = $(`<div id="html_370469e774364231a1666f73c72f134c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Laguna Miraflores. <strong>Elevación:</strong> 1375.0 m  <strong>Fecha:</strong> 1975-06-01 <strong>Recolectores:</strong> John T. Atwood <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_48fc56a040844e3d840120029dc0c359.setContent(html_370469e774364231a1666f73c72f134c);
+        
+
+        circle_marker_b5e4b043ea7a4818955aa4886d33bf5d.bindPopup(popup_48fc56a040844e3d840120029dc0c359)
+        ;
+
+        
+    
+    
+            var circle_marker_18a5a6d759a845a59098a97feef09d21 = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_fc420c1ccefa4454a4c70a0f9ceac453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbcddc71fa0a43bfb16a78a13be82116 = $(`<div id="html_bbcddc71fa0a43bfb16a78a13be82116" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán, Monteverde Comunidad <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-06-06 <strong>Recolectores:</strong> Valerie J. Dryer <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_fc420c1ccefa4454a4c70a0f9ceac453.setContent(html_bbcddc71fa0a43bfb16a78a13be82116);
+        
+
+        circle_marker_18a5a6d759a845a59098a97feef09d21.bindPopup(popup_fc420c1ccefa4454a4c70a0f9ceac453)
+        ;
+
+        
+    
+    
+            var circle_marker_04328ac2dc914ee892e3558e5abba44a = L.circleMarker(
+                [13.016667, -85.93333299999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_bdd73d38f5ae4b06bdff583e3c82dd7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88db41745de44e7c889fafdae56d7ca8 = $(`<div id="html_88db41745de44e7c889fafdae56d7ca8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Hwy. 3 ca. 1 km NW of La Fundadora entrance, unnamed peak ca. 500 m W of Hwy.; cloud forest. <strong>Elevación:</strong> 1485.0 m  <strong>Fecha:</strong> 1981-05-24 <strong>Recolectores:</strong> W. D. Stevens|James E. Henrich <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_bdd73d38f5ae4b06bdff583e3c82dd7e.setContent(html_88db41745de44e7c889fafdae56d7ca8);
+        
+
+        circle_marker_04328ac2dc914ee892e3558e5abba44a.bindPopup(popup_bdd73d38f5ae4b06bdff583e3c82dd7e)
+        ;
+
+        
+    
+    
+            var circle_marker_6269b11e165c49c683120ac0204cd599 = L.circleMarker(
+                [10.92, -85.44],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_d31d656e271243809b179f8a22b30114 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d98d986dd7e54008a784ac1bec810056 = $(`<div id="html_d98d986dd7e54008a784ac1bec810056" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Cacao <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Carlos Chávez <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_d31d656e271243809b179f8a22b30114.setContent(html_d98d986dd7e54008a784ac1bec810056);
+        
+
+        circle_marker_6269b11e165c49c683120ac0204cd599.bindPopup(popup_d31d656e271243809b179f8a22b30114)
+        ;
+
+        
+    
+    
+            var circle_marker_cb90bee7191047469163e89e84ec827f = L.circleMarker(
+                [10.3, -84.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_0b082caf4c924f20a5bf3e65ffac1ad6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b15f8c6021e4b758bc03e086c851b59 = $(`<div id="html_9b15f8c6021e4b758bc03e086c851b59" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In Mata's pasture, Monteverde <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1977-07-26 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_0b082caf4c924f20a5bf3e65ffac1ad6.setContent(html_9b15f8c6021e4b758bc03e086c851b59);
+        
+
+        circle_marker_cb90bee7191047469163e89e84ec827f.bindPopup(popup_0b082caf4c924f20a5bf3e65ffac1ad6)
+        ;
+
+        
+    
+    
+            var circle_marker_e3901bd9f7d34e00ae1fe9e1e463ac5f = L.circleMarker(
+                [13.166667000000002, -86.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_0173cb1a77e54a0dbe12053bcc149b8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_163e7f393ba94567b236bce0587dc721 = $(`<div id="html_163e7f393ba94567b236bce0587dc721" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Natural Miraflor, Municipio de Esteli, Comunidad Los Volcancitos <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-07-10 <strong>Recolectores:</strong> R. M. Rueda|I. Coronado G.|W. Velásquez|M. Arróliga <strong>Identificadores:</strong> A. Pool</div>`)[0];
+            popup_0173cb1a77e54a0dbe12053bcc149b8a.setContent(html_163e7f393ba94567b236bce0587dc721);
+        
+
+        circle_marker_e3901bd9f7d34e00ae1fe9e1e463ac5f.bindPopup(popup_0173cb1a77e54a0dbe12053bcc149b8a)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e625fa82b84860821bef6376993c33 = L.circleMarker(
+                [13.266667000000002, -86.266667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_5841c1c16c384b569f555f463cf31781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8238e5b908364672956e497220636534 = $(`<div id="html_8238e5b908364672956e497220636534" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Municipio de Esteli, ásentamiento Puertas Azules. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1999-04-17 <strong>Recolectores:</strong> R. M. Rueda|W. Velásquez <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_5841c1c16c384b569f555f463cf31781.setContent(html_8238e5b908364672956e497220636534);
+        
+
+        circle_marker_e3e625fa82b84860821bef6376993c33.bindPopup(popup_5841c1c16c384b569f555f463cf31781)
+        ;
+
+        
+    
+    
+            var circle_marker_b873e388a8234a8c9db3183947503d7e = L.circleMarker(
+                [13.03333, -85.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_8a04727e16ad40e793b2727dd63b2aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_956473105e4a44c5b72399a1c9358d40 = $(`<div id="html_956473105e4a44c5b72399a1c9358d40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 27.5-28 miles NE of Sebaco <strong>Elevación:</strong> 1325.0 m  <strong>Fecha:</strong> 1962-07-21 <strong>Recolectores:</strong> Grady L. Webster|Kim I. Miller|Lillian W. Miller <strong>Identificadores:</strong> P.W. Fritsch</div>`)[0];
+            popup_8a04727e16ad40e793b2727dd63b2aa2.setContent(html_956473105e4a44c5b72399a1c9358d40);
+        
+
+        circle_marker_b873e388a8234a8c9db3183947503d7e.bindPopup(popup_8a04727e16ad40e793b2727dd63b2aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_0ffaabe25b234d638480bbeed165fcea = L.circleMarker(
+                [10.266667, -84.81666700000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_2ba9a39759964b47bd3062a373ace779 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f45d254c2e624816bc5e0a1ad845a20c = $(`<div id="html_f45d254c2e624816bc5e0a1ad845a20c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino a San Luis de Monteverde. <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 2002-05-23 <strong>Recolectores:</strong> Leslie Roger Landrum <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_2ba9a39759964b47bd3062a373ace779.setContent(html_f45d254c2e624816bc5e0a1ad845a20c);
+        
+
+        circle_marker_0ffaabe25b234d638480bbeed165fcea.bindPopup(popup_2ba9a39759964b47bd3062a373ace779)
+        ;
+
+        
+    
+    
+            var circle_marker_47080486cbde4ca998dff0383cbb9072 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_3b8986c5990840c592f8edb2dcf646f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f337a6b62a254676b15aa560bc475a3a = $(`<div id="html_f337a6b62a254676b15aa560bc475a3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-06-06 <strong>Recolectores:</strong> V. J. Dryer <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3b8986c5990840c592f8edb2dcf646f5.setContent(html_f337a6b62a254676b15aa560bc475a3a);
+        
+
+        circle_marker_47080486cbde4ca998dff0383cbb9072.bindPopup(popup_3b8986c5990840c592f8edb2dcf646f5)
+        ;
+
+        
+    
+    
+            var circle_marker_7fc8aa10836d47bf9d1bd3223c771a3b = L.circleMarker(
+                [12.8614, -84.8978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+        
+    
+        var popup_f5a347e8041e47daa7c99f62bd8eda2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d6426b89298428f92773b05b72e6b9c = $(`<div id="html_0d6426b89298428f92773b05b72e6b9c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1962-07-21 <strong>Recolectores:</strong> G. L. Webster & et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f5a347e8041e47daa7c99f62bd8eda2b.setContent(html_0d6426b89298428f92773b05b72e6b9c);
+        
+
+        circle_marker_7fc8aa10836d47bf9d1bd3223c771a3b.bindPopup(popup_f5a347e8041e47daa7c99f62bd8eda2b)
+        ;
+
+        
+    
+    
+            var layer_control_577b4d4e2488497eb6665760992959e7 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0a2e420298fd4a2c9d928d41983c1615,
+                    "ESRI World Imagery" : tile_layer_0ed3459989664754a472f507137ed537,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_577b4d4e2488497eb6665760992959e7.base_layers,
+                layer_control_577b4d4e2488497eb6665760992959e7.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b2a5541cfd8e4fbc9da84f2bb5d94daa);
+            tile_layer_0ed3459989664754a472f507137ed537.remove();
+        
+</script>

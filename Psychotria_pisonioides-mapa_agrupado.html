@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_107f228e0587498fbe911f37ade84a8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_107f228e0587498fbe911f37ade84a8c" ></div>
+        
+</body>
+<script>    
+    
+            var map_107f228e0587498fbe911f37ade84a8c = L.map(
+                "map_107f228e0587498fbe911f37ade84a8c",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_107f228e0587498fbe911f37ade84a8c);
+
+            
+
+        
+    
+            var tile_layer_a42b45252602490981c89864010f1090 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_107f228e0587498fbe911f37ade84a8c);
+        
+    
+            var tile_layer_2b8475d654f94a949afb163d86686082 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_107f228e0587498fbe911f37ade84a8c);
+        
+    
+            var marker_cluster_b5975a729f30494f93df215520b7708f = L.markerClusterGroup(
+                {}
+            );
+            map_107f228e0587498fbe911f37ade84a8c.addLayer(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+            var marker_c7dd12b0974b464aa10e3a9cf51ece7b = L.marker(
+                [4.714969, -75.480967],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_f423da6044ae41ec87588fefbc45cd4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f80d5fbfd8544b01b7db72f63e1f5f94 = $(`<div id="html_f80d5fbfd8544b01b7db72f63e1f5f94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_f423da6044ae41ec87588fefbc45cd4e.setContent(html_f80d5fbfd8544b01b7db72f63e1f5f94);
+        
+
+        marker_c7dd12b0974b464aa10e3a9cf51ece7b.bindPopup(popup_f423da6044ae41ec87588fefbc45cd4e)
+        ;
+
+        
+    
+    
+            var marker_a041070f2d934dbe804125ab61ea1950 = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_f97ccbf5169d4e82b510f36a055b59d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ac16892f9b94c7ab4ff8dfb434a75d8 = $(`<div id="html_5ac16892f9b94c7ab4ff8dfb434a75d8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_f97ccbf5169d4e82b510f36a055b59d5.setContent(html_5ac16892f9b94c7ab4ff8dfb434a75d8);
+        
+
+        marker_a041070f2d934dbe804125ab61ea1950.bindPopup(popup_f97ccbf5169d4e82b510f36a055b59d5)
+        ;
+
+        
+    
+    
+            var marker_27901c3e61b0425fb1d237bc3e5070a2 = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_d252a844823746be9d8e18d87287be66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcbed96aa6c644f6a7c8d09ea0872d1d = $(`<div id="html_bcbed96aa6c644f6a7c8d09ea0872d1d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_d252a844823746be9d8e18d87287be66.setContent(html_bcbed96aa6c644f6a7c8d09ea0872d1d);
+        
+
+        marker_27901c3e61b0425fb1d237bc3e5070a2.bindPopup(popup_d252a844823746be9d8e18d87287be66)
+        ;
+
+        
+    
+    
+            var marker_71506afbf81240ba89c653f8a3bcea64 = L.marker(
+                [4.709187, -75.483917],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_d8ae34eb4fe445e7a419ef882931df64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62e49f04e7b742ae84c2ff0ba9b00e61 = $(`<div id="html_62e49f04e7b742ae84c2ff0ba9b00e61" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, La Pastora. <strong>Elevación:</strong> 2620.0 m  <strong>Fecha:</strong> 1989-10-13 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_d8ae34eb4fe445e7a419ef882931df64.setContent(html_62e49f04e7b742ae84c2ff0ba9b00e61);
+        
+
+        marker_71506afbf81240ba89c653f8a3bcea64.bindPopup(popup_d8ae34eb4fe445e7a419ef882931df64)
+        ;
+
+        
+    
+    
+            var marker_7152840ef21e49bb81dd3f38e560d078 = L.marker(
+                [4.709411, -75.484063],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_e902cb87c9e449229bc67ae6c007f98e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80a769d98d8f43c0bef3e67307b8d557 = $(`<div id="html_80a769d98d8f43c0bef3e67307b8d557" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-12 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_e902cb87c9e449229bc67ae6c007f98e.setContent(html_80a769d98d8f43c0bef3e67307b8d557);
+        
+
+        marker_7152840ef21e49bb81dd3f38e560d078.bindPopup(popup_e902cb87c9e449229bc67ae6c007f98e)
+        ;
+
+        
+    
+    
+            var marker_267b15b8213b4fa5b1c4a339fb2adbb4 = L.marker(
+                [4.709411, -75.484063],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_046d4b4022d94033a5dde3e1160fbcbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59d10d237a5840488f722755f56cfe6b = $(`<div id="html_59d10d237a5840488f722755f56cfe6b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-12 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_046d4b4022d94033a5dde3e1160fbcbd.setContent(html_59d10d237a5840488f722755f56cfe6b);
+        
+
+        marker_267b15b8213b4fa5b1c4a339fb2adbb4.bindPopup(popup_046d4b4022d94033a5dde3e1160fbcbd)
+        ;
+
+        
+    
+    
+            var marker_a52ab5a90347491a9a7d60b81a278567 = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_6672cb5df606494695569ec4556e875f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f37349c0383c4b59a436f78bbcd063cb = $(`<div id="html_f37349c0383c4b59a436f78bbcd063cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_6672cb5df606494695569ec4556e875f.setContent(html_f37349c0383c4b59a436f78bbcd063cb);
+        
+
+        marker_a52ab5a90347491a9a7d60b81a278567.bindPopup(popup_6672cb5df606494695569ec4556e875f)
+        ;
+
+        
+    
+    
+            var marker_0796c22adb1f43abb708043723beb014 = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_e9950765e3564c19b9fdee797e509259 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09fa8d8bb6f242e6b6843db822065207 = $(`<div id="html_09fa8d8bb6f242e6b6843db822065207" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_e9950765e3564c19b9fdee797e509259.setContent(html_09fa8d8bb6f242e6b6843db822065207);
+        
+
+        marker_0796c22adb1f43abb708043723beb014.bindPopup(popup_e9950765e3564c19b9fdee797e509259)
+        ;
+
+        
+    
+    
+            var marker_69497026986e4c42a2e3592dd0b615a8 = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_aa5fed1cd75e4513ace4d3e03a0a4b52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daa12888460f44019c7d5e767c73da08 = $(`<div id="html_daa12888460f44019c7d5e767c73da08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_aa5fed1cd75e4513ace4d3e03a0a4b52.setContent(html_daa12888460f44019c7d5e767c73da08);
+        
+
+        marker_69497026986e4c42a2e3592dd0b615a8.bindPopup(popup_aa5fed1cd75e4513ace4d3e03a0a4b52)
+        ;
+
+        
+    
+    
+            var marker_b6ce584323c045bf923891e851b8ae1f = L.marker(
+                [4.714982, -75.480725],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_b2b307d58c8c40eda7fd85f09b449dd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ce01870b3094887b284935dc2da0f81 = $(`<div id="html_1ce01870b3094887b284935dc2da0f81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Natural Regional Ucumarí, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> Jesús Orlando Rangel-Churio <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_b2b307d58c8c40eda7fd85f09b449dd1.setContent(html_1ce01870b3094887b284935dc2da0f81);
+        
+
+        marker_b6ce584323c045bf923891e851b8ae1f.bindPopup(popup_b2b307d58c8c40eda7fd85f09b449dd1)
+        ;
+
+        
+    
+    
+            var marker_c942c3dd23d441208dabd13dbb3a9fde = L.marker(
+                [9.67806, -83.86972],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_05241bcefc61439897eefb57ec2d8d9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffa0246cbed246cb82465d3e4ff6dd78 = $(`<div id="html_ffa0246cbed246cb82465d3e4ff6dd78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Cartago Province, Canton El Guarco. Cerro de la Muerte nr. Trinidad de Dota, 2 km north of km 64 of Interamericana highway. Finca Truchas Selva Madre, on trail back from second cascada. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2015-02-15 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-05</div>`)[0];
+            popup_05241bcefc61439897eefb57ec2d8d9c.setContent(html_ffa0246cbed246cb82465d3e4ff6dd78);
+        
+
+        marker_c942c3dd23d441208dabd13dbb3a9fde.bindPopup(popup_05241bcefc61439897eefb57ec2d8d9c)
+        ;
+
+        
+    
+    
+            var marker_d26264224a354dd2b0adc8e7d335d441 = L.marker(
+                [9.671669999999999, -83.85611],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_02695a8f88b046378a34f5df15ddb8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb8f381532334dd6852ef97d31394d71 = $(`<div id="html_bb8f381532334dd6852ef97d31394d71" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, San José Province, Canton Dota. Cerro de la Muerte, near Tres de Junio, beside Interamerican Highway, 10 m inside forest. <strong>Elevación:</strong> 2660.0 m  <strong>Fecha:</strong> 2013-03-22 <strong>Recolectores:</strong> Berger,A. & Schinnerl,J. <strong>Identificadores:</strong> A. Berger 2015-05</div>`)[0];
+            popup_02695a8f88b046378a34f5df15ddb8a7.setContent(html_bb8f381532334dd6852ef97d31394d71);
+        
+
+        marker_d26264224a354dd2b0adc8e7d335d441.bindPopup(popup_02695a8f88b046378a34f5df15ddb8a7)
+        ;
+
+        
+    
+    
+            var marker_710fac33402243d69ef50ab4c523ce22 = L.marker(
+                [9.69, -83.88],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_1592b6f440cd4f53878330ed8fdc16f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81694a9d51fc4ac08694e2c6a986d159 = $(`<div id="html_81694a9d51fc4ac08694e2c6a986d159" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Río Macho, Cordillera de Talamanca, Finca La Esperanza, Convenio UNA-DGF, bosque primario <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1994-06-24 <strong>Recolectores:</strong> Eduardo Lépiz|Víctor H. Ramírez <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_1592b6f440cd4f53878330ed8fdc16f1.setContent(html_81694a9d51fc4ac08694e2c6a986d159);
+        
+
+        marker_710fac33402243d69ef50ab4c523ce22.bindPopup(popup_1592b6f440cd4f53878330ed8fdc16f1)
+        ;
+
+        
+    
+    
+            var marker_3b15e60298064464a6cdde617baf009e = L.marker(
+                [9.0, -82.966667],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_ba3cb85d8bc4450baff79ddd2a0bd9ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53b3c9688efc48d0a24a693c0f6e9ff2 = $(`<div id="html_53b3c9688efc48d0a24a693c0f6e9ff2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Atlantic slope, unnamed cordillera between the Río Terbi and the Río Siní. <strong>Elevación:</strong> 2575.0 m  <strong>Fecha:</strong> 1984-09-13 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch.|Michael H. Grayum <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_ba3cb85d8bc4450baff79ddd2a0bd9ee.setContent(html_53b3c9688efc48d0a24a693c0f6e9ff2);
+        
+
+        marker_3b15e60298064464a6cdde617baf009e.bindPopup(popup_ba3cb85d8bc4450baff79ddd2a0bd9ee)
+        ;
+
+        
+    
+    
+            var marker_0a8ac605fc1241518d9c3da17f1c3af3 = L.marker(
+                [8.833333, -82.583333],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_d25e7baf55274ac09dc0d89f6907162e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9ef55499e39486da0f277c7d6357af5 = $(`<div id="html_b9ef55499e39486da0f277c7d6357af5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Cerro Punta, above Guadalupe. Above STRI cabin. <strong>Elevación:</strong> 2375.0 m  <strong>Fecha:</strong> 1986-06-07 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_d25e7baf55274ac09dc0d89f6907162e.setContent(html_b9ef55499e39486da0f277c7d6357af5);
+        
+
+        marker_0a8ac605fc1241518d9c3da17f1c3af3.bindPopup(popup_d25e7baf55274ac09dc0d89f6907162e)
+        ;
+
+        
+    
+    
+            var marker_54f3e1d1eafe4da598e62d173a2ad250 = L.marker(
+                [10.143880000000001, -84.08776999999999],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_eaaee92b3fbc4b86b29ebe35679f74da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05e422802d5d42cbb22160d936342fd0 = $(`<div id="html_05e422802d5d42cbb22160d936342fd0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Atlantic slope of the Cordillera Central, Puesta Barva Refuge, hike on trail past Laguna Barva to Copey. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2004-04-14 <strong>Recolectores:</strong> Alex Gilman <strong>Identificadores:</strong> CMT</div>`)[0];
+            popup_eaaee92b3fbc4b86b29ebe35679f74da.setContent(html_05e422802d5d42cbb22160d936342fd0);
+        
+
+        marker_54f3e1d1eafe4da598e62d173a2ad250.bindPopup(popup_eaaee92b3fbc4b86b29ebe35679f74da)
+        ;
+
+        
+    
+    
+            var marker_a4081ded47954840bffffe79f230ebc0 = L.marker(
+                [8.883333, -82.633333],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_f3b40f8ae28e4b2b8701ce9ffa27400e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a96d35d43134fb6b3b6a066289f6276 = $(`<div id="html_0a96d35d43134fb6b3b6a066289f6276" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Nubes, Cerro Punat, Parque Internacional La Amistad. Camino a Valle Libre <strong>Elevación:</strong> 1000.0 m  <strong>Fecha:</strong> 1993-08-29 <strong>Recolectores:</strong> Mireya D. Correa A.|E. Montenegro|Hugo Navarrete|E. Hidalgo <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f3b40f8ae28e4b2b8701ce9ffa27400e.setContent(html_0a96d35d43134fb6b3b6a066289f6276);
+        
+
+        marker_a4081ded47954840bffffe79f230ebc0.bindPopup(popup_f3b40f8ae28e4b2b8701ce9ffa27400e)
+        ;
+
+        
+    
+    
+            var marker_03a48ef3fdac403b86ad8907ac54788d = L.marker(
+                [4.71755, -75.463154],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_322f4e53eb0543ef9bb6b27f6b676a1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2117cd8fccde4eb499378c30ac98e072 = $(`<div id="html_2117cd8fccde4eb499378c30ac98e072" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Ucumari, arriba de La Pastora. <strong>Elevación:</strong> 2610.0 m  <strong>Fecha:</strong> 1989-10-10 <strong>Recolectores:</strong> J. Orlando Rangel|et al. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_322f4e53eb0543ef9bb6b27f6b676a1c.setContent(html_2117cd8fccde4eb499378c30ac98e072);
+        
+
+        marker_03a48ef3fdac403b86ad8907ac54788d.bindPopup(popup_322f4e53eb0543ef9bb6b27f6b676a1c)
+        ;
+
+        
+    
+    
+            var marker_aecbfd6d09e14e17a8f6649141c80e57 = L.marker(
+                [9.12, -82.96],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_5c8e8835556d4241bcbcb94ef471786d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8daabbdf2c524b51b9334c5e20535bf0 = $(`<div id="html_8daabbdf2c524b51b9334c5e20535bf0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Silencio, Rio Terbi, aguas arriba. Bosque pirmario cerca del sitio de acampar. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1996-01-01 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5c8e8835556d4241bcbcb94ef471786d.setContent(html_8daabbdf2c524b51b9334c5e20535bf0);
+        
+
+        marker_aecbfd6d09e14e17a8f6649141c80e57.bindPopup(popup_5c8e8835556d4241bcbcb94ef471786d)
+        ;
+
+        
+    
+    
+            var marker_971431960bac4b5fbac1e289bf869e77 = L.marker(
+                [9.678056, -83.869722],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_573f0919b15842ffb0123484341f87ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b42744dfc924d7f836bd58e657669cb = $(`<div id="html_6b42744dfc924d7f836bd58e657669cb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de la Muerte nr. Trinidad de Dota, 2 km north of km 64 of Interamericana highway. Finca Truchas Selva Madre, on trail back from second cascada. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 2015-02-15 <strong>Recolectores:</strong> A. Berger <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_573f0919b15842ffb0123484341f87ea.setContent(html_6b42744dfc924d7f836bd58e657669cb);
+        
+
+        marker_971431960bac4b5fbac1e289bf869e77.bindPopup(popup_573f0919b15842ffb0123484341f87ea)
+        ;
+
+        
+    
+    
+            var marker_3029a2f2a1b745378f57242effe09696 = L.marker(
+                [9.671667, -83.856111],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_afad89d5981249a3bec28f62c3619836 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8b723afdbd749e185432938a9df90b5 = $(`<div id="html_a8b723afdbd749e185432938a9df90b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de la Muerte, near Tres de Junio, beside Interamerican Highway, 10 m inside forest. <strong>Elevación:</strong> 2660.0 m  <strong>Fecha:</strong> 2013-03-22 <strong>Recolectores:</strong> A. Berger|J. Schinnerl <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_afad89d5981249a3bec28f62c3619836.setContent(html_a8b723afdbd749e185432938a9df90b5);
+        
+
+        marker_3029a2f2a1b745378f57242effe09696.bindPopup(popup_afad89d5981249a3bec28f62c3619836)
+        ;
+
+        
+    
+    
+            var marker_cb6e84efb4e54e7d98f304b17d315484 = L.marker(
+                [9.693092, -83.867722],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_d697af707eee4577b65a9d37aab0b21d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76f5ebd3dd854ce89466dece4ecad01c = $(`<div id="html_76f5ebd3dd854ce89466dece4ecad01c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guarco, San Isidro, Río Macho, La Esperanza del Guarco, 4 km desde carret. Interam. (km61), sobre camino del ICE. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d697af707eee4577b65a9d37aab0b21d.setContent(html_76f5ebd3dd854ce89466dece4ecad01c);
+        
+
+        marker_cb6e84efb4e54e7d98f304b17d315484.bindPopup(popup_d697af707eee4577b65a9d37aab0b21d)
+        ;
+
+        
+    
+    
+            var marker_8bcdda04ad09453689ff6315793fad7e = L.marker(
+                [9.693092, -83.867722],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_54d5caf44fc342289ee4ba6e2bde1624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f093d40f568f4016b36f9b8031062f60 = $(`<div id="html_f093d40f568f4016b36f9b8031062f60" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guarco, San Isidro, Río Macho, La Esperanza del Guarco, 4 km desde carret. Interam. (km61), sobre camino del ICE. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_54d5caf44fc342289ee4ba6e2bde1624.setContent(html_f093d40f568f4016b36f9b8031062f60);
+        
+
+        marker_8bcdda04ad09453689ff6315793fad7e.bindPopup(popup_54d5caf44fc342289ee4ba6e2bde1624)
+        ;
+
+        
+    
+    
+            var marker_aae4f3aabc04477c801959b0e5aaf5b6 = L.marker(
+                [9.697222, -83.883333],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_31266ec9c6ea4fc08437fa1817f09618 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2c3b4bb9c5448ab987fbdcb0f4387bd = $(`<div id="html_a2c3b4bb9c5448ab987fbdcb0f4387bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca la Esperanza, Convenio UNA-DGF. Bosque primario. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1994-06-28 <strong>Recolectores:</strong> Eduardo Lepiz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_31266ec9c6ea4fc08437fa1817f09618.setContent(html_a2c3b4bb9c5448ab987fbdcb0f4387bd);
+        
+
+        marker_aae4f3aabc04477c801959b0e5aaf5b6.bindPopup(popup_31266ec9c6ea4fc08437fa1817f09618)
+        ;
+
+        
+    
+    
+            var marker_e3b84af0f48b4d418ee0f7b8499de41e = L.marker(
+                [9.125, -82.963889],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_ae818fe27a9e42debd6fa71f1b9a34e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_244aeca0393d40ee94acda220682cbef = $(`<div id="html_244aeca0393d40ee94acda220682cbef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle del Silencio, Rio Terbi, aguas arriba. Bosque pirmario cerca del sitio de acampar. <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1996-09-20 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_ae818fe27a9e42debd6fa71f1b9a34e1.setContent(html_244aeca0393d40ee94acda220682cbef);
+        
+
+        marker_e3b84af0f48b4d418ee0f7b8499de41e.bindPopup(popup_ae818fe27a9e42debd6fa71f1b9a34e1)
+        ;
+
+        
+    
+    
+            var marker_d9c9491b8ba948dfb3ec3640d267feb1 = L.marker(
+                [3.8811, -72.8667],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_a91089cf0d3d48b0958c00c4856d9ba7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49c301327ffe4c52b7e32cc1cb4385bf = $(`<div id="html_49c301327ffe4c52b7e32cc1cb4385bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a91089cf0d3d48b0958c00c4856d9ba7.setContent(html_49c301327ffe4c52b7e32cc1cb4385bf);
+        
+
+        marker_d9c9491b8ba948dfb3ec3640d267feb1.bindPopup(popup_a91089cf0d3d48b0958c00c4856d9ba7)
+        ;
+
+        
+    
+    
+            var marker_a89839bb69594c90a2c71a841e986816 = L.marker(
+                [3.8811, -72.8667],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_ffa1157150bc4be7991e0a7ecf55089c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0f97d182ab1424294b5aa43bacd848a = $(`<div id="html_a0f97d182ab1424294b5aa43bacd848a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1922-08-01 <strong>Recolectores:</strong> F. W. Pennell <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_ffa1157150bc4be7991e0a7ecf55089c.setContent(html_a0f97d182ab1424294b5aa43bacd848a);
+        
+
+        marker_a89839bb69594c90a2c71a841e986816.bindPopup(popup_ffa1157150bc4be7991e0a7ecf55089c)
+        ;
+
+        
+    
+    
+            var marker_7919730ea0304fc5995b08180485cfd8 = L.marker(
+                [3.8811, -72.8667],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_1e839148366943419baacd5a36f99ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4ce3e1cd7dc473d84595eeaf7a1ce75 = $(`<div id="html_b4ce3e1cd7dc473d84595eeaf7a1ce75" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> nan <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1e839148366943419baacd5a36f99ed0.setContent(html_b4ce3e1cd7dc473d84595eeaf7a1ce75);
+        
+
+        marker_7919730ea0304fc5995b08180485cfd8.bindPopup(popup_1e839148366943419baacd5a36f99ed0)
+        ;
+
+        
+    
+    
+            var marker_6da3d7a88c7e4e3baa376acdfc2905c7 = L.marker(
+                [4.707008, -75.49828199999999],
+                {}
+            ).addTo(marker_cluster_b5975a729f30494f93df215520b7708f);
+        
+    
+        var popup_5d39b9286ab14e09aae0147675ff2fd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8e4cca738a54369acc2fddbcaf90fd1 = $(`<div id="html_b8e4cca738a54369acc2fddbcaf90fd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Regional Natural Ucumarí <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 1995-08-09 <strong>Recolectores:</strong> Murcia C. <strong>Identificadores:</strong> Taylor C.</div>`)[0];
+            popup_5d39b9286ab14e09aae0147675ff2fd4.setContent(html_b8e4cca738a54369acc2fddbcaf90fd1);
+        
+
+        marker_6da3d7a88c7e4e3baa376acdfc2905c7.bindPopup(popup_5d39b9286ab14e09aae0147675ff2fd4)
+        ;
+
+        
+    
+    
+            var layer_control_18e5a1310543470099af190692d26e06 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a42b45252602490981c89864010f1090,
+                    "ESRI World Imagery" : tile_layer_2b8475d654f94a949afb163d86686082,
+                },
+                overlays :  {
+                    "macro_element_b5975a729f30494f93df215520b7708f" : marker_cluster_b5975a729f30494f93df215520b7708f,
+                },
+            };
+            L.control.layers(
+                layer_control_18e5a1310543470099af190692d26e06.base_layers,
+                layer_control_18e5a1310543470099af190692d26e06.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_107f228e0587498fbe911f37ade84a8c);
+            tile_layer_2b8475d654f94a949afb163d86686082.remove();
+        
+</script>

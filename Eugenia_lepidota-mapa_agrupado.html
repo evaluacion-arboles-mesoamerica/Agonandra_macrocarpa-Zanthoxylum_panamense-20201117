@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_33d577257da8400d98c4a443e6af2c32 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_33d577257da8400d98c4a443e6af2c32" ></div>
+        
+</body>
+<script>    
+    
+            var map_33d577257da8400d98c4a443e6af2c32 = L.map(
+                "map_33d577257da8400d98c4a443e6af2c32",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_33d577257da8400d98c4a443e6af2c32);
+
+            
+
+        
+    
+            var tile_layer_990c6b8411cf4e4483b5dbc61bf58678 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33d577257da8400d98c4a443e6af2c32);
+        
+    
+            var tile_layer_910cffe5d2304827b099356d1bae45a1 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33d577257da8400d98c4a443e6af2c32);
+        
+    
+            var marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba = L.markerClusterGroup(
+                {}
+            );
+            map_33d577257da8400d98c4a443e6af2c32.addLayer(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+            var marker_97fb229c577a4d67b073596c191a7790 = L.marker(
+                [9.69, -84.17],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_975f128d34b04042a9134ef1e22e4e31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb50bd8dc9d64d87a059fedd28148a17 = $(`<div id="html_cb50bd8dc9d64d87a059fedd28148a17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Acosta, Sabanillas.  Area no Protegida.  Finca Aguas Buenas. <strong>Elevación:</strong> 1880.0 m  <strong>Fecha:</strong> 2001-10-03 <strong>Recolectores:</strong> Chacon, R.; Sanchez, J.; Ruiz, A. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_975f128d34b04042a9134ef1e22e4e31.setContent(html_cb50bd8dc9d64d87a059fedd28148a17);
+        
+
+        marker_97fb229c577a4d67b073596c191a7790.bindPopup(popup_975f128d34b04042a9134ef1e22e4e31)
+        ;
+
+        
+    
+    
+            var marker_089edbdc86e44301b55b5b9f5ec59452 = L.marker(
+                [10.06, -84.06],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_1348fbbbc1c24820a3705790e6794911 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d4ce4eed51f474681a26b5327ebb852 = $(`<div id="html_4d4ce4eed51f474681a26b5327ebb852" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de San Rafael Monte de la Cruz. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1992-05-20 <strong>Recolectores:</strong> Quírico Jiménez|Luis J. Poveda Álvarez|Óscar Castro <strong>Identificadores:</strong> Q. Jiménez, V/</div>`)[0];
+            popup_1348fbbbc1c24820a3705790e6794911.setContent(html_4d4ce4eed51f474681a26b5327ebb852);
+        
+
+        marker_089edbdc86e44301b55b5b9f5ec59452.bindPopup(popup_1348fbbbc1c24820a3705790e6794911)
+        ;
+
+        
+    
+    
+            var marker_86f8c0deec754c7195c2db3b743788ad = L.marker(
+                [9.0, -82.81666700000001],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_f81d1e7e3e124005a24d19cd63c9a662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c03ed4a6fc7e4110bd8b8a0490ea3366 = $(`<div id="html_c03ed4a6fc7e4110bd8b8a0490ea3366" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, headwaters of Río Bella Vista. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 1983-08-25 <strong>Recolectores:</strong> Gerrit Davidse|Luis Diego Gómez P.|Alfredo Grijalva P.|Isidro A. Chacón G.|Rafael Chacón|Gerardo Herrera Ch. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_f81d1e7e3e124005a24d19cd63c9a662.setContent(html_c03ed4a6fc7e4110bd8b8a0490ea3366);
+        
+
+        marker_86f8c0deec754c7195c2db3b743788ad.bindPopup(popup_f81d1e7e3e124005a24d19cd63c9a662)
+        ;
+
+        
+    
+    
+            var marker_03be1891e7bf4691b1b8c60ba64a4e2f = L.marker(
+                [10.07, -84.1],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_0658a6ba69174c288d82de05ce11f477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5929cc6ff90c4543aa845a18d7e6930a = $(`<div id="html_5929cc6ff90c4543aa845a18d7e6930a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nac. Braulio Carrillo Río Porrosatí. 50 m Norte de Parada de Buses de Paso Llano. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-07-24 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_0658a6ba69174c288d82de05ce11f477.setContent(html_5929cc6ff90c4543aa845a18d7e6930a);
+        
+
+        marker_03be1891e7bf4691b1b8c60ba64a4e2f.bindPopup(popup_0658a6ba69174c288d82de05ce11f477)
+        ;
+
+        
+    
+    
+            var marker_2b8e8f061b5c4753af4ea14c7780e03e = L.marker(
+                [10.02027, -84.09583],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_9f408840ffeb4548977e593d2368b94e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58e8f634f4594592b6725d5c0f5ebe31 = $(`<div id="html_58e8f634f4594592b6725d5c0f5ebe31" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Residencial del Monte, San Rafael de Heredia <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1989-01-30 <strong>Recolectores:</strong> H. Angulo Z. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_9f408840ffeb4548977e593d2368b94e.setContent(html_58e8f634f4594592b6725d5c0f5ebe31);
+        
+
+        marker_2b8e8f061b5c4753af4ea14c7780e03e.bindPopup(popup_9f408840ffeb4548977e593d2368b94e)
+        ;
+
+        
+    
+    
+            var marker_e8c04a9638c94e76a95f39e7ce080147 = L.marker(
+                [10.08333, -84.08333],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_ec3ba7ec9cc949e78693e167c2edbaa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd9d0b63b82f400682c6e1754ae6ee25 = $(`<div id="html_fd9d0b63b82f400682c6e1754ae6ee25" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Au bord du Río Segundo, Massif du volcán du Barba <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1890-01-10 <strong>Recolectores:</strong> Adolphe Tonduz <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_ec3ba7ec9cc949e78693e167c2edbaa2.setContent(html_fd9d0b63b82f400682c6e1754ae6ee25);
+        
+
+        marker_e8c04a9638c94e76a95f39e7ce080147.bindPopup(popup_ec3ba7ec9cc949e78693e167c2edbaa2)
+        ;
+
+        
+    
+    
+            var marker_df8c8ff711aa474097171b76cde099a2 = L.marker(
+                [10.1, -84.1],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_1e579f8891a7466794035c257521ed68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_308919ae6406403d807e9711b5dac3b9 = $(`<div id="html_308919ae6406403d807e9711b5dac3b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro del Gallito <strong>Elevación:</strong> 18.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> J. León <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1e579f8891a7466794035c257521ed68.setContent(html_308919ae6406403d807e9711b5dac3b9);
+        
+
+        marker_df8c8ff711aa474097171b76cde099a2.bindPopup(popup_1e579f8891a7466794035c257521ed68)
+        ;
+
+        
+    
+    
+            var marker_a2184cfd85cb4a019d027368ade289e3 = L.marker(
+                [10.0575, -84.11666],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_af15388095484eac9d78d0c7d51cf336 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cb7ed7ded51435f85dc3a626ca84a22 = $(`<div id="html_3cb7ed7ded51435f85dc3a626ca84a22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Paso Llomo San José de la Montaña, en la Parce la experimental <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1986-07-04 <strong>Recolectores:</strong> Luis J. Poveda Álvarez|Sergio Avendaño R. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_af15388095484eac9d78d0c7d51cf336.setContent(html_3cb7ed7ded51435f85dc3a626ca84a22);
+        
+
+        marker_a2184cfd85cb4a019d027368ade289e3.bindPopup(popup_af15388095484eac9d78d0c7d51cf336)
+        ;
+
+        
+    
+    
+            var marker_63d20fc9a6df468991d80183b8002cec = L.marker(
+                [10.134167, -84.1],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_c0cd4d29661a4a7cb12bb5fd01c1549c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e21f8199ead48108d1eca8929a80cfb = $(`<div id="html_8e21f8199ead48108d1eca8929a80cfb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In Monte Barba <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1847-05-01 <strong>Recolectores:</strong> A. S. Oersted <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_c0cd4d29661a4a7cb12bb5fd01c1549c.setContent(html_8e21f8199ead48108d1eca8929a80cfb);
+        
+
+        marker_63d20fc9a6df468991d80183b8002cec.bindPopup(popup_c0cd4d29661a4a7cb12bb5fd01c1549c)
+        ;
+
+        
+    
+    
+            var marker_554379d6ea314de4ba153d8bf62e9df7 = L.marker(
+                [10.086110000000001, -84.10583000000001],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_1fb6325eb7ae4082a8bcc617e0f83083 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4577ae2889334d49a718f6f5f55a284a = $(`<div id="html_4577ae2889334d49a718f6f5f55a284a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Arriba de San José de la Montaña, Río Porrós <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1965-06-26 <strong>Recolectores:</strong> Alfonso Jiménez M. <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_1fb6325eb7ae4082a8bcc617e0f83083.setContent(html_4577ae2889334d49a718f6f5f55a284a);
+        
+
+        marker_554379d6ea314de4ba153d8bf62e9df7.bindPopup(popup_1fb6325eb7ae4082a8bcc617e0f83083)
+        ;
+
+        
+    
+    
+            var marker_1ee6a579c80c4f9b8b51d8d41832a947 = L.marker(
+                [8.98, -82.83],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_21af768b95644611953f579c27b5aae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6afe0bad39a640439db9d97a47cb6d1f = $(`<div id="html_6afe0bad39a640439db9d97a47cb6d1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Cuenca Terraba-Sierpe <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1998-04-12 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> F.R. Barrie</div>`)[0];
+            popup_21af768b95644611953f579c27b5aae4.setContent(html_6afe0bad39a640439db9d97a47cb6d1f);
+        
+
+        marker_1ee6a579c80c4f9b8b51d8d41832a947.bindPopup(popup_21af768b95644611953f579c27b5aae4)
+        ;
+
+        
+    
+    
+            var marker_11bc98621a224eef94cd4b4e6145e968 = L.marker(
+                [9.016667, -82.85],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_105c36da77604e379bb77e77445c256f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0da9dec4bc3b44df911df0af15228df8 = $(`<div id="html_0da9dec4bc3b44df911df0af15228df8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Río Burú. <strong>Elevación:</strong> 2010.0 m  <strong>Fecha:</strong> 1983-08-19 <strong>Recolectores:</strong> Luis Diego Gómez P.|Isidro A. Chacón G.|Rafael Chacón|Gerardo Herrera Ch. <strong>Identificadores:</strong> F. Barrie</div>`)[0];
+            popup_105c36da77604e379bb77e77445c256f.setContent(html_0da9dec4bc3b44df911df0af15228df8);
+        
+
+        marker_11bc98621a224eef94cd4b4e6145e968.bindPopup(popup_105c36da77604e379bb77e77445c256f)
+        ;
+
+        
+    
+    
+            var marker_82a56fd937f4417d94cb661b9de5cd2c = L.marker(
+                [10.089444, -84.106111],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_65113ae7094e44b990c4b089fdff0348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffe2d7a8d2e042aca3ce18724ccf1d99 = $(`<div id="html_ffe2d7a8d2e042aca3ce18724ccf1d99" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Porrosati y Sacramento; faldas de V. Barva. <strong>Elevación:</strong> 1950.0 m  <strong>Fecha:</strong> 2004-07-20 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_65113ae7094e44b990c4b089fdff0348.setContent(html_ffe2d7a8d2e042aca3ce18724ccf1d99);
+        
+
+        marker_82a56fd937f4417d94cb661b9de5cd2c.bindPopup(popup_65113ae7094e44b990c4b089fdff0348)
+        ;
+
+        
+    
+    
+            var marker_4a5a980418bf4375a50c33e45f20e556 = L.marker(
+                [10.066667, -84.06666700000001],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_6e544dbcdb744cc5ab53974c197a0858 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ea7c9510bda492bbd73890e23b5bd8d = $(`<div id="html_5ea7c9510bda492bbd73890e23b5bd8d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monte de la Cruz. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1992-05-20 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_6e544dbcdb744cc5ab53974c197a0858.setContent(html_5ea7c9510bda492bbd73890e23b5bd8d);
+        
+
+        marker_4a5a980418bf4375a50c33e45f20e556.bindPopup(popup_6e544dbcdb744cc5ab53974c197a0858)
+        ;
+
+        
+    
+    
+            var marker_7d54cd81ffaa4bff8f5c138cae4eabc4 = L.marker(
+                [8.985606, -82.832725],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_8b6bb4fd48b34c31945fda2201fd21b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d69177c55a043a48859e455982c4147 = $(`<div id="html_6d69177c55a043a48859e455982c4147" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Send Cerro Echandi, Primer Campamento borde de Tacotal <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1998-04-12 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_8b6bb4fd48b34c31945fda2201fd21b0.setContent(html_6d69177c55a043a48859e455982c4147);
+        
+
+        marker_7d54cd81ffaa4bff8f5c138cae4eabc4.bindPopup(popup_8b6bb4fd48b34c31945fda2201fd21b0)
+        ;
+
+        
+    
+    
+            var marker_fd3f9296541e4c0ca5328174031cfd62 = L.marker(
+                [8.985606, -82.832725],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_699585f9259f48a7987b418e37010f78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e31ccc7d4a74ee3ad88d2767cb5c22b = $(`<div id="html_7e31ccc7d4a74ee3ad88d2767cb5c22b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Send Cerro Echandi, Primer Campamento borde de Tacotal <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1998-04-12 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_699585f9259f48a7987b418e37010f78.setContent(html_7e31ccc7d4a74ee3ad88d2767cb5c22b);
+        
+
+        marker_fd3f9296541e4c0ca5328174031cfd62.bindPopup(popup_699585f9259f48a7987b418e37010f78)
+        ;
+
+        
+    
+    
+            var marker_341cd4b3325241748eb7f7bf617240df = L.marker(
+                [8.985606, -82.832725],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_e2ee1009968e4734a721dae525d96b95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5feeb123d64e4bf1ba6d710a62486c4a = $(`<div id="html_5feeb123d64e4bf1ba6d710a62486c4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus, Send Cerro Echandi, Primer Campamento borde de Tacotal <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1998-04-12 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_e2ee1009968e4734a721dae525d96b95.setContent(html_5feeb123d64e4bf1ba6d710a62486c4a);
+        
+
+        marker_341cd4b3325241748eb7f7bf617240df.bindPopup(popup_e2ee1009968e4734a721dae525d96b95)
+        ;
+
+        
+    
+    
+            var marker_2252281e983e44f8baa3257a06a631e5 = L.marker(
+                [10.075, -84.108333],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_d0f0a600327e43b38efa9232dc29bec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ef9383a517446d9b99735e8de817657 = $(`<div id="html_4ef9383a517446d9b99735e8de817657" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Porrosati. 50 m Norte de Parada de Buses de Paso Llano. <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1990-07-24 <strong>Recolectores:</strong> Gerardo Rivera <strong>Identificadores:</strong> Barrie, Fred</div>`)[0];
+            popup_d0f0a600327e43b38efa9232dc29bec5.setContent(html_4ef9383a517446d9b99735e8de817657);
+        
+
+        marker_2252281e983e44f8baa3257a06a631e5.bindPopup(popup_d0f0a600327e43b38efa9232dc29bec5)
+        ;
+
+        
+    
+    
+            var marker_e2e07ceeb4d94289b9bd135a6d01300b = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_63a9641ddfa242448b8b804ac4c90b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c485b61b16e44922aa20015bfbabf964 = $(`<div id="html_c485b61b16e44922aa20015bfbabf964" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1847-05-01 <strong>Recolectores:</strong> A. S. Oersted <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_63a9641ddfa242448b8b804ac4c90b03.setContent(html_c485b61b16e44922aa20015bfbabf964);
+        
+
+        marker_e2e07ceeb4d94289b9bd135a6d01300b.bindPopup(popup_63a9641ddfa242448b8b804ac4c90b03)
+        ;
+
+        
+    
+    
+            var marker_df6d548b12744d7a831ed247ce67f030 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_63acbd6f19ca4b8da8c0b88a2ee7a65c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac020b12fc1d4ace82a2d5f260edc28f = $(`<div id="html_ac020b12fc1d4ace82a2d5f260edc28f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1847-05-01 <strong>Recolectores:</strong> A. S. Oersted <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_63acbd6f19ca4b8da8c0b88a2ee7a65c.setContent(html_ac020b12fc1d4ace82a2d5f260edc28f);
+        
+
+        marker_df6d548b12744d7a831ed247ce67f030.bindPopup(popup_63acbd6f19ca4b8da8c0b88a2ee7a65c)
+        ;
+
+        
+    
+    
+            var marker_7c1f612fca0e47f892dae2ca8a08848d = L.marker(
+                [17.217668, -88.68476700000001],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_87d1ab329bb24d4292be91f0374fab2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43ae2ddedf3240e3b00d155e745f75fc = $(`<div id="html_43ae2ddedf3240e3b00d155e745f75fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Caroline Whitefoord; The Natural History Museum; b.1933; Whitef. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_87d1ab329bb24d4292be91f0374fab2a.setContent(html_43ae2ddedf3240e3b00d155e745f75fc);
+        
+
+        marker_7c1f612fca0e47f892dae2ca8a08848d.bindPopup(popup_87d1ab329bb24d4292be91f0374fab2a)
+        ;
+
+        
+    
+    
+            var marker_9eef790ae4f549b98a1f5473051892b3 = L.marker(
+                [9.68, -84.17],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_b77b367c33504d2eacb2bf8f63823cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f181542a7fe64f3eb82070c9b6deabc6 = $(`<div id="html_f181542a7fe64f3eb82070c9b6deabc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Aguas Buenas. <strong>Elevación:</strong> 1880.0 m  <strong>Fecha:</strong> 2001-10-03 <strong>Recolectores:</strong> Chacón, Rafael <strong>Identificadores:</strong> Ruiz, Armando</div>`)[0];
+            popup_b77b367c33504d2eacb2bf8f63823cf9.setContent(html_f181542a7fe64f3eb82070c9b6deabc6);
+        
+
+        marker_9eef790ae4f549b98a1f5473051892b3.bindPopup(popup_b77b367c33504d2eacb2bf8f63823cf9)
+        ;
+
+        
+    
+    
+            var marker_400fe08320724768bedf8ff6a97e6087 = L.marker(
+                [9.0, -82.81],
+                {}
+            ).addTo(marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba);
+        
+    
+        var popup_aaaa12ca75bb444b9cc1a4a41f7c7fb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0a6361ba41b4017a4a75fc849c9b8d1 = $(`<div id="html_d0a6361ba41b4017a4a75fc849c9b8d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Headwaters of río Bella Vista. Forested quebrada. <strong>Elevación:</strong> 2150.0 m  <strong>Fecha:</strong> 1983-08-25 <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_aaaa12ca75bb444b9cc1a4a41f7c7fb0.setContent(html_d0a6361ba41b4017a4a75fc849c9b8d1);
+        
+
+        marker_400fe08320724768bedf8ff6a97e6087.bindPopup(popup_aaaa12ca75bb444b9cc1a4a41f7c7fb0)
+        ;
+
+        
+    
+    
+            var layer_control_f7a72aaf97d54bd4b06f8dd3df027a1d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_990c6b8411cf4e4483b5dbc61bf58678,
+                    "ESRI World Imagery" : tile_layer_910cffe5d2304827b099356d1bae45a1,
+                },
+                overlays :  {
+                    "macro_element_3f0d4d7ad4ef49e9a8d52eee8c462eba" : marker_cluster_3f0d4d7ad4ef49e9a8d52eee8c462eba,
+                },
+            };
+            L.control.layers(
+                layer_control_f7a72aaf97d54bd4b06f8dd3df027a1d.base_layers,
+                layer_control_f7a72aaf97d54bd4b06f8dd3df027a1d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_33d577257da8400d98c4a443e6af2c32);
+            tile_layer_910cffe5d2304827b099356d1bae45a1.remove();
+        
+</script>

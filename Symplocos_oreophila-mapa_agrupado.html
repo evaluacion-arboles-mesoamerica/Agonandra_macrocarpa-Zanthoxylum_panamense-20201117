@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b538b2e6c9ad4c4889325d692ab57f2d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b538b2e6c9ad4c4889325d692ab57f2d" ></div>
+        
+</body>
+<script>    
+    
+            var map_b538b2e6c9ad4c4889325d692ab57f2d = L.map(
+                "map_b538b2e6c9ad4c4889325d692ab57f2d",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b538b2e6c9ad4c4889325d692ab57f2d);
+
+            
+
+        
+    
+            var tile_layer_e4462632a1724da1ac13120c07d3796b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b538b2e6c9ad4c4889325d692ab57f2d);
+        
+    
+            var tile_layer_da0e3bf76dfe42928a893561a9a3c2ff = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b538b2e6c9ad4c4889325d692ab57f2d);
+        
+    
+            var marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d = L.markerClusterGroup(
+                {}
+            );
+            map_b538b2e6c9ad4c4889325d692ab57f2d.addLayer(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+            var marker_00b5317caced415ea308d6c710bbb9e5 = L.marker(
+                [9.55, -83.733333],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_e09ed110101e4a208634d40998bf25e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c628332c233145d9adc77840200fbffd = $(`<div id="html_c628332c233145d9adc77840200fbffd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cloud forest area, Cordillera de Talamanøca, mountain of Cerro de la Muerte, Panamerican Highway between km 60 and 77, La Trinidad <strong>Elevación:</strong> 3140.0 m  <strong>Fecha:</strong> 1966-02-26 <strong>Recolectores:</strong> Antonio Molina R.|William C. Burger|Bruce Wallenta <strong>Identificadores:</strong> L.M. Kelly & F. Almeda</div>`)[0];
+            popup_e09ed110101e4a208634d40998bf25e9.setContent(html_c628332c233145d9adc77840200fbffd);
+        
+
+        marker_00b5317caced415ea308d6c710bbb9e5.bindPopup(popup_e09ed110101e4a208634d40998bf25e9)
+        ;
+
+        
+    
+    
+            var marker_1e2055013b9b4a38939262480919b9cc = L.marker(
+                [9.67, -83.85],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_d6ab1630c349489db759dabcd4c221fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb6d18dcae604287a875b64591253701 = $(`<div id="html_eb6d18dcae604287a875b64591253701" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Provincia de Cartago-San José, dense, wet thickets about 16 km southeast of El Empalme <strong>Elevación:</strong> 2499.36 m  <strong>Fecha:</strong> 1972-06-08 <strong>Recolectores:</strong> Robert L. Wilbur|Frank Almeda <strong>Identificadores:</strong> L. Kelly, 2002 (MEXU)</div>`)[0];
+            popup_d6ab1630c349489db759dabcd4c221fb.setContent(html_eb6d18dcae604287a875b64591253701);
+        
+
+        marker_1e2055013b9b4a38939262480919b9cc.bindPopup(popup_d6ab1630c349489db759dabcd4c221fb)
+        ;
+
+        
+    
+    
+            var marker_09fcc3f11a2e4c64a6e2eba38975c7f6 = L.marker(
+                [9.031111, -82.821389],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_40e9ecb727ae4ad097673ede4c8a8407 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a4f1aa0ab964d239e1de2c8b5f060d1 = $(`<div id="html_7a4f1aa0ab964d239e1de2c8b5f060d1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro. Cordillera de Talamanca, Cerro Echandi on the Costa Rican-Panama international border. <strong>Elevación:</strong> 3162.0 m  <strong>Fecha:</strong> 2001-11-14 <strong>Recolectores:</strong> Evelio Alfaro; Alexander Alvarado Mendez <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_40e9ecb727ae4ad097673ede4c8a8407.setContent(html_7a4f1aa0ab964d239e1de2c8b5f060d1);
+        
+
+        marker_09fcc3f11a2e4c64a6e2eba38975c7f6.bindPopup(popup_40e9ecb727ae4ad097673ede4c8a8407)
+        ;
+
+        
+    
+    
+            var marker_0df3fd3476fa4a92b89624474e504831 = L.marker(
+                [9.693092, -83.867722],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_aa15c8d4e2654c2388a02f307198c61f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c102e82a2bf449a59e6c29e85b3898fd = $(`<div id="html_c102e82a2bf449a59e6c29e85b3898fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guarco, San Isidro, Río Macho, La Esperanza del Guarco, 4 km desde carret. Interam. (km61), sobre camino del ICE. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_aa15c8d4e2654c2388a02f307198c61f.setContent(html_c102e82a2bf449a59e6c29e85b3898fd);
+        
+
+        marker_0df3fd3476fa4a92b89624474e504831.bindPopup(popup_aa15c8d4e2654c2388a02f307198c61f)
+        ;
+
+        
+    
+    
+            var marker_cc8d6e7786574710b4173b6a5d03a14e = L.marker(
+                [9.693092, -83.867722],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_d779b90300fe4ddcb756151072dda242 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc2343fabd834dad83efd949a494d1a4 = $(`<div id="html_fc2343fabd834dad83efd949a494d1a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guarco, San Isidro, Río Macho, La Esperanza del Guarco, 4 km desde carret. Interam. (km61), sobre camino del ICE. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_d779b90300fe4ddcb756151072dda242.setContent(html_fc2343fabd834dad83efd949a494d1a4);
+        
+
+        marker_cc8d6e7786574710b4173b6a5d03a14e.bindPopup(popup_d779b90300fe4ddcb756151072dda242)
+        ;
+
+        
+    
+    
+            var marker_bdcdf7c1049a4a59a2fb04dd782f6a7c = L.marker(
+                [9.693092, -83.867722],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_f3af9273594d4a1687dcf5c24dc9419a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a8a96c6b09b4b4990b8a6f3473b96c6 = $(`<div id="html_6a8a96c6b09b4b4990b8a6f3473b96c6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Guarco, San Isidro, Río Macho, La Esperanza del Guarco, 4 km desde carret. Interam. (km61), sobre camino del ICE. <strong>Elevación:</strong> 2840.0 m  <strong>Fecha:</strong> 1999-04-21 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_f3af9273594d4a1687dcf5c24dc9419a.setContent(html_6a8a96c6b09b4b4990b8a6f3473b96c6);
+        
+
+        marker_bdcdf7c1049a4a59a2fb04dd782f6a7c.bindPopup(popup_f3af9273594d4a1687dcf5c24dc9419a)
+        ;
+
+        
+    
+    
+            var marker_9fe851220e4f4a2984363a98269c6ef9 = L.marker(
+                [9.616667, -83.811111],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_47965ed335c440f0bfde318b23fbcf8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d05a8c7b894d45398b095725a57ae533 = $(`<div id="html_d05a8c7b894d45398b095725a57ae533" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de La Muerte. Ojo de Agua. <strong>Elevación:</strong> 2940.0 m  <strong>Fecha:</strong> 1999-04-19 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_47965ed335c440f0bfde318b23fbcf8d.setContent(html_d05a8c7b894d45398b095725a57ae533);
+        
+
+        marker_9fe851220e4f4a2984363a98269c6ef9.bindPopup(popup_47965ed335c440f0bfde318b23fbcf8d)
+        ;
+
+        
+    
+    
+            var marker_e46694edda66436da6d179ca575b59fd = L.marker(
+                [9.616667, -83.811111],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_46ab9dda1a8541488944824c92c22a7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e656e767e814f12a5131846312cfc20 = $(`<div id="html_6e656e767e814f12a5131846312cfc20" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de La Muerte. Ojo de Agua. <strong>Elevación:</strong> 2940.0 m  <strong>Fecha:</strong> 1999-04-19 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_46ab9dda1a8541488944824c92c22a7a.setContent(html_6e656e767e814f12a5131846312cfc20);
+        
+
+        marker_e46694edda66436da6d179ca575b59fd.bindPopup(popup_46ab9dda1a8541488944824c92c22a7a)
+        ;
+
+        
+    
+    
+            var marker_b018105cbb3a49539c1823b8f3c61914 = L.marker(
+                [9.616667, -83.811111],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_01a1215d8a934478ad2c02e057a252c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18a26413c8694bd8a3a0dd4e61d74b46 = $(`<div id="html_18a26413c8694bd8a3a0dd4e61d74b46" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de La Muerte. Ojo de Agua. <strong>Elevación:</strong> 2940.0 m  <strong>Fecha:</strong> 1999-04-19 <strong>Recolectores:</strong> Milady Alfaro <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_01a1215d8a934478ad2c02e057a252c2.setContent(html_18a26413c8694bd8a3a0dd4e61d74b46);
+        
+
+        marker_b018105cbb3a49539c1823b8f3c61914.bindPopup(popup_01a1215d8a934478ad2c02e057a252c2)
+        ;
+
+        
+    
+    
+            var marker_e32bed6110d4440db73f9fbdea3ddd8b = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_44c5dfb272234a1496b9b789d4cc1f0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b544dcadbed46eb82661029d13cf800 = $(`<div id="html_3b544dcadbed46eb82661029d13cf800" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1966-02-26 <strong>Recolectores:</strong> A. Molina R. & W. C. Burger <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_44c5dfb272234a1496b9b789d4cc1f0d.setContent(html_3b544dcadbed46eb82661029d13cf800);
+        
+
+        marker_e32bed6110d4440db73f9fbdea3ddd8b.bindPopup(popup_44c5dfb272234a1496b9b789d4cc1f0d)
+        ;
+
+        
+    
+    
+            var marker_aad78e9b39514f0f901fa55ce0c5ac0e = L.marker(
+                [10.16, -84.11],
+                {}
+            ).addTo(marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d);
+        
+    
+        var popup_ec76e31d51ad4af584ceaafe5fa7f2c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99f14496a034419da6dabc4d2f3a78ce = $(`<div id="html_99f14496a034419da6dabc4d2f3a78ce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo Sendero del transecto. On flat portion of ridge during descent from Cerro Las Marías to old road that leads from San Rafael, Vara Blanca to Refugio <strong>Elevación:</strong> 2230.0 m  <strong>Fecha:</strong> 1992-05-30 <strong>Recolectores:</strong> Boyle, Brad <strong>Identificadores:</strong> Kriebel, Ricardo</div>`)[0];
+            popup_ec76e31d51ad4af584ceaafe5fa7f2c7.setContent(html_99f14496a034419da6dabc4d2f3a78ce);
+        
+
+        marker_aad78e9b39514f0f901fa55ce0c5ac0e.bindPopup(popup_ec76e31d51ad4af584ceaafe5fa7f2c7)
+        ;
+
+        
+    
+    
+            var layer_control_f36ee2599e3b4926b4d91ac33d79203a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e4462632a1724da1ac13120c07d3796b,
+                    "ESRI World Imagery" : tile_layer_da0e3bf76dfe42928a893561a9a3c2ff,
+                },
+                overlays :  {
+                    "macro_element_3fa52bc8a10945fa99b725b545b4bc4d" : marker_cluster_3fa52bc8a10945fa99b725b545b4bc4d,
+                },
+            };
+            L.control.layers(
+                layer_control_f36ee2599e3b4926b4d91ac33d79203a.base_layers,
+                layer_control_f36ee2599e3b4926b4d91ac33d79203a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b538b2e6c9ad4c4889325d692ab57f2d);
+            tile_layer_da0e3bf76dfe42928a893561a9a3c2ff.remove();
+        
+</script>

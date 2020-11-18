@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b935d92ad0f64d9991fd10aac064ca00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b935d92ad0f64d9991fd10aac064ca00" ></div>
+        
+</body>
+<script>    
+    
+            var map_b935d92ad0f64d9991fd10aac064ca00 = L.map(
+                "map_b935d92ad0f64d9991fd10aac064ca00",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b935d92ad0f64d9991fd10aac064ca00);
+
+            
+
+        
+    
+            var tile_layer_dbd242eafdc346e6849dfa8c99e9f155 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b935d92ad0f64d9991fd10aac064ca00);
+        
+    
+            var tile_layer_23ddfa25216343619bdc86f072fd7dbd = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b935d92ad0f64d9991fd10aac064ca00);
+        
+    
+            var marker_cluster_b54fe6712fef47a99cfdafbb094fc90a = L.markerClusterGroup(
+                {}
+            );
+            map_b935d92ad0f64d9991fd10aac064ca00.addLayer(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+            var marker_946216177b46406aa6f123009b1aea48 = L.marker(
+                [10.177778, -84.15083299999999],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_f4265959b6024a319c28b0c93cb4003b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c301b1eec374ea4934ca097ce2df0e9 = $(`<div id="html_7c301b1eec374ea4934ca097ce2df0e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On bluff overlooking turnoff to San Rafael from the Sarapiquí road <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1973-01-10 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_f4265959b6024a319c28b0c93cb4003b.setContent(html_7c301b1eec374ea4934ca097ce2df0e9);
+        
+
+        marker_946216177b46406aa6f123009b1aea48.bindPopup(popup_f4265959b6024a319c28b0c93cb4003b)
+        ;
+
+        
+    
+    
+            var marker_6a1a0d815dcc47ccbb1b574dc3570d8b = L.marker(
+                [10.17, -84.13],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_4724a84ed84c45f280cf3fff443d83d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d727d59a7474ec59a1aa08a281463f0 = $(`<div id="html_7d727d59a7474ec59a1aa08a281463f0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near Río San Rafael, northwest slopes of Barba Volcano <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1967-09-17 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_4724a84ed84c45f280cf3fff443d83d5.setContent(html_7d727d59a7474ec59a1aa08a281463f0);
+        
+
+        marker_6a1a0d815dcc47ccbb1b574dc3570d8b.bindPopup(popup_4724a84ed84c45f280cf3fff443d83d5)
+        ;
+
+        
+    
+    
+            var marker_0be275a2725a4ba7b5338963821e3e63 = L.marker(
+                [10.17, -84.13],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_6d0f405130b948748159df9fe716f941 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2a54006b7d14aa7885c5ae89d6631c4 = $(`<div id="html_f2a54006b7d14aa7885c5ae89d6631c4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Rafael, 2 km east of Vara Blanca. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1969-04-26 <strong>Recolectores:</strong> Roy W. Lent <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_6d0f405130b948748159df9fe716f941.setContent(html_f2a54006b7d14aa7885c5ae89d6631c4);
+        
+
+        marker_0be275a2725a4ba7b5338963821e3e63.bindPopup(popup_6d0f405130b948748159df9fe716f941)
+        ;
+
+        
+    
+    
+            var marker_402e26147e304bf1a897349ad3305977 = L.marker(
+                [10.2, -84.15],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_073a10c9634b4580827e120d24436097 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81c889073876441a9a6698cd446a9ac5 = $(`<div id="html_81c889073876441a9a6698cd446a9ac5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wet pasture land bordering forest and stream, 4 kM down a road which jack-knifes to east off of Highway 9, 3.3 km north of Vara Blanca <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-06-06 <strong>Recolectores:</strong> James L. Luteyn <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_073a10c9634b4580827e120d24436097.setContent(html_81c889073876441a9a6698cd446a9ac5);
+        
+
+        marker_402e26147e304bf1a897349ad3305977.bindPopup(popup_073a10c9634b4580827e120d24436097)
+        ;
+
+        
+    
+    
+            var marker_3146476f9fc64e9c9ae4bc45d6d38405 = L.marker(
+                [10.17, -84.13],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_78cf9f5870d8463f92c9e4dc2abfe725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f66c1118274444fb12f027a66e23835 = $(`<div id="html_7f66c1118274444fb12f027a66e23835" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Region between San Rafael and the Río San Rafael, about 3 km east of Vara Blanca <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1976-02-23 <strong>Recolectores:</strong> John F. Utley|K. Burt-Utley <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_78cf9f5870d8463f92c9e4dc2abfe725.setContent(html_7f66c1118274444fb12f027a66e23835);
+        
+
+        marker_3146476f9fc64e9c9ae4bc45d6d38405.bindPopup(popup_78cf9f5870d8463f92c9e4dc2abfe725)
+        ;
+
+        
+    
+    
+            var marker_bda44255712f4b6aaade9a51ea952ecf = L.marker(
+                [10.159722, -84.210278],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_5464177b54844eb4b087ffa66fc9b9d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa9ee57341a84972b176d86f56f2a36e = $(`<div id="html_fa9ee57341a84972b176d86f56f2a36e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Between Poasito and Volcán Poás National Park, roadsides along Costa Rican 120 <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1975-12-18 <strong>Recolectores:</strong> John F. Utley|K. Burt-Utley <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_5464177b54844eb4b087ffa66fc9b9d2.setContent(html_fa9ee57341a84972b176d86f56f2a36e);
+        
+
+        marker_bda44255712f4b6aaade9a51ea952ecf.bindPopup(popup_5464177b54844eb4b087ffa66fc9b9d2)
+        ;
+
+        
+    
+    
+            var marker_e975dc9992fe4637ae6f03f4392fb587 = L.marker(
+                [10.17, -84.15],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_e9443d1073f74180bd6856c386dd41da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecc77c3bc3c34116b96435a501050135 = $(`<div id="html_ecc77c3bc3c34116b96435a501050135" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca de Sarapiquí, north slope of Central Cordillera, between Poás and Barba volcanoes <strong>Elevación:</strong> 1680.0 m  <strong>Fecha:</strong> 1938-01-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_e9443d1073f74180bd6856c386dd41da.setContent(html_ecc77c3bc3c34116b96435a501050135);
+        
+
+        marker_e975dc9992fe4637ae6f03f4392fb587.bindPopup(popup_e9443d1073f74180bd6856c386dd41da)
+        ;
+
+        
+    
+    
+            var marker_310cddf432d149a7b59c6bb0f750b51c = L.marker(
+                [10.18, -84.15],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_56dcc7d40ca24fe5b58b62d7385ce8aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4678c22f0fed4d6086bccaa0c760f73e = $(`<div id="html_4678c22f0fed4d6086bccaa0c760f73e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On bluff overlooking turnoff to San Rafael from the Sarapiquí road <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1973-05-07 <strong>Recolectores:</strong> Gary S. Hartshorn <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_56dcc7d40ca24fe5b58b62d7385ce8aa.setContent(html_4678c22f0fed4d6086bccaa0c760f73e);
+        
+
+        marker_310cddf432d149a7b59c6bb0f750b51c.bindPopup(popup_56dcc7d40ca24fe5b58b62d7385ce8aa)
+        ;
+
+        
+    
+    
+            var marker_23815b1934a942e3b717cfa50f067a4f = L.marker(
+                [10.17, -84.15],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_cf0997b3c2a6437eab4c06a5a24ebd5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_303f0e2c2264452f9953000ccd5424b5 = $(`<div id="html_303f0e2c2264452f9953000ccd5424b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vicinity of Vara Blanca north of Central Cordillera, between Poás and Barba volcanoes <strong>Elevación:</strong> 1680.0 m  <strong>Fecha:</strong> 1938-04-01 <strong>Recolectores:</strong> Alexander F. Skutch <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_cf0997b3c2a6437eab4c06a5a24ebd5d.setContent(html_303f0e2c2264452f9953000ccd5424b5);
+        
+
+        marker_23815b1934a942e3b717cfa50f067a4f.bindPopup(popup_cf0997b3c2a6437eab4c06a5a24ebd5d)
+        ;
+
+        
+    
+    
+            var marker_45a5662a39fa47a7949242be56645784 = L.marker(
+                [10.17, -84.14],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_207efaad081240b29def652d12c7689d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32dbb92e66904a399a9353dca04b279b = $(`<div id="html_32dbb92e66904a399a9353dca04b279b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 2 km east of San Rafael along, and on slopes above, the Río Sarapiqui. <strong>Elevación:</strong> 1850.0 m  <strong>Fecha:</strong> 1972-05-25 <strong>Recolectores:</strong> John F. Utley|K. Burt-Utley|Donald E. Stone|T. Stone <strong>Identificadores:</strong> M. H. Grayum (MO)</div>`)[0];
+            popup_207efaad081240b29def652d12c7689d.setContent(html_32dbb92e66904a399a9353dca04b279b);
+        
+
+        marker_45a5662a39fa47a7949242be56645784.bindPopup(popup_207efaad081240b29def652d12c7689d)
+        ;
+
+        
+    
+    
+            var marker_cf503943bc9f4be1bd97dc9154f1e032 = L.marker(
+                [10.288056, -84.382778],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_894f7b606bf346f8a7dd2c16c6e3bf42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7645af58acd4e11af24ed9d0b4bba5f = $(`<div id="html_c7645af58acd4e11af24ed9d0b4bba5f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Juan Castro Blanco.  Cuenca del San Carlos.  Entrando por San Vicente.  Parque Nacional Juan Castro Blanco.  Faldas del Cerro Platanar. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2000-07-20 <strong>Recolectores:</strong> Alexánder Rodríguez|V. Ramírez|G. Sancho|Gerardo Soto <strong>Identificadores:</strong> J. F. Morales (INB)</div>`)[0];
+            popup_894f7b606bf346f8a7dd2c16c6e3bf42.setContent(html_c7645af58acd4e11af24ed9d0b4bba5f);
+        
+
+        marker_cf503943bc9f4be1bd97dc9154f1e032.bindPopup(popup_894f7b606bf346f8a7dd2c16c6e3bf42)
+        ;
+
+        
+    
+    
+            var marker_60ae7ae3a769454788718420400f1ca6 = L.marker(
+                [10.288056, -84.382778],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_e42aa256e9da4ead8eb90753ed711f3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23b3421001014ca2a0bb9fb7deab33fa = $(`<div id="html_23b3421001014ca2a0bb9fb7deab33fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Vicente, a orilla del camino ruta al Parque Nacional Juan Castro Blanco. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2000-07-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e42aa256e9da4ead8eb90753ed711f3b.setContent(html_23b3421001014ca2a0bb9fb7deab33fa);
+        
+
+        marker_60ae7ae3a769454788718420400f1ca6.bindPopup(popup_e42aa256e9da4ead8eb90753ed711f3b)
+        ;
+
+        
+    
+    
+            var marker_c1d96bdc328c4d8ab891af83ee7f9ee8 = L.marker(
+                [10.288056, -84.382778],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_de4a58993510472f89e0542d534d1558 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5814bb3aa4e440e1a7d2af38367e8e5a = $(`<div id="html_5814bb3aa4e440e1a7d2af38367e8e5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Vicente, a orilla del camino ruta al Parque Nacional Juan Castro Blanco. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2000-07-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_de4a58993510472f89e0542d534d1558.setContent(html_5814bb3aa4e440e1a7d2af38367e8e5a);
+        
+
+        marker_c1d96bdc328c4d8ab891af83ee7f9ee8.bindPopup(popup_de4a58993510472f89e0542d534d1558)
+        ;
+
+        
+    
+    
+            var marker_5ed4ebb6a8c74dd8ae0bffba34af2d07 = L.marker(
+                [10.288056, -84.382778],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_30f4936aaaf1457cba2a70593fa22fd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d7ebf8342d47ffa66c7ae547f7604e = $(`<div id="html_b3d7ebf8342d47ffa66c7ae547f7604e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Vicente, a orilla del camino ruta al Parque Nacional Juan Castro Blanco. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2000-07-20 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Geovanny Sancho ; Gerardo Soto <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_30f4936aaaf1457cba2a70593fa22fd1.setContent(html_b3d7ebf8342d47ffa66c7ae547f7604e);
+        
+
+        marker_5ed4ebb6a8c74dd8ae0bffba34af2d07.bindPopup(popup_30f4936aaaf1457cba2a70593fa22fd1)
+        ;
+
+        
+    
+    
+            var marker_fad37598f8a64b4e86ae3e30da008bdc = L.marker(
+                [10.174392, -84.169464],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_96ea3a4550e542f2b6552c6bc65e5e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f48d53bd5ad244e8be2ad6e617f8405a = $(`<div id="html_f48d53bd5ad244e8be2ad6e617f8405a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-03-13 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_96ea3a4550e542f2b6552c6bc65e5e22.setContent(html_f48d53bd5ad244e8be2ad6e617f8405a);
+        
+
+        marker_fad37598f8a64b4e86ae3e30da008bdc.bindPopup(popup_96ea3a4550e542f2b6552c6bc65e5e22)
+        ;
+
+        
+    
+    
+            var marker_6a9664d33898470498be2a6dd9048077 = L.marker(
+                [10.174392, -84.169464],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_15612c166bbc441089288c27487c5916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e101728596734fb390de6fc927b31980 = $(`<div id="html_e101728596734fb390de6fc927b31980" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-03-13 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_15612c166bbc441089288c27487c5916.setContent(html_e101728596734fb390de6fc927b31980);
+        
+
+        marker_6a9664d33898470498be2a6dd9048077.bindPopup(popup_15612c166bbc441089288c27487c5916)
+        ;
+
+        
+    
+    
+            var marker_1f8249cc8c9d42dba4f6b3acb9cd24e3 = L.marker(
+                [10.174392, -84.169464],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_bb5002cbff5b4c28ab411e923fa0b716 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ea0696be0844ef5a96dba431ad10734 = $(`<div id="html_4ea0696be0844ef5a96dba431ad10734" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-03-13 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_bb5002cbff5b4c28ab411e923fa0b716.setContent(html_4ea0696be0844ef5a96dba431ad10734);
+        
+
+        marker_1f8249cc8c9d42dba4f6b3acb9cd24e3.bindPopup(popup_bb5002cbff5b4c28ab411e923fa0b716)
+        ;
+
+        
+    
+    
+            var marker_eda3fcac0c3f408f86889a233c849f45 = L.marker(
+                [10.175, -84.158333],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_eb0d447e8ed74067b11d731be4ca8e99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9d3b567029c404f82447bbd51225324 = $(`<div id="html_c9d3b567029c404f82447bbd51225324" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vara Blanca. In Sarapiqui road. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1973-05-07 <strong>Recolectores:</strong> Gary Hartshorn <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_eb0d447e8ed74067b11d731be4ca8e99.setContent(html_c9d3b567029c404f82447bbd51225324);
+        
+
+        marker_eda3fcac0c3f408f86889a233c849f45.bindPopup(popup_eb0d447e8ed74067b11d731be4ca8e99)
+        ;
+
+        
+    
+    
+            var marker_1daeefe79d684e528f14986319211c7e = L.marker(
+                [10.227778, -84.594444],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_ea7cb0d1dadf4bb2a2f89ad10c9c4e3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_664616605e0145599b025afdcb1f6f65 = $(`<div id="html_664616605e0145599b025afdcb1f6f65" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Volcan Viejo. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1986-02-11 <strong>Recolectores:</strong> Jorge Gómez Laurito <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_ea7cb0d1dadf4bb2a2f89ad10c9c4e3f.setContent(html_664616605e0145599b025afdcb1f6f65);
+        
+
+        marker_1daeefe79d684e528f14986319211c7e.bindPopup(popup_ea7cb0d1dadf4bb2a2f89ad10c9c4e3f)
+        ;
+
+        
+    
+    
+            var marker_194dd91b59a14d0597aadcadc59dd303 = L.marker(
+                [10.063889, -84.025],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_cc6af59580ff49d1b7433b51aa32d924 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48d6ed449ae344d8997a574c19ebdd89 = $(`<div id="html_48d6ed449ae344d8997a574c19ebdd89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sendero hacia la Quebrada Zurqui. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1984-06-30 <strong>Recolectores:</strong> Nelson A. Zamora Villalobos <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_cc6af59580ff49d1b7433b51aa32d924.setContent(html_48d6ed449ae344d8997a574c19ebdd89);
+        
+
+        marker_194dd91b59a14d0597aadcadc59dd303.bindPopup(popup_cc6af59580ff49d1b7433b51aa32d924)
+        ;
+
+        
+    
+    
+            var marker_03127d0b511c41c391ff661906cf1dd1 = L.marker(
+                [-23.257082999999998, -45.042472],
+                {}
+            ).addTo(marker_cluster_b54fe6712fef47a99cfdafbb094fc90a);
+        
+    
+        var popup_5fc49062c4424c8db4ee9e49c858130e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae8b7ab03a164fe2b4dc9b34504aa8f2 = $(`<div id="html_ae8b7ab03a164fe2b4dc9b34504aa8f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Estadual da Serra do Mar <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1996-12-14 <strong>Recolectores:</strong> Ferretti, AR <strong>Identificadores:</strong> Ferretti, AR</div>`)[0];
+            popup_5fc49062c4424c8db4ee9e49c858130e.setContent(html_ae8b7ab03a164fe2b4dc9b34504aa8f2);
+        
+
+        marker_03127d0b511c41c391ff661906cf1dd1.bindPopup(popup_5fc49062c4424c8db4ee9e49c858130e)
+        ;
+
+        
+    
+    
+            var layer_control_b480559114bb4806b4670e33853aa702 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_dbd242eafdc346e6849dfa8c99e9f155,
+                    "ESRI World Imagery" : tile_layer_23ddfa25216343619bdc86f072fd7dbd,
+                },
+                overlays :  {
+                    "macro_element_b54fe6712fef47a99cfdafbb094fc90a" : marker_cluster_b54fe6712fef47a99cfdafbb094fc90a,
+                },
+            };
+            L.control.layers(
+                layer_control_b480559114bb4806b4670e33853aa702.base_layers,
+                layer_control_b480559114bb4806b4670e33853aa702.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b935d92ad0f64d9991fd10aac064ca00);
+            tile_layer_23ddfa25216343619bdc86f072fd7dbd.remove();
+        
+</script>

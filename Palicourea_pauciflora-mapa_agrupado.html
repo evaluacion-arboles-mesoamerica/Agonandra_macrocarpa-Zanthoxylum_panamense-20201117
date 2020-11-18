@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_157af399d7e4416387fcdf1641e49c3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_157af399d7e4416387fcdf1641e49c3b" ></div>
+        
+</body>
+<script>    
+    
+            var map_157af399d7e4416387fcdf1641e49c3b = L.map(
+                "map_157af399d7e4416387fcdf1641e49c3b",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_157af399d7e4416387fcdf1641e49c3b);
+
+            
+
+        
+    
+            var tile_layer_3213d87468c446c0bea4b4ef5682970c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_157af399d7e4416387fcdf1641e49c3b);
+        
+    
+            var tile_layer_c2c46720b521494b9894d0f250daa060 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_157af399d7e4416387fcdf1641e49c3b);
+        
+    
+            var marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c = L.markerClusterGroup(
+                {}
+            );
+            map_157af399d7e4416387fcdf1641e49c3b.addLayer(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+            var marker_b1c610e5ef6c4614ab12267e05eb8850 = L.marker(
+                [9.37, -83.1],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_80dd48dfb3a94b8a993273fbb76c0dfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f041ba59cb7c40e6814c3e06118ac7fc = $(`<div id="html_f041ba59cb7c40e6814c3e06118ac7fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Cordillera de Talamanca; Cordillera de Talamanca. Amubri, Alto Lari, Kivut. Siguiendo la fila divisoria entre Ríos Lari y Dapari. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1992-03-22 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_80dd48dfb3a94b8a993273fbb76c0dfd.setContent(html_f041ba59cb7c40e6814c3e06118ac7fc);
+        
+
+        marker_b1c610e5ef6c4614ab12267e05eb8850.bindPopup(popup_80dd48dfb3a94b8a993273fbb76c0dfd)
+        ;
+
+        
+    
+    
+            var marker_50840ea611374c79bdd2d0767bcf8bbb = L.marker(
+                [8.816667, -82.4],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_6719627e72054cec9492cb5e351f8a93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fabad7dd353f4b6d84c3610a1e09a9f4 = $(`<div id="html_fabad7dd353f4b6d84c3610a1e09a9f4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pate Macho. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1986-01-17 <strong>Recolectores:</strong> Greg C. de Nevers|Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6719627e72054cec9492cb5e351f8a93.setContent(html_fabad7dd353f4b6d84c3610a1e09a9f4);
+        
+
+        marker_50840ea611374c79bdd2d0767bcf8bbb.bindPopup(popup_6719627e72054cec9492cb5e351f8a93)
+        ;
+
+        
+    
+    
+            var marker_2bc743a8bd8247c081fabc5a7f1c5e12 = L.marker(
+                [8.75, -82.25],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_be6b67c7dec247a48b392151585c8dac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d71537c6bb54a748640fd5d4fbc912e = $(`<div id="html_6d71537c6bb54a748640fd5d4fbc912e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna Dam area; N of reservoir, ridge along Continental Divide and southward from Quebrada de Arena. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1984-08-01 <strong>Recolectores:</strong> William G. D'Arcy|Carol A. Todzia <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_be6b67c7dec247a48b392151585c8dac.setContent(html_6d71537c6bb54a748640fd5d4fbc912e);
+        
+
+        marker_2bc743a8bd8247c081fabc5a7f1c5e12.bindPopup(popup_be6b67c7dec247a48b392151585c8dac)
+        ;
+
+        
+    
+    
+            var marker_570da75f904049afbe383c953deb47d4 = L.marker(
+                [8.493611, -81.766667],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_d8cb081262434df9ac9018353dc431d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07a861c380bc40e28d2e00973c0d8dd5 = $(`<div id="html_07a861c380bc40e28d2e00973c0d8dd5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Near continental divide in vicinity of Cerro Colorado, 9.4 road-miles from Chami [Chame] Camp. [Coordinates on original label: 8º35'N, 81º45W] <strong>Elevación:</strong> 1700.0 m  <strong>Fecha:</strong> 1986-04-15 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d8cb081262434df9ac9018353dc431d5.setContent(html_07a861c380bc40e28d2e00973c0d8dd5);
+        
+
+        marker_570da75f904049afbe383c953deb47d4.bindPopup(popup_d8cb081262434df9ac9018353dc431d5)
+        ;
+
+        
+    
+    
+            var marker_429e64ad07e649148de7bd8279beaaa7 = L.marker(
+                [8.816667, -82.4],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_4b1cd2354bbb441580bb966091aedc13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b390b15e08c94f74a03798ad3ef9b3b2 = $(`<div id="html_b390b15e08c94f74a03798ad3ef9b3b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along trail to Cerro Pate Macho, c. 8º49'N, 82º24'W. Forested slopes. c. 2100 m. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1986-01-17 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_4b1cd2354bbb441580bb966091aedc13.setContent(html_b390b15e08c94f74a03798ad3ef9b3b2);
+        
+
+        marker_429e64ad07e649148de7bd8279beaaa7.bindPopup(popup_4b1cd2354bbb441580bb966091aedc13)
+        ;
+
+        
+    
+    
+            var marker_5c5a49a805f04b13bacd74b0477625be = L.marker(
+                [8.83, -82.398333],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_5ef5848ae1424963a7620be2f1814248 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6bf8ae582a5416c8ff53d07f9b39104 = $(`<div id="html_f6bf8ae582a5416c8ff53d07f9b39104" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Above Boquete on trail to Cerro Pate Macho and down into Bocas. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1987-07-29 <strong>Recolectores:</strong> Gordon McPherson <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_5ef5848ae1424963a7620be2f1814248.setContent(html_f6bf8ae582a5416c8ff53d07f9b39104);
+        
+
+        marker_5c5a49a805f04b13bacd74b0477625be.bindPopup(popup_5ef5848ae1424963a7620be2f1814248)
+        ;
+
+        
+    
+    
+            var marker_acdd25668e4f49c3a7e71614323183eb = L.marker(
+                [8.783333, -82.35],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_a4dd5007fe9049b9bf241b584d98ea31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee790f1a4cf74272b4652c7280d4acae = $(`<div id="html_ee790f1a4cf74272b4652c7280d4acae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bocas del Toro border along Continental Divide NE of Cerro Pate Macho, above Palo Alto. Windswept elfin forest. <strong>Elevación:</strong> 2200.0 m  <strong>Fecha:</strong> 1982-03-15 <strong>Recolectores:</strong> Sandy Knapp|W. John Kress|Barry E. Hammel <strong>Identificadores:</strong> David H. Lorence</div>`)[0];
+            popup_a4dd5007fe9049b9bf241b584d98ea31.setContent(html_ee790f1a4cf74272b4652c7280d4acae);
+        
+
+        marker_acdd25668e4f49c3a7e71614323183eb.bindPopup(popup_a4dd5007fe9049b9bf241b584d98ea31)
+        ;
+
+        
+    
+    
+            var marker_d469a489f3d3426a80c53b29d221331b = L.marker(
+                [8.816667, -82.383333],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_2186b5be16354830ab51426282c13a54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_237317dbe21642e187bea36e1ec48b53 = $(`<div id="html_237317dbe21642e187bea36e1ec48b53" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Chiriquí and Bocas del Toro provinces, in forest along trail from end of Río Palo Alto road to Chiriquí border with Bocas del Toro province near peak of Cerro Pate Macho. <strong>Elevación:</strong> 2194.56 m  <strong>Fecha:</strong> 1978-11-20 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> David H. Lorence & J. Dwyer</div>`)[0];
+            popup_2186b5be16354830ab51426282c13a54.setContent(html_237317dbe21642e187bea36e1ec48b53);
+        
+
+        marker_d469a489f3d3426a80c53b29d221331b.bindPopup(popup_2186b5be16354830ab51426282c13a54)
+        ;
+
+        
+    
+    
+            var marker_54538342b007444fa2e09912b72095d0 = L.marker(
+                [8.833333, -82.4],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_ce53e880ff6d464eb6a55eb20446bb96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7926a9eb837549ac9b31d18675fddf29 = $(`<div id="html_7926a9eb837549ac9b31d18675fddf29" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW ridge of Cerro Pate Macho from summit to Finca Serrano. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1981-05-27 <strong>Recolectores:</strong> Kenneth J. Sytsma|Sandy Knapp|Lennart Andersson <strong>Identificadores:</strong> C. M. Taylor, 1990 (UPRRP)</div>`)[0];
+            popup_ce53e880ff6d464eb6a55eb20446bb96.setContent(html_7926a9eb837549ac9b31d18675fddf29);
+        
+
+        marker_54538342b007444fa2e09912b72095d0.bindPopup(popup_ce53e880ff6d464eb6a55eb20446bb96)
+        ;
+
+        
+    
+    
+            var marker_7f2d564fdba24462a21cd767621712bd = L.marker(
+                [8.833333, -82.4],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_8b626c02521349128143a328a5dd499b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b810f2f2e72e4bec9a7dc71b0353e723 = $(`<div id="html_b810f2f2e72e4bec9a7dc71b0353e723" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> NW ridge of Cerro Pate Macho from summit to Finca Serrano. <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 1981-05-27 <strong>Recolectores:</strong> Kenneth J. Sytsma|Sandy Knapp|Lennart Andersson <strong>Identificadores:</strong> C. M. Taylor & D. Lorence</div>`)[0];
+            popup_8b626c02521349128143a328a5dd499b.setContent(html_b810f2f2e72e4bec9a7dc71b0353e723);
+        
+
+        marker_7f2d564fdba24462a21cd767621712bd.bindPopup(popup_8b626c02521349128143a328a5dd499b)
+        ;
+
+        
+    
+    
+            var marker_9e1c8404318b435da8e8391255da3098 = L.marker(
+                [8.8175, -82.398611],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_3404a219273e4967bd2548aac517dd33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2745744d18a414d9e219445d90a03b3 = $(`<div id="html_d2745744d18a414d9e219445d90a03b3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pata de Macho, ca. 5 miles NE of Boquete along trail to Continental Divide which leads to Finca Francisco Serrano (Francisco Serrano: Pacific slope) <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1979-11-22 <strong>Recolectores:</strong> Thomas M. Antonio <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3404a219273e4967bd2548aac517dd33.setContent(html_d2745744d18a414d9e219445d90a03b3);
+        
+
+        marker_9e1c8404318b435da8e8391255da3098.bindPopup(popup_3404a219273e4967bd2548aac517dd33)
+        ;
+
+        
+    
+    
+            var marker_7ce846b5d74440e98258ed3c928cd1bb = L.marker(
+                [9.379167, -83.104167],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_2dda04af6ce548dcbd36058b1739ec60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b80de56d4da749419825bb840be99d9b = $(`<div id="html_b80de56d4da749419825bb840be99d9b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri, Alto Lari, Kivut. Siguiendo la fila divisoria entre Rios Lari y Dapari. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1992-03-22 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2dda04af6ce548dcbd36058b1739ec60.setContent(html_b80de56d4da749419825bb840be99d9b);
+        
+
+        marker_7ce846b5d74440e98258ed3c928cd1bb.bindPopup(popup_2dda04af6ce548dcbd36058b1739ec60)
+        ;
+
+        
+    
+    
+            var marker_4f563c3f95f24f10aedb47d8cf2886d7 = L.marker(
+                [8.5, -82.25],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_0797d96f4400475d85b727b46eb9f540 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_060ae93208c94c969a6f5b177e026f45 = $(`<div id="html_060ae93208c94c969a6f5b177e026f45" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1911-03-18 <strong>Recolectores:</strong> H. F. Pittier <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_0797d96f4400475d85b727b46eb9f540.setContent(html_060ae93208c94c969a6f5b177e026f45);
+        
+
+        marker_4f563c3f95f24f10aedb47d8cf2886d7.bindPopup(popup_0797d96f4400475d85b727b46eb9f540)
+        ;
+
+        
+    
+    
+            var marker_db2a44b683a64bb7b024c4e29d21bd92 = L.marker(
+                [9.37, -83.1],
+                {}
+            ).addTo(marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c);
+        
+    
+        var popup_c0930cf328ce444895a75a7075ebb4e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4849863061734cf7b2c4e80485ee1dfc = $(`<div id="html_4849863061734cf7b2c4e80485ee1dfc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri, Alto Lari, Kivut. Siguiendo la fila divisoria entre Rìos Lari y Dapari. <strong>Elevación:</strong> 1900.0 m  <strong>Fecha:</strong> 1992-03-22 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c0930cf328ce444895a75a7075ebb4e0.setContent(html_4849863061734cf7b2c4e80485ee1dfc);
+        
+
+        marker_db2a44b683a64bb7b024c4e29d21bd92.bindPopup(popup_c0930cf328ce444895a75a7075ebb4e0)
+        ;
+
+        
+    
+    
+            var layer_control_2c34568cc8fa4a73bcae61d0e2a1e9c3 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3213d87468c446c0bea4b4ef5682970c,
+                    "ESRI World Imagery" : tile_layer_c2c46720b521494b9894d0f250daa060,
+                },
+                overlays :  {
+                    "macro_element_460d82cf838c4e528a2cd5b7e5f69f4c" : marker_cluster_460d82cf838c4e528a2cd5b7e5f69f4c,
+                },
+            };
+            L.control.layers(
+                layer_control_2c34568cc8fa4a73bcae61d0e2a1e9c3.base_layers,
+                layer_control_2c34568cc8fa4a73bcae61d0e2a1e9c3.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_157af399d7e4416387fcdf1641e49c3b);
+            tile_layer_c2c46720b521494b9894d0f250daa060.remove();
+        
+</script>

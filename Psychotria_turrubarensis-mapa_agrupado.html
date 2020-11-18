@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_975d6415b42a44a7995ac9eed4dc2de2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_975d6415b42a44a7995ac9eed4dc2de2" ></div>
+        
+</body>
+<script>    
+    
+            var map_975d6415b42a44a7995ac9eed4dc2de2 = L.map(
+                "map_975d6415b42a44a7995ac9eed4dc2de2",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_975d6415b42a44a7995ac9eed4dc2de2);
+
+            
+
+        
+    
+            var tile_layer_650211d4801d4325a98b2043c43832f5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_975d6415b42a44a7995ac9eed4dc2de2);
+        
+    
+            var tile_layer_c4f5efc8d2294934b99eaf0266913d23 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_975d6415b42a44a7995ac9eed4dc2de2);
+        
+    
+            var marker_cluster_6d2e29e0cfac4ded95d449408e7345c8 = L.markerClusterGroup(
+                {}
+            );
+            map_975d6415b42a44a7995ac9eed4dc2de2.addLayer(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+            var marker_30dcb09c06da4681b7a42a3a2c5ae37e = L.marker(
+                [9.726389, -84.19111099999999],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_bd436ed991a4478a8bc396574a9c2e75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d53f623625924945bc59c8984986348c = $(`<div id="html_d53f623625924945bc59c8984986348c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cangrejal. Área no Protegida. Finca Tiquires. En Margen del Río Tiquires. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2001-10-01 <strong>Recolectores:</strong> Joaquín Sánchez González|A. Ruíz|Rafael Chacón <strong>Identificadores:</strong> J. Sanchez</div>`)[0];
+            popup_bd436ed991a4478a8bc396574a9c2e75.setContent(html_d53f623625924945bc59c8984986348c);
+        
+
+        marker_30dcb09c06da4681b7a42a3a2c5ae37e.bindPopup(popup_bd436ed991a4478a8bc396574a9c2e75)
+        ;
+
+        
+    
+    
+            var marker_fe287098484148bb83ef1c23aabad08b = L.marker(
+                [9.791667, -84.475],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_ca29605fe26941dc945e81a450bc1958 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6664e647dd83419cb40ae8324f78d8d6 = $(`<div id="html_6664e647dd83419cb40ae8324f78d8d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerros de Turrubares Faldas del Cerro Bares <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-01 <strong>Recolectores:</strong> Jimenez Madrigal, Qurico; Zuniga, Ramon; Valera, G. <strong>Identificadores:</strong> B. Bartholomew</div>`)[0];
+            popup_ca29605fe26941dc945e81a450bc1958.setContent(html_6664e647dd83419cb40ae8324f78d8d6);
+        
+
+        marker_fe287098484148bb83ef1c23aabad08b.bindPopup(popup_ca29605fe26941dc945e81a450bc1958)
+        ;
+
+        
+    
+    
+            var marker_ab28519cd0ea4a0c99b0ea396d3ae767 = L.marker(
+                [9.79, -84.46],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_641707e8e3484d468160c1528d92adda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fcf90c518f044a3a4861cf53514ba97 = $(`<div id="html_9fcf90c518f044a3a4861cf53514ba97" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Cerros de Turrubares, Cerros de Puriscal, vecindades de Llano Caite <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Quírico Jiménez|R. Quesada <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_641707e8e3484d468160c1528d92adda.setContent(html_9fcf90c518f044a3a4861cf53514ba97);
+        
+
+        marker_ab28519cd0ea4a0c99b0ea396d3ae767.bindPopup(popup_641707e8e3484d468160c1528d92adda)
+        ;
+
+        
+    
+    
+            var marker_15800a2d44b84f338b8e709b28e137cb = L.marker(
+                [9.73, -84.38],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_96f6b35676da422291c65a2feb9f73a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb25c5316fb149208aaed2953aa713e1 = $(`<div id="html_eb25c5316fb149208aaed2953aa713e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerros de Puriscal, Faldas Fila Vara Blanca, San Martín de Puriscal <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> Quírico Jiménez|J. F. Morales|Eduardo Lépiz|José Á. González R.|F. J. Quesada <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_96f6b35676da422291c65a2feb9f73a1.setContent(html_eb25c5316fb149208aaed2953aa713e1);
+        
+
+        marker_15800a2d44b84f338b8e709b28e137cb.bindPopup(popup_96f6b35676da422291c65a2feb9f73a1)
+        ;
+
+        
+    
+    
+            var marker_15ca06eba6114372be70539453ad2fa1 = L.marker(
+                [9.791667, -84.475],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_e66c1aeafa7e495780da1923dd6bb74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50bfe1529ab246d29220f629f13b54b1 = $(`<div id="html_50bfe1529ab246d29220f629f13b54b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Cerros de Turrubares, Faldas del Cerro Bares. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-06 <strong>Recolectores:</strong> Quírico Jiménez|Rodolfo Zúñiga|Gerardo Varela <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_e66c1aeafa7e495780da1923dd6bb74f.setContent(html_50bfe1529ab246d29220f629f13b54b1);
+        
+
+        marker_15ca06eba6114372be70539453ad2fa1.bindPopup(popup_e66c1aeafa7e495780da1923dd6bb74f)
+        ;
+
+        
+    
+    
+            var marker_c1b15686fe644a038714ab9d7667f9b7 = L.marker(
+                [8.888889, -82.841667],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_c6321c7bdbce4e0b8c42547ff0220015 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d6128f9a2cb46a48fec3704fcdee745 = $(`<div id="html_8d6128f9a2cb46a48fec3704fcdee745" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zona Protectora Las Tablas San Vito Coto Brus - Sabalito Finca Neblinas. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-09-24 <strong>Recolectores:</strong> Gerardo Mora|Curso II de Parataxónomos <strong>Identificadores:</strong> C.M. Taylor, 1996 (MO)</div>`)[0];
+            popup_c6321c7bdbce4e0b8c42547ff0220015.setContent(html_8d6128f9a2cb46a48fec3704fcdee745);
+        
+
+        marker_c1b15686fe644a038714ab9d7667f9b7.bindPopup(popup_c6321c7bdbce4e0b8c42547ff0220015)
+        ;
+
+        
+    
+    
+            var marker_974f212837fe4a89933621987d863ed3 = L.marker(
+                [8.91, -82.81],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_48a00098f2764086897ca2bf5767eb9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c835fa5c26274ccba263e0bc2be60de0 = $(`<div id="html_c835fa5c26274ccba263e0bc2be60de0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Las Tablas. Cordillera de Talamanca. Fila Los Suizos. Vecindades Quebrada 15 <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1995-09-27 <strong>Recolectores:</strong> Mario Chinchilla <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_48a00098f2764086897ca2bf5767eb9b.setContent(html_c835fa5c26274ccba263e0bc2be60de0);
+        
+
+        marker_974f212837fe4a89933621987d863ed3.bindPopup(popup_48a00098f2764086897ca2bf5767eb9b)
+        ;
+
+        
+    
+    
+            var marker_b831b79b3eee49b3862244372833ee7f = L.marker(
+                [9.89, -84.38],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_d8d7b5e75abb4511934e449ce364e3c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27694a1b7b7f42f09e548436590011dd = $(`<div id="html_27694a1b7b7f42f09e548436590011dd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. La Cangreja; Cerros de Puriscal. San Martín de Puriscal; Vara Blanca. Bosque primario falda N Cerro Cangreja <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> J. F. Morales <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d8d7b5e75abb4511934e449ce364e3c6.setContent(html_27694a1b7b7f42f09e548436590011dd);
+        
+
+        marker_b831b79b3eee49b3862244372833ee7f.bindPopup(popup_d8d7b5e75abb4511934e449ce364e3c6)
+        ;
+
+        
+    
+    
+            var marker_c26096d6f2ac47b8a26fdead81a608a8 = L.marker(
+                [8.90333, -82.78472],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_66c01d64cb104b1a874315343e42451e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7304b58169f146f996ec670505008378 = $(`<div id="html_7304b58169f146f996ec670505008378" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca terraba-Sierp. Las Mellizas, Cafrosa. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-01-14 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_66c01d64cb104b1a874315343e42451e.setContent(html_7304b58169f146f996ec670505008378);
+        
+
+        marker_c26096d6f2ac47b8a26fdead81a608a8.bindPopup(popup_66c01d64cb104b1a874315343e42451e)
+        ;
+
+        
+    
+    
+            var marker_ed624e41bb7d45c79ae60b38fd1f230f = L.marker(
+                [8.89, -82.79],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_d522c1df5d844781b72fd303cf711c9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96940af1484e4ff2a00d1632e334f5a0 = $(`<div id="html_96940af1484e4ff2a00d1632e334f5a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de El General. Finca Cafrosa. <strong>Elevación:</strong> 1220.0 m  <strong>Fecha:</strong> 1996-03-12 <strong>Recolectores:</strong> Enia Navarro V. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_d522c1df5d844781b72fd303cf711c9f.setContent(html_96940af1484e4ff2a00d1632e334f5a0);
+        
+
+        marker_ed624e41bb7d45c79ae60b38fd1f230f.bindPopup(popup_d522c1df5d844781b72fd303cf711c9f)
+        ;
+
+        
+    
+    
+            var marker_73f73072515548f8a3dc63a275078321 = L.marker(
+                [8.916667, -82.75],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_195b95bd25a84fe9b2cdfd787af29d9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd5fbe19f5534e9e8835ddfbb394f349 = $(`<div id="html_cd5fbe19f5534e9e8835ddfbb394f349" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica/Panama [Near La Lucha; remnants near pastures on Rio Coton. Cerro Pando, ridges above the Rio Coton and the Rio Negro. Southern Puntarenas ] <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1982-02-19 <strong>Recolectores:</strong> Kerry Barringer <strong>Identificadores:</strong> C.Taylor</div>`)[0];
+            popup_195b95bd25a84fe9b2cdfd787af29d9e.setContent(html_cd5fbe19f5534e9e8835ddfbb394f349);
+        
+
+        marker_73f73072515548f8a3dc63a275078321.bindPopup(popup_195b95bd25a84fe9b2cdfd787af29d9e)
+        ;
+
+        
+    
+    
+            var marker_ddca8f7f4aa942fe85f192715b7a8a30 = L.marker(
+                [8.895, -82.77221999999999],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_c8569a82bc4049e48b855fabd9a44030 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b53ae603eadf41849df2087e54103f51 = $(`<div id="html_b53ae603eadf41849df2087e54103f51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca Térraba-Sierpe. Alrededores de La Amistad Lodge. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2003-12-30 <strong>Recolectores:</strong> Daniel Solano|Ricardo Kriebel <strong>Identificadores:</strong> J. González</div>`)[0];
+            popup_c8569a82bc4049e48b855fabd9a44030.setContent(html_b53ae603eadf41849df2087e54103f51);
+        
+
+        marker_ddca8f7f4aa942fe85f192715b7a8a30.bindPopup(popup_c8569a82bc4049e48b855fabd9a44030)
+        ;
+
+        
+    
+    
+            var marker_c337f95619b0439d8cf03c1ad5519543 = L.marker(
+                [8.895, -82.772222],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_126777b5a45245b0a6b3c5733cf506d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bef4c86d7874323bcf8f0f7c6d1bb72 = $(`<div id="html_2bef4c86d7874323bcf8f0f7c6d1bb72" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Lodge, alrededores. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-12-30 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_126777b5a45245b0a6b3c5733cf506d0.setContent(html_2bef4c86d7874323bcf8f0f7c6d1bb72);
+        
+
+        marker_c337f95619b0439d8cf03c1ad5519543.bindPopup(popup_126777b5a45245b0a6b3c5733cf506d0)
+        ;
+
+        
+    
+    
+            var marker_f8fa3ae0de624a21b14c4cee68c49074 = L.marker(
+                [8.895, -82.772222],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_302696f81fb4419dbe37ce812c0b34cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f9e552dbe144fd182dbff1b3d89b918 = $(`<div id="html_8f9e552dbe144fd182dbff1b3d89b918" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Lodge, alrededores. <strong>Elevación:</strong> 1450.0 m  <strong>Fecha:</strong> 2003-12-30 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Zamora Villalobos, Nelson A.</div>`)[0];
+            popup_302696f81fb4419dbe37ce812c0b34cb.setContent(html_8f9e552dbe144fd182dbff1b3d89b918);
+        
+
+        marker_f8fa3ae0de624a21b14c4cee68c49074.bindPopup(popup_302696f81fb4419dbe37ce812c0b34cb)
+        ;
+
+        
+    
+    
+            var marker_23d0c871be3242d2bd255f898c1962c7 = L.marker(
+                [8.895, -82.772222],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_bf8474b574444795930ef440b1e05115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40cba8e6625f4606b7804b96b186ddde = $(`<div id="html_40cba8e6625f4606b7804b96b186ddde" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Lodge, alrededores. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2003-12-30 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_bf8474b574444795930ef440b1e05115.setContent(html_40cba8e6625f4606b7804b96b186ddde);
+        
+
+        marker_23d0c871be3242d2bd255f898c1962c7.bindPopup(popup_bf8474b574444795930ef440b1e05115)
+        ;
+
+        
+    
+    
+            var marker_7e2e7befc86640e8ac43ee3bf46b8ae6 = L.marker(
+                [8.895, -82.772222],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_5953c16410034eb884b29ab56a2bb283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a9757d0a6ab4a0a8542fc222420a6d2 = $(`<div id="html_1a9757d0a6ab4a0a8542fc222420a6d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> La Amistad Lodge, alrededores. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2003-12-30 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_5953c16410034eb884b29ab56a2bb283.setContent(html_1a9757d0a6ab4a0a8542fc222420a6d2);
+        
+
+        marker_7e2e7befc86640e8ac43ee3bf46b8ae6.bindPopup(popup_5953c16410034eb884b29ab56a2bb283)
+        ;
+
+        
+    
+    
+            var marker_0e4e4738288743918ec4d99229d7e1ec = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_32956ec92ec549fa9ee58c44e9ad03ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6232c6890c9049bd8c4fb42366634fec = $(`<div id="html_6232c6890c9049bd8c4fb42366634fec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Bustamante, Julio</div>`)[0];
+            popup_32956ec92ec549fa9ee58c44e9ad03ce.setContent(html_6232c6890c9049bd8c4fb42366634fec);
+        
+
+        marker_0e4e4738288743918ec4d99229d7e1ec.bindPopup(popup_32956ec92ec549fa9ee58c44e9ad03ce)
+        ;
+
+        
+    
+    
+            var marker_84c74ef1740d499789c787cc2e8f3fd5 = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_abf59276f30445aaa8dd134feb448569 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49947ef27a214c97921bf7e67b49a528 = $(`<div id="html_49947ef27a214c97921bf7e67b49a528" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Bustamante, Julio</div>`)[0];
+            popup_abf59276f30445aaa8dd134feb448569.setContent(html_49947ef27a214c97921bf7e67b49a528);
+        
+
+        marker_84c74ef1740d499789c787cc2e8f3fd5.bindPopup(popup_abf59276f30445aaa8dd134feb448569)
+        ;
+
+        
+    
+    
+            var marker_c4b15276f15f48a09e049b94e95a710a = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_dba5df1c12ec4809976e82dd03f0c7fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e51e7395f3440ddb0e7dd9bb796e1f2 = $(`<div id="html_5e51e7395f3440ddb0e7dd9bb796e1f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_dba5df1c12ec4809976e82dd03f0c7fa.setContent(html_5e51e7395f3440ddb0e7dd9bb796e1f2);
+        
+
+        marker_c4b15276f15f48a09e049b94e95a710a.bindPopup(popup_dba5df1c12ec4809976e82dd03f0c7fa)
+        ;
+
+        
+    
+    
+            var marker_eb4606703ace4c1eb6a24ce674f86509 = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_0984d994c1b64a17b24baa215f4b1ebf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46f10066d0c146729f044619899fdb81 = $(`<div id="html_46f10066d0c146729f044619899fdb81" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_0984d994c1b64a17b24baa215f4b1ebf.setContent(html_46f10066d0c146729f044619899fdb81);
+        
+
+        marker_eb4606703ace4c1eb6a24ce674f86509.bindPopup(popup_0984d994c1b64a17b24baa215f4b1ebf)
+        ;
+
+        
+    
+    
+            var marker_975f236205734f5790632005ea181eda = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_7a5475a8b1d743cfbd621b823a976da1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9629a2dc7c03420aaf716baa70e24da0 = $(`<div id="html_9629a2dc7c03420aaf716baa70e24da0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Luis, Cerro Turrubares. <strong>Elevación:</strong> 1592.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Julio Bustamante <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7a5475a8b1d743cfbd621b823a976da1.setContent(html_9629a2dc7c03420aaf716baa70e24da0);
+        
+
+        marker_975f236205734f5790632005ea181eda.bindPopup(popup_7a5475a8b1d743cfbd621b823a976da1)
+        ;
+
+        
+    
+    
+            var marker_338aa61f722a48779b6ba8941cca21c2 = L.marker(
+                [8.903333, -82.784722],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_10c99ed25c3d43f0a0e4c7df0a6356c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f72eae10a6b4c3795ef027f212c7fa2 = $(`<div id="html_7f72eae10a6b4c3795ef027f212c7fa2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, a orilla del camino y de quebrada. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-01-14 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_10c99ed25c3d43f0a0e4c7df0a6356c2.setContent(html_7f72eae10a6b4c3795ef027f212c7fa2);
+        
+
+        marker_338aa61f722a48779b6ba8941cca21c2.bindPopup(popup_10c99ed25c3d43f0a0e4c7df0a6356c2)
+        ;
+
+        
+    
+    
+            var marker_d64b672ba95543d1bf504d759670d361 = L.marker(
+                [8.903333, -82.784722],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_c3d343bdbf6f48d2b31cd1b91908779a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bdf45b0f3de41d088db5b61bfafd1b5 = $(`<div id="html_7bdf45b0f3de41d088db5b61bfafd1b5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, a orilla del camino y de quebrada. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-01-14 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c3d343bdbf6f48d2b31cd1b91908779a.setContent(html_7bdf45b0f3de41d088db5b61bfafd1b5);
+        
+
+        marker_d64b672ba95543d1bf504d759670d361.bindPopup(popup_c3d343bdbf6f48d2b31cd1b91908779a)
+        ;
+
+        
+    
+    
+            var marker_bf1354fb5efe4bc3bd985a94eed296db = L.marker(
+                [8.903333, -82.784722],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_9175696964c5480e9565d677a975f718 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86a5fb0638374967b273b0cba506ec01 = $(`<div id="html_86a5fb0638374967b273b0cba506ec01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Finca Cafrosa, a orilla del camino y de quebrada. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1999-01-14 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_9175696964c5480e9565d677a975f718.setContent(html_86a5fb0638374967b273b0cba506ec01);
+        
+
+        marker_bf1354fb5efe4bc3bd985a94eed296db.bindPopup(popup_9175696964c5480e9565d677a975f718)
+        ;
+
+        
+    
+    
+            var marker_7ea6ba2219bb499b9245382726793f9c = L.marker(
+                [8.913889, -82.81944399999999],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_1e75de822c194095afec96ca618d0dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a00a0ec8cd645fbbe613ac866c64256 = $(`<div id="html_7a00a0ec8cd645fbbe613ac866c64256" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Los Suizos. Vecindades Quebrada 15. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1995-09-27 <strong>Recolectores:</strong> Mario Chinchilla <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_1e75de822c194095afec96ca618d0dc4.setContent(html_7a00a0ec8cd645fbbe613ac866c64256);
+        
+
+        marker_7ea6ba2219bb499b9245382726793f9c.bindPopup(popup_1e75de822c194095afec96ca618d0dc4)
+        ;
+
+        
+    
+    
+            var marker_3cdc5c3c0e3d42df8f57de52b910b2ab = L.marker(
+                [8.888889, -82.841667],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_f5b8d5ab261d46f49a01b3b021c6e254 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79cbb0eacb62452f92d8f5f801b446e6 = $(`<div id="html_79cbb0eacb62452f92d8f5f801b446e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Vito, Sabalito, Finca Neblinas. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1990-09-24 <strong>Recolectores:</strong> Gerardo Mora <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f5b8d5ab261d46f49a01b3b021c6e254.setContent(html_79cbb0eacb62452f92d8f5f801b446e6);
+        
+
+        marker_3cdc5c3c0e3d42df8f57de52b910b2ab.bindPopup(popup_f5b8d5ab261d46f49a01b3b021c6e254)
+        ;
+
+        
+    
+    
+            var marker_7d4d145858a24ec9a9c7923edb97e556 = L.marker(
+                [9.791667, -84.475],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_e835b7f518754e9d9aa83a700cc2637a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bc6e342295e4309af60f3b96c6ab970 = $(`<div id="html_4bc6e342295e4309af60f3b96c6ab970" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas del Cerro Bares. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-06 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Burger, William</div>`)[0];
+            popup_e835b7f518754e9d9aa83a700cc2637a.setContent(html_4bc6e342295e4309af60f3b96c6ab970);
+        
+
+        marker_7d4d145858a24ec9a9c7923edb97e556.bindPopup(popup_e835b7f518754e9d9aa83a700cc2637a)
+        ;
+
+        
+    
+    
+            var marker_138812ca071447e4b8b6480ac5d5602a = L.marker(
+                [9.733333, -84.383333],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_8fee918a560b4df0b35db38088fbef37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a5fb6d73daa4722921e69ebdd34494f = $(`<div id="html_5a5fb6d73daa4722921e69ebdd34494f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas Fila Vara Blanca. San Martin de Puriscal. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_8fee918a560b4df0b35db38088fbef37.setContent(html_5a5fb6d73daa4722921e69ebdd34494f);
+        
+
+        marker_138812ca071447e4b8b6480ac5d5602a.bindPopup(popup_8fee918a560b4df0b35db38088fbef37)
+        ;
+
+        
+    
+    
+            var marker_7b13a2860d7e43559994dc1a2a68bff5 = L.marker(
+                [9.794444, -84.466667],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_cd4f98817c88447a8d9548a4638310b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73a5ddf367fd46389fa6cfa01b7ca037 = $(`<div id="html_73a5ddf367fd46389fa6cfa01b7ca037" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vecindades de Llano Caite. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_cd4f98817c88447a8d9548a4638310b6.setContent(html_73a5ddf367fd46389fa6cfa01b7ca037);
+        
+
+        marker_7b13a2860d7e43559994dc1a2a68bff5.bindPopup(popup_cd4f98817c88447a8d9548a4638310b6)
+        ;
+
+        
+    
+    
+            var marker_44ef7d264efb485c91ea2ca3a309beca = L.marker(
+                [9.794444, -84.447222],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_53d33a6ac48b478eab21262cf84051cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c71f092c594c219182b9c92d6d4247 = $(`<div id="html_00c71f092c594c219182b9c92d6d4247" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sitio El Rubi. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1991-12-10 <strong>Recolectores:</strong> Rodolfo Zúñiga <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_53d33a6ac48b478eab21262cf84051cd.setContent(html_00c71f092c594c219182b9c92d6d4247);
+        
+
+        marker_44ef7d264efb485c91ea2ca3a309beca.bindPopup(popup_53d33a6ac48b478eab21262cf84051cd)
+        ;
+
+        
+    
+    
+            var marker_0169a8032ba748e4928ab90108b28e73 = L.marker(
+                [9.898611, -84.383611],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_d92978c6ac2b4394855c78f17e898e64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f009dc82977409b8023b61c254488fb = $(`<div id="html_2f009dc82977409b8023b61c254488fb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Martin de Puriscal; Vara Blanca. Bosque primario falda N Cerro Cangreja <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> Juan Francisco Morales Quirós <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_d92978c6ac2b4394855c78f17e898e64.setContent(html_2f009dc82977409b8023b61c254488fb);
+        
+
+        marker_0169a8032ba748e4928ab90108b28e73.bindPopup(popup_d92978c6ac2b4394855c78f17e898e64)
+        ;
+
+        
+    
+    
+            var marker_32ad38d4c5e04807bb27c211cec0c002 = L.marker(
+                [8.9, -82.793056],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_31a6bd9e7dfb40cda86bb252f2fb2d3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6328d8e585084ad69dffb3ac809e37d7 = $(`<div id="html_6328d8e585084ad69dffb3ac809e37d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Coto Brus. Finca Cafrosa. Bosque primario. <strong>Elevación:</strong> 1220.0 m  <strong>Fecha:</strong> 1996-03-12 <strong>Recolectores:</strong> Enia Navarro <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_31a6bd9e7dfb40cda86bb252f2fb2d3d.setContent(html_6328d8e585084ad69dffb3ac809e37d7);
+        
+
+        marker_32ad38d4c5e04807bb27c211cec0c002.bindPopup(popup_31a6bd9e7dfb40cda86bb252f2fb2d3d)
+        ;
+
+        
+    
+    
+            var marker_f35832358807478a9dcf60dd1b6ced35 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_2eb109a28772484aa212924d81863f6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_219bfb7a90d54a1d91a43d529dee88e1 = $(`<div id="html_219bfb7a90d54a1d91a43d529dee88e1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1990-11-06 <strong>Recolectores:</strong> Q. Jiménez M. et al. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2eb109a28772484aa212924d81863f6b.setContent(html_219bfb7a90d54a1d91a43d529dee88e1);
+        
+
+        marker_f35832358807478a9dcf60dd1b6ced35.bindPopup(popup_2eb109a28772484aa212924d81863f6b)
+        ;
+
+        
+    
+    
+            var marker_e56fd665da9a459aa2ac79b7fd3b4572 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_9082e966a0e549ff810b1259d5045f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_132ef189188f4ff1890c13e5106d63d7 = $(`<div id="html_132ef189188f4ff1890c13e5106d63d7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1982-02-19 <strong>Recolectores:</strong> K. A. Barringer <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_9082e966a0e549ff810b1259d5045f69.setContent(html_132ef189188f4ff1890c13e5106d63d7);
+        
+
+        marker_e56fd665da9a459aa2ac79b7fd3b4572.bindPopup(popup_9082e966a0e549ff810b1259d5045f69)
+        ;
+
+        
+    
+    
+            var marker_9d677a4304de4ac19d6c5df4140429a5 = L.marker(
+                [9.6667, -84.0],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_e8f05aac0f0646adbda8c415ea562801 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_721a3287a77f4a1d813f39fe882c97b2 = $(`<div id="html_721a3287a77f4a1d813f39fe882c97b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Q. Jiménez M. <strong>Identificadores:</strong> Q. Jiménez M.</div>`)[0];
+            popup_e8f05aac0f0646adbda8c415ea562801.setContent(html_721a3287a77f4a1d813f39fe882c97b2);
+        
+
+        marker_9d677a4304de4ac19d6c5df4140429a5.bindPopup(popup_e8f05aac0f0646adbda8c415ea562801)
+        ;
+
+        
+    
+    
+            var marker_eb445e63bb8045e08d96a0983cba3c15 = L.marker(
+                [9.797222, -84.45277800000001],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_9df91bd6348b4eb884f64bdc03d30234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_054ae14b5404498cba116c9a1532bfee = $(`<div id="html_054ae14b5404498cba116c9a1532bfee" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No Protegida.Cuenca del Tárcoles.Cerro Turrubares. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 2001-12-24 <strong>Recolectores:</strong> Bustamante, J <strong>Identificadores:</strong> Bustamante, J</div>`)[0];
+            popup_9df91bd6348b4eb884f64bdc03d30234.setContent(html_054ae14b5404498cba116c9a1532bfee);
+        
+
+        marker_eb445e63bb8045e08d96a0983cba3c15.bindPopup(popup_9df91bd6348b4eb884f64bdc03d30234)
+        ;
+
+        
+    
+    
+            var marker_6093d82044cd49ed96db263c742d62da = L.marker(
+                [9.79, -84.47],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_d612ceea693b4e0fb3cca4202a165466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5062ecbf23d437db926934690d40a08 = $(`<div id="html_d5062ecbf23d437db926934690d40a08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Z. P. Cerros de Turrubares, Faldas del Cerro Bares. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1990-11-06 <strong>Recolectores:</strong> Zuniga, R.; Jiménez, Q.; Varela, G. <strong>Identificadores:</strong> Burger, W. & Jiménez, Q.</div>`)[0];
+            popup_d612ceea693b4e0fb3cca4202a165466.setContent(html_d5062ecbf23d437db926934690d40a08);
+        
+
+        marker_6093d82044cd49ed96db263c742d62da.bindPopup(popup_d612ceea693b4e0fb3cca4202a165466)
+        ;
+
+        
+    
+    
+            var marker_df7a6b2d6b16428f9497799cbed5d5b7 = L.marker(
+                [9.8, -84.47],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_40ecc50ae2a64b7a8594985a3feeb779 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2b189cf2d564b809155ec1a1ddee1b4 = $(`<div id="html_d2b189cf2d564b809155ec1a1ddee1b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Rafael. <strong>Elevación:</strong> 1080.0 m  <strong>Fecha:</strong> 2004-10-05 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_40ecc50ae2a64b7a8594985a3feeb779.setContent(html_d2b189cf2d564b809155ec1a1ddee1b4);
+        
+
+        marker_df7a6b2d6b16428f9497799cbed5d5b7.bindPopup(popup_40ecc50ae2a64b7a8594985a3feeb779)
+        ;
+
+        
+    
+    
+            var marker_f34d36f2e58547d7b01d5c2ac46c17da = L.marker(
+                [9.81, -84.48],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_f88bf699d2fe4598bb736d3ed63f6660 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76fc5214c06b4a9ca644aed241b96a7e = $(`<div id="html_76fc5214c06b4a9ca644aed241b96a7e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Faldas del Cerro Pelón. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2004-10-07 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_f88bf699d2fe4598bb736d3ed63f6660.setContent(html_76fc5214c06b4a9ca644aed241b96a7e);
+        
+
+        marker_f34d36f2e58547d7b01d5c2ac46c17da.bindPopup(popup_f88bf699d2fe4598bb736d3ed63f6660)
+        ;
+
+        
+    
+    
+            var marker_870c16deddc140509eee46ca98b9b3ac = L.marker(
+                [9.79, -84.49],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_d686382963c046148e93dc8b57e51225 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2958886f078b4831aea7c2ee58da669c = $(`<div id="html_2958886f078b4831aea7c2ee58da669c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerros de Turrubares Cuenca del río Grande de Tárcoles, sitio El Rubí. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Zúñiga, Rodolfo <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_d686382963c046148e93dc8b57e51225.setContent(html_2958886f078b4831aea7c2ee58da669c);
+        
+
+        marker_870c16deddc140509eee46ca98b9b3ac.bindPopup(popup_d686382963c046148e93dc8b57e51225)
+        ;
+
+        
+    
+    
+            var marker_8c74c85833fc4865b4e98b0ed186f8a8 = L.marker(
+                [9.79, -84.46],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_4bacae8df9814bbeba8e2fed14c20423 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_738f4efd830e4c0cb1288539337b8bc6 = $(`<div id="html_738f4efd830e4c0cb1288539337b8bc6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerros de Turrubares Vecindades de Llano de Caite. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1993-03-05 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_4bacae8df9814bbeba8e2fed14c20423.setContent(html_738f4efd830e4c0cb1288539337b8bc6);
+        
+
+        marker_8c74c85833fc4865b4e98b0ed186f8a8.bindPopup(popup_4bacae8df9814bbeba8e2fed14c20423)
+        ;
+
+        
+    
+    
+            var marker_cb14074a47584b839b555afa98e49eff = L.marker(
+                [9.73, -84.38],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_914bdee88fd94d7e9fcfba265f1c3497 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92f4cf80f4264f49aa2d06aadd42645e = $(`<div id="html_92f4cf80f4264f49aa2d06aadd42645e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja San Martín. Faldas de Fila Vara Blanca. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_914bdee88fd94d7e9fcfba265f1c3497.setContent(html_92f4cf80f4264f49aa2d06aadd42645e);
+        
+
+        marker_cb14074a47584b839b555afa98e49eff.bindPopup(popup_914bdee88fd94d7e9fcfba265f1c3497)
+        ;
+
+        
+    
+    
+            var marker_e3abfbad69334737bae7a361c3ee89db = L.marker(
+                [9.73, -84.38],
+                {}
+            ).addTo(marker_cluster_6d2e29e0cfac4ded95d449408e7345c8);
+        
+    
+        var popup_9ecea8a273784771bd39186d91b8228d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b757807d351a45c383aa1386cfd67084 = $(`<div id="html_b757807d351a45c383aa1386cfd67084" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. La Cangreja San Marín. Vara Blanca. Bosque primario falda N de Cerro La Cangreja. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1994-01-05 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_9ecea8a273784771bd39186d91b8228d.setContent(html_b757807d351a45c383aa1386cfd67084);
+        
+
+        marker_e3abfbad69334737bae7a361c3ee89db.bindPopup(popup_9ecea8a273784771bd39186d91b8228d)
+        ;
+
+        
+    
+    
+            var layer_control_154f0f0df9064b4aad15971b989b3412 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_650211d4801d4325a98b2043c43832f5,
+                    "ESRI World Imagery" : tile_layer_c4f5efc8d2294934b99eaf0266913d23,
+                },
+                overlays :  {
+                    "macro_element_6d2e29e0cfac4ded95d449408e7345c8" : marker_cluster_6d2e29e0cfac4ded95d449408e7345c8,
+                },
+            };
+            L.control.layers(
+                layer_control_154f0f0df9064b4aad15971b989b3412.base_layers,
+                layer_control_154f0f0df9064b4aad15971b989b3412.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_975d6415b42a44a7995ac9eed4dc2de2);
+            tile_layer_c4f5efc8d2294934b99eaf0266913d23.remove();
+        
+</script>

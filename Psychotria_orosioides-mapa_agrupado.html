@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f02be058aedf47d48c8d3a075162af3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f02be058aedf47d48c8d3a075162af3e" ></div>
+        
+</body>
+<script>    
+    
+            var map_f02be058aedf47d48c8d3a075162af3e = L.map(
+                "map_f02be058aedf47d48c8d3a075162af3e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f02be058aedf47d48c8d3a075162af3e);
+
+            
+
+        
+    
+            var tile_layer_77cf7583e77d436ba18644351eee66ed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f02be058aedf47d48c8d3a075162af3e);
+        
+    
+            var tile_layer_5dc41b4e569f4faabac190b0abf8ec1b = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f02be058aedf47d48c8d3a075162af3e);
+        
+    
+            var marker_cluster_6defd99f7fa847a6a293201f4d32045c = L.markerClusterGroup(
+                {}
+            );
+            map_f02be058aedf47d48c8d3a075162af3e.addLayer(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+            var marker_4c76425594ff48a7bdb87d33e324a00a = L.marker(
+                [10.366667, -84.783333],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_1fcd0703b41f47dd9a0d2d2daacccab0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1de43f195c354a93bbf03e1e104bc638 = $(`<div id="html_1de43f195c354a93bbf03e1e104bc638" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo Field Station, Bosque Eterno de Los Niños, along Sendero Congo <strong>Elevación:</strong> 1215.0 m  <strong>Fecha:</strong> 2005-03-21 <strong>Recolectores:</strong> Paul, J. <strong>Identificadores:</strong> C.M. Taylor 2006</div>`)[0];
+            popup_1fcd0703b41f47dd9a0d2d2daacccab0.setContent(html_1de43f195c354a93bbf03e1e104bc638);
+        
+
+        marker_4c76425594ff48a7bdb87d33e324a00a.bindPopup(popup_1fcd0703b41f47dd9a0d2d2daacccab0)
+        ;
+
+        
+    
+    
+            var marker_0eae383c991a4855991c7d942a5881f5 = L.marker(
+                [10.43778, -84.69083],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_21353665439f427f951db34fb2aa0aaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15cdef6965ee41e5b211b6399565cf5a = $(`<div id="html_15cdef6965ee41e5b211b6399565cf5a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Alajuela Province, boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-04</div>`)[0];
+            popup_21353665439f427f951db34fb2aa0aaa.setContent(html_15cdef6965ee41e5b211b6399565cf5a);
+        
+
+        marker_0eae383c991a4855991c7d942a5881f5.bindPopup(popup_21353665439f427f951db34fb2aa0aaa)
+        ;
+
+        
+    
+    
+            var marker_35780abb447b4941b0694f7e12aabaf9 = L.marker(
+                [10.43778, -84.69083],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_e9cad8497057410aad13ddc16883413f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2daf13f4fe014563a9ae00f9199d0d35 = $(`<div id="html_2daf13f4fe014563a9ae00f9199d0d35" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, Alajuela Province, boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-04</div>`)[0];
+            popup_e9cad8497057410aad13ddc16883413f.setContent(html_2daf13f4fe014563a9ae00f9199d0d35);
+        
+
+        marker_35780abb447b4941b0694f7e12aabaf9.bindPopup(popup_e9cad8497057410aad13ddc16883413f)
+        ;
+
+        
+    
+    
+            var marker_be6f642428344a83a5a536d524d43fa9 = L.marker(
+                [10.31, -84.75],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_0578dcb05ee846a0b370b6f98f3bb28d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ddfcacaace24c3999ab0390652bc2a8 = $(`<div id="html_4ddfcacaace24c3999ab0390652bc2a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde, Cordillera de Tilarán, Valle del Río Peñas Blancas, Ref. Alema. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1993-11-10 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_0578dcb05ee846a0b370b6f98f3bb28d.setContent(html_4ddfcacaace24c3999ab0390652bc2a8);
+        
+
+        marker_be6f642428344a83a5a536d524d43fa9.bindPopup(popup_0578dcb05ee846a0b370b6f98f3bb28d)
+        ;
+
+        
+    
+    
+            var marker_6e3fcf2d0a95415ea4eed32b01bfdf96 = L.marker(
+                [10.38, -84.7],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_ade05e74bd284fdeb85622eaecdeb91c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7b2278e7e564b8fa913a6033fa26d27 = $(`<div id="html_c7b2278e7e564b8fa913a6033fa26d27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestale Monteverde, Bosque Eterno De Los Niños, Cordillera de Tilarán, Río Peñas Blancas, Quebrada Gata, riachuelo de Fernando Villalobos. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-04-18 <strong>Recolectores:</strong> Erick Bello C.|William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_ade05e74bd284fdeb85622eaecdeb91c.setContent(html_c7b2278e7e564b8fa913a6033fa26d27);
+        
+
+        marker_6e3fcf2d0a95415ea4eed32b01bfdf96.bindPopup(popup_ade05e74bd284fdeb85622eaecdeb91c)
+        ;
+
+        
+    
+    
+            var marker_f6a344b230c349ec8338017d3300fe69 = L.marker(
+                [10.36, -84.8],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_6ffbd1f6e8e349f4bef4fd7a141aa374 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d1706c4783749fd96b8d583fe89fd94 = $(`<div id="html_5d1706c4783749fd96b8d583fe89fd94" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Arenal; Cordillera de Tilarán. Quebrada San Gerardo, Río Caño Negro. Finca de Los Mejías. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-17 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_6ffbd1f6e8e349f4bef4fd7a141aa374.setContent(html_5d1706c4783749fd96b8d583fe89fd94);
+        
+
+        marker_f6a344b230c349ec8338017d3300fe69.bindPopup(popup_6ffbd1f6e8e349f4bef4fd7a141aa374)
+        ;
+
+        
+    
+    
+            var marker_7e5690c4f6dc45859d332ad15e8e9b1f = L.marker(
+                [10.38, -84.7],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_eca80c6722e94d7e9699460fb14d9610 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98dc9192ce01459686e77fce20ecc0f2 = $(`<div id="html_98dc9192ce01459686e77fce20ecc0f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bosque Eterno De Los Niños, Cordillera de Tilarán, Valley of Río Agua Gata, Atlantic slope, Road from Lagarto at Inter-American <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1991-04-18 <strong>Recolectores:</strong> William A. Haber|Willow Zuchowski <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_eca80c6722e94d7e9699460fb14d9610.setContent(html_98dc9192ce01459686e77fce20ecc0f2);
+        
+
+        marker_7e5690c4f6dc45859d332ad15e8e9b1f.bindPopup(popup_eca80c6722e94d7e9699460fb14d9610)
+        ;
+
+        
+    
+    
+            var marker_1e51f8f13db644d9bb0779f71b6f6c9f = L.marker(
+                [10.3, -84.75],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_e8e3037770604502a0a697f6ad53c25c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c06951abcc24e78ad3338e9f0eae41f = $(`<div id="html_1c06951abcc24e78ad3338e9f0eae41f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas. Parcela de Alemán. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1989-06-25 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_e8e3037770604502a0a697f6ad53c25c.setContent(html_1c06951abcc24e78ad3338e9f0eae41f);
+        
+
+        marker_1e51f8f13db644d9bb0779f71b6f6c9f.bindPopup(popup_e8e3037770604502a0a697f6ad53c25c)
+        ;
+
+        
+    
+    
+            var marker_b9b86e240c1a445a9f9a802d4bd977b9 = L.marker(
+                [10.28, -84.71],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_2ca0d5fb834743ee88e1e212798c8a72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6e9f44db53449e88fd7b84e78b66ac6 = $(`<div id="html_a6e9f44db53449e88fd7b84e78b66ac6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Biológica Monteverde Río Peñas Blancas, Altos de Quebrada Portal. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1989-05-23 <strong>Recolectores:</strong> Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_2ca0d5fb834743ee88e1e212798c8a72.setContent(html_a6e9f44db53449e88fd7b84e78b66ac6);
+        
+
+        marker_b9b86e240c1a445a9f9a802d4bd977b9.bindPopup(popup_2ca0d5fb834743ee88e1e212798c8a72)
+        ;
+
+        
+    
+    
+            var marker_dbcfa6b379f0405fb0109f68eca32d32 = L.marker(
+                [10.56, -84.9],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_70fe18a8278b41aea7c06723d9ffd399 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e134c0e194d4a29a45451846d0e59f8 = $(`<div id="html_5e134c0e194d4a29a45451846d0e59f8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 15 km northwest of Arenal by air, 2 km northwest of Nuevo Arenal on road to Tilarán, then 3 km northeast on road to San Rafael de Guatuso, then 2 km west on road to Finca Cote, on N side of road <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1983-04-30 <strong>Recolectores:</strong> Ronald L. Liesner|Emmet J. Judziewicz|Blanca Pérez G. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_70fe18a8278b41aea7c06723d9ffd399.setContent(html_5e134c0e194d4a29a45451846d0e59f8);
+        
+
+        marker_dbcfa6b379f0405fb0109f68eca32d32.bindPopup(popup_70fe18a8278b41aea7c06723d9ffd399)
+        ;
+
+        
+    
+    
+            var marker_c768038e58a14eb29b0f613d72f3cd2b = L.marker(
+                [10.366667, -84.866667],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_49c6c0cd28214bf4a70ad5aa38b3cd91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_277f1de82f5f4ff8ae7d55f86959c84d = $(`<div id="html_277f1de82f5f4ff8ae7d55f86959c84d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiquito de Tilarán, Río Negro valley, Atlantic slope, lower montane wet forest. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1986-07-30 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_49c6c0cd28214bf4a70ad5aa38b3cd91.setContent(html_277f1de82f5f4ff8ae7d55f86959c84d);
+        
+
+        marker_c768038e58a14eb29b0f613d72f3cd2b.bindPopup(popup_49c6c0cd28214bf4a70ad5aa38b3cd91)
+        ;
+
+        
+    
+    
+            var marker_0d13a8433709420b90a6feca53d8b899 = L.marker(
+                [10.366667, -84.8],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_bb02310ce5154b83b5353de3c4d56d45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1736200a058477aa9e029e48d1e45ff = $(`<div id="html_e1736200a058477aa9e029e48d1e45ff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Monteverde. San Gerardo Biological Station. Sendero Congo, 1 km W of Station. Semi-disturbed primary forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-05-10 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_bb02310ce5154b83b5353de3c4d56d45.setContent(html_e1736200a058477aa9e029e48d1e45ff);
+        
+
+        marker_0d13a8433709420b90a6feca53d8b899.bindPopup(popup_bb02310ce5154b83b5353de3c4d56d45)
+        ;
+
+        
+    
+    
+            var marker_097200c918904005b349fb296076d8cb = L.marker(
+                [10.366660000000001, -84.78333],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_ae173dd2146643a1bf460bd53b9e3af6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce5ac8f4012e4efda34aa63eb5b9800b = $(`<div id="html_ce5ac8f4012e4efda34aa63eb5b9800b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Guanacaste. Monteverde. San Gerardo Biological Station. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-07-01 <strong>Recolectores:</strong> Darin S. Penneys <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_ae173dd2146643a1bf460bd53b9e3af6.setContent(html_ce5ac8f4012e4efda34aa63eb5b9800b);
+        
+
+        marker_097200c918904005b349fb296076d8cb.bindPopup(popup_ae173dd2146643a1bf460bd53b9e3af6)
+        ;
+
+        
+    
+    
+            var marker_86c711a9a7534ca18c8e285ad58db3f9 = L.marker(
+                [10.366660000000001, -84.78333],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_3fcd006e80074e5abdccf94ffc2cb975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fee204a5fb14432a83cc796e18e4823d = $(`<div id="html_fee204a5fb14432a83cc796e18e4823d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo Field Station, Bosque Eterno de Los Niños, along Sendero Congo. <strong>Elevación:</strong> 1215.0 m  <strong>Fecha:</strong> 2005-03-21 <strong>Recolectores:</strong> John R. Paul <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_3fcd006e80074e5abdccf94ffc2cb975.setContent(html_fee204a5fb14432a83cc796e18e4823d);
+        
+
+        marker_86c711a9a7534ca18c8e285ad58db3f9.bindPopup(popup_3fcd006e80074e5abdccf94ffc2cb975)
+        ;
+
+        
+    
+    
+            var marker_2ce398c7acc4467a9d54d0c7bd6162e9 = L.marker(
+                [10.437778, -84.690833],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_7a4abc2845464489a584fc7b81e16b0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6403dd100a3a4c43923cf6fd04126431 = $(`<div id="html_6403dd100a3a4c43923cf6fd04126431" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Boarder region of Cantons San Carlos and San Ramón. Sendero Cerro Chato, around halfway on descent from Laguna Cerro Chato to pastures surrounding the Arenal Observatory Lodge. <strong>Elevación:</strong> 1040.0 m  <strong>Fecha:</strong> 2015-02-07 <strong>Recolectores:</strong> A. Berger <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_7a4abc2845464489a584fc7b81e16b0a.setContent(html_6403dd100a3a4c43923cf6fd04126431);
+        
+
+        marker_2ce398c7acc4467a9d54d0c7bd6162e9.bindPopup(popup_7a4abc2845464489a584fc7b81e16b0a)
+        ;
+
+        
+    
+    
+            var marker_a4dede786ef548db895b3d80329877fb = L.marker(
+                [10.722937, -85.03681],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_9169a5687c6a4ec0b613be7abb7842f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b35fe19b34d4e27b411452d41051aa0 = $(`<div id="html_6b35fe19b34d4e27b411452d41051aa0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Altos Los Brenes, bosques aleda?os al hotel Las Heliconias, sendero que lleva a Laguna Danta.                                                                                                                                                                                                                                                                                                                                                                                                                     " <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_9169a5687c6a4ec0b613be7abb7842f0.setContent(html_6b35fe19b34d4e27b411452d41051aa0);
+        
+
+        marker_a4dede786ef548db895b3d80329877fb.bindPopup(popup_9169a5687c6a4ec0b613be7abb7842f0)
+        ;
+
+        
+    
+    
+            var marker_0f5a69b6b5a5476bb81a425514ded812 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_6027e6759af64c2c8c85196cd8c3fdab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49f282ec559946d78b8eb2ded9b6e255 = $(`<div id="html_49f282ec559946d78b8eb2ded9b6e255" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio, Cuenca del Río Frío, Alto Masís, Colectado en bosque secundario; a orilla de sendero <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> B. Hammel (INB), 3 May./</div>`)[0];
+            popup_6027e6759af64c2c8c85196cd8c3fdab.setContent(html_49f282ec559946d78b8eb2ded9b6e255);
+        
+
+        marker_0f5a69b6b5a5476bb81a425514ded812.bindPopup(popup_6027e6759af64c2c8c85196cd8c3fdab)
+        ;
+
+        
+    
+    
+            var marker_6cc76a4706ab48c0976e892365d626e6 = L.marker(
+                [10.58, -84.98527800000001],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_7cb13df6d28a448dbc042dbe4bcc5793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3faeb952b9d74a3ea82f34dfc9a9beae = $(`<div id="html_3faeb952b9d74a3ea82f34dfc9a9beae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Volcán Tenorio. Cuenca del Río Frío. Tenorio. Alto Masís. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-08-08 <strong>Recolectores:</strong> José Luis Chaves <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_7cb13df6d28a448dbc042dbe4bcc5793.setContent(html_3faeb952b9d74a3ea82f34dfc9a9beae);
+        
+
+        marker_6cc76a4706ab48c0976e892365d626e6.bindPopup(popup_7cb13df6d28a448dbc042dbe4bcc5793)
+        ;
+
+        
+    
+    
+            var marker_23dcbe6b14b44ea790c5a09a1cdebab5 = L.marker(
+                [10.722937, -85.036806],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_fe4dad2d01054a08b3d261c7d1708a0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a6191a0a904298b59b62ae6f2a89ef = $(`<div id="html_96a6191a0a904298b59b62ae6f2a89ef" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_fe4dad2d01054a08b3d261c7d1708a0d.setContent(html_96a6191a0a904298b59b62ae6f2a89ef);
+        
+
+        marker_23dcbe6b14b44ea790c5a09a1cdebab5.bindPopup(popup_fe4dad2d01054a08b3d261c7d1708a0d)
+        ;
+
+        
+    
+    
+            var marker_9f24e3d4c0694a1ababa749b5cf2698a = L.marker(
+                [10.722937, -85.036806],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_042b46825d3649a884545d3cd4239da2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8a8203eae9f4e85864a6cb88a0c160d = $(`<div id="html_a8a8203eae9f4e85864a6cb88a0c160d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_042b46825d3649a884545d3cd4239da2.setContent(html_a8a8203eae9f4e85864a6cb88a0c160d);
+        
+
+        marker_9f24e3d4c0694a1ababa749b5cf2698a.bindPopup(popup_042b46825d3649a884545d3cd4239da2)
+        ;
+
+        
+    
+    
+            var marker_5f6b57e3537647c085b94e5d156a57ef = L.marker(
+                [10.722937, -85.036806],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_e5d2118697e04defa8a66083f69261c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ed1d5e437e7468a8343992e63f7043a = $(`<div id="html_9ed1d5e437e7468a8343992e63f7043a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e5d2118697e04defa8a66083f69261c4.setContent(html_9ed1d5e437e7468a8343992e63f7043a);
+        
+
+        marker_5f6b57e3537647c085b94e5d156a57ef.bindPopup(popup_e5d2118697e04defa8a66083f69261c4)
+        ;
+
+        
+    
+    
+            var marker_f46b51c675f447e8a00ae694956a2cd5 = L.marker(
+                [10.722937, -85.036806],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_a2e569265fc14d8da85fcf88a37c2a3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b3971a3a7b64d4bbaf7611eecbdaf50 = $(`<div id="html_3b3971a3a7b64d4bbaf7611eecbdaf50" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Albergue Helinonias,sendero Heliconias. Área de Conservación Arenal <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 2000-11-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a2e569265fc14d8da85fcf88a37c2a3f.setContent(html_3b3971a3a7b64d4bbaf7611eecbdaf50);
+        
+
+        marker_f46b51c675f447e8a00ae694956a2cd5.bindPopup(popup_a2e569265fc14d8da85fcf88a37c2a3f)
+        ;
+
+        
+    
+    
+            var marker_d3b3ba99a22540428c7dc1002d475f5c = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_944c2f36128f46beab7c57113b97aae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a5568a4229d4415b690f0db4beca606 = $(`<div id="html_1a5568a4229d4415b690f0db4beca606" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_944c2f36128f46beab7c57113b97aae7.setContent(html_1a5568a4229d4415b690f0db4beca606);
+        
+
+        marker_d3b3ba99a22540428c7dc1002d475f5c.bindPopup(popup_944c2f36128f46beab7c57113b97aae7)
+        ;
+
+        
+    
+    
+            var marker_0ec3a93f75e84e658215feeb88aeef7e = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_f5fcac8a158644d5b9ac427ba700e2b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c461c8378acc4b7584fff6c9a2fa8f40 = $(`<div id="html_c461c8378acc4b7584fff6c9a2fa8f40" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f5fcac8a158644d5b9ac427ba700e2b9.setContent(html_c461c8378acc4b7584fff6c9a2fa8f40);
+        
+
+        marker_0ec3a93f75e84e658215feeb88aeef7e.bindPopup(popup_f5fcac8a158644d5b9ac427ba700e2b9)
+        ;
+
+        
+    
+    
+            var marker_22018e27271045f0a68ffd2bb86f6c27 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_05783357c5304437a752154b83a8e35c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d441aff553d4f3680aa2e22d6a3c071 = $(`<div id="html_6d441aff553d4f3680aa2e22d6a3c071" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_05783357c5304437a752154b83a8e35c.setContent(html_6d441aff553d4f3680aa2e22d6a3c071);
+        
+
+        marker_22018e27271045f0a68ffd2bb86f6c27.bindPopup(popup_05783357c5304437a752154b83a8e35c)
+        ;
+
+        
+    
+    
+            var marker_67eee9c2fa124f1ab10f6e44bb5c51f6 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_ff5c7e488bd34bec93208e5ed9d97873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81ab26c4d15248bbacb4bb861cfa863d = $(`<div id="html_81ab26c4d15248bbacb4bb861cfa863d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_ff5c7e488bd34bec93208e5ed9d97873.setContent(html_81ab26c4d15248bbacb4bb861cfa863d);
+        
+
+        marker_67eee9c2fa124f1ab10f6e44bb5c51f6.bindPopup(popup_ff5c7e488bd34bec93208e5ed9d97873)
+        ;
+
+        
+    
+    
+            var marker_25a40758cf7040beb2b4888b1062c210 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_806d3198b2df49648366795e09c72f42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1a749b69dbb4ef5bd7635d8989dbd24 = $(`<div id="html_a1a749b69dbb4ef5bd7635d8989dbd24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2001-02-13 <strong>Recolectores:</strong> Jose Luis Chaves <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_806d3198b2df49648366795e09c72f42.setContent(html_a1a749b69dbb4ef5bd7635d8989dbd24);
+        
+
+        marker_25a40758cf7040beb2b4888b1062c210.bindPopup(popup_806d3198b2df49648366795e09c72f42)
+        ;
+
+        
+    
+    
+            var marker_8436bcf8e9c64feeb34e90a3098c6a99 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_efdb01bc4eae4dd789c6c3a399c12725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e36fb1e1a77b48a58786c75be2ce64e9 = $(`<div id="html_e36fb1e1a77b48a58786c75be2ce64e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_efdb01bc4eae4dd789c6c3a399c12725.setContent(html_e36fb1e1a77b48a58786c75be2ce64e9);
+        
+
+        marker_8436bcf8e9c64feeb34e90a3098c6a99.bindPopup(popup_efdb01bc4eae4dd789c6c3a399c12725)
+        ;
+
+        
+    
+    
+            var marker_d9d50ff8352644549ada89fa43a3859d = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_f47307017ecc4ea5b979d7a4fd096843 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7bb0f3990894dcd8e1018dbbe6d63e7 = $(`<div id="html_d7bb0f3990894dcd8e1018dbbe6d63e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_f47307017ecc4ea5b979d7a4fd096843.setContent(html_d7bb0f3990894dcd8e1018dbbe6d63e7);
+        
+
+        marker_d9d50ff8352644549ada89fa43a3859d.bindPopup(popup_f47307017ecc4ea5b979d7a4fd096843)
+        ;
+
+        
+    
+    
+            var marker_6e3811cad27449e6b6585aecfa84975e = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_0f6dfa9e7bc1476c9e243ef5702cc58d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45e9f3d7e5714a419aba435f86374c1c = $(`<div id="html_45e9f3d7e5714a419aba435f86374c1c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0f6dfa9e7bc1476c9e243ef5702cc58d.setContent(html_45e9f3d7e5714a419aba435f86374c1c);
+        
+
+        marker_6e3811cad27449e6b6585aecfa84975e.bindPopup(popup_0f6dfa9e7bc1476c9e243ef5702cc58d)
+        ;
+
+        
+    
+    
+            var marker_8eee78ea4f2c4e2ebd8297c01c1f05d4 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_4225c5185798454aba7b211d0c49aca6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb6ad8587c904ad38f626f7571a7dc52 = $(`<div id="html_fb6ad8587c904ad38f626f7571a7dc52" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-04-06 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_4225c5185798454aba7b211d0c49aca6.setContent(html_fb6ad8587c904ad38f626f7571a7dc52);
+        
+
+        marker_8eee78ea4f2c4e2ebd8297c01c1f05d4.bindPopup(popup_4225c5185798454aba7b211d0c49aca6)
+        ;
+
+        
+    
+    
+            var marker_6955d2c3fee7453ca6cad97bc68f00ae = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_76e493f918874d11a00798cc8d5860a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4560da16b214f56812f9a330d5a6f36 = $(`<div id="html_c4560da16b214f56812f9a330d5a6f36" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_76e493f918874d11a00798cc8d5860a3.setContent(html_c4560da16b214f56812f9a330d5a6f36);
+        
+
+        marker_6955d2c3fee7453ca6cad97bc68f00ae.bindPopup(popup_76e493f918874d11a00798cc8d5860a3)
+        ;
+
+        
+    
+    
+            var marker_2c0d068f4f9a4393b74689628325f012 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_3313f0328ef94ea39fb8ed98a3d83d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60719fd4c592496c9ef013a9be1322e7 = $(`<div id="html_60719fd4c592496c9ef013a9be1322e7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3313f0328ef94ea39fb8ed98a3d83d7c.setContent(html_60719fd4c592496c9ef013a9be1322e7);
+        
+
+        marker_2c0d068f4f9a4393b74689628325f012.bindPopup(popup_3313f0328ef94ea39fb8ed98a3d83d7c)
+        ;
+
+        
+    
+    
+            var marker_f92c9b3e70344453887efab6ee51287f = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_0bdc5a67f65b4d2e89305b65f91e163a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba62902ec38c4b809ba769838fa1c8e9 = $(`<div id="html_ba62902ec38c4b809ba769838fa1c8e9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_0bdc5a67f65b4d2e89305b65f91e163a.setContent(html_ba62902ec38c4b809ba769838fa1c8e9);
+        
+
+        marker_f92c9b3e70344453887efab6ee51287f.bindPopup(popup_0bdc5a67f65b4d2e89305b65f91e163a)
+        ;
+
+        
+    
+    
+            var marker_5a0e7135b5c840c8bc307587a77ae78c = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_91b19c7275514c1d82490712c388d5ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa8236faafab40138c2bb0cab2eb5957 = $(`<div id="html_aa8236faafab40138c2bb0cab2eb5957" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_91b19c7275514c1d82490712c388d5ae.setContent(html_aa8236faafab40138c2bb0cab2eb5957);
+        
+
+        marker_5a0e7135b5c840c8bc307587a77ae78c.bindPopup(popup_91b19c7275514c1d82490712c388d5ae)
+        ;
+
+        
+    
+    
+            var marker_0a82f749c5ba456cb6ad9a034b9d99b3 = L.marker(
+                [10.671389, -84.990278],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_67bb0c089655465aae98a7b58e55ac07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb28daf019e94c4680c4d172240bea8e = $(`<div id="html_eb28daf019e94c4680c4d172240bea8e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Volcán Tenorio Alto Masis. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-08-07 <strong>Recolectores:</strong> Jose Luis Chaves; Eleomar Muñoz <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_67bb0c089655465aae98a7b58e55ac07.setContent(html_eb28daf019e94c4680c4d172240bea8e);
+        
+
+        marker_0a82f749c5ba456cb6ad9a034b9d99b3.bindPopup(popup_67bb0c089655465aae98a7b58e55ac07)
+        ;
+
+        
+    
+    
+            var marker_ed6ff2b7ffa24b72a75c254b3b8ccde6 = L.marker(
+                [10.366667, -84.783334],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_f20ed7ff75d047aeb0c8cfff124a1f66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0042402528a4179b9920e096735048d = $(`<div id="html_b0042402528a4179b9920e096735048d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. San Gerardo Biological Station. Sendero Viejo, 500 m S of Station. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-07-01 <strong>Recolectores:</strong> Darin Penneys <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f20ed7ff75d047aeb0c8cfff124a1f66.setContent(html_b0042402528a4179b9920e096735048d);
+        
+
+        marker_ed6ff2b7ffa24b72a75c254b3b8ccde6.bindPopup(popup_f20ed7ff75d047aeb0c8cfff124a1f66)
+        ;
+
+        
+    
+    
+            var marker_5920877cfa22446b98f3993b7bb55550 = L.marker(
+                [10.366667, -84.8],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_3f1ce64364bf4c0b8b052ffba838b023 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03f3d789985c4ca4a2a3397051312f08 = $(`<div id="html_03f3d789985c4ca4a2a3397051312f08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde. San Gerardo Biological Station. Sendero Congo, 1 km W of Station. Semi-disturbed primary forest. Premontane rain forest. <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1995-05-10 <strong>Recolectores:</strong> Darin Penneys <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3f1ce64364bf4c0b8b052ffba838b023.setContent(html_03f3d789985c4ca4a2a3397051312f08);
+        
+
+        marker_5920877cfa22446b98f3993b7bb55550.bindPopup(popup_3f1ce64364bf4c0b8b052ffba838b023)
+        ;
+
+        
+    
+    
+            var marker_32cff65290e8435b89a375c78f6cc576 = L.marker(
+                [10.383333, -84.7],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_26773b204326480986fb5fcc20c81ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc618044a4bc421f847f06e00a901522 = $(`<div id="html_fc618044a4bc421f847f06e00a901522" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Rio Penas Blancas, Quebrada Gata, riachuelo de Fernando Villalobos. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1990-04-18 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_26773b204326480986fb5fcc20c81ee4.setContent(html_fc618044a4bc421f847f06e00a901522);
+        
+
+        marker_32cff65290e8435b89a375c78f6cc576.bindPopup(popup_26773b204326480986fb5fcc20c81ee4)
+        ;
+
+        
+    
+    
+            var marker_3297cc80f63c45268c10a9ecef447482 = L.marker(
+                [10.366667, -84.8],
+                {}
+            ).addTo(marker_cluster_6defd99f7fa847a6a293201f4d32045c);
+        
+    
+        var popup_cc19ae2546aa4122b23e67f72984b895 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_187942a65d4d4b588e30f824a6cb5f58 = $(`<div id="html_187942a65d4d4b588e30f824a6cb5f58" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada San Gerardo, Rio Cano Negro. Finca de Los Mejias. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1990-02-17 <strong>Recolectores:</strong> Erick Bello <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_cc19ae2546aa4122b23e67f72984b895.setContent(html_187942a65d4d4b588e30f824a6cb5f58);
+        
+
+        marker_3297cc80f63c45268c10a9ecef447482.bindPopup(popup_cc19ae2546aa4122b23e67f72984b895)
+        ;
+
+        
+    
+    
+            var layer_control_a278fe56e198485bad0df3970db932fc = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_77cf7583e77d436ba18644351eee66ed,
+                    "ESRI World Imagery" : tile_layer_5dc41b4e569f4faabac190b0abf8ec1b,
+                },
+                overlays :  {
+                    "macro_element_6defd99f7fa847a6a293201f4d32045c" : marker_cluster_6defd99f7fa847a6a293201f4d32045c,
+                },
+            };
+            L.control.layers(
+                layer_control_a278fe56e198485bad0df3970db932fc.base_layers,
+                layer_control_a278fe56e198485bad0df3970db932fc.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f02be058aedf47d48c8d3a075162af3e);
+            tile_layer_5dc41b4e569f4faabac190b0abf8ec1b.remove();
+        
+</script>

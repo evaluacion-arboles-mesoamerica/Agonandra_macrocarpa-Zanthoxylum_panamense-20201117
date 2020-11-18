@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8abfd40e6e8841868cb02d11378a4086 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8abfd40e6e8841868cb02d11378a4086" ></div>
+        
+</body>
+<script>    
+    
+            var map_8abfd40e6e8841868cb02d11378a4086 = L.map(
+                "map_8abfd40e6e8841868cb02d11378a4086",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8abfd40e6e8841868cb02d11378a4086);
+
+            
+
+        
+    
+            var tile_layer_cdba841c26b84766b641634d52add66e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8abfd40e6e8841868cb02d11378a4086);
+        
+    
+            var tile_layer_aea43f6afb204ddf9154be618c799281 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8abfd40e6e8841868cb02d11378a4086);
+        
+    
+            var marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338 = L.markerClusterGroup(
+                {}
+            );
+            map_8abfd40e6e8841868cb02d11378a4086.addLayer(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+            var marker_99931c8d86b94938a7b44ddda1b977a2 = L.marker(
+                [6.91666, -74.91666],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_df9728145cd74e76ad60153ae688993f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f6021ab0c784018abcb9960f7af5025 = $(`<div id="html_3f6021ab0c784018abcb9960f7af5025" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Vereda Arenasblancas. <strong>Elevación:</strong> 1175.0 m  <strong>Fecha:</strong> 1994-04-11 <strong>Recolectores:</strong> Ramiro Fonnegra G.|et al. <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_df9728145cd74e76ad60153ae688993f.setContent(html_3f6021ab0c784018abcb9960f7af5025);
+        
+
+        marker_99931c8d86b94938a7b44ddda1b977a2.bindPopup(popup_df9728145cd74e76ad60153ae688993f)
+        ;
+
+        
+    
+    
+            var marker_bef7d963220c4bf2bcf5fc5938839d71 = L.marker(
+                [10.3, -84.8],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_4f852ce110f94a1ba4ba0ca58c97ae3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3e6d4dff02d47b68d3bdf1753d978d6 = $(`<div id="html_e3e6d4dff02d47b68d3bdf1753d978d6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve. Swamp on continental divide, lower montane rain forest. <strong>Elevación:</strong> 1550.0 m  <strong>Fecha:</strong> 1986-11-08 <strong>Recolectores:</strong> William A. Haber|Erick Bello C. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_4f852ce110f94a1ba4ba0ca58c97ae3f.setContent(html_e3e6d4dff02d47b68d3bdf1753d978d6);
+        
+
+        marker_bef7d963220c4bf2bcf5fc5938839d71.bindPopup(popup_4f852ce110f94a1ba4ba0ca58c97ae3f)
+        ;
+
+        
+    
+    
+            var marker_839ff769cbef460594bb7f24934fbac3 = L.marker(
+                [10.333333, -84.833333],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_f88123d6e7864a529277fb7667373950 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21b603e0808e4ec6a45f0d3510ccce6d = $(`<div id="html_21b603e0808e4ec6a45f0d3510ccce6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Monteverde Cloud Forest Reserve, El Valle area on continental divide, lower montane rain forest <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 1986-05-23 <strong>Recolectores:</strong> William A. Haber|Erick Bello C.|L. Lierheimer <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_f88123d6e7864a529277fb7667373950.setContent(html_21b603e0808e4ec6a45f0d3510ccce6d);
+        
+
+        marker_839ff769cbef460594bb7f24934fbac3.bindPopup(popup_f88123d6e7864a529277fb7667373950)
+        ;
+
+        
+    
+    
+            var marker_e7c3f0a87459425dac18b28884c82008 = L.marker(
+                [7.6666669999999995, -77.7],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_e95b2c3ad9444b038addc94b4a409350 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d238a4528df44feaf80452470df7392 = $(`<div id="html_3d238a4528df44feaf80452470df7392" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pirre, valley between between Pirre and next most southernly peak, sloping hillside. [The co-collectors Ronald L. Hartman & Robert L. Dressler are not printed on the original labels but are clearly indicated in Folsom's fieldbook.] <strong>Elevación:</strong> 1275.0 m  <strong>Fecha:</strong> 1977-07-10 <strong>Recolectores:</strong> James P. Folsom|Ronald L. Hartman|Robert L. Dressler <strong>Identificadores:</strong> John D. Dwyer</div>`)[0];
+            popup_e95b2c3ad9444b038addc94b4a409350.setContent(html_3d238a4528df44feaf80452470df7392);
+        
+
+        marker_e7c3f0a87459425dac18b28884c82008.bindPopup(popup_e95b2c3ad9444b038addc94b4a409350)
+        ;
+
+        
+    
+    
+            var marker_205d921023f54801a10a5e4629354a61 = L.marker(
+                [10.1, -83.96666],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_8b3696db8c144b7a9b75cdd4d752b054 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27182d29cd204b8bb805a92577c33e1f = $(`<div id="html_27182d29cd204b8bb805a92577c33e1f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cantón de Vázquez de Coronado P.N. Braulio Carrillo. Cuenca del Sarapiquí. Bajo La Hondura. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-01-21 <strong>Recolectores:</strong> Alexánder Rodríguez <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_8b3696db8c144b7a9b75cdd4d752b054.setContent(html_27182d29cd204b8bb805a92577c33e1f);
+        
+
+        marker_205d921023f54801a10a5e4629354a61.bindPopup(popup_8b3696db8c144b7a9b75cdd4d752b054)
+        ;
+
+        
+    
+    
+            var marker_d5f41beff2f14446875d231018ab36e0 = L.marker(
+                [10.03, -83.95],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_94dd3127e53f4d6282e86ecacee3f856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6f4032d4aba496c8567837aae518536 = $(`<div id="html_d6f4032d4aba496c8567837aae518536" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Sendero Río Cascajal <strong>Elevación:</strong> 1250.0 m  <strong>Fecha:</strong> 1984-06-30 <strong>Recolectores:</strong> Nelson Zamora|Pablo E. Sánchez V.|Silvia Lobo <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_94dd3127e53f4d6282e86ecacee3f856.setContent(html_d6f4032d4aba496c8567837aae518536);
+        
+
+        marker_d5f41beff2f14446875d231018ab36e0.bindPopup(popup_94dd3127e53f4d6282e86ecacee3f856)
+        ;
+
+        
+    
+    
+            var marker_d35b78f2f8b04f4b91a54f0e1febf189 = L.marker(
+                [7.95, -77.716667],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_7a1f57c727134439b3f17d466b0968ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_791bf38aef994cfbbd08b9e6b81682cf = $(`<div id="html_791bf38aef994cfbbd08b9e6b81682cf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Serranía de Pirre 1.5-2.5 mi S on ridge from intersection with trail down to Rancho Frío. Cloud forest main ridge. <strong>Elevación:</strong> 1100.0 m  <strong>Fecha:</strong> 1977-07-11 <strong>Recolectores:</strong> Ronald L. Hartman|James P. Folsom|Robert L. Dressler <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_7a1f57c727134439b3f17d466b0968ac.setContent(html_791bf38aef994cfbbd08b9e6b81682cf);
+        
+
+        marker_d35b78f2f8b04f4b91a54f0e1febf189.bindPopup(popup_7a1f57c727134439b3f17d466b0968ac)
+        ;
+
+        
+    
+    
+            var marker_bd0c7e0dbe5e48b9bf207065734ad76b = L.marker(
+                [7.95, -77.7],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_31c74c6b8f7f412c92733d6cc1861cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9552434b8217429ba932bf80d4b0cf19 = $(`<div id="html_9552434b8217429ba932bf80d4b0cf19" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Pirre, ridge top near Rancho Plastico. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1977-07-10 <strong>Recolectores:</strong> James P. Folsom <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_31c74c6b8f7f412c92733d6cc1861cc7.setContent(html_9552434b8217429ba932bf80d4b0cf19);
+        
+
+        marker_bd0c7e0dbe5e48b9bf207065734ad76b.bindPopup(popup_31c74c6b8f7f412c92733d6cc1861cc7)
+        ;
+
+        
+    
+    
+            var marker_b563837639d54827ae946c8953da30d9 = L.marker(
+                [10.28, -84.78],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_f37aa6f733c64df3a66dc6d5c74e4795 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa7b33f3c5da44dcb24ce0a27b812629 = $(`<div id="html_fa7b33f3c5da44dcb24ce0a27b812629" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilaran, Monteverde Reserva, Monteverde above Santa Elena, pacific side <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1983-07-30 <strong>Recolectores:</strong> Kerry Barringer|Eric A. Christenson|Blanca Pérez G. <strong>Identificadores:</strong> W.Burger</div>`)[0];
+            popup_f37aa6f733c64df3a66dc6d5c74e4795.setContent(html_fa7b33f3c5da44dcb24ce0a27b812629);
+        
+
+        marker_b563837639d54827ae946c8953da30d9.bindPopup(popup_f37aa6f733c64df3a66dc6d5c74e4795)
+        ;
+
+        
+    
+    
+            var marker_20822d35ba2b492d838833bd03f5b0ba = L.marker(
+                [10.077778, -84.01111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_4bdb061b45444344bdf0eed936403fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a022125be174c01b230f0ed35b30476 = $(`<div id="html_7a022125be174c01b230f0ed35b30476" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. P.N. Braulio Carrillo, 500 m E del Tunel Zurquí, sendero El Relleno. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 2003-05-21 <strong>Recolectores:</strong> Luis Acosta|Luis Diego Vargas <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_4bdb061b45444344bdf0eed936403fe5.setContent(html_7a022125be174c01b230f0ed35b30476);
+        
+
+        marker_20822d35ba2b492d838833bd03f5b0ba.bindPopup(popup_4bdb061b45444344bdf0eed936403fe5)
+        ;
+
+        
+    
+    
+            var marker_497c21e015d34a44b9659fe038390fb0 = L.marker(
+                [10.068694, -84.00147],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_f352a31cef4c4e5f8895588cdf9e4d77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bc037b406d14a75812a87a717eeeeb3 = $(`<div id="html_6bc037b406d14a75812a87a717eeeeb3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. Puesto Zurquí, Sendero El Relleno, 500 m después del túnel hacia Guapiles. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-04-29 <strong>Recolectores:</strong> Luis Acosta|G. Lizano <strong>Identificadores:</strong> D. Santamaría</div>`)[0];
+            popup_f352a31cef4c4e5f8895588cdf9e4d77.setContent(html_6bc037b406d14a75812a87a717eeeeb3);
+        
+
+        marker_497c21e015d34a44b9659fe038390fb0.bindPopup(popup_f352a31cef4c4e5f8895588cdf9e4d77)
+        ;
+
+        
+    
+    
+            var marker_0ef935e6fe6f46cc8a6fb3bb3e9d4466 = L.marker(
+                [10.067028, -83.89041999999999],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_090b4dca85e7451b958e136f86ac1545 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0ef7070de924fd9a9ec4bb10ba6690f = $(`<div id="html_e0ef7070de924fd9a9ec4bb10ba6690f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Braulio Carrillo. Cuenca del Sarapiquí. Ruta Volcán Irazú-Quebrada González. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-06-04 <strong>Recolectores:</strong> Evelio Alfaro|José Á. González R. <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_090b4dca85e7451b958e136f86ac1545.setContent(html_e0ef7070de924fd9a9ec4bb10ba6690f);
+        
+
+        marker_0ef935e6fe6f46cc8a6fb3bb3e9d4466.bindPopup(popup_090b4dca85e7451b958e136f86ac1545)
+        ;
+
+        
+    
+    
+            var marker_6a5a592bfa7b4676abc7ccd91712b7eb = L.marker(
+                [9.804011000000001, -83.17289],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_da891f51aef84c7a87ad16c41d8dc75e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_965b92e0a3cd4c6ea49fe3bbfe985012 = $(`<div id="html_965b92e0a3cd4c6ea49fe3bbfe985012" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> "Limon, Valle de la Estrella, Fila Matama. Cerca de 11 km SW del pueblo de Aguas Zarcas. Punto 5. Bosque Muy Humedo, siempreverde montano, con arboles de dosel 25-30 m. Dap 0.3-1.2 m. Dominado por Sapium megistocarpus, Guarea kunthiana, Casearia tacanensis, Cecropia obtusifolia y Dendropanax arboreus.                                                                                                                                                                                                     " <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> C. Taylor</div>`)[0];
+            popup_da891f51aef84c7a87ad16c41d8dc75e.setContent(html_965b92e0a3cd4c6ea49fe3bbfe985012);
+        
+
+        marker_6a5a592bfa7b4676abc7ccd91712b7eb.bindPopup(popup_da891f51aef84c7a87ad16c41d8dc75e)
+        ;
+
+        
+    
+    
+            var marker_3005fce53fcc433fbd81596a3854b9aa = L.marker(
+                [10.068694, -84.00147199999999],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_d2a90836abb54fbca31f7b959158049d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60349d517c574bfa9eaf9cc37a36a108 = $(`<div id="html_60349d517c574bfa9eaf9cc37a36a108" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Sendero El Relleno. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-04-29 <strong>Recolectores:</strong> L. Acosta; Gustavo Lizano <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_d2a90836abb54fbca31f7b959158049d.setContent(html_60349d517c574bfa9eaf9cc37a36a108);
+        
+
+        marker_3005fce53fcc433fbd81596a3854b9aa.bindPopup(popup_d2a90836abb54fbca31f7b959158049d)
+        ;
+
+        
+    
+    
+            var marker_dccc335c0bf848c8a410ca61f32727e3 = L.marker(
+                [10.068694, -84.00147199999999],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_2e58e946af9647498c3bfdb79fcefae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef883cc8b2d14cbe961d9f2907d6e0df = $(`<div id="html_ef883cc8b2d14cbe961d9f2907d6e0df" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Sendero El Relleno. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-04-29 <strong>Recolectores:</strong> L. Acosta; Gustavo Lizano <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_2e58e946af9647498c3bfdb79fcefae4.setContent(html_ef883cc8b2d14cbe961d9f2907d6e0df);
+        
+
+        marker_dccc335c0bf848c8a410ca61f32727e3.bindPopup(popup_2e58e946af9647498c3bfdb79fcefae4)
+        ;
+
+        
+    
+    
+            var marker_3007096c30a64c89b2d7b361fe0cdc34 = L.marker(
+                [10.068694, -84.00147199999999],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_88f6042d17b44d02a4b569b180a899b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84e543da60d444a787a12a052bc06cae = $(`<div id="html_84e543da60d444a787a12a052bc06cae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo. Sendero El Relleno. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 2004-04-29 <strong>Recolectores:</strong> L. Acosta; Gustavo Lizano <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_88f6042d17b44d02a4b569b180a899b0.setContent(html_84e543da60d444a787a12a052bc06cae);
+        
+
+        marker_3007096c30a64c89b2d7b361fe0cdc34.bindPopup(popup_88f6042d17b44d02a4b569b180a899b0)
+        ;
+
+        
+    
+    
+            var marker_94167937ee754ecb9d486897045ee71c = L.marker(
+                [10.077778, -84.011111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_a42f551733534cc081e492d279a00fc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cacaf73e652b44e289d844d3d9f53731 = $(`<div id="html_cacaf73e652b44e289d844d3d9f53731" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo, 500 m E del Tunel Zurquí, sendero El Relleno. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 2003-05-21 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a42f551733534cc081e492d279a00fc6.setContent(html_cacaf73e652b44e289d844d3d9f53731);
+        
+
+        marker_94167937ee754ecb9d486897045ee71c.bindPopup(popup_a42f551733534cc081e492d279a00fc6)
+        ;
+
+        
+    
+    
+            var marker_f62bb0d6a0b545a2bea1bfcc32801942 = L.marker(
+                [10.077778, -84.011111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_a8cd4c1140254654b1c8511dc047c5c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98d0e805d88b4beab67a59df9ca72f66 = $(`<div id="html_98d0e805d88b4beab67a59df9ca72f66" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo, 500 m E del Tunel Zurquí, sendero El Relleno. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 2003-05-21 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_a8cd4c1140254654b1c8511dc047c5c3.setContent(html_98d0e805d88b4beab67a59df9ca72f66);
+        
+
+        marker_f62bb0d6a0b545a2bea1bfcc32801942.bindPopup(popup_a8cd4c1140254654b1c8511dc047c5c3)
+        ;
+
+        
+    
+    
+            var marker_a1ae44b616a5469e9a53259259784ec5 = L.marker(
+                [10.077778, -84.011111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_dd7de8fa2c85446d9ce6ef51919ec362 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9db3307383aa408286e7bf3ada661983 = $(`<div id="html_9db3307383aa408286e7bf3ada661983" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P. N. Braulio Carrillo, 500 m E del Tunel Zurquí, sendero El Relleno. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 2003-05-21 <strong>Recolectores:</strong> L. Acosta; Luis Diego Vargas <strong>Identificadores:</strong> Santamaría, Daniel</div>`)[0];
+            popup_dd7de8fa2c85446d9ce6ef51919ec362.setContent(html_9db3307383aa408286e7bf3ada661983);
+        
+
+        marker_a1ae44b616a5469e9a53259259784ec5.bindPopup(popup_dd7de8fa2c85446d9ce6ef51919ec362)
+        ;
+
+        
+    
+    
+            var marker_d7ac4b29811249a290ef369cbe6c7315 = L.marker(
+                [9.81788, -83.15871],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_e73da6ce78414bbfbfe1186de86d3fba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_687ff276ada146438693d30c9aaca7e5 = $(`<div id="html_687ff276ada146438693d30c9aaca7e5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fila Matama. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 2007-11-01 <strong>Recolectores:</strong> Daniel Santamaría; Daniel Solano ; Marcos Moraga ; Alexánder Francisco Rodríguez González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_e73da6ce78414bbfbfe1186de86d3fba.setContent(html_687ff276ada146438693d30c9aaca7e5);
+        
+
+        marker_d7ac4b29811249a290ef369cbe6c7315.bindPopup(popup_e73da6ce78414bbfbfe1186de86d3fba)
+        ;
+
+        
+    
+    
+            var marker_91e903ad024a434b8c0e95f2a99c7cdc = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_83caabc2aa174204885b05470c8a9fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3a5dc1d6211456b87bd962db01a1a5d = $(`<div id="html_f3a5dc1d6211456b87bd962db01a1a5d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_83caabc2aa174204885b05470c8a9fb9.setContent(html_f3a5dc1d6211456b87bd962db01a1a5d);
+        
+
+        marker_91e903ad024a434b8c0e95f2a99c7cdc.bindPopup(popup_83caabc2aa174204885b05470c8a9fb9)
+        ;
+
+        
+    
+    
+            var marker_ab47050e690643849205a316765fd858 = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_2f0363f72556484a9aa7dadede72428a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cda0d31360dd4873b5daadcfe63693d9 = $(`<div id="html_cda0d31360dd4873b5daadcfe63693d9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2f0363f72556484a9aa7dadede72428a.setContent(html_cda0d31360dd4873b5daadcfe63693d9);
+        
+
+        marker_ab47050e690643849205a316765fd858.bindPopup(popup_2f0363f72556484a9aa7dadede72428a)
+        ;
+
+        
+    
+    
+            var marker_b6922081dced470485e4825dbb8f07dc = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_d28a7f50b95a47a4a919c5f2f843638c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1579525e3f9948d59c5a63c5117c4a11 = $(`<div id="html_1579525e3f9948d59c5a63c5117c4a11" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d28a7f50b95a47a4a919c5f2f843638c.setContent(html_1579525e3f9948d59c5a63c5117c4a11);
+        
+
+        marker_b6922081dced470485e4825dbb8f07dc.bindPopup(popup_d28a7f50b95a47a4a919c5f2f843638c)
+        ;
+
+        
+    
+    
+            var marker_fd876532565f4b99a2725cb3df4b2512 = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_f1565ac2dbda46c3aa324c6a60db04fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76c2ead8199b4002b8953aafd4dd1a84 = $(`<div id="html_76c2ead8199b4002b8953aafd4dd1a84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f1565ac2dbda46c3aa324c6a60db04fe.setContent(html_76c2ead8199b4002b8953aafd4dd1a84);
+        
+
+        marker_fd876532565f4b99a2725cb3df4b2512.bindPopup(popup_f1565ac2dbda46c3aa324c6a60db04fe)
+        ;
+
+        
+    
+    
+            var marker_75d5422a5fc14d1397d8cb8f7400afb8 = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_3a62d5a8cd754767b81cca3c22583824 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bdc178d409541f2b6b852e0fe356e68 = $(`<div id="html_1bdc178d409541f2b6b852e0fe356e68" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3a62d5a8cd754767b81cca3c22583824.setContent(html_1bdc178d409541f2b6b852e0fe356e68);
+        
+
+        marker_75d5422a5fc14d1397d8cb8f7400afb8.bindPopup(popup_3a62d5a8cd754767b81cca3c22583824)
+        ;
+
+        
+    
+    
+            var marker_9f8b99027d814b8f866e1d2eeb0dbf34 = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_7cb9cb0876bd4949bdc29dcc2983e2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cc933c1399f4d73a5cdeeae5d8cfb01 = $(`<div id="html_2cc933c1399f4d73a5cdeeae5d8cfb01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7cb9cb0876bd4949bdc29dcc2983e2b1.setContent(html_2cc933c1399f4d73a5cdeeae5d8cfb01);
+        
+
+        marker_9f8b99027d814b8f866e1d2eeb0dbf34.bindPopup(popup_7cb9cb0876bd4949bdc29dcc2983e2b1)
+        ;
+
+        
+    
+    
+            var marker_4a1a4307c83d4d108136fed9dd26cb08 = L.marker(
+                [9.804011000000001, -83.172889],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_cb64e6fca8cc44a8b543f4c260b4ee10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33bb2d6450494b1389742baf94c07673 = $(`<div id="html_33bb2d6450494b1389742baf94c07673" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Limón, Valle La Estrella Fila Matama. Ca. 11 km SW del Pueblo de Aguas Zarcas. Punto 21. <strong>Elevación:</strong> 1350.0 m  <strong>Fecha:</strong> 2007-10-24 <strong>Recolectores:</strong> Daniel Solano; Alexánder Francisco Rodríguez González ; Billen Gamboa R. ; Daniel Santamaría ; Eduardo Boza ; Mario Hernández Peña ; Marcos Moraga ; Oscar Chacón Chavarría ; Ruth Delgado Dávila <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_cb64e6fca8cc44a8b543f4c260b4ee10.setContent(html_33bb2d6450494b1389742baf94c07673);
+        
+
+        marker_4a1a4307c83d4d108136fed9dd26cb08.bindPopup(popup_cb64e6fca8cc44a8b543f4c260b4ee10)
+        ;
+
+        
+    
+    
+            var marker_3b2111ebb138406b9c2b0bbf7aa470ea = L.marker(
+                [9.35727, -83.2305],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_47fdc2427e804cf59bcfd9180a85c0f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dd7daa852a349c68256f8b15164b8ad = $(`<div id="html_0dd7daa852a349c68256f8b15164b8ad" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 1812.0 m  <strong>Fecha:</strong> 2007-03-02 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_47fdc2427e804cf59bcfd9180a85c0f8.setContent(html_0dd7daa852a349c68256f8b15164b8ad);
+        
+
+        marker_3b2111ebb138406b9c2b0bbf7aa470ea.bindPopup(popup_47fdc2427e804cf59bcfd9180a85c0f8)
+        ;
+
+        
+    
+    
+            var marker_6da93846edc14c6b99aeb1b123252457 = L.marker(
+                [9.35727, -83.2305],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_df12bb77895246a2b8c260d80114d920 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1617574a83094fa09edb958acef595f5 = $(`<div id="html_1617574a83094fa09edb958acef595f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 1812.0 m  <strong>Fecha:</strong> 2007-03-02 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_df12bb77895246a2b8c260d80114d920.setContent(html_1617574a83094fa09edb958acef595f5);
+        
+
+        marker_6da93846edc14c6b99aeb1b123252457.bindPopup(popup_df12bb77895246a2b8c260d80114d920)
+        ;
+
+        
+    
+    
+            var marker_b0c1d9df9d9042e4879e53fbda655f43 = L.marker(
+                [9.35727, -83.2305],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_a3ed987573ba4c51825e47596aea1411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9111ca46eabe4e00a9e2a8d0f45ca87f = $(`<div id="html_9111ca46eabe4e00a9e2a8d0f45ca87f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Transtalamanca, Ujarrás-San José Cabécar. <strong>Elevación:</strong> 1812.0 m  <strong>Fecha:</strong> 2007-03-02 <strong>Recolectores:</strong> Daniel Solano <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_a3ed987573ba4c51825e47596aea1411.setContent(html_9111ca46eabe4e00a9e2a8d0f45ca87f);
+        
+
+        marker_b0c1d9df9d9042e4879e53fbda655f43.bindPopup(popup_a3ed987573ba4c51825e47596aea1411)
+        ;
+
+        
+    
+    
+            var marker_45e545627e4a46ae80fdfb2318717b2b = L.marker(
+                [10.067028, -83.890424],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_49816fd6cec24eaba1239d3bd0829e1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d05534b35f54318aecd28c068c212eb = $(`<div id="html_4d05534b35f54318aecd28c068c212eb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-06-04 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_49816fd6cec24eaba1239d3bd0829e1a.setContent(html_4d05534b35f54318aecd28c068c212eb);
+        
+
+        marker_45e545627e4a46ae80fdfb2318717b2b.bindPopup(popup_49816fd6cec24eaba1239d3bd0829e1a)
+        ;
+
+        
+    
+    
+            var marker_0bf30c21c4024a189e0b51b400352530 = L.marker(
+                [10.067028, -83.890424],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_42e543f9f617483794ba685cef749bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e78b492c966142288deb2af8a6d0f067 = $(`<div id="html_e78b492c966142288deb2af8a6d0f067" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-06-04 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_42e543f9f617483794ba685cef749bd9.setContent(html_e78b492c966142288deb2af8a6d0f067);
+        
+
+        marker_0bf30c21c4024a189e0b51b400352530.bindPopup(popup_42e543f9f617483794ba685cef749bd9)
+        ;
+
+        
+    
+    
+            var marker_67b5002294cd4b9cb60d93ef65321a84 = L.marker(
+                [10.067028, -83.890424],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_2ac2b6681574471bb4fefd7364b624d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b41e05f6c574b2c9acfc2b9da4878b1 = $(`<div id="html_1b41e05f6c574b2c9acfc2b9da4878b1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Transecto Irazú - Braulio Carrillo. <strong>Elevación:</strong> 1600.0 m  <strong>Fecha:</strong> 2004-06-04 <strong>Recolectores:</strong> Evelio Alfaro; Jose González <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_2ac2b6681574471bb4fefd7364b624d3.setContent(html_1b41e05f6c574b2c9acfc2b9da4878b1);
+        
+
+        marker_67b5002294cd4b9cb60d93ef65321a84.bindPopup(popup_2ac2b6681574471bb4fefd7364b624d3)
+        ;
+
+        
+    
+    
+            var marker_1f5a871ed20d4851bc7a521de818451e = L.marker(
+                [9.701105, -83.789346],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_833ff60384b144039fb723eee4d17c35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39955885e015423c8cbf05ff0e719829 = $(`<div id="html_39955885e015423c8cbf05ff0e719829" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2002-12-18 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_833ff60384b144039fb723eee4d17c35.setContent(html_39955885e015423c8cbf05ff0e719829);
+        
+
+        marker_1f5a871ed20d4851bc7a521de818451e.bindPopup(popup_833ff60384b144039fb723eee4d17c35)
+        ;
+
+        
+    
+    
+            var marker_d6d6f28a60254b4792e28b8db2e854b1 = L.marker(
+                [9.701105, -83.789346],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_3b43cdbc45804e5783d7f27959349350 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45e658a21a7640c1b94a6b18b95e00f5 = $(`<div id="html_45e658a21a7640c1b94a6b18b95e00f5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tapanti <strong>Elevación:</strong> 1650.0 m  <strong>Fecha:</strong> 2002-12-18 <strong>Recolectores:</strong> Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3b43cdbc45804e5783d7f27959349350.setContent(html_45e658a21a7640c1b94a6b18b95e00f5);
+        
+
+        marker_d6d6f28a60254b4792e28b8db2e854b1.bindPopup(popup_3b43cdbc45804e5783d7f27959349350)
+        ;
+
+        
+    
+    
+            var marker_eed48ad69c0948b58c35a0a062d8bcff = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_f504a67800504de88bfcb3c88ebd67d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2759932d3fd45048ef84b2f2925a5c7 = $(`<div id="html_e2759932d3fd45048ef84b2f2925a5c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f504a67800504de88bfcb3c88ebd67d8.setContent(html_e2759932d3fd45048ef84b2f2925a5c7);
+        
+
+        marker_eed48ad69c0948b58c35a0a062d8bcff.bindPopup(popup_f504a67800504de88bfcb3c88ebd67d8)
+        ;
+
+        
+    
+    
+            var marker_daeede3846d74c5dacb4149873c9d6b8 = L.marker(
+                [9.477778, -83.690278],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_6eb1781501dc4115b2e563a5d3a662d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7573cf3644a8445e8fa588a72007f154 = $(`<div id="html_7573cf3644a8445e8fa588a72007f154" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fortuna, 1 Km al NE <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2003-11-12 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6eb1781501dc4115b2e563a5d3a662d2.setContent(html_7573cf3644a8445e8fa588a72007f154);
+        
+
+        marker_daeede3846d74c5dacb4149873c9d6b8.bindPopup(popup_6eb1781501dc4115b2e563a5d3a662d2)
+        ;
+
+        
+    
+    
+            var marker_1559be47ccfa4fa8a38ddc87905d4935 = L.marker(
+                [10.066667, -83.986111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_3fe12d878d0c4e90b97bfe8ffe37d3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4cf03f957b9498cb6bbfeba36f69fd3 = $(`<div id="html_e4cf03f957b9498cb6bbfeba36f69fd3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station. Above (NE of) Rio Hondura. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-15 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_3fe12d878d0c4e90b97bfe8ffe37d3c2.setContent(html_e4cf03f957b9498cb6bbfeba36f69fd3);
+        
+
+        marker_1559be47ccfa4fa8a38ddc87905d4935.bindPopup(popup_3fe12d878d0c4e90b97bfe8ffe37d3c2)
+        ;
+
+        
+    
+    
+            var marker_afb4f86704924f708d900b71ea75b853 = L.marker(
+                [10.066667, -83.986111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_89b9a38e564a47118c18d801992f880b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5c62b3d8b4e477fb5271955a4215761 = $(`<div id="html_f5c62b3d8b4e477fb5271955a4215761" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station. Above (NE of) Rio Hondura. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-15 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_89b9a38e564a47118c18d801992f880b.setContent(html_f5c62b3d8b4e477fb5271955a4215761);
+        
+
+        marker_afb4f86704924f708d900b71ea75b853.bindPopup(popup_89b9a38e564a47118c18d801992f880b)
+        ;
+
+        
+    
+    
+            var marker_154b762bb62f4da38f446b95754a74d7 = L.marker(
+                [10.066667, -83.986111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_6a7b376c792942b5b6da6085b36a428d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b619c65cce71417c97fb410785480d09 = $(`<div id="html_b619c65cce71417c97fb410785480d09" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Zurqui Station. Above (NE of) Rio Hondura. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 2000-07-15 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Gerardo Soto <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6a7b376c792942b5b6da6085b36a428d.setContent(html_b619c65cce71417c97fb410785480d09);
+        
+
+        marker_154b762bb62f4da38f446b95754a74d7.bindPopup(popup_6a7b376c792942b5b6da6085b36a428d)
+        ;
+
+        
+    
+    
+            var marker_57a6ba3c29ea4279a5ef7c793420fa1a = L.marker(
+                [9.397222, -83.086111],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_da651aabf2184ccfb658c8d804fac404 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4856359a2f5e4b4c8f945277fbc0493e = $(`<div id="html_4856359a2f5e4b4c8f945277fbc0493e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Amubri, Alto Lari, Kivut. Siguiendo la fila entre los Rios Dapari y Lari, margen izquierda de este. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1992-03-16 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_da651aabf2184ccfb658c8d804fac404.setContent(html_4856359a2f5e4b4c8f945277fbc0493e);
+        
+
+        marker_57a6ba3c29ea4279a5ef7c793420fa1a.bindPopup(popup_da651aabf2184ccfb658c8d804fac404)
+        ;
+
+        
+    
+    
+            var marker_dba503d5fbc54d2abb7f1bdbf54b7ee2 = L.marker(
+                [10.1, -83.966667],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_d01de5d7dbfe4282b2da6b5044f93b13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_672eebd4d886468c9dc9422543f18c58 = $(`<div id="html_672eebd4d886468c9dc9422543f18c58" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On steep bank along highway ca. 10 km N of park entrance. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-01-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Sandy Salas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d01de5d7dbfe4282b2da6b5044f93b13.setContent(html_672eebd4d886468c9dc9422543f18c58);
+        
+
+        marker_dba503d5fbc54d2abb7f1bdbf54b7ee2.bindPopup(popup_d01de5d7dbfe4282b2da6b5044f93b13)
+        ;
+
+        
+    
+    
+            var marker_451ef9daa0894b3c8bb62460ccc97285 = L.marker(
+                [10.1, -83.966667],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_401755b4eacf40f180ea99c1200af94d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d72062fa4c374c989c1e48738bb8d608 = $(`<div id="html_d72062fa4c374c989c1e48738bb8d608" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On steep bank along highway ca. 10 km N of park entrance. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-01-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Sandy Salas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_401755b4eacf40f180ea99c1200af94d.setContent(html_d72062fa4c374c989c1e48738bb8d608);
+        
+
+        marker_451ef9daa0894b3c8bb62460ccc97285.bindPopup(popup_401755b4eacf40f180ea99c1200af94d)
+        ;
+
+        
+    
+    
+            var marker_5ab5b36297a64438a0038190cb72a32c = L.marker(
+                [10.1, -83.966667],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_d371f9fb43e44ee78b01cd2cf9658a70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e69c663e4c6147afab57ff04aa7a1a84 = $(`<div id="html_e69c663e4c6147afab57ff04aa7a1a84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On steep bank along highway ca. 10 km N of park entrance. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-01-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Sandy Salas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_d371f9fb43e44ee78b01cd2cf9658a70.setContent(html_e69c663e4c6147afab57ff04aa7a1a84);
+        
+
+        marker_5ab5b36297a64438a0038190cb72a32c.bindPopup(popup_d371f9fb43e44ee78b01cd2cf9658a70)
+        ;
+
+        
+    
+    
+            var marker_a4be000a165a4838a56960a3c18075ea = L.marker(
+                [10.1, -83.966667],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_16433f1ba1f8450399dd30e1e2106974 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bf45c2947814c748ce00f478f5dd751 = $(`<div id="html_7bf45c2947814c748ce00f478f5dd751" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On steep bank along highway ca. 10 km N of park entrance. <strong>Elevación:</strong> 1200.0 m  <strong>Fecha:</strong> 1997-01-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Sandy Salas <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_16433f1ba1f8450399dd30e1e2106974.setContent(html_7bf45c2947814c748ce00f478f5dd751);
+        
+
+        marker_a4be000a165a4838a56960a3c18075ea.bindPopup(popup_16433f1ba1f8450399dd30e1e2106974)
+        ;
+
+        
+    
+    
+            var marker_750ff73368ad4eca9ca3ef553206e7d9 = L.marker(
+                [7.0, -75.5],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_c7ee0f71f8094396a9564148dbdf8d11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_709b9dd5edb64dde97225084e2f7a105 = $(`<div id="html_709b9dd5edb64dde97225084e2f7a105" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1992-04-02 <strong>Recolectores:</strong> R. Fonnegra G. <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_c7ee0f71f8094396a9564148dbdf8d11.setContent(html_709b9dd5edb64dde97225084e2f7a105);
+        
+
+        marker_750ff73368ad4eca9ca3ef553206e7d9.bindPopup(popup_c7ee0f71f8094396a9564148dbdf8d11)
+        ;
+
+        
+    
+    
+            var marker_6bf5eaaae4f84cb89f34ebe1175ac2c5 = L.marker(
+                [10.0, -84.8333],
+                {}
+            ).addTo(marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338);
+        
+    
+        var popup_a78c50d59b1b4a7298c3873472de7b99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cac78c211424cfb99fee6b99802512c = $(`<div id="html_6cac78c211424cfb99fee6b99802512c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1983-07-30 <strong>Recolectores:</strong> K. A. Barringer <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_a78c50d59b1b4a7298c3873472de7b99.setContent(html_6cac78c211424cfb99fee6b99802512c);
+        
+
+        marker_6bf5eaaae4f84cb89f34ebe1175ac2c5.bindPopup(popup_a78c50d59b1b4a7298c3873472de7b99)
+        ;
+
+        
+    
+    
+            var layer_control_8867d2fd05c64226862324b0c35dcf23 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cdba841c26b84766b641634d52add66e,
+                    "ESRI World Imagery" : tile_layer_aea43f6afb204ddf9154be618c799281,
+                },
+                overlays :  {
+                    "macro_element_dfffaa93c5c8476ea2e94dcfa9887338" : marker_cluster_dfffaa93c5c8476ea2e94dcfa9887338,
+                },
+            };
+            L.control.layers(
+                layer_control_8867d2fd05c64226862324b0c35dcf23.base_layers,
+                layer_control_8867d2fd05c64226862324b0c35dcf23.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_8abfd40e6e8841868cb02d11378a4086);
+            tile_layer_aea43f6afb204ddf9154be618c799281.remove();
+        
+</script>

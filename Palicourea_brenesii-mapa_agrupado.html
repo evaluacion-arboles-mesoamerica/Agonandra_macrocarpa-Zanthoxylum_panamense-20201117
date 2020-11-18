@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0cd961eab294b9a889494dce9024dfe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a0cd961eab294b9a889494dce9024dfe" ></div>
+        
+</body>
+<script>    
+    
+            var map_a0cd961eab294b9a889494dce9024dfe = L.map(
+                "map_a0cd961eab294b9a889494dce9024dfe",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a0cd961eab294b9a889494dce9024dfe);
+
+            
+
+        
+    
+            var tile_layer_16047c7553d847cb9b3bb5fe899064bf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0cd961eab294b9a889494dce9024dfe);
+        
+    
+            var tile_layer_d05c8648728946d3931dbbf4e539bfef = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a0cd961eab294b9a889494dce9024dfe);
+        
+    
+            var marker_cluster_11296f15572a40c9941c0bb0ff1217f3 = L.markerClusterGroup(
+                {}
+            );
+            map_a0cd961eab294b9a889494dce9024dfe.addLayer(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+            var marker_07fc3e15dd864796810b68c00f8ec393 = L.marker(
+                [9.540705, -83.81716999999999],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_5887c859cd434d5cbad415d12e231649 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77b71292f9c64f49af53f3c82be086c7 = $(`<div id="html_77b71292f9c64f49af53f3c82be086c7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-03-31 15:08:02 <strong>Recolectores:</strong> nancyed <strong>Identificadores:</strong> Leonardo Álvarez</div>`)[0];
+            popup_5887c859cd434d5cbad415d12e231649.setContent(html_77b71292f9c64f49af53f3c82be086c7);
+        
+
+        marker_07fc3e15dd864796810b68c00f8ec393.bindPopup(popup_5887c859cd434d5cbad415d12e231649)
+        ;
+
+        
+    
+    
+            var marker_003ff43055ff42ff88e7ccacbe3b58b2 = L.marker(
+                [9.548055999999999, -83.800833],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_f1ef8cfe32d74898931b246eef601d5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1036d8689439431b94d2a31c55486588 = $(`<div id="html_1036d8689439431b94d2a31c55486588" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Los Robles trail, above Savegre Mountain Hotel <strong>Elevación:</strong> 2407.5 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Ronald L. Jones|Bruce Hoagland <strong>Identificadores:</strong> C. M. Taylor</div>`)[0];
+            popup_f1ef8cfe32d74898931b246eef601d5d.setContent(html_1036d8689439431b94d2a31c55486588);
+        
+
+        marker_003ff43055ff42ff88e7ccacbe3b58b2.bindPopup(popup_f1ef8cfe32d74898931b246eef601d5d)
+        ;
+
+        
+    
+    
+            var marker_9b162aad852d4555a9ae8f234e72c92e = L.marker(
+                [9.67194, -83.89361],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_82a67ada89ce4cc594aa5ba7bd6fc25d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c4d17b770d4367900052bae7ce5332 = $(`<div id="html_14c4d17b770d4367900052bae7ce5332" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, San José Province, Canton Dota. Cerro de la Muerte nr. Trinidad de Dota/km 64 on Interamericana highway. Trail surrounding apartment belonging to Finca Truchas Selva Madre. <strong>Elevación:</strong> 2460.0 m  <strong>Fecha:</strong> 2015-02-15 00:00:00 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-02</div>`)[0];
+            popup_82a67ada89ce4cc594aa5ba7bd6fc25d.setContent(html_14c4d17b770d4367900052bae7ce5332);
+        
+
+        marker_9b162aad852d4555a9ae8f234e72c92e.bindPopup(popup_82a67ada89ce4cc594aa5ba7bd6fc25d)
+        ;
+
+        
+    
+    
+            var marker_7522d94965654ee5a79e6b197fe7fcce = L.marker(
+                [9.67194, -83.89361],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_3abe3d5743e1438a9a47f3f2b6a03042 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29fb09c530764f879ad7637b715e7a0a = $(`<div id="html_29fb09c530764f879ad7637b715e7a0a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica, San José Province, Canton Dota. Cerro de la Muerte nr. Trinidad de Dota/km 64 on Interamericana highway. Trail surrounding apartment belonging to Finca Truchas Selva Madre. <strong>Elevación:</strong> 2460.0 m  <strong>Fecha:</strong> 2015-02-15 00:00:00 <strong>Recolectores:</strong> Berger,A. <strong>Identificadores:</strong> A. Berger 2015-02</div>`)[0];
+            popup_3abe3d5743e1438a9a47f3f2b6a03042.setContent(html_29fb09c530764f879ad7637b715e7a0a);
+        
+
+        marker_7522d94965654ee5a79e6b197fe7fcce.bindPopup(popup_3abe3d5743e1438a9a47f3f2b6a03042)
+        ;
+
+        
+    
+    
+            var marker_8dade8b36f5b4a399034e5b47ef1f7a0 = L.marker(
+                [9.67, -83.85],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_7da9446876c2451d81ba8275cc184463 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4e72be1c12940f8b560fa2a34ad18d0 = $(`<div id="html_e4e72be1c12940f8b560fa2a34ad18d0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Just off the Panamerican Highway along logging road to the south at Km 66, selectively logged oak forest <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1984-05-10 00:00:00 <strong>Recolectores:</strong> Charlotte M. Taylor <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_7da9446876c2451d81ba8275cc184463.setContent(html_e4e72be1c12940f8b560fa2a34ad18d0);
+        
+
+        marker_8dade8b36f5b4a399034e5b47ef1f7a0.bindPopup(popup_7da9446876c2451d81ba8275cc184463)
+        ;
+
+        
+    
+    
+            var marker_d536c34177324d14b7169f628883344e = L.marker(
+                [9.65, -84.03],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_45f201ea810d4549ade0f235357ad204 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7de9bc7b74134c288c0c548652a8d183 = $(`<div id="html_7de9bc7b74134c288c0c548652a8d183" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Wooded slopes about 7.4 km by winding road west of Santa Maria de Dota <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1968-08-28 00:00:00 <strong>Recolectores:</strong> Robert L. Wilbur|Donald E. Stone <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_45f201ea810d4549ade0f235357ad204.setContent(html_7de9bc7b74134c288c0c548652a8d183);
+        
+
+        marker_d536c34177324d14b7169f628883344e.bindPopup(popup_45f201ea810d4549ade0f235357ad204)
+        ;
+
+        
+    
+    
+            var marker_1fbcf95824b54f8a96b3854f86b0b6f6 = L.marker(
+                [9.580556, -83.8],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_16cb72ac9a184b858914c20528ecb109 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20c99c98af53476f8986e81431f50c51 = $(`<div id="html_20c99c98af53476f8986e81431f50c51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos. Cuenca del Savegre. A orilla de la carretera y margenes del río Savegre. <strong>Elevación:</strong> 2100.0 m  <strong>Fecha:</strong> 1998-04-17 00:00:00 <strong>Recolectores:</strong> Alexánder Rodríguez|Luis Diego Vargas|Priscilla Hurtado <strong>Identificadores:</strong> C.M. Taylor</div>`)[0];
+            popup_16cb72ac9a184b858914c20528ecb109.setContent(html_20c99c98af53476f8986e81431f50c51);
+        
+
+        marker_1fbcf95824b54f8a96b3854f86b0b6f6.bindPopup(popup_16cb72ac9a184b858914c20528ecb109)
+        ;
+
+        
+    
+    
+            var marker_6b429168e5864ba18138e59cbd125dcf = L.marker(
+                [9.548888999999999, -83.80305600000001],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_be7b7d5c6c794582b47333151ac4e38e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88140cf8f9494169988345d78a9a2fb1 = $(`<div id="html_88140cf8f9494169988345d78a9a2fb1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Los Santos, Cuenca del Savegre, San Gerardo de Dota, Sendero Robles <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1987-05-21 00:00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_be7b7d5c6c794582b47333151ac4e38e.setContent(html_88140cf8f9494169988345d78a9a2fb1);
+        
+
+        marker_6b429168e5864ba18138e59cbd125dcf.bindPopup(popup_be7b7d5c6c794582b47333151ac4e38e)
+        ;
+
+        
+    
+    
+            var marker_d4a0b4e97fd2423ea310cc3f2d56e56c = L.marker(
+                [9.671945, -83.89361099999999],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_57160245f67446e4b73b867f87e5f4b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbb2095dbc304d248082a873c4b53eba = $(`<div id="html_dbb2095dbc304d248082a873c4b53eba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro de la Muerte nr. Trinidad de Dota/km 64 on Interamericana highway. Trail surrounding apartment belonging to Finca Truchas Selva Madre. <strong>Elevación:</strong> 2460.0 m  <strong>Fecha:</strong> 2015-02-15 00:00:00 <strong>Recolectores:</strong> A. Berger <strong>Identificadores:</strong> A. Berger</div>`)[0];
+            popup_57160245f67446e4b73b867f87e5f4b7.setContent(html_dbb2095dbc304d248082a873c4b53eba);
+        
+
+        marker_d4a0b4e97fd2423ea310cc3f2d56e56c.bindPopup(popup_57160245f67446e4b73b867f87e5f4b7)
+        ;
+
+        
+    
+    
+            var marker_8664ed6f29ef44f1a55825c02e952239 = L.marker(
+                [9.55, -83.75],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_01ff5d0794254e0eaa45edb67dcd4ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75eb361286844767816c892592d7ea54 = $(`<div id="html_75eb361286844767816c892592d7ea54" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 3200.0 m  <strong>Fecha:</strong> 1949-04-10 00:00:00 <strong>Recolectores:</strong> Louis O. Williams <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_01ff5d0794254e0eaa45edb67dcd4ae7.setContent(html_75eb361286844767816c892592d7ea54);
+        
+
+        marker_8664ed6f29ef44f1a55825c02e952239.bindPopup(popup_01ff5d0794254e0eaa45edb67dcd4ae7)
+        ;
+
+        
+    
+    
+            var marker_bce04eb789084442afb3d0d20022007e = L.marker(
+                [9.548941000000001, -83.803291],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_770632ad231541f495c7573680887239 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_822f69eb881b45c5903656adf7a34be4 = $(`<div id="html_822f69eb881b45c5903656adf7a34be4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo de Dota. Sendero Robles <strong>Elevación:</strong> 2400.0 m  <strong>Fecha:</strong> 2004-03-17 00:00:00 <strong>Recolectores:</strong> Grace Wood; Donald Montgomery Wood <strong>Identificadores:</strong> Wood, Grace</div>`)[0];
+            popup_770632ad231541f495c7573680887239.setContent(html_822f69eb881b45c5903656adf7a34be4);
+        
+
+        marker_bce04eb789084442afb3d0d20022007e.bindPopup(popup_770632ad231541f495c7573680887239)
+        ;
+
+        
+    
+    
+            var marker_dc4f50f0a20c4f4c9e2438106082464c = L.marker(
+                [9.538917, -83.818861],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_c38924909cdc447cac7cf52bc549fd44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3ac0bc487ca474c8d37852b3ddb59ba = $(`<div id="html_b3ac0bc487ca474c8d37852b3ddb59ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2005-03-10 00:00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_c38924909cdc447cac7cf52bc549fd44.setContent(html_b3ac0bc487ca474c8d37852b3ddb59ba);
+        
+
+        marker_dc4f50f0a20c4f4c9e2438106082464c.bindPopup(popup_c38924909cdc447cac7cf52bc549fd44)
+        ;
+
+        
+    
+    
+            var marker_d837974e524c41c1997de073b04f31b1 = L.marker(
+                [9.538917, -83.818861],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_0efdd8e3f98641d9808c45200f52ce5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64956aa1370f45adbb4d19995e3fbf4e = $(`<div id="html_64956aa1370f45adbb4d19995e3fbf4e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2005-03-10 00:00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_0efdd8e3f98641d9808c45200f52ce5d.setContent(html_64956aa1370f45adbb4d19995e3fbf4e);
+        
+
+        marker_d837974e524c41c1997de073b04f31b1.bindPopup(popup_0efdd8e3f98641d9808c45200f52ce5d)
+        ;
+
+        
+    
+    
+            var marker_e8f1195b23c24bc8b4e067ed280426a1 = L.marker(
+                [9.538917, -83.818861],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_b23ca7b781014a8db677b5ea6cfd9a77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_615a6ba2d9e8433496dd7f700c902b08 = $(`<div id="html_615a6ba2d9e8433496dd7f700c902b08" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 2005-03-10 00:00:00 <strong>Recolectores:</strong> Brad Boyle <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_b23ca7b781014a8db677b5ea6cfd9a77.setContent(html_615a6ba2d9e8433496dd7f700c902b08);
+        
+
+        marker_e8f1195b23c24bc8b4e067ed280426a1.bindPopup(popup_b23ca7b781014a8db677b5ea6cfd9a77)
+        ;
+
+        
+    
+    
+            var marker_39907c4020ef407082d1ea86773bbdf2 = L.marker(
+                [9.548941000000001, -83.803291],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_cbf22e127c624980a502e33e5771bf8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_406f947b3d3245578d0d90bdc57b7a24 = $(`<div id="html_406f947b3d3245578d0d90bdc57b7a24" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo de Dota. Sendero Robles <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1997-05-21 00:00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_cbf22e127c624980a502e33e5771bf8c.setContent(html_406f947b3d3245578d0d90bdc57b7a24);
+        
+
+        marker_39907c4020ef407082d1ea86773bbdf2.bindPopup(popup_cbf22e127c624980a502e33e5771bf8c)
+        ;
+
+        
+    
+    
+            var marker_2d1ccd949db44d86930baf8421cae67c = L.marker(
+                [9.548941000000001, -83.803291],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_2d6bf18986a543a6996f6f79443d532c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7493e276d664c81b104e4a597253285 = $(`<div id="html_a7493e276d664c81b104e4a597253285" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Gerardo de Dota. Sendero Robles <strong>Elevación:</strong> 2450.0 m  <strong>Fecha:</strong> 1997-05-21 00:00:00 <strong>Recolectores:</strong> Billen Gamboa R. <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2d6bf18986a543a6996f6f79443d532c.setContent(html_a7493e276d664c81b104e4a597253285);
+        
+
+        marker_2d1ccd949db44d86930baf8421cae67c.bindPopup(popup_2d6bf18986a543a6996f6f79443d532c)
+        ;
+
+        
+    
+    
+            var marker_516c14928f924a2f9d5347cebf020ac0 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_dec5e57bdd9e496c9c6b44c9df1751d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_045ab2264686445eaab5083e46188bd0 = $(`<div id="html_045ab2264686445eaab5083e46188bd0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1921-04-01 00:00:00 <strong>Recolectores:</strong> A. M. Brenes <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_dec5e57bdd9e496c9c6b44c9df1751d7.setContent(html_045ab2264686445eaab5083e46188bd0);
+        
+
+        marker_516c14928f924a2f9d5347cebf020ac0.bindPopup(popup_dec5e57bdd9e496c9c6b44c9df1751d7)
+        ;
+
+        
+    
+    
+            var marker_b003e46641444435bf28018aad36740b = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_096d5b766cf94d80b93ae6b7012bf8ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddfb1ec3d2604b9a95aaf34b69cfd33b = $(`<div id="html_ddfb1ec3d2604b9a95aaf34b69cfd33b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1949-04-10 00:00:00 <strong>Recolectores:</strong> Ll. Williams <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_096d5b766cf94d80b93ae6b7012bf8ae.setContent(html_ddfb1ec3d2604b9a95aaf34b69cfd33b);
+        
+
+        marker_b003e46641444435bf28018aad36740b.bindPopup(popup_096d5b766cf94d80b93ae6b7012bf8ae)
+        ;
+
+        
+    
+    
+            var marker_1b63b5ae5ad84a47ad01e50ceb41e70e = L.marker(
+                [9.56, -83.8],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_1dd9f7a45a5e4a4c9bc073a036e09d96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0302fd50236b42fabbf128afb2c7f73b = $(`<div id="html_0302fd50236b42fabbf128afb2c7f73b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos San Gerardo. <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 1989-08-01 00:00:00 <strong>Recolectores:</strong> Velzen, Henk van <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_1dd9f7a45a5e4a4c9bc073a036e09d96.setContent(html_0302fd50236b42fabbf128afb2c7f73b);
+        
+
+        marker_1b63b5ae5ad84a47ad01e50ceb41e70e.bindPopup(popup_1dd9f7a45a5e4a4c9bc073a036e09d96)
+        ;
+
+        
+    
+    
+            var marker_ba4178d6fd174cb6a4395927d38734c8 = L.marker(
+                [9.66, -83.85],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_6b3fc65c91a84a7bb341d876231e4032 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38f2369f468b4df28d6f9c8c05dfc797 = $(`<div id="html_38f2369f468b4df28d6f9c8c05dfc797" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos Just off rthe Pan-american Hwy along a logging road to the S at km 66. <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1984-05-10 00:00:00 <strong>Recolectores:</strong> Taylor, Charlotte M. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6b3fc65c91a84a7bb341d876231e4032.setContent(html_38f2369f468b4df28d6f9c8c05dfc797);
+        
+
+        marker_ba4178d6fd174cb6a4395927d38734c8.bindPopup(popup_6b3fc65c91a84a7bb341d876231e4032)
+        ;
+
+        
+    
+    
+            var marker_b3aabac79e6f43049e90ba6a1592362e = L.marker(
+                [9.66, -83.85],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_f7402695b48c41c2a0aa8e1bd7433436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f3145d3f590472fa424dc83f2cd5155 = $(`<div id="html_2f3145d3f590472fa424dc83f2cd5155" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos In the Talamancas for ca. 2 km along a logging road leading W from km 67-68 of Panamerican Hwy . Wet oak forest. <strong>Elevación:</strong> 2700.0 m  <strong>Fecha:</strong> 1984-06-03 00:00:00 <strong>Recolectores:</strong> Taylor, Charlotte M. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_f7402695b48c41c2a0aa8e1bd7433436.setContent(html_2f3145d3f590472fa424dc83f2cd5155);
+        
+
+        marker_b3aabac79e6f43049e90ba6a1592362e.bindPopup(popup_f7402695b48c41c2a0aa8e1bd7433436)
+        ;
+
+        
+    
+    
+            var marker_40f200bb525a428886f8916843e9b617 = L.marker(
+                [9.69, -83.9],
+                {}
+            ).addTo(marker_cluster_11296f15572a40c9941c0bb0ff1217f3);
+        
+    
+        var popup_b533fa889d714669a11ff549a1a0a6cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c76b5723e24544b98e60a04a78305ab9 = $(`<div id="html_c76b5723e24544b98e60a04a78305ab9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Los Santos 10 km SE of El Empalme. <strong>Elevación:</strong> 2500.0 m  <strong>Fecha:</strong> 1973-03-17 00:00:00 <strong>Recolectores:</strong> Stolze, Robert G. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_b533fa889d714669a11ff549a1a0a6cf.setContent(html_c76b5723e24544b98e60a04a78305ab9);
+        
+
+        marker_40f200bb525a428886f8916843e9b617.bindPopup(popup_b533fa889d714669a11ff549a1a0a6cf)
+        ;
+
+        
+    
+    
+            var layer_control_bdae90fddaf14a069cd8cd1cdafbe479 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_16047c7553d847cb9b3bb5fe899064bf,
+                    "ESRI World Imagery" : tile_layer_d05c8648728946d3931dbbf4e539bfef,
+                },
+                overlays :  {
+                    "macro_element_11296f15572a40c9941c0bb0ff1217f3" : marker_cluster_11296f15572a40c9941c0bb0ff1217f3,
+                },
+            };
+            L.control.layers(
+                layer_control_bdae90fddaf14a069cd8cd1cdafbe479.base_layers,
+                layer_control_bdae90fddaf14a069cd8cd1cdafbe479.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a0cd961eab294b9a889494dce9024dfe);
+            tile_layer_d05c8648728946d3931dbbf4e539bfef.remove();
+        
+</script>

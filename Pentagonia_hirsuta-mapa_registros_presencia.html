@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7ef0c5d424944ba92a9d126fc4aa4b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7ef0c5d424944ba92a9d126fc4aa4b9" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7ef0c5d424944ba92a9d126fc4aa4b9 = L.map(
+                "map_b7ef0c5d424944ba92a9d126fc4aa4b9",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+
+            
+
+        
+    
+            var tile_layer_227034c98e834b658f27a565477bcd47 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+            var tile_layer_3fb7e19a921d4732ae73ab267eda9bc5 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+            var circle_marker_68eb845ba87848dabbadb4ff001c7e9a = L.circleMarker(
+                [9.614722, -82.73944399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_811d719c91234eabad9f6205b346e164 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09bfbd491de04c68be8b2377b056aae9 = $(`<div id="html_09bfbd491de04c68be8b2377b056aae9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino entre Margarita y Punta Cocles. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2016-11-07 <strong>Recolectores:</strong> Barry E. Hammel|Isabel Pérez <strong>Identificadores:</strong> B. Hammel 7/Nov./</div>`)[0];
+            popup_811d719c91234eabad9f6205b346e164.setContent(html_09bfbd491de04c68be8b2377b056aae9);
+        
+
+        circle_marker_68eb845ba87848dabbadb4ff001c7e9a.bindPopup(popup_811d719c91234eabad9f6205b346e164)
+        ;
+
+        
+    
+    
+            var circle_marker_3fb025cd9ffd4fa2800d74e414c755b0 = L.circleMarker(
+                [9.614722, -82.73944399999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_8dbabf99482c47ac930b9a7692f96ca0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee013a87405f40fca7d769efd5978630 = $(`<div id="html_ee013a87405f40fca7d769efd5978630" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Camino entre Margarita y Punta Cocles. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2016-11-07 <strong>Recolectores:</strong> Barry E. Hammel|Isabel Pérez <strong>Identificadores:</strong> B. Hammel 7/Nov./</div>`)[0];
+            popup_8dbabf99482c47ac930b9a7692f96ca0.setContent(html_ee013a87405f40fca7d769efd5978630);
+        
+
+        circle_marker_3fb025cd9ffd4fa2800d74e414c755b0.bindPopup(popup_8dbabf99482c47ac930b9a7692f96ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_37acf27aec0744b29d36a3b065e6584d = L.circleMarker(
+                [8.9, -77.766667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_b7abf6bffbb942f6a59e3c1134b27e78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3f7a9bbb6264c18907683f865f1ce2d = $(`<div id="html_d3f7a9bbb6264c18907683f865f1ce2d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de San Blas, Cerro Bo Yala; frente a la Isla de Tubualá <strong>Elevación:</strong> 530.0 m  <strong>Fecha:</strong> 1993-03-11 <strong>Recolectores:</strong> Heraclio Herrera|Prudencio González <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_b7abf6bffbb942f6a59e3c1134b27e78.setContent(html_d3f7a9bbb6264c18907683f865f1ce2d);
+        
+
+        circle_marker_37acf27aec0744b29d36a3b065e6584d.bindPopup(popup_b7abf6bffbb942f6a59e3c1134b27e78)
+        ;
+
+        
+    
+    
+            var circle_marker_72dff36c234d4b389d9cd32e4d4586de = L.circleMarker(
+                [9.366667, -82.666667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_19cd1e5560a541a9905cce607c51cd5c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a37241df33c4966b8a8712705b78c4a = $(`<div id="html_6a37241df33c4966b8a8712705b78c4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Huron. <strong>Elevación:</strong> 106.68 m  <strong>Fecha:</strong> 1968-04-11 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> B. Hammel 06/May/</div>`)[0];
+            popup_19cd1e5560a541a9905cce607c51cd5c.setContent(html_6a37241df33c4966b8a8712705b78c4a);
+        
+
+        circle_marker_72dff36c234d4b389d9cd32e4d4586de.bindPopup(popup_19cd1e5560a541a9905cce607c51cd5c)
+        ;
+
+        
+    
+    
+            var circle_marker_08a10d7da2054d34889daf0c0a52c910 = L.circleMarker(
+                [9.366667, -82.666667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_4798c7036ce745ea9e376e3a553b5bab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_208d2a90888d4d75b8186288e84e6800 = $(`<div id="html_208d2a90888d4d75b8186288e84e6800" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Huron. <strong>Elevación:</strong> 106.68 m  <strong>Fecha:</strong> 1968-04-11 <strong>Recolectores:</strong> Joseph H. Kirkbride, Jr.|James A. Duke <strong>Identificadores:</strong> B. Hammel 06/May/</div>`)[0];
+            popup_4798c7036ce745ea9e376e3a553b5bab.setContent(html_208d2a90888d4d75b8186288e84e6800);
+        
+
+        circle_marker_08a10d7da2054d34889daf0c0a52c910.bindPopup(popup_4798c7036ce745ea9e376e3a553b5bab)
+        ;
+
+        
+    
+    
+            var circle_marker_f00a5fcab7bd4bb9b9a454f249623102 = L.circleMarker(
+                [9.664664, -83.02469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_be366e30dfce4d8eabb6c89cfb42a760 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b28850ffe33f4db697ebd81d72f6e58a = $(`<div id="html_b28850ffe33f4db697ebd81d72f6e58a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.B. Hitoy Cerere. Cuenca del Estrella. Valle de la Estrella. R. B. Hitoy Cerere. Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Solano|Daniel Santamaría|Billen Gamboa R.|Marcos Moraga <strong>Identificadores:</strong> D. Solano</div>`)[0];
+            popup_be366e30dfce4d8eabb6c89cfb42a760.setContent(html_b28850ffe33f4db697ebd81d72f6e58a);
+        
+
+        circle_marker_f00a5fcab7bd4bb9b9a454f249623102.bindPopup(popup_be366e30dfce4d8eabb6c89cfb42a760)
+        ;
+
+        
+    
+    
+            var circle_marker_113e4304a9ac4982b49b60541838ba96 = L.circleMarker(
+                [9.715778, -82.819833],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_cd804f6966494a8e882197151965ae05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29ad7c63956747a3ad2ab313ec7a0f7d = $(`<div id="html_29ad7c63956747a3ad2ab313ec7a0f7d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Puerto Vargas, Junto a la caseta de entrada. <strong>Elevación:</strong> 16.0 m  <strong>Fecha:</strong> 2008-02-28 <strong>Recolectores:</strong> Luis Diego Vargas; Jorge Blanco <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_cd804f6966494a8e882197151965ae05.setContent(html_29ad7c63956747a3ad2ab313ec7a0f7d);
+        
+
+        circle_marker_113e4304a9ac4982b49b60541838ba96.bindPopup(popup_cd804f6966494a8e882197151965ae05)
+        ;
+
+        
+    
+    
+            var circle_marker_f88ecf87f2e54741b3101d1eb8b3fdd6 = L.circleMarker(
+                [9.664664, -83.02469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_7f3beee769644dc3ae07165aa4e803c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e5efaf7adbd4272834040c0608cb008 = $(`<div id="html_9e5efaf7adbd4272834040c0608cb008" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_7f3beee769644dc3ae07165aa4e803c9.setContent(html_9e5efaf7adbd4272834040c0608cb008);
+        
+
+        circle_marker_f88ecf87f2e54741b3101d1eb8b3fdd6.bindPopup(popup_7f3beee769644dc3ae07165aa4e803c9)
+        ;
+
+        
+    
+    
+            var circle_marker_0a96ef61ada949b7adc71135d69d39cc = L.circleMarker(
+                [9.664664, -83.02469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_d86c9275fe1c4b65adc7756f65e4a9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38a48e6504814b67bd85ce95db844586 = $(`<div id="html_38a48e6504814b67bd85ce95db844586" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_d86c9275fe1c4b65adc7756f65e4a9e5.setContent(html_38a48e6504814b67bd85ce95db844586);
+        
+
+        circle_marker_0a96ef61ada949b7adc71135d69d39cc.bindPopup(popup_d86c9275fe1c4b65adc7756f65e4a9e5)
+        ;
+
+        
+    
+    
+            var circle_marker_6c3bcc2f56624c64a6aa77cad44bccb1 = L.circleMarker(
+                [9.664664, -83.02469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_c6b2ad5deb004b919402c9d5b76a6414 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa56af51049a4292a5067597e1a95f89 = $(`<div id="html_aa56af51049a4292a5067597e1a95f89" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Valle de la Estrella, Reserva Biol. Hitoy Cerere, Sendero Espavel. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 2006-11-20 <strong>Recolectores:</strong> Daniel Solano; Daniel Santamaría ; Billen Gamboa R. ; Marcos Moraga <strong>Identificadores:</strong> Solano, Daniel</div>`)[0];
+            popup_c6b2ad5deb004b919402c9d5b76a6414.setContent(html_aa56af51049a4292a5067597e1a95f89);
+        
+
+        circle_marker_6c3bcc2f56624c64a6aa77cad44bccb1.bindPopup(popup_c6b2ad5deb004b919402c9d5b76a6414)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2bedde6c1a473db7d4d76f1b1f7536 = L.circleMarker(
+                [9.588583999999999, -82.604965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_2465b8da8ca247599cc1321b2b02d842 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6de1872d437f4f65ac692eae2cc18273 = $(`<div id="html_6de1872d437f4f65ac692eae2cc18273" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Gandoca, entrada al muelle de la laguna Gandoca <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-03-04 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_2465b8da8ca247599cc1321b2b02d842.setContent(html_6de1872d437f4f65ac692eae2cc18273);
+        
+
+        circle_marker_cf2bedde6c1a473db7d4d76f1b1f7536.bindPopup(popup_2465b8da8ca247599cc1321b2b02d842)
+        ;
+
+        
+    
+    
+            var circle_marker_98ecff5cfa29499289d22d71ae446da7 = L.circleMarker(
+                [9.639339999999999, -82.650835],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_67cb9fd6aa874d7c88e8ce8af0de343c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6e1cc44637746d4abbc5c15198aa4a8 = $(`<div id="html_d6e1cc44637746d4abbc5c15198aa4a8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Talamanca, Res Vida Silvestre Manzanillo <strong>Elevación:</strong> 35.0 m  <strong>Fecha:</strong> 2003-01-30 <strong>Recolectores:</strong> Jose González; Luis González ; Alfonso Garita <strong>Identificadores:</strong> González, Jose</div>`)[0];
+            popup_67cb9fd6aa874d7c88e8ce8af0de343c.setContent(html_d6e1cc44637746d4abbc5c15198aa4a8);
+        
+
+        circle_marker_98ecff5cfa29499289d22d71ae446da7.bindPopup(popup_67cb9fd6aa874d7c88e8ce8af0de343c)
+        ;
+
+        
+    
+    
+            var circle_marker_5db0f79d9d7a4a0da3fd534311ee766a = L.circleMarker(
+                [9.613889, -82.65],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_698a4b65ad3542b6a4fe376da34dd490 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1281a9338ba6481680c2e29f033cae22 = $(`<div id="html_1281a9338ba6481680c2e29f033cae22" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Al Sur de Manzanillo, moist forest, in forest on slope. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1999-03-09 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_698a4b65ad3542b6a4fe376da34dd490.setContent(html_1281a9338ba6481680c2e29f033cae22);
+        
+
+        circle_marker_5db0f79d9d7a4a0da3fd534311ee766a.bindPopup(popup_698a4b65ad3542b6a4fe376da34dd490)
+        ;
+
+        
+    
+    
+            var circle_marker_9479f2ad70264c37957ff8a669b5e2da = L.circleMarker(
+                [9.613889, -82.65],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_0ecb37ff1e2d4ad38e2204e3c36a6d01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36fed6746a954419972659dd0afa1bce = $(`<div id="html_36fed6746a954419972659dd0afa1bce" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Al Sur de Manzanillo, moist forest, in forest on slope. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> 1999-03-09 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0ecb37ff1e2d4ad38e2204e3c36a6d01.setContent(html_36fed6746a954419972659dd0afa1bce);
+        
+
+        circle_marker_9479f2ad70264c37957ff8a669b5e2da.bindPopup(popup_0ecb37ff1e2d4ad38e2204e3c36a6d01)
+        ;
+
+        
+    
+    
+            var circle_marker_7fd14ab864444a90974bff9f5e34a2b4 = L.circleMarker(
+                [9.588583999999999, -82.604965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_52b82bd73c084e9386e0810ad8042036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ecab9f1b6934e0687a8fe4473f1681f = $(`<div id="html_6ecab9f1b6934e0687a8fe4473f1681f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Gandoca, entrada al muelle de la laguna Gandoca <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-03-04 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_52b82bd73c084e9386e0810ad8042036.setContent(html_6ecab9f1b6934e0687a8fe4473f1681f);
+        
+
+        circle_marker_7fd14ab864444a90974bff9f5e34a2b4.bindPopup(popup_52b82bd73c084e9386e0810ad8042036)
+        ;
+
+        
+    
+    
+            var circle_marker_587ce2c230914e37b546c52665b4b65b = L.circleMarker(
+                [9.588583999999999, -82.604965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_dbd97b01469140e9b1abcd0ad8bd8b5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dd27fd40cbd4ce3bf59c9da342e9373 = $(`<div id="html_4dd27fd40cbd4ce3bf59c9da342e9373" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Gandoca, entrada al muelle de la laguna Gandoca <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-03-04 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_dbd97b01469140e9b1abcd0ad8bd8b5d.setContent(html_4dd27fd40cbd4ce3bf59c9da342e9373);
+        
+
+        circle_marker_587ce2c230914e37b546c52665b4b65b.bindPopup(popup_dbd97b01469140e9b1abcd0ad8bd8b5d)
+        ;
+
+        
+    
+    
+            var circle_marker_454b6dbc7b2f4db1b1d0f88148210880 = L.circleMarker(
+                [9.588583999999999, -82.604965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_0c4f676c7abe428b9d943fa807bd6c3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3fe5cc933e4406bb441dfbfdf534563 = $(`<div id="html_c3fe5cc933e4406bb441dfbfdf534563" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Gandoca, entrada al muelle de la laguna Gandoca <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-03-04 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_0c4f676c7abe428b9d943fa807bd6c3b.setContent(html_c3fe5cc933e4406bb441dfbfdf534563);
+        
+
+        circle_marker_454b6dbc7b2f4db1b1d0f88148210880.bindPopup(popup_0c4f676c7abe428b9d943fa807bd6c3b)
+        ;
+
+        
+    
+    
+            var circle_marker_89e87106a5c44fedb99daa1e4d1163cb = L.circleMarker(
+                [9.588583999999999, -82.604965],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_b3eabb1a29f2424e89576e580e623816 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c08877cdd97d46a19c9d5c761662db62 = $(`<div id="html_c08877cdd97d46a19c9d5c761662db62" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Gandoca, entrada al muelle de la laguna Gandoca <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-03-04 <strong>Recolectores:</strong> Barry Hammel; Reinaldo Aguilar <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_b3eabb1a29f2424e89576e580e623816.setContent(html_c08877cdd97d46a19c9d5c761662db62);
+        
+
+        circle_marker_89e87106a5c44fedb99daa1e4d1163cb.bindPopup(popup_b3eabb1a29f2424e89576e580e623816)
+        ;
+
+        
+    
+    
+            var circle_marker_74ca5e81d2024576a59a74cbcf9a9aed = L.circleMarker(
+                [9.67537, -83.024953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_5dbf3b5561eb47219622b608f881db10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c434bffff125462c94b7abbc5c44377a = $(`<div id="html_c434bffff125462c94b7abbc5c44377a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_5dbf3b5561eb47219622b608f881db10.setContent(html_c434bffff125462c94b7abbc5c44377a);
+        
+
+        circle_marker_74ca5e81d2024576a59a74cbcf9a9aed.bindPopup(popup_5dbf3b5561eb47219622b608f881db10)
+        ;
+
+        
+    
+    
+            var circle_marker_3b6f142180804de0949b038a587d5688 = L.circleMarker(
+                [9.67537, -83.024953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_4680ffa455144d538d6f82982c223932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_035c5e45201f4dfabdad199a146bd5be = $(`<div id="html_035c5e45201f4dfabdad199a146bd5be" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Hitoy Cerere, Sendero Indio Alejo <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2000-06-27 <strong>Recolectores:</strong> L. Acosta <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_4680ffa455144d538d6f82982c223932.setContent(html_035c5e45201f4dfabdad199a146bd5be);
+        
+
+        circle_marker_3b6f142180804de0949b038a587d5688.bindPopup(popup_4680ffa455144d538d6f82982c223932)
+        ;
+
+        
+    
+    
+            var circle_marker_be90a78155ae46f089463fb1969d8aa8 = L.circleMarker(
+                [9.673611, -83.026389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_77cfd9662f7744c594c57377c26adaac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7673063d1a645efafa938e19407886f = $(`<div id="html_c7673063d1a645efafa938e19407886f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> En limite con la Reserva Biologica Hitoy-Cerere. Bosque primario y secundario. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1999-05-12 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez ; Elvira Salas <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_77cfd9662f7744c594c57377c26adaac.setContent(html_c7673063d1a645efafa938e19407886f);
+        
+
+        circle_marker_be90a78155ae46f089463fb1969d8aa8.bindPopup(popup_77cfd9662f7744c594c57377c26adaac)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab68852537b4abb9b9c95dacc48c97e = L.circleMarker(
+                [9.511667, -82.955556],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_e4af4ac3e44649b3945dfd797720122f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e382b22260fb4ffab16a40bae783b30f = $(`<div id="html_e382b22260fb4ffab16a40bae783b30f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Alrededores de Amubri, cacaotal, area de repasto. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> 1995-04-11 <strong>Recolectores:</strong> Angela Mora Maroto <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_e4af4ac3e44649b3945dfd797720122f.setContent(html_e382b22260fb4ffab16a40bae783b30f);
+        
+
+        circle_marker_5ab68852537b4abb9b9c95dacc48c97e.bindPopup(popup_e4af4ac3e44649b3945dfd797720122f)
+        ;
+
+        
+    
+    
+            var circle_marker_37b559665c3e4589bc5ee9deee8bef17 = L.circleMarker(
+                [10.0114, -83.9519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_a1331933273344a5b4459318138fc6d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59e284fec60f4a2484d6b9fd70adddec = $(`<div id="html_59e284fec60f4a2484d6b9fd70adddec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1895-03-01 <strong>Recolectores:</strong> A. Tonduz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_a1331933273344a5b4459318138fc6d5.setContent(html_59e284fec60f4a2484d6b9fd70adddec);
+        
+
+        circle_marker_37b559665c3e4589bc5ee9deee8bef17.bindPopup(popup_a1331933273344a5b4459318138fc6d5)
+        ;
+
+        
+    
+    
+            var circle_marker_dd79e8d0183a4ec49cd0c161d9ada50e = L.circleMarker(
+                [9.588583, -82.604967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+        
+    
+        var popup_4be3a6a1e9ce4bbf9220104d9633f053 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39496255ced84b6f9e18453b51bce7b6 = $(`<div id="html_39496255ced84b6f9e18453b51bce7b6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.V.S. Gandoca-Manzanillo.Puerto Viejo. Playa, por Gandoca. <strong>Elevación:</strong> 0.0 m  <strong>Fecha:</strong> 1999-05-04 <strong>Recolectores:</strong> Hammel, B; Aguilar, R <strong>Identificadores:</strong> Hammel, B</div>`)[0];
+            popup_4be3a6a1e9ce4bbf9220104d9633f053.setContent(html_39496255ced84b6f9e18453b51bce7b6);
+        
+
+        circle_marker_dd79e8d0183a4ec49cd0c161d9ada50e.bindPopup(popup_4be3a6a1e9ce4bbf9220104d9633f053)
+        ;
+
+        
+    
+    
+            var layer_control_4a0549009be140f69b0540040a616735 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_227034c98e834b658f27a565477bcd47,
+                    "ESRI World Imagery" : tile_layer_3fb7e19a921d4732ae73ab267eda9bc5,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_4a0549009be140f69b0540040a616735.base_layers,
+                layer_control_4a0549009be140f69b0540040a616735.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b7ef0c5d424944ba92a9d126fc4aa4b9);
+            tile_layer_3fb7e19a921d4732ae73ab267eda9bc5.remove();
+        
+</script>

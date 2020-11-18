@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d737bde8a50b4e96816af9a56186477e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d737bde8a50b4e96816af9a56186477e" ></div>
+        
+</body>
+<script>    
+    
+            var map_d737bde8a50b4e96816af9a56186477e = L.map(
+                "map_d737bde8a50b4e96816af9a56186477e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d737bde8a50b4e96816af9a56186477e);
+
+            
+
+        
+    
+            var tile_layer_927298aaa8024d81aba7954a5960f996 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d737bde8a50b4e96816af9a56186477e);
+        
+    
+            var tile_layer_4bbbb12840fa4a8990b595f8b9cf36d1 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d737bde8a50b4e96816af9a56186477e);
+        
+    
+            var marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c = L.markerClusterGroup(
+                {}
+            );
+            map_d737bde8a50b4e96816af9a56186477e.addLayer(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+            var marker_2e091b02dbd34d36a7a42611dcaf2859 = L.marker(
+                [9.405278, -84.153056],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_6ee4075309154adcbe1a35c0ea19c79a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd45e3d7e06b4588a138ee1841c4ed69 = $(`<div id="html_fd45e3d7e06b4588a138ee1841c4ed69" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila, reserva natural del hotel Si Como No. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> H. E. Ballard 20/jun./</div>`)[0];
+            popup_6ee4075309154adcbe1a35c0ea19c79a.setContent(html_fd45e3d7e06b4588a138ee1841c4ed69);
+        
+
+        marker_2e091b02dbd34d36a7a42611dcaf2859.bindPopup(popup_6ee4075309154adcbe1a35c0ea19c79a)
+        ;
+
+        
+    
+    
+            var marker_78038ab9c8dc4061bdbe4f61501a4de0 = L.marker(
+                [9.405278, -84.153056],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_004de643395f4208b079d72c74ba414f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddfc6650221e4b1a8675bad00856a015 = $(`<div id="html_ddfc6650221e4b1a8675bad00856a015" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila, reserva natural del hotel Si Como No. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> H. E. Ballard, 20/jun./</div>`)[0];
+            popup_004de643395f4208b079d72c74ba414f.setContent(html_ddfc6650221e4b1a8675bad00856a015);
+        
+
+        marker_78038ab9c8dc4061bdbe4f61501a4de0.bindPopup(popup_004de643395f4208b079d72c74ba414f)
+        ;
+
+        
+    
+    
+            var marker_c09c23c6abd643f6bb8ae76996098d7f = L.marker(
+                [9.405278, -84.153056],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_972d623c43d9488b8322b522e7c45183 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9f63bd03474f21a71c9d456fbee422 = $(`<div id="html_4d9f63bd03474f21a71c9d456fbee422" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila, reserva natural del hotel Si Como No. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> H. E. Ballard, 20/jun./</div>`)[0];
+            popup_972d623c43d9488b8322b522e7c45183.setContent(html_4d9f63bd03474f21a71c9d456fbee422);
+        
+
+        marker_c09c23c6abd643f6bb8ae76996098d7f.bindPopup(popup_972d623c43d9488b8322b522e7c45183)
+        ;
+
+        
+    
+    
+            var marker_039a66a94ff241589dfe25f6fd956a23 = L.marker(
+                [11.533333, -84.43333299999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_9e77508f0eed45a0baefbd39e6e835f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0610f9bdfa8b48a58ba95408438f1c2d = $(`<div id="html_0610f9bdfa8b48a58ba95408438f1c2d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Orillas de Río Zapote; matorrales húmedas y breñosas [Molina number series, fb give elevation of 30 m but that obviously wrong] <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1951-12-08 <strong>Recolectores:</strong> Paul J. Shank|Antonio Molina R. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_9e77508f0eed45a0baefbd39e6e835f0.setContent(html_0610f9bdfa8b48a58ba95408438f1c2d);
+        
+
+        marker_039a66a94ff241589dfe25f6fd956a23.bindPopup(popup_9e77508f0eed45a0baefbd39e6e835f0)
+        ;
+
+        
+    
+    
+            var marker_520d1d20b18843a69a631a345eea1c86 = L.marker(
+                [15.87055, -89.94471999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_c940ec201fc641169ed544e3d35373c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_878ba99256314dde94afd2896d988fbc = $(`<div id="html_878ba99256314dde94afd2896d988fbc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sebol, bordering Río Sebol, about 12 km below Sebol, in high forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1964-04-11 <strong>Recolectores:</strong> Elias Contreras <strong>Identificadores:</strong> HARVEY E. BALLARD JR</div>`)[0];
+            popup_c940ec201fc641169ed544e3d35373c1.setContent(html_878ba99256314dde94afd2896d988fbc);
+        
+
+        marker_520d1d20b18843a69a631a345eea1c86.bindPopup(popup_c940ec201fc641169ed544e3d35373c1)
+        ;
+
+        
+    
+    
+            var marker_ec46334efbac4de8b701133c93a842f3 = L.marker(
+                [11.633333, -84.43333299999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_d2636e73e3a3454fb7218153eb00e160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7986f6ee3864d578fbf0f22b8ecabf0 = $(`<div id="html_d7986f6ee3864d578fbf0f22b8ecabf0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Verdún; bosque húmedo tropical <strong>Elevación:</strong> 200.0 m  <strong>Fecha:</strong> 1982-09-01 <strong>Recolectores:</strong> A. Laguna <strong>Identificadores:</strong> W.D. Stevens</div>`)[0];
+            popup_d2636e73e3a3454fb7218153eb00e160.setContent(html_d7986f6ee3864d578fbf0f22b8ecabf0);
+        
+
+        marker_ec46334efbac4de8b701133c93a842f3.bindPopup(popup_d2636e73e3a3454fb7218153eb00e160)
+        ;
+
+        
+    
+    
+            var marker_1e5dc5b0147046e1836c5c9e6506ffbe = L.marker(
+                [7.8, -75.56666],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_fc3f58eaa49646c8b82005675c5554a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eb5f8af7459462eaadd1f266c6f8d9f = $(`<div id="html_3eb5f8af7459462eaadd1f266c6f8d9f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Corregimiento de Uré, Vereda Versalles, Cerro Moyambo. <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1990-10-27 <strong>Recolectores:</strong> Francisco J. Roldán|et al. <strong>Identificadores:</strong> H.E. Ballard</div>`)[0];
+            popup_fc3f58eaa49646c8b82005675c5554a4.setContent(html_3eb5f8af7459462eaadd1f266c6f8d9f);
+        
+
+        marker_1e5dc5b0147046e1836c5c9e6506ffbe.bindPopup(popup_fc3f58eaa49646c8b82005675c5554a4)
+        ;
+
+        
+    
+    
+            var marker_a395c2cf5ea5483e989f9a37947ee04a = L.marker(
+                [11.433333, -84.6],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_ec3b56b57d294e4cb70cdcb24bd614c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0c4066cc3704653a71c55e76351af02 = $(`<div id="html_b0c4066cc3704653a71c55e76351af02" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Montañas Esquipulas y Alemán; bosque lluvioso [Molina number series] <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1951-11-27 <strong>Recolectores:</strong> Paul J. Shank|Antonio Molina R. <strong>Identificadores:</strong> Harvey E. Ballard, Jr. (BHO)</div>`)[0];
+            popup_ec3b56b57d294e4cb70cdcb24bd614c9.setContent(html_b0c4066cc3704653a71c55e76351af02);
+        
+
+        marker_a395c2cf5ea5483e989f9a37947ee04a.bindPopup(popup_ec3b56b57d294e4cb70cdcb24bd614c9)
+        ;
+
+        
+    
+    
+            var marker_273c3da538fe423fa0421f41a0aea765 = L.marker(
+                [15.52305, -89.33527],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_0d90213555804d3aa4bd15b1e6a90847 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56af312230c94568bf18b967efc68734 = $(`<div id="html_56af312230c94568bf18b967efc68734" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Estor. In high forest <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1972-03-18 <strong>Recolectores:</strong> Elias Contreras <strong>Identificadores:</strong> W.H.A. Hekking, 1994 (U)</div>`)[0];
+            popup_0d90213555804d3aa4bd15b1e6a90847.setContent(html_56af312230c94568bf18b967efc68734);
+        
+
+        marker_273c3da538fe423fa0421f41a0aea765.bindPopup(popup_0d90213555804d3aa4bd15b1e6a90847)
+        ;
+
+        
+    
+    
+            var marker_c7498f9ad5ef486d8d4d9967fdba250b = L.marker(
+                [15.738879999999998, -89.09166],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_7c13364bab6541e19f118c2c18d6c088 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0bae32bbca2436999d1b0cdfd75bf3b = $(`<div id="html_c0bae32bbca2436999d1b0cdfd75bf3b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cienaga, in zapotal, high forest, bordering Río Cienaga, on the Izabal-Peten Road. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1975-03-04 <strong>Recolectores:</strong> Cyrus L. Lundell|Elias Contreras <strong>Identificadores:</strong> W.H.A. Hekking, 1994 (U)</div>`)[0];
+            popup_7c13364bab6541e19f118c2c18d6c088.setContent(html_c0bae32bbca2436999d1b0cdfd75bf3b);
+        
+
+        marker_c7498f9ad5ef486d8d4d9967fdba250b.bindPopup(popup_7c13364bab6541e19f118c2c18d6c088)
+        ;
+
+        
+    
+    
+            var marker_1636ba6060e54a389495a54a407d8851 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_6340c919858d45c5a0c5124ce2a25d37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94d103b16c2b4e2ab82fc12e5ebcfe46 = $(`<div id="html_94d103b16c2b4e2ab82fc12e5ebcfe46" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_6340c919858d45c5a0c5124ce2a25d37.setContent(html_94d103b16c2b4e2ab82fc12e5ebcfe46);
+        
+
+        marker_1636ba6060e54a389495a54a407d8851.bindPopup(popup_6340c919858d45c5a0c5124ce2a25d37)
+        ;
+
+        
+    
+    
+            var marker_077b87c572cc4806849f5967df2d9326 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_3a8089050a4d43f299204abd5a8cc283 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c0e1dd5eeb34392bbc30e56880ab0b6 = $(`<div id="html_8c0e1dd5eeb34392bbc30e56880ab0b6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_3a8089050a4d43f299204abd5a8cc283.setContent(html_8c0e1dd5eeb34392bbc30e56880ab0b6);
+        
+
+        marker_077b87c572cc4806849f5967df2d9326.bindPopup(popup_3a8089050a4d43f299204abd5a8cc283)
+        ;
+
+        
+    
+    
+            var marker_1595f212373049d4bc5a25cbdba38297 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_bccb17b945314bf3b40c007514865253 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c09dfdca4ba4b52a699093149cb0b5b = $(`<div id="html_0c09dfdca4ba4b52a699093149cb0b5b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_bccb17b945314bf3b40c007514865253.setContent(html_0c09dfdca4ba4b52a699093149cb0b5b);
+        
+
+        marker_1595f212373049d4bc5a25cbdba38297.bindPopup(popup_bccb17b945314bf3b40c007514865253)
+        ;
+
+        
+    
+    
+            var marker_9fa63c5a31b346e38d194e7a9c8c9376 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_a7628c31ed814f47a1d86e6ea257ea4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5edebce99ad48e59b14d9233da44c9e = $(`<div id="html_c5edebce99ad48e59b14d9233da44c9e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_a7628c31ed814f47a1d86e6ea257ea4b.setContent(html_c5edebce99ad48e59b14d9233da44c9e);
+        
+
+        marker_9fa63c5a31b346e38d194e7a9c8c9376.bindPopup(popup_a7628c31ed814f47a1d86e6ea257ea4b)
+        ;
+
+        
+    
+    
+            var marker_7e7fd69314b64976b90ce7cf3c6118d6 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_caa59b1fd6334d5b9cda13f186dca62a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc6694d415064778a8c1e527c789cb3a = $(`<div id="html_dc6694d415064778a8c1e527c789cb3a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_caa59b1fd6334d5b9cda13f186dca62a.setContent(html_dc6694d415064778a8c1e527c789cb3a);
+        
+
+        marker_7e7fd69314b64976b90ce7cf3c6118d6.bindPopup(popup_caa59b1fd6334d5b9cda13f186dca62a)
+        ;
+
+        
+    
+    
+            var marker_b42050dd42444340a4e159e8b3af756c = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_d09a98f8687f4104b4e4b4018037afff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fff53dd75d5469ab328b95506490a03 = $(`<div id="html_5fff53dd75d5469ab328b95506490a03" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-18 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_d09a98f8687f4104b4e4b4018037afff.setContent(html_5fff53dd75d5469ab328b95506490a03);
+        
+
+        marker_b42050dd42444340a4e159e8b3af756c.bindPopup(popup_d09a98f8687f4104b4e4b4018037afff)
+        ;
+
+        
+    
+    
+            var marker_9666187371824009b5072abe8150287c = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_2d0f48affa5b463d829898485ef6a000 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e5d4383f0a44a75ac0b201620d3cdc0 = $(`<div id="html_7e5d4383f0a44a75ac0b201620d3cdc0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_2d0f48affa5b463d829898485ef6a000.setContent(html_7e5d4383f0a44a75ac0b201620d3cdc0);
+        
+
+        marker_9666187371824009b5072abe8150287c.bindPopup(popup_2d0f48affa5b463d829898485ef6a000)
+        ;
+
+        
+    
+    
+            var marker_26601d884e5a4518aea5eca9b7a37309 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_121b2d1d700b43cb9946851724365271 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd8c7f0dd0c54f7da069455f7f91588e = $(`<div id="html_cd8c7f0dd0c54f7da069455f7f91588e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_121b2d1d700b43cb9946851724365271.setContent(html_cd8c7f0dd0c54f7da069455f7f91588e);
+        
+
+        marker_26601d884e5a4518aea5eca9b7a37309.bindPopup(popup_121b2d1d700b43cb9946851724365271)
+        ;
+
+        
+    
+    
+            var marker_0a125a515cd841e89d86daa1df1b8733 = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_0b66f2f5c0ff44f0b83f2e69df94c8a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70349855e7f441b3bc5fc0cb6f379b4a = $(`<div id="html_70349855e7f441b3bc5fc0cb6f379b4a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_0b66f2f5c0ff44f0b83f2e69df94c8a2.setContent(html_70349855e7f441b3bc5fc0cb6f379b4a);
+        
+
+        marker_0a125a515cd841e89d86daa1df1b8733.bindPopup(popup_0b66f2f5c0ff44f0b83f2e69df94c8a2)
+        ;
+
+        
+    
+    
+            var marker_4f113d22525246d589304a90ba10933a = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_64b39a11234d44aea5b6e328fe36b7c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9efa2ac00a094d0e9651645cad36a119 = $(`<div id="html_9efa2ac00a094d0e9651645cad36a119" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_64b39a11234d44aea5b6e328fe36b7c6.setContent(html_9efa2ac00a094d0e9651645cad36a119);
+        
+
+        marker_4f113d22525246d589304a90ba10933a.bindPopup(popup_64b39a11234d44aea5b6e328fe36b7c6)
+        ;
+
+        
+    
+    
+            var marker_e822db66c2694fb885e05058485fe1ea = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_15ca6737bc564698a1b0c4a3b9546a35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_081da039cccc439d9ec52c78ea97f2b4 = $(`<div id="html_081da039cccc439d9ec52c78ea97f2b4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_15ca6737bc564698a1b0c4a3b9546a35.setContent(html_081da039cccc439d9ec52c78ea97f2b4);
+        
+
+        marker_e822db66c2694fb885e05058485fe1ea.bindPopup(popup_15ca6737bc564698a1b0c4a3b9546a35)
+        ;
+
+        
+    
+    
+            var marker_3ff2db323c014ac0bc932a4e7706e12f = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_2008e578e3eb45c99e5791383d90756d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95513841dec04744b800bcdb1950a8d2 = $(`<div id="html_95513841dec04744b800bcdb1950a8d2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_2008e578e3eb45c99e5791383d90756d.setContent(html_95513841dec04744b800bcdb1950a8d2);
+        
+
+        marker_3ff2db323c014ac0bc932a4e7706e12f.bindPopup(popup_2008e578e3eb45c99e5791383d90756d)
+        ;
+
+        
+    
+    
+            var marker_f5fca31b31e2401293823e46f5ef63bf = L.marker(
+                [9.405278, -84.15299999999999],
+                {}
+            ).addTo(marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c);
+        
+    
+        var popup_68fcafc37b114fefbce85c2bb9925d53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55a3b0993d8d40e3af3fdd5f94057a65 = $(`<div id="html_55a3b0993d8d40e3af3fdd5f94057a65" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Entre Quepos y P. N. Manuel Antonio, por la fila. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 2011-08-27 <strong>Recolectores:</strong> Barry Hammel; Jorge Hernández ; Isabel Pérez <strong>Identificadores:</strong> Ballard, Harvey E.</div>`)[0];
+            popup_68fcafc37b114fefbce85c2bb9925d53.setContent(html_55a3b0993d8d40e3af3fdd5f94057a65);
+        
+
+        marker_f5fca31b31e2401293823e46f5ef63bf.bindPopup(popup_68fcafc37b114fefbce85c2bb9925d53)
+        ;
+
+        
+    
+    
+            var layer_control_982fdd5a68ab4f7c87c77764dde68dc9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_927298aaa8024d81aba7954a5960f996,
+                    "ESRI World Imagery" : tile_layer_4bbbb12840fa4a8990b595f8b9cf36d1,
+                },
+                overlays :  {
+                    "macro_element_53dd7ef7959a46fe9a8b50851f658a7c" : marker_cluster_53dd7ef7959a46fe9a8b50851f658a7c,
+                },
+            };
+            L.control.layers(
+                layer_control_982fdd5a68ab4f7c87c77764dde68dc9.base_layers,
+                layer_control_982fdd5a68ab4f7c87c77764dde68dc9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d737bde8a50b4e96816af9a56186477e);
+            tile_layer_4bbbb12840fa4a8990b595f8b9cf36d1.remove();
+        
+</script>

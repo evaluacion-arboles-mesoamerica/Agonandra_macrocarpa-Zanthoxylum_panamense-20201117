@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_163fd92c706c4c5db60ba1c0ce41ee0e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_163fd92c706c4c5db60ba1c0ce41ee0e" ></div>
+        
+</body>
+<script>    
+    
+            var map_163fd92c706c4c5db60ba1c0ce41ee0e = L.map(
+                "map_163fd92c706c4c5db60ba1c0ce41ee0e",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_163fd92c706c4c5db60ba1c0ce41ee0e);
+
+            
+
+        
+    
+            var tile_layer_6dac71e036e048128a684973f121f88b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_163fd92c706c4c5db60ba1c0ce41ee0e);
+        
+    
+            var tile_layer_852ea1edcd864601969f2476cbbd3ea3 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_163fd92c706c4c5db60ba1c0ce41ee0e);
+        
+    
+            var marker_cluster_82128308f6534f34aebe268dca99f540 = L.markerClusterGroup(
+                {}
+            );
+            map_163fd92c706c4c5db60ba1c0ce41ee0e.addLayer(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+            var marker_40fa9f3ca96247b9ac42d69c8ea90e72 = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_2616dd73a1e648e5802906bd28a8554a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1dcea7330404ae89cb1c2fdaf05e903 = $(`<div id="html_f1dcea7330404ae89cb1c2fdaf05e903" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Tierras Morenas. Río El Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-06-27 <strong>Recolectores:</strong> Gladys Rodríguez <strong>Identificadores:</strong> J. Kallunki</div>`)[0];
+            popup_2616dd73a1e648e5802906bd28a8554a.setContent(html_f1dcea7330404ae89cb1c2fdaf05e903);
+        
+
+        marker_40fa9f3ca96247b9ac42d69c8ea90e72.bindPopup(popup_2616dd73a1e648e5802906bd28a8554a)
+        ;
+
+        
+    
+    
+            var marker_a032109c537342dd870f618c2533044e = L.marker(
+                [10.48, -84.97],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_2f5c79e2b254481396e156b50bedf6b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_130d722ca1b740219d99eafbdd155b27 = $(`<div id="html_130d722ca1b740219d99eafbdd155b27" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 1 km antes de la entrada a la ciudad. Ribera Río Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Quírico Jiménez|Víctor H. Ramírez <strong>Identificadores:</strong> J. Kallunki</div>`)[0];
+            popup_2f5c79e2b254481396e156b50bedf6b4.setContent(html_130d722ca1b740219d99eafbdd155b27);
+        
+
+        marker_a032109c537342dd870f618c2533044e.bindPopup(popup_2f5c79e2b254481396e156b50bedf6b4)
+        ;
+
+        
+    
+    
+            var marker_f9a52877b7ad4af5a0a34545b971ed7f = L.marker(
+                [10.49, -84.98],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_83838ed604124fb99eab16b285da09b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f3fcc280c9492c89f1e59a750dfc06 = $(`<div id="html_b5f3fcc280c9492c89f1e59a750dfc06" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km Tilarán, camino a Cañas. <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1994-01-19 <strong>Recolectores:</strong> Quírico Jiménez|Luis J. Poveda Álvarez|Eduardo Lépiz|Víctor H. Ramírez <strong>Identificadores:</strong> J. A. Kallunki (NY)</div>`)[0];
+            popup_83838ed604124fb99eab16b285da09b1.setContent(html_b5f3fcc280c9492c89f1e59a750dfc06);
+        
+
+        marker_f9a52877b7ad4af5a0a34545b971ed7f.bindPopup(popup_83838ed604124fb99eab16b285da09b1)
+        ;
+
+        
+    
+    
+            var marker_134e74aa0f684ee9b22a6b8b7d427528 = L.marker(
+                [10.091660000000001, -65.95],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_60c007c8a68741c28c2dab91a69921eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5987772d297d441887d0cd704b1487bf = $(`<div id="html_5987772d297d441887d0cd704b1487bf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Dto. Paez: Orillas del Río Aragua. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1977-06-07 <strong>Recolectores:</strong> Ángel C. González|Gerrit Davidse <strong>Identificadores:</strong> J. Kallunki</div>`)[0];
+            popup_60c007c8a68741c28c2dab91a69921eb.setContent(html_5987772d297d441887d0cd704b1487bf);
+        
+
+        marker_134e74aa0f684ee9b22a6b8b7d427528.bindPopup(popup_60c007c8a68741c28c2dab91a69921eb)
+        ;
+
+        
+    
+    
+            var marker_3d90bc673d9541a59998a3de6da9e28a = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_456696bc1bab4a21bcacc3a9fef378d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e437925352ac4d2ab72b958f387a31a5 = $(`<div id="html_e437925352ac4d2ab72b958f387a31a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cuenca del Tempisque.  1 Km antes de la entrada a la ciudad.  Ribera Río Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Alexánder Rodríguez|Víctor H. Ramírez <strong>Identificadores:</strong> Alex. Rodríguez (INB)</div>`)[0];
+            popup_456696bc1bab4a21bcacc3a9fef378d5.setContent(html_e437925352ac4d2ab72b958f387a31a5);
+        
+
+        marker_3d90bc673d9541a59998a3de6da9e28a.bindPopup(popup_456696bc1bab4a21bcacc3a9fef378d5)
+        ;
+
+        
+    
+    
+            var marker_c9deff2cf15b4978a8391acf3c5f17b5 = L.marker(
+                [10.83333, -69.11666],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_7aadc5b3fc8f4e28b36857a01dab34ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cf542e5fd5e47cf81854af2cdfb0cf8 = $(`<div id="html_7cf542e5fd5e47cf81854af2cdfb0cf8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Quebrada de la Cueva El Toro. Trail going to La Piedra. Slope above river. <strong>Elevación:</strong> 750.0 m  <strong>Fecha:</strong> 1979-06-22 <strong>Recolectores:</strong> Ronald L. Liesner|Ángel C. González|R.C. Wingfield <strong>Identificadores:</strong> R. Liesner (MO)</div>`)[0];
+            popup_7aadc5b3fc8f4e28b36857a01dab34ad.setContent(html_7cf542e5fd5e47cf81854af2cdfb0cf8);
+        
+
+        marker_c9deff2cf15b4978a8391acf3c5f17b5.bindPopup(popup_7aadc5b3fc8f4e28b36857a01dab34ad)
+        ;
+
+        
+    
+    
+            var marker_1bed17dd82324e8687663dbce29e5720 = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_bfd13186489549d4a10f570d5e911cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2869bca504c44ffc9d85ef72a07c1abf = $(`<div id="html_2869bca504c44ffc9d85ef72a07c1abf" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilaran. Tierras Morenas, Rio Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-08-01 <strong>Recolectores:</strong> Gladys Rodríguez <strong>Identificadores:</strong> Q. Jiménez</div>`)[0];
+            popup_bfd13186489549d4a10f570d5e911cd4.setContent(html_2869bca504c44ffc9d85ef72a07c1abf);
+        
+
+        marker_1bed17dd82324e8687663dbce29e5720.bindPopup(popup_bfd13186489549d4a10f570d5e911cd4)
+        ;
+
+        
+    
+    
+            var marker_d01c9b041b1a454c86b8bbe3364cfed8 = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_fb2e53f6fd274509bdc85c49afbd8116 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_193d2fe3d7e14d33bf9f9096c3642e41 = $(`<div id="html_193d2fe3d7e14d33bf9f9096c3642e41" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilara|n. Tierras Morenas, Rio Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1995-07-25 <strong>Recolectores:</strong> Gladys Rodríguez <strong>Identificadores:</strong> Q. Jiménez</div>`)[0];
+            popup_fb2e53f6fd274509bdc85c49afbd8116.setContent(html_193d2fe3d7e14d33bf9f9096c3642e41);
+        
+
+        marker_d01c9b041b1a454c86b8bbe3364cfed8.bindPopup(popup_fb2e53f6fd274509bdc85c49afbd8116)
+        ;
+
+        
+    
+    
+            var marker_d1c15d83f4254dd8bcfd92a7b1735499 = L.marker(
+                [10.48, -84.97],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_2c40b78d60764af48bdae91ed632d0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dece9b9b2ac4863a6dd394cd9cb91e6 = $(`<div id="html_6dece9b9b2ac4863a6dd394cd9cb91e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Quírico Jiménez|Víctor H. Ramírez <strong>Identificadores:</strong> J. Kallunki</div>`)[0];
+            popup_2c40b78d60764af48bdae91ed632d0e3.setContent(html_6dece9b9b2ac4863a6dd394cd9cb91e6);
+        
+
+        marker_d1c15d83f4254dd8bcfd92a7b1735499.bindPopup(popup_2c40b78d60764af48bdae91ed632d0e3)
+        ;
+
+        
+    
+    
+            var marker_f52ea411fd0e47fb9efcd94cc5b49584 = L.marker(
+                [10.830556, -84.969444],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_8a558a5f03674254a52ffdf83772f439 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79398b62cf684cdfa29239b4c03184a1 = $(`<div id="html_79398b62cf684cdfa29239b4c03184a1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> No protegida. Cuenca del Zapote. Márgenes del Río Chimurria. Finca de Guillermo Aponte. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-05-21 <strong>Recolectores:</strong> Alexánder Rodríguez|Eduardo Lépiz <strong>Identificadores:</strong> E. Alfaro</div>`)[0];
+            popup_8a558a5f03674254a52ffdf83772f439.setContent(html_79398b62cf684cdfa29239b4c03184a1);
+        
+
+        marker_f52ea411fd0e47fb9efcd94cc5b49584.bindPopup(popup_8a558a5f03674254a52ffdf83772f439)
+        ;
+
+        
+    
+    
+            var marker_da13009822844c8d9ee704cf31d9d4ef = L.marker(
+                [10.830556, -84.969444],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_222691a0f12c47179aef0b8f43b4075d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6559f25d90e34fa0a62fa36bd9ed993c = $(`<div id="html_6559f25d90e34fa0a62fa36bd9ed993c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puntarenas. Margen del Rio Chimurria. Cerca de la Plaza. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-05-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Eduardo Lepiz <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_222691a0f12c47179aef0b8f43b4075d.setContent(html_6559f25d90e34fa0a62fa36bd9ed993c);
+        
+
+        marker_da13009822844c8d9ee704cf31d9d4ef.bindPopup(popup_222691a0f12c47179aef0b8f43b4075d)
+        ;
+
+        
+    
+    
+            var marker_90ac815f0d254f739de05abafeb16eac = L.marker(
+                [10.830556, -84.969444],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_bdbd778bbc684590abd6347e8e3feb64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_581d1b90675d406a9b78037b3be6bbbc = $(`<div id="html_581d1b90675d406a9b78037b3be6bbbc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Colonia Puntarenas. Margen del Rio Chimurria. Cerca de la Plaza. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2001-05-21 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Eduardo Lepiz <strong>Identificadores:</strong> Alfaro, Evelio</div>`)[0];
+            popup_bdbd778bbc684590abd6347e8e3feb64.setContent(html_581d1b90675d406a9b78037b3be6bbbc);
+        
+
+        marker_90ac815f0d254f739de05abafeb16eac.bindPopup(popup_bdbd778bbc684590abd6347e8e3feb64)
+        ;
+
+        
+    
+    
+            var marker_473468a2632549119affda6ddbf7637b = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_90d8c2acc02b488aab310b3437ef29e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83415794f40d4846a21b553454c5a33e = $(`<div id="html_83415794f40d4846a21b553454c5a33e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_90d8c2acc02b488aab310b3437ef29e0.setContent(html_83415794f40d4846a21b553454c5a33e);
+        
+
+        marker_473468a2632549119affda6ddbf7637b.bindPopup(popup_90d8c2acc02b488aab310b3437ef29e0)
+        ;
+
+        
+    
+    
+            var marker_2225b6b2b4404c2e8565e1e490614091 = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_483c3c73dbb1440196ebb133287fa7dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35221267f4454fd1949264208816bab9 = $(`<div id="html_35221267f4454fd1949264208816bab9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_483c3c73dbb1440196ebb133287fa7dd.setContent(html_35221267f4454fd1949264208816bab9);
+        
+
+        marker_2225b6b2b4404c2e8565e1e490614091.bindPopup(popup_483c3c73dbb1440196ebb133287fa7dd)
+        ;
+
+        
+    
+    
+            var marker_45682150c21e4650be7be400cb811a61 = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_9426d436fd824913a226157389643b5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9db1425c1c614d7fbef08fb4d36ce6ab = $(`<div id="html_9db1425c1c614d7fbef08fb4d36ce6ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_9426d436fd824913a226157389643b5e.setContent(html_9db1425c1c614d7fbef08fb4d36ce6ab);
+        
+
+        marker_45682150c21e4650be7be400cb811a61.bindPopup(popup_9426d436fd824913a226157389643b5e)
+        ;
+
+        
+    
+    
+            var marker_046a65ece1b6479e9b8bb034b03c34ee = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_ad272ba934854580885bdcfabe74dedf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ea9c300988b4ccb923c98e5bf283544 = $(`<div id="html_6ea9c300988b4ccb923c98e5bf283544" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Alexánder Francisco Rodríguez González; Victor Ramírez <strong>Identificadores:</strong> Rodríguez González, Alexánder Francisco</div>`)[0];
+            popup_ad272ba934854580885bdcfabe74dedf.setContent(html_6ea9c300988b4ccb923c98e5bf283544);
+        
+
+        marker_046a65ece1b6479e9b8bb034b03c34ee.bindPopup(popup_ad272ba934854580885bdcfabe74dedf)
+        ;
+
+        
+    
+    
+            var marker_47f4063b5ba24fc7b823f3580da1464e = L.marker(
+                [10.572222, -85.033333],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_b988004f189d47ba8071acb285944561 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_767b68d9fbf74004a748c65606db6129 = $(`<div id="html_767b68d9fbf74004a748c65606db6129" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas, Rio Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-08-01 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_b988004f189d47ba8071acb285944561.setContent(html_767b68d9fbf74004a748c65606db6129);
+        
+
+        marker_47f4063b5ba24fc7b823f3580da1464e.bindPopup(popup_b988004f189d47ba8071acb285944561)
+        ;
+
+        
+    
+    
+            var marker_b260079cd5a64c139be3348d363de289 = L.marker(
+                [10.497222, -84.9875],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_02a7b1ea449244e79ccc0aca97f278a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f69185415c47f29e3965afa1c5056e = $(`<div id="html_b5f69185415c47f29e3965afa1c5056e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km Tilaran, camino a Canas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-01-19 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Kallunki, Jacquely Ann</div>`)[0];
+            popup_02a7b1ea449244e79ccc0aca97f278a4.setContent(html_b5f69185415c47f29e3965afa1c5056e);
+        
+
+        marker_b260079cd5a64c139be3348d363de289.bindPopup(popup_02a7b1ea449244e79ccc0aca97f278a4)
+        ;
+
+        
+    
+    
+            var marker_ef30bf7e4f4a4720aaa27a69ce5087c4 = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_a55dc492e32042bda475597c0c0851a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c88d5591a9c4e22b661f78f9a19c672 = $(`<div id="html_3c88d5591a9c4e22b661f78f9a19c672" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 4Km antes de llegar a la ciudad. A la vera de un riachuelo. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1974-04-03 <strong>Recolectores:</strong> Luis J. Poveda <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_a55dc492e32042bda475597c0c0851a2.setContent(html_3c88d5591a9c4e22b661f78f9a19c672);
+        
+
+        marker_ef30bf7e4f4a4720aaa27a69ce5087c4.bindPopup(popup_a55dc492e32042bda475597c0c0851a2)
+        ;
+
+        
+    
+    
+            var marker_60ee911a36fa40b987cf03ca7a91aede = L.marker(
+                [10.572222, -85.033333],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_151a9171a1174bebb7567f97c26d011e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c149cdaf3d24446197a2c499abd64901 = $(`<div id="html_c149cdaf3d24446197a2c499abd64901" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas. Rio El Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-06-27 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Kallunki, Jacquely Ann</div>`)[0];
+            popup_151a9171a1174bebb7567f97c26d011e.setContent(html_c149cdaf3d24446197a2c499abd64901);
+        
+
+        marker_60ee911a36fa40b987cf03ca7a91aede.bindPopup(popup_151a9171a1174bebb7567f97c26d011e)
+        ;
+
+        
+    
+    
+            var marker_08bad6d0596240c1b4336466913cce52 = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_f56d934756f643359554b9592d13af59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e634135b33b40e5a6cd5524fa31b853 = $(`<div id="html_0e634135b33b40e5a6cd5524fa31b853" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Kallunki, Jacquely Ann</div>`)[0];
+            popup_f56d934756f643359554b9592d13af59.setContent(html_0e634135b33b40e5a6cd5524fa31b853);
+        
+
+        marker_08bad6d0596240c1b4336466913cce52.bindPopup(popup_f56d934756f643359554b9592d13af59)
+        ;
+
+        
+    
+    
+            var marker_413ac161819944c8b47e2e6a0f5adb1a = L.marker(
+                [10.486111, -84.973611],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_84637c8afc614abeb9b0d41f4ed24efa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e707dafdb504fad9a8cddca3e8951fa = $(`<div id="html_1e707dafdb504fad9a8cddca3e8951fa" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 Km antes de la entrada a la ciudad. Ribera Rio Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Kallunki, Jacquely Ann</div>`)[0];
+            popup_84637c8afc614abeb9b0d41f4ed24efa.setContent(html_1e707dafdb504fad9a8cddca3e8951fa);
+        
+
+        marker_413ac161819944c8b47e2e6a0f5adb1a.bindPopup(popup_84637c8afc614abeb9b0d41f4ed24efa)
+        ;
+
+        
+    
+    
+            var marker_f181add2e5834eaea8d57ec48c42880d = L.marker(
+                [10.572222, -85.033333],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_b7f5bc0a64074832bd1458b5950099d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c2d0df3fdda4e8299e8cd963ed7d802 = $(`<div id="html_4c2d0df3fdda4e8299e8cd963ed7d802" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Tierras Morenas, Rio Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1995-07-25 <strong>Recolectores:</strong> Gladys Rodriguez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_b7f5bc0a64074832bd1458b5950099d3.setContent(html_4c2d0df3fdda4e8299e8cd963ed7d802);
+        
+
+        marker_f181add2e5834eaea8d57ec48c42880d.bindPopup(popup_b7f5bc0a64074832bd1458b5950099d3)
+        ;
+
+        
+    
+    
+            var marker_02506fa0d94c40f4aa5b5185a9b9e51f = L.marker(
+                [10.48, -84.97],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_a5320ddf7a1b4a8cb277f617baaf8024 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6c85cd64aa247c1a731b5a559655490 = $(`<div id="html_b6c85cd64aa247c1a731b5a559655490" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> 1 km antes de la entrada a la ciudad, ribera río Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1998-07-10 <strong>Recolectores:</strong> Rodríguez, Alexánder <strong>Identificadores:</strong> Rodríguez, Alexánder</div>`)[0];
+            popup_a5320ddf7a1b4a8cb277f617baaf8024.setContent(html_b6c85cd64aa247c1a731b5a559655490);
+        
+
+        marker_02506fa0d94c40f4aa5b5185a9b9e51f.bindPopup(popup_a5320ddf7a1b4a8cb277f617baaf8024)
+        ;
+
+        
+    
+    
+            var marker_90e58116e1294ebc96872e088d4aea78 = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_da1930aa0b4b48d89235330101e871ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6405b5d6ee0c41b5907f12eea729e8fd = $(`<div id="html_6405b5d6ee0c41b5907f12eea729e8fd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. Tierras Morenas. Río Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-08-01 <strong>Recolectores:</strong> Rodríguez, Gladys <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_da1930aa0b4b48d89235330101e871ce.setContent(html_6405b5d6ee0c41b5907f12eea729e8fd);
+        
+
+        marker_90e58116e1294ebc96872e088d4aea78.bindPopup(popup_da1930aa0b4b48d89235330101e871ce)
+        ;
+
+        
+    
+    
+            var marker_235faf8e183d492699cead584338a9ee = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_f76a9829b57843b28dd6a68b597e48e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_536438b693054d68a656bb0b7280fe20 = $(`<div id="html_536438b693054d68a656bb0b7280fe20" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán . Tierras Morenas, Río Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1994-06-27 <strong>Recolectores:</strong> Rodríguez, Gladys <strong>Identificadores:</strong> Kallunki, J.</div>`)[0];
+            popup_f76a9829b57843b28dd6a68b597e48e0.setContent(html_536438b693054d68a656bb0b7280fe20);
+        
+
+        marker_235faf8e183d492699cead584338a9ee.bindPopup(popup_f76a9829b57843b28dd6a68b597e48e0)
+        ;
+
+        
+    
+    
+            var marker_3b41a9f576964259822bad1a474686b4 = L.marker(
+                [10.48, -84.97],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_52b82c83413d4d0e81621b3270955d90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09eab99c945c49ff9f47cffaf7b289ba = $(`<div id="html_09eab99c945c49ff9f47cffaf7b289ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán.1 km antes de la entrada a  la ciudad. Ribera río Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Kallunki, J.</div>`)[0];
+            popup_52b82c83413d4d0e81621b3270955d90.setContent(html_09eab99c945c49ff9f47cffaf7b289ba);
+        
+
+        marker_3b41a9f576964259822bad1a474686b4.bindPopup(popup_52b82c83413d4d0e81621b3270955d90)
+        ;
+
+        
+    
+    
+            var marker_eb0cb41173e14642a8173776cfd3882c = L.marker(
+                [10.48, -84.97],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_14380fd05f944cf794b67949c128416c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51dd0f63254f478480191f0a194f065f = $(`<div id="html_51dd0f63254f478480191f0a194f065f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán .1 km antes de la entrada a la ciudad. Ribera del Río  Santa Rosa. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-08-03 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Kallunki, J.</div>`)[0];
+            popup_14380fd05f944cf794b67949c128416c.setContent(html_51dd0f63254f478480191f0a194f065f);
+        
+
+        marker_eb0cb41173e14642a8173776cfd3882c.bindPopup(popup_14380fd05f944cf794b67949c128416c)
+        ;
+
+        
+    
+    
+            var marker_7e376b368db14aa7893401a28a699943 = L.marker(
+                [10.49, -84.98],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_ec931a7a9b7844d09d05b141fdd849b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ff6adeae02648e2b331e782a217db01 = $(`<div id="html_3ff6adeae02648e2b331e782a217db01" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán.1 km Tilarán.Camino a Cañas. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1994-01-19 <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Kallunki, J.</div>`)[0];
+            popup_ec931a7a9b7844d09d05b141fdd849b1.setContent(html_3ff6adeae02648e2b331e782a217db01);
+        
+
+        marker_7e376b368db14aa7893401a28a699943.bindPopup(popup_ec931a7a9b7844d09d05b141fdd849b1)
+        ;
+
+        
+    
+    
+            var marker_64a6496f9fcf44c1846eaac2395bb47c = L.marker(
+                [10.57, -85.03],
+                {}
+            ).addTo(marker_cluster_82128308f6534f34aebe268dca99f540);
+        
+    
+        var popup_321118aa95e946e5b44b3e42319cd77e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50e3be2611ee4b6499ef79e4be400f29 = $(`<div id="html_50e3be2611ee4b6499ef79e4be400f29" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán . Tierras Morenas, Río Cabuyo. <strong>Elevación:</strong> 685.0 m  <strong>Fecha:</strong> 1995-07-25 <strong>Recolectores:</strong> Rodríguez, Gladys <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_321118aa95e946e5b44b3e42319cd77e.setContent(html_50e3be2611ee4b6499ef79e4be400f29);
+        
+
+        marker_64a6496f9fcf44c1846eaac2395bb47c.bindPopup(popup_321118aa95e946e5b44b3e42319cd77e)
+        ;
+
+        
+    
+    
+            var layer_control_1c95018302b74c699c16b31c7eea91e1 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6dac71e036e048128a684973f121f88b,
+                    "ESRI World Imagery" : tile_layer_852ea1edcd864601969f2476cbbd3ea3,
+                },
+                overlays :  {
+                    "macro_element_82128308f6534f34aebe268dca99f540" : marker_cluster_82128308f6534f34aebe268dca99f540,
+                },
+            };
+            L.control.layers(
+                layer_control_1c95018302b74c699c16b31c7eea91e1.base_layers,
+                layer_control_1c95018302b74c699c16b31c7eea91e1.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_163fd92c706c4c5db60ba1c0ce41ee0e);
+            tile_layer_852ea1edcd864601969f2476cbbd3ea3.remove();
+        
+</script>

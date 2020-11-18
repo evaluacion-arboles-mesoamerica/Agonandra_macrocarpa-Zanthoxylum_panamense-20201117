@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bedb726d8d94b47933e683fd26c24ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6bedb726d8d94b47933e683fd26c24ce" ></div>
+        
+</body>
+<script>    
+    
+            var map_6bedb726d8d94b47933e683fd26c24ce = L.map(
+                "map_6bedb726d8d94b47933e683fd26c24ce",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6bedb726d8d94b47933e683fd26c24ce);
+
+            
+
+        
+    
+            var tile_layer_eefa3f9b54374dec972ad49df20a9aa5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bedb726d8d94b47933e683fd26c24ce);
+        
+    
+            var tile_layer_d1c4b0a320b04bb982d7ef98cd8cc6bb = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bedb726d8d94b47933e683fd26c24ce);
+        
+    
+            var marker_cluster_75075eda779644849aad5b432610e2cd = L.markerClusterGroup(
+                {}
+            );
+            map_6bedb726d8d94b47933e683fd26c24ce.addLayer(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+            var marker_e875c3a393fd4a61a975bf656a5be52d = L.marker(
+                [9.83, -84.05],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_1b50ad0d8a0e48c68570832cad6145a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_504d383cee4f4b4dae996516eae2a719 = $(`<div id="html_504d383cee4f4b4dae996516eae2a719" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Along Quebrada Tablazo and on forested slope above creek, northeast part of Altos Tablazo. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 1985-04-23 <strong>Recolectores:</strong> Michael H. Grayum|George E. Schatz <strong>Identificadores:</strong> L. Bohs (UT)</div>`)[0];
+            popup_1b50ad0d8a0e48c68570832cad6145a9.setContent(html_504d383cee4f4b4dae996516eae2a719);
+        
+
+        marker_e875c3a393fd4a61a975bf656a5be52d.bindPopup(popup_1b50ad0d8a0e48c68570832cad6145a9)
+        ;
+
+        
+    
+    
+            var marker_fdaba2ee7fe34cfd801759fc73752dce = L.marker(
+                [8.81666, -82.6],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_35c20e3e65d84291b42c6774b91a9286 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6030c06222294303ab3e7486239f354b = $(`<div id="html_6030c06222294303ab3e7486239f354b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Grassy slopes on lava flow about 16 km above town at Volcán <strong>Elevación:</strong> 1798.32 m  <strong>Fecha:</strong> 1978-02-13 <strong>Recolectores:</strong> Barry E. Hammel <strong>Identificadores:</strong> W.G. D'Ary</div>`)[0];
+            popup_35c20e3e65d84291b42c6774b91a9286.setContent(html_6030c06222294303ab3e7486239f354b);
+        
+
+        marker_fdaba2ee7fe34cfd801759fc73752dce.bindPopup(popup_35c20e3e65d84291b42c6774b91a9286)
+        ;
+
+        
+    
+    
+            var marker_57e809300c9a4c4e8e37209ebe79f84c = L.marker(
+                [8.802222, -82.526944],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_09ba1d81807c48b6b18e1b125f18cbf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91569199c9114c18a1f58de1323e5019 = $(`<div id="html_91569199c9114c18a1f58de1323e5019" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barú (E slope) deep draw west of Finca Yen. <strong>Elevación:</strong> 2438.4 m  <strong>Fecha:</strong> 1979-03-17 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|John E. Averett <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_09ba1d81807c48b6b18e1b125f18cbf5.setContent(html_91569199c9114c18a1f58de1323e5019);
+        
+
+        marker_57e809300c9a4c4e8e37209ebe79f84c.bindPopup(popup_09ba1d81807c48b6b18e1b125f18cbf5)
+        ;
+
+        
+    
+    
+            var marker_871b428dab224a88b0f72bdf64b416d5 = L.marker(
+                [8.783333, -82.5],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_1bcfbe90a2f049f0a5953d5a3ab292ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eae047295229419d8120913fd17b60a9 = $(`<div id="html_eae047295229419d8120913fd17b60a9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ridgetop above Alto Boquete. <strong>Elevación:</strong> 2438.4 m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_1bcfbe90a2f049f0a5953d5a3ab292ec.setContent(html_eae047295229419d8120913fd17b60a9);
+        
+
+        marker_871b428dab224a88b0f72bdf64b416d5.bindPopup(popup_1bcfbe90a2f049f0a5953d5a3ab292ec)
+        ;
+
+        
+    
+    
+            var marker_ade061d82210495990cb4f4f6d8176bf = L.marker(
+                [8.8, -82.56666700000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_6d84e7e33a5a4a37bd5249c964cc3e61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19ba197797de4493be4c9c8e0731eb0f = $(`<div id="html_19ba197797de4493be4c9c8e0731eb0f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguacatal, SW side of El Barú; wooded ravine. <strong>Elevación:</strong> 2050.0 m  <strong>Fecha:</strong> 1979-04-11 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6d84e7e33a5a4a37bd5249c964cc3e61.setContent(html_19ba197797de4493be4c9c8e0731eb0f);
+        
+
+        marker_ade061d82210495990cb4f4f6d8176bf.bindPopup(popup_6d84e7e33a5a4a37bd5249c964cc3e61)
+        ;
+
+        
+    
+    
+            var marker_fcb887c04dff451da48a3f0577825fdb = L.marker(
+                [8.81666, -82.6],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_bc1335dd683f48d4b7753a544e644fdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92c743b9491d4204b09814c4f560223f = $(`<div id="html_92c743b9491d4204b09814c4f560223f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W end of high ridge N of Barú summit at ca. 3000 m <strong>Elevación:</strong> 2072.64 m  <strong>Fecha:</strong> 1979-04-08 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_bc1335dd683f48d4b7753a544e644fdb.setContent(html_92c743b9491d4204b09814c4f560223f);
+        
+
+        marker_fcb887c04dff451da48a3f0577825fdb.bindPopup(popup_bc1335dd683f48d4b7753a544e644fdb)
+        ;
+
+        
+    
+    
+            var marker_a55c2ec988fb4e958dc3ce964485830b = L.marker(
+                [8.85, -82.55],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_2bf6cb3482aa4ed589f1d6e3e75ba6ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_901e9038e21a424e93cd846dfb80bce5 = $(`<div id="html_901e9038e21a424e93cd846dfb80bce5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> E of Cerro Punta on road to Paso Respingo <strong>Elevación:</strong> 2286.0 m  <strong>Fecha:</strong> 1979-04-02 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_2bf6cb3482aa4ed589f1d6e3e75ba6ef.setContent(html_901e9038e21a424e93cd846dfb80bce5);
+        
+
+        marker_a55c2ec988fb4e958dc3ce964485830b.bindPopup(popup_2bf6cb3482aa4ed589f1d6e3e75ba6ef)
+        ;
+
+        
+    
+    
+            var marker_12aba8e889a4458684a6b7acbc578ffc = L.marker(
+                [8.8, -82.56666],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_fd6d54275042478e81de87193e2d018e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f199a55cc05a462089b4da0cf876dbae = $(`<div id="html_f199a55cc05a462089b4da0cf876dbae" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W side of Volcán Barú, along trail from lava flats to summit. Oak forest. <strong>Elevación:</strong> 685.8 m  <strong>Fecha:</strong> 1975-07-22 <strong>Recolectores:</strong> Scott A. Mori|A. Bolten <strong>Identificadores:</strong> W.D'Arcy</div>`)[0];
+            popup_fd6d54275042478e81de87193e2d018e.setContent(html_f199a55cc05a462089b4da0cf876dbae);
+        
+
+        marker_12aba8e889a4458684a6b7acbc578ffc.bindPopup(popup_fd6d54275042478e81de87193e2d018e)
+        ;
+
+        
+    
+    
+            var marker_66ebd3ac1abb4e6f9f8d85baffa5e940 = L.marker(
+                [8.791667, -82.508333],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_d1aa7e5f4f5f471d968c3155fef2f9a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_713ee03cfbf34ca7bad348e3a27f4f7c = $(`<div id="html_713ee03cfbf34ca7bad348e3a27f4f7c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Barú, SE side, above Yen Finca, headwaters of Río Calgá. <strong>Elevación:</strong> 2453.640000000001 m  <strong>Fecha:</strong> 1979-03-20 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|John E. Averett <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d1aa7e5f4f5f471d968c3155fef2f9a2.setContent(html_713ee03cfbf34ca7bad348e3a27f4f7c);
+        
+
+        marker_66ebd3ac1abb4e6f9f8d85baffa5e940.bindPopup(popup_d1aa7e5f4f5f471d968c3155fef2f9a2)
+        ;
+
+        
+    
+    
+            var marker_ce3c04b80b7a4c66afa33a7c190565e4 = L.marker(
+                [8.8, -82.61666],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_1b0f34461c7e49e1a737218e791671b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7816529063fd4f188402c4daaa709334 = $(`<div id="html_7816529063fd4f188402c4daaa709334" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Western slopes of Volcán de Chiriquí (Barú). On lava flow. <strong>Elevación:</strong> 1500.0 m  <strong>Fecha:</strong> 1975-04-21 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_1b0f34461c7e49e1a737218e791671b1.setContent(html_7816529063fd4f188402c4daaa709334);
+        
+
+        marker_ce3c04b80b7a4c66afa33a7c190565e4.bindPopup(popup_1b0f34461c7e49e1a737218e791671b1)
+        ;
+
+        
+    
+    
+            var marker_040fe1331d744ba595273e14eff1bc71 = L.marker(
+                [8.85, -82.51666],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_5aa99fb3ba4a4790a2925ba1d44258b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70cb871107eb43e68218aebf4bf07ad0 = $(`<div id="html_70cb871107eb43e68218aebf4bf07ad0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajo Chorro. Rain forest <strong>Elevación:</strong> 1828.8 m  <strong>Fecha:</strong> 1938-01-10 <strong>Recolectores:</strong> Mary E. Davidson <strong>Identificadores:</strong> W.G. D'Ary</div>`)[0];
+            popup_5aa99fb3ba4a4790a2925ba1d44258b5.setContent(html_70cb871107eb43e68218aebf4bf07ad0);
+        
+
+        marker_040fe1331d744ba595273e14eff1bc71.bindPopup(popup_5aa99fb3ba4a4790a2925ba1d44258b5)
+        ;
+
+        
+    
+    
+            var marker_ffc70176e0bb4065b835878a94579995 = L.marker(
+                [8.80055, -82.5675],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_c98c781fb97f4e0187a1ba622accda9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ea2b33d937b4388aeadaa79b073391d = $(`<div id="html_1ea2b33d937b4388aeadaa79b073391d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán Barú, summit to Llanos at base of W slope, along trail <strong>Elevación:</strong> 2194.56 m  <strong>Fecha:</strong> 1979-03-22 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|John E. Averett <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_c98c781fb97f4e0187a1ba622accda9a.setContent(html_1ea2b33d937b4388aeadaa79b073391d);
+        
+
+        marker_ffc70176e0bb4065b835878a94579995.bindPopup(popup_c98c781fb97f4e0187a1ba622accda9a)
+        ;
+
+        
+    
+    
+            var marker_dffd23d534e44e48a216e20e1de667ab = L.marker(
+                [8.8, -82.56666700000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_425c6daae1ed4516ac235fc2316c8359 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f7802dc29754ecb9b6cadcd629a8dec = $(`<div id="html_9f7802dc29754ecb9b6cadcd629a8dec" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Llanos E of El Hato de Volcán. <strong>Elevación:</strong> 2072.64 m  <strong>Fecha:</strong> 1979-04-05 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_425c6daae1ed4516ac235fc2316c8359.setContent(html_9f7802dc29754ecb9b6cadcd629a8dec);
+        
+
+        marker_dffd23d534e44e48a216e20e1de667ab.bindPopup(popup_425c6daae1ed4516ac235fc2316c8359)
+        ;
+
+        
+    
+    
+            var marker_1e0947ea912341d8848bbfed35b959ee = L.marker(
+                [8.805556, -82.666667],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_6784cf1f9c254c56b8ea017b5e6c14f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94d57c265e694af2a2c6f350eab326a5 = $(`<div id="html_94d57c265e694af2a2c6f350eab326a5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiriquí Viejo at Nueva California to pass by Cerro Pando, ca. 5 miles NW. Roadside. [Elevation on original label: 5800-6000 feet] <strong>Elevación:</strong> 1447.8000000000004 m  <strong>Fecha:</strong> 1979-04-06 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_6784cf1f9c254c56b8ea017b5e6c14f8.setContent(html_94d57c265e694af2a2c6f350eab326a5);
+        
+
+        marker_1e0947ea912341d8848bbfed35b959ee.bindPopup(popup_6784cf1f9c254c56b8ea017b5e6c14f8)
+        ;
+
+        
+    
+    
+            var marker_82788667b4fd4b96a95ac465216f44bf = L.marker(
+                [8.8, -82.56666],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_bd9c9e7de23e476bbbe7f73c4665181b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd2b9e95673e401f98d0e5d8c21665ab = $(`<div id="html_cd2b9e95673e401f98d0e5d8c21665ab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> W side of Volcán Barú, along trail from lava flats to summit. Oak forest. <strong>Elevación:</strong> 685.8 m  <strong>Fecha:</strong> 1975-07-22 <strong>Recolectores:</strong> Scott A. Mori|A. Bolten <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_bd9c9e7de23e476bbbe7f73c4665181b.setContent(html_cd2b9e95673e401f98d0e5d8c21665ab);
+        
+
+        marker_82788667b4fd4b96a95ac465216f44bf.bindPopup(popup_bd9c9e7de23e476bbbe7f73c4665181b)
+        ;
+
+        
+    
+    
+            var marker_3e9613da65344e488a15ca1423f327fa = L.marker(
+                [8.812222, -82.545278],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_77691aef6d014b98a33776846c7bd39c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_502ee943f63945548e6938499885c4bd = $(`<div id="html_502ee943f63945548e6938499885c4bd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Deep wooded draw going W from "La Nevera" head of Río Chiriquí Viejo on Barú. <strong>Elevación:</strong> 3169.92 m  <strong>Fecha:</strong> 1979-03-14 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_77691aef6d014b98a33776846c7bd39c.setContent(html_502ee943f63945548e6938499885c4bd);
+        
+
+        marker_3e9613da65344e488a15ca1423f327fa.bindPopup(popup_77691aef6d014b98a33776846c7bd39c)
+        ;
+
+        
+    
+    
+            var marker_6b26a205d5a74220aca05fb54991d000 = L.marker(
+                [8.8, -82.505],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_0599c40c4e184c2e905f7ecb7a580aed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89d827dc461f461481662d4e842ce70d = $(`<div id="html_89d827dc461f461481662d4e842ce70d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Road to top of El Baru from Boquete (East side of Baru). <strong>Elevación:</strong> 2529.84 m  <strong>Fecha:</strong> 1979-03-17 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|John E. Averett <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_0599c40c4e184c2e905f7ecb7a580aed.setContent(html_89d827dc461f461481662d4e842ce70d);
+        
+
+        marker_6b26a205d5a74220aca05fb54991d000.bindPopup(popup_0599c40c4e184c2e905f7ecb7a580aed)
+        ;
+
+        
+    
+    
+            var marker_3e5a5d8952554a92a7f70b73a35cbad9 = L.marker(
+                [8.866667, -82.583333],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_2fe20bd8c33a47f4b49606b05496f0c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cb20744a3ba4e0c9c45d911c230a633 = $(`<div id="html_4cb20744a3ba4e0c9c45d911c230a633" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Chiriqui Viejo valley, near to Cerro Punto Gate. <strong>Elevación:</strong> 1800.0 m  <strong>Fecha:</strong> 1938-03-29 <strong>Recolectores:</strong> Gene White <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_2fe20bd8c33a47f4b49606b05496f0c7.setContent(html_4cb20744a3ba4e0c9c45d911c230a633);
+        
+
+        marker_3e5a5d8952554a92a7f70b73a35cbad9.bindPopup(popup_2fe20bd8c33a47f4b49606b05496f0c7)
+        ;
+
+        
+    
+    
+            var marker_001f558763da4dacaf57dc4d54085a05 = L.marker(
+                [8.812222, -82.545278],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_f305e9a9c3434377b181ce39f64f7c2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caec6061374e4ac29d93cf8373d9e1e8 = $(`<div id="html_caec6061374e4ac29d93cf8373d9e1e8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Deep wooded draw going W from "La Nevera" head of Río Chiriquí Viejo on Barú. <strong>Elevación:</strong> 3169.92 m  <strong>Fecha:</strong> 1979-03-14 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f305e9a9c3434377b181ce39f64f7c2b.setContent(html_caec6061374e4ac29d93cf8373d9e1e8);
+        
+
+        marker_001f558763da4dacaf57dc4d54085a05.bindPopup(popup_f305e9a9c3434377b181ce39f64f7c2b)
+        ;
+
+        
+    
+    
+            var marker_d528744f15c2412295c8a56d682407d7 = L.marker(
+                [8.83333, -82.53333],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_79bbf91df07f4a2390276fb9158b37df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c63e109543a34673998b773ef15847ea = $(`<div id="html_c63e109543a34673998b773ef15847ea" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> On Boquete Trail, 4 km from Cerro Punta. Lower montane rain forest. Near Paso Respingo. In pasture and disturbed oak forest <strong>Elevación:</strong> 2300.0 m  <strong>Fecha:</strong> 1975-04-22 <strong>Recolectores:</strong> Scott A. Mori|Jacquelyn A. Kallunki <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_79bbf91df07f4a2390276fb9158b37df.setContent(html_c63e109543a34673998b773ef15847ea);
+        
+
+        marker_d528744f15c2412295c8a56d682407d7.bindPopup(popup_79bbf91df07f4a2390276fb9158b37df)
+        ;
+
+        
+    
+    
+            var marker_fed11478d5db4f26a26dbc33ab244532 = L.marker(
+                [8.85, -82.5],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_c1738e46d74e425ba693ec8ff2583b4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d7adb8e79814ca2aea0993f508eaec6 = $(`<div id="html_7d7adb8e79814ca2aea0993f508eaec6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canyon to waterfall, 5 mi. NE El Volcán. <strong>Elevación:</strong> 2133.6 m  <strong>Fecha:</strong> 1970-12-18 <strong>Recolectores:</strong> Edwin L. Tyson <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_c1738e46d74e425ba693ec8ff2583b4b.setContent(html_7d7adb8e79814ca2aea0993f508eaec6);
+        
+
+        marker_fed11478d5db4f26a26dbc33ab244532.bindPopup(popup_c1738e46d74e425ba693ec8ff2583b4b)
+        ;
+
+        
+    
+    
+            var marker_de1660ef22904f6ab8309f72b4242581 = L.marker(
+                [8.934167, -78.42222199999999],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_0b09979085bf47309711f3ca5b12de1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e2556c4a7b64c458dc9e10cc12204a4 = $(`<div id="html_3e2556c4a7b64c458dc9e10cc12204a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> From Torti to the Pilota del Toro, the mountain overlooking Torti Arriba. Collected with Gregorio Alonzo and relatives. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1977-08-27 <strong>Recolectores:</strong> James P. Folsom|G. Alonzo de Monte|et al. <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_0b09979085bf47309711f3ca5b12de1c.setContent(html_3e2556c4a7b64c458dc9e10cc12204a4);
+        
+
+        marker_de1660ef22904f6ab8309f72b4242581.bindPopup(popup_0b09979085bf47309711f3ca5b12de1c)
+        ;
+
+        
+    
+    
+            var marker_b162aaeae44a4dcc930a09a424406d11 = L.marker(
+                [8.85, -82.55],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_39cd5c67bf584c959db38c2b4cd9447d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d5d1dc606de4c2f86f19e49340084e6 = $(`<div id="html_9d5d1dc606de4c2f86f19e49340084e6" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Trail from Paso Respingo to Bajo Chorro, Cerro Punta to Boquete <strong>Elevación:</strong> 2225.04 m  <strong>Fecha:</strong> 1979-04-13 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_39cd5c67bf584c959db38c2b4cd9447d.setContent(html_9d5d1dc606de4c2f86f19e49340084e6);
+        
+
+        marker_b162aaeae44a4dcc930a09a424406d11.bindPopup(popup_39cd5c67bf584c959db38c2b4cd9447d)
+        ;
+
+        
+    
+    
+            var marker_5624abe3df8b4bc09f3b03cd0f276d20 = L.marker(
+                [8.783333, -82.5],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_22f3c47936a34694ac53dbe14f4b12ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2876e5a4912343d796504c8d9783fa8c = $(`<div id="html_2876e5a4912343d796504c8d9783fa8c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Ridgetop above Alto Boquete. <strong>Elevación:</strong> 2438.4 m  <strong>Fecha:</strong> 1979-04-09 <strong>Recolectores:</strong> William G. D'Arcy|Barry E. Hammel|E.C. Hill|S. Schwartz|O. Wolcott|H. Wolcott <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_22f3c47936a34694ac53dbe14f4b12ea.setContent(html_2876e5a4912343d796504c8d9783fa8c);
+        
+
+        marker_5624abe3df8b4bc09f3b03cd0f276d20.bindPopup(popup_22f3c47936a34694ac53dbe14f4b12ea)
+        ;
+
+        
+    
+    
+            var marker_28cee9467fec4747bce32af37c1d3b96 = L.marker(
+                [8.801389, -82.513056],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_75e8252dfec64e0d8c9f1044002466fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_793f1477c8da4b42b677a5071ad43b49 = $(`<div id="html_793f1477c8da4b42b677a5071ad43b49" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> East slope of Volcán Barú. WSW of Yen Finca <strong>Elevación:</strong> 2590.8 m  <strong>Fecha:</strong> 1979-03-19 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy|John E. Averett <strong>Identificadores:</strong> W.G. D'Arcy</div>`)[0];
+            popup_75e8252dfec64e0d8c9f1044002466fc.setContent(html_793f1477c8da4b42b677a5071ad43b49);
+        
+
+        marker_28cee9467fec4747bce32af37c1d3b96.bindPopup(popup_75e8252dfec64e0d8c9f1044002466fc)
+        ;
+
+        
+    
+    
+            var marker_3935e3b1f429473f8ba10b219e78560d = L.marker(
+                [8.816945, -82.563611],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_ec0f831e1f3248ddb3b336d587df1c41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e019c60200c456c87decfc1fe27dd78 = $(`<div id="html_6e019c60200c456c87decfc1fe27dd78" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> In deep moist canyon, 6 mi NE EL Volcan. <strong>Elevación:</strong> 2209.8 m  <strong>Fecha:</strong> 1962-03-04 <strong>Recolectores:</strong> Edwin L. Tyson <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_ec0f831e1f3248ddb3b336d587df1c41.setContent(html_6e019c60200c456c87decfc1fe27dd78);
+        
+
+        marker_3935e3b1f429473f8ba10b219e78560d.bindPopup(popup_ec0f831e1f3248ddb3b336d587df1c41)
+        ;
+
+        
+    
+    
+            var marker_7e4e396e7b7a4aada3d5b307ff354e12 = L.marker(
+                [8.85, -82.51666],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_1e7eec3cbdfb47498cba4761eddf0eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f56fc5edd84421380d7ce742f927203 = $(`<div id="html_4f56fc5edd84421380d7ce742f927203" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Bajo Chorro. Rain forest <strong>Elevación:</strong> 2133.6 m  <strong>Fecha:</strong> 1938-03-26 <strong>Recolectores:</strong> Mary E. Davidson <strong>Identificadores:</strong> Sandra Knapp, Nov. 24</div>`)[0];
+            popup_1e7eec3cbdfb47498cba4761eddf0eb6.setContent(html_4f56fc5edd84421380d7ce742f927203);
+        
+
+        marker_7e4e396e7b7a4aada3d5b307ff354e12.bindPopup(popup_1e7eec3cbdfb47498cba4761eddf0eb6)
+        ;
+
+        
+    
+    
+            var marker_011cba605583459a851ede3ffe7fd196 = L.marker(
+                [8.858611, -82.59055500000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_fcdc656666c14ccbaa18fbe162791eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c07364b52b1430d921864a3e14e9d0e = $(`<div id="html_3c07364b52b1430d921864a3e14e9d0e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Punta. <strong>Elevación:</strong> 1828.8 m  <strong>Fecha:</strong> 1969-06-27 <strong>Recolectores:</strong> Edwin L. Tyson <strong>Identificadores:</strong> W.G. D'Ary</div>`)[0];
+            popup_fcdc656666c14ccbaa18fbe162791eb8.setContent(html_3c07364b52b1430d921864a3e14e9d0e);
+        
+
+        marker_011cba605583459a851ede3ffe7fd196.bindPopup(popup_fcdc656666c14ccbaa18fbe162791eb8)
+        ;
+
+        
+    
+    
+            var marker_fea3e0d16db1416382b3c72e0ad870bb = L.marker(
+                [8.812222, -82.545278],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_33bb305e623244d1aa3fc64d17739bf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb59138d3e38485496aa2e161fd1e9af = $(`<div id="html_bb59138d3e38485496aa2e161fd1e9af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Deep wooded draw going W from "La Nevera" head of Río Chiriquí Viejo on Barú. <strong>Elevación:</strong> 3169.92 m  <strong>Fecha:</strong> 1979-03-14 <strong>Recolectores:</strong> Barry E. Hammel|William G. D'Arcy <strong>Identificadores:</strong> W.G. D'Arcy, 1980 (MO)</div>`)[0];
+            popup_33bb305e623244d1aa3fc64d17739bf5.setContent(html_bb59138d3e38485496aa2e161fd1e9af);
+        
+
+        marker_fea3e0d16db1416382b3c72e0ad870bb.bindPopup(popup_33bb305e623244d1aa3fc64d17739bf5)
+        ;
+
+        
+    
+    
+            var marker_ea70fa3229594e2f91748fd761698a16 = L.marker(
+                [9.84, -84.12],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_06ab9de48adb471fbce85d91e885755c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f995f82dd5a4bb09df181a80e08497a = $(`<div id="html_5f995f82dd5a4bb09df181a80e08497a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Growing among grass in shade of hedgerow trees. Cerro Daser (Fila Cedral) <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1971-08-30 <strong>Recolectores:</strong> William C. Burger|Melinda Burger <strong>Identificadores:</strong> S. Knapp, 1985 (BM)</div>`)[0];
+            popup_06ab9de48adb471fbce85d91e885755c.setContent(html_5f995f82dd5a4bb09df181a80e08497a);
+        
+
+        marker_ea70fa3229594e2f91748fd761698a16.bindPopup(popup_06ab9de48adb471fbce85d91e885755c)
+        ;
+
+        
+    
+    
+            var marker_a392a4545de944c8ac5cd6dc369d1857 = L.marker(
+                [8.793611, -82.58166700000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_d382a4cd506049f68abb1f554e0acb26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5852cf25fc664bd4b9ac420b3f278b6e = $(`<div id="html_5852cf25fc664bd4b9ac420b3f278b6e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Volcán. Camino del Aguacatal. <strong>Elevación:</strong> 2079.0 m  <strong>Fecha:</strong> 2012-01-23 <strong>Recolectores:</strong> Orlando Ortiz|M. Stapf|Riccardo M. Baldini <strong>Identificadores:</strong> O.O. Ortiz</div>`)[0];
+            popup_d382a4cd506049f68abb1f554e0acb26.setContent(html_5852cf25fc664bd4b9ac420b3f278b6e);
+        
+
+        marker_a392a4545de944c8ac5cd6dc369d1857.bindPopup(popup_d382a4cd506049f68abb1f554e0acb26)
+        ;
+
+        
+    
+    
+            var marker_20173ed21aca42fa9cec06f022a1eea9 = L.marker(
+                [9.391667, -83.597222],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_bfce50e9fae44637affc2d1e235edd6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e21ca4f429845a19e57045093088660 = $(`<div id="html_0e21ca4f429845a19e57045093088660" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca. Las Nubes, Santa Elena. <strong>Elevación:</strong> 1210.0 m  <strong>Fecha:</strong> 1995-08-04 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Lynn Bohs</div>`)[0];
+            popup_bfce50e9fae44637affc2d1e235edd6e.setContent(html_0e21ca4f429845a19e57045093088660);
+        
+
+        marker_20173ed21aca42fa9cec06f022a1eea9.bindPopup(popup_bfce50e9fae44637affc2d1e235edd6e)
+        ;
+
+        
+    
+    
+            var marker_d09437f453c44eeaa6ab5ac4502bed65 = L.marker(
+                [9.842722, -84.164861],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_cd5c6873f3074f42839f9290f89ec329 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5472d1cc7b34528b5402866cd73bc93 = $(`<div id="html_e5472d1cc7b34528b5402866cd73bc93" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z. P. Cerros de Escazú. Propiedad de Jorge Salgado. <strong>Elevación:</strong> 1750.0 m  <strong>Fecha:</strong> 2009-01-11 <strong>Recolectores:</strong> Daniel Solano; Ricardo Kriebel ; Manuel Angel Zumbado ; David Cordero <strong>Identificadores:</strong> Soto, Armando</div>`)[0];
+            popup_cd5c6873f3074f42839f9290f89ec329.setContent(html_e5472d1cc7b34528b5402866cd73bc93);
+        
+
+        marker_d09437f453c44eeaa6ab5ac4502bed65.bindPopup(popup_cd5c6873f3074f42839f9290f89ec329)
+        ;
+
+        
+    
+    
+            var marker_6a446c735a554f65b22ab81833912e3e = L.marker(
+                [9.391667, -83.597222],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_4d1f641d225140269ee54ae290a18508 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b009fb56874c4782138fc22b5bbc57 = $(`<div id="html_82b009fb56874c4782138fc22b5bbc57" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Nubes, Santa Elena. Colecta en bosque secundario y potrero. <strong>Elevación:</strong> 1210.0 m  <strong>Fecha:</strong> 1995-08-04 <strong>Recolectores:</strong> Evelio Alfaro <strong>Identificadores:</strong> Knapp, Sandra</div>`)[0];
+            popup_4d1f641d225140269ee54ae290a18508.setContent(html_82b009fb56874c4782138fc22b5bbc57);
+        
+
+        marker_6a446c735a554f65b22ab81833912e3e.bindPopup(popup_4d1f641d225140269ee54ae290a18508)
+        ;
+
+        
+    
+    
+            var marker_9d004ccd292246a9aeaaa7d468db6012 = L.marker(
+                [9.841667, -84.122222],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_a8d5340913f94f33ad471471a11e3f0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b145187573834ff69d6a5bcc261d01cc = $(`<div id="html_b145187573834ff69d6a5bcc261d01cc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cedral y Alto Hierbabuena. <strong>Elevación:</strong> 2000.0 m  <strong>Fecha:</strong> 1993-10-01 <strong>Recolectores:</strong> Victor Ramírez <strong>Identificadores:</strong> Knapp, Sandra</div>`)[0];
+            popup_a8d5340913f94f33ad471471a11e3f0a.setContent(html_b145187573834ff69d6a5bcc261d01cc);
+        
+
+        marker_9d004ccd292246a9aeaaa7d468db6012.bindPopup(popup_a8d5340913f94f33ad471471a11e3f0a)
+        ;
+
+        
+    
+    
+            var marker_2f648b4b98944ba5b2b6e04a9af993f8 = L.marker(
+                [9.58, -83.78],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_abf8f8720b314f21ad36aecb7287b3cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bccbae9d7484edd9d78b11d7cb7ee9b = $(`<div id="html_6bccbae9d7484edd9d78b11d7cb7ee9b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> San Jose: Canton de Dota. Hills around Rio Savegre, near Finca Zacatales. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1991-08-01 <strong>Recolectores:</strong> Gay, H.; Hobson, J.; Baum, A.; Raymond, B. <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_abf8f8720b314f21ad36aecb7287b3cc.setContent(html_6bccbae9d7484edd9d78b11d7cb7ee9b);
+        
+
+        marker_2f648b4b98944ba5b2b6e04a9af993f8.bindPopup(popup_abf8f8720b314f21ad36aecb7287b3cc)
+        ;
+
+        
+    
+    
+            var marker_7b228bcdabb74484b82b77d3ffbe336f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_eee04bf515934d63900f2d187a5045b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8321114dbded485c96da136249fa2d9a = $(`<div id="html_8321114dbded485c96da136249fa2d9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1898-01-01 <strong>Recolectores:</strong> A. Tonduz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_eee04bf515934d63900f2d187a5045b6.setContent(html_8321114dbded485c96da136249fa2d9a);
+        
+
+        marker_7b228bcdabb74484b82b77d3ffbe336f.bindPopup(popup_eee04bf515934d63900f2d187a5045b6)
+        ;
+
+        
+    
+    
+            var marker_b78881ecc1354536b21d9425bb8d7cb0 = L.marker(
+                [9.97028, -84.18806],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_da8bb2fb2d9e4b0c849139a2e3a36ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5fde41ade8c47f287fc5515c1a91120 = $(`<div id="html_c5fde41ade8c47f287fc5515c1a91120" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica - Le Copey <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Tonduz, A. (Coll. Barbey-Boissier) <strong>Identificadores:</strong> Knapp, S. D. (2009)</div>`)[0];
+            popup_da8bb2fb2d9e4b0c849139a2e3a36ac2.setContent(html_c5fde41ade8c47f287fc5515c1a91120);
+        
+
+        marker_b78881ecc1354536b21d9425bb8d7cb0.bindPopup(popup_da8bb2fb2d9e4b0c849139a2e3a36ac2)
+        ;
+
+        
+    
+    
+            var marker_28851634e1074d37a2eef8e21dfa2750 = L.marker(
+                [9.391667, -83.597222],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_f12142d8fb9e439cbb95be1f054e16b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a93fc6d2045f4bc59e3511e252de6d6d = $(`<div id="html_a93fc6d2045f4bc59e3511e252de6d6d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Talamanca, Las Nubes, Santa Elena. <strong>Elevación:</strong> 1210.0 m  <strong>Fecha:</strong> 1995-08-04 <strong>Recolectores:</strong> E Alfaro <strong>Identificadores:</strong> Lynn Bohs</div>`)[0];
+            popup_f12142d8fb9e439cbb95be1f054e16b4.setContent(html_a93fc6d2045f4bc59e3511e252de6d6d);
+        
+
+        marker_28851634e1074d37a2eef8e21dfa2750.bindPopup(popup_f12142d8fb9e439cbb95be1f054e16b4)
+        ;
+
+        
+    
+    
+            var marker_9d1ea40c923c4fe290dd83ed80945331 = L.marker(
+                [9.970203, -84.18794100000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_25d6aa813883421c9020943a57542739 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8137df5393c749e4a01ca7cf15ecb951 = $(`<div id="html_8137df5393c749e4a01ca7cf15ecb951" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1894-12-01 <strong>Recolectores:</strong> Adolphe Tonduz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_25d6aa813883421c9020943a57542739.setContent(html_8137df5393c749e4a01ca7cf15ecb951);
+        
+
+        marker_9d1ea40c923c4fe290dd83ed80945331.bindPopup(popup_25d6aa813883421c9020943a57542739)
+        ;
+
+        
+    
+    
+            var marker_19bbaed198a5464daedce29b218d2ae9 = L.marker(
+                [9.970203, -84.18794100000001],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_7f3d1bec49df4682b03509cdaf7d7957 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c252cd5215ec4a538c45c528c1193fd1 = $(`<div id="html_c252cd5215ec4a538c45c528c1193fd1" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1898-02-01 <strong>Recolectores:</strong> Adolphe Tonduz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7f3d1bec49df4682b03509cdaf7d7957.setContent(html_c252cd5215ec4a538c45c528c1193fd1);
+        
+
+        marker_19bbaed198a5464daedce29b218d2ae9.bindPopup(popup_7f3d1bec49df4682b03509cdaf7d7957)
+        ;
+
+        
+    
+    
+            var marker_8acc1ca7b18b4d22885b43aecede9fef = L.marker(
+                [10.3, -84.81],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_6d5e6deb178b469baeddae205a47969f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8f88b2d9d424e93af84cb30e65348a0 = $(`<div id="html_d8f88b2d9d424e93af84cb30e65348a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. B. Monteverde Monteverde. pacific slope moist forest in deep quebrada canyon below cliff edge. Cordillera de Tilarán. <strong>Elevación:</strong> 1300.0 m  <strong>Fecha:</strong> 1994-04-14 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Knapp, Sandra</div>`)[0];
+            popup_6d5e6deb178b469baeddae205a47969f.setContent(html_d8f88b2d9d424e93af84cb30e65348a0);
+        
+
+        marker_8acc1ca7b18b4d22885b43aecede9fef.bindPopup(popup_6d5e6deb178b469baeddae205a47969f)
+        ;
+
+        
+    
+    
+            var marker_0c314ff3473c4bf4b0bea476c16d4690 = L.marker(
+                [9.84, -84.14],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_8c8f2b0099c64ffc9f955670cbb8e159 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4069a10d4dbf4cd595c07c9c5bf90edd = $(`<div id="html_4069a10d4dbf4cd595c07c9c5bf90edd" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerros de Escazú Cedral. Cerro Rabo de Mico. Bosque secundario. <strong>Elevación:</strong> 2250.0 m  <strong>Fecha:</strong> 1991-07-25 <strong>Recolectores:</strong> Morales, Juan Francisco <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_8c8f2b0099c64ffc9f955670cbb8e159.setContent(html_4069a10d4dbf4cd595c07c9c5bf90edd);
+        
+
+        marker_0c314ff3473c4bf4b0bea476c16d4690.bindPopup(popup_8c8f2b0099c64ffc9f955670cbb8e159)
+        ;
+
+        
+    
+    
+            var marker_c3400e611d83458c8608acc1a297cff1 = L.marker(
+                [9.55, -83.67],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_953529072de34f5eb2c7acffa04d5393 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9094d87ed3e54f8693f66bc170a2e8f2 = $(`<div id="html_9094d87ed3e54f8693f66bc170a2e8f2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Chirripó Cordillera de Talamanca. Sendero al Mirador, colectado en bosque secundario. <strong>Elevación:</strong> 2600.0 m  <strong>Fecha:</strong> 1995-08-18 <strong>Recolectores:</strong> Picado, Annia <strong>Identificadores:</strong> Morales, Juan Francisco</div>`)[0];
+            popup_953529072de34f5eb2c7acffa04d5393.setContent(html_9094d87ed3e54f8693f66bc170a2e8f2);
+        
+
+        marker_c3400e611d83458c8608acc1a297cff1.bindPopup(popup_953529072de34f5eb2c7acffa04d5393)
+        ;
+
+        
+    
+    
+            var marker_8da2682363b34d53b4d13bc9b092ee22 = L.marker(
+                [9.89, -84.16],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_840d8f4a41a54673bd9142f7b200b267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60a3017bd2e5499ab15a1afc4ab20bbb = $(`<div id="html_60a3017bd2e5499ab15a1afc4ab20bbb" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Hills above Escazú. <strong>Elevación:</strong> 1523.0 m  <strong>Fecha:</strong> 1953-10-02 <strong>Recolectores:</strong> Heiser, C. <strong>Identificadores:</strong> Heiser, C.</div>`)[0];
+            popup_840d8f4a41a54673bd9142f7b200b267.setContent(html_60a3017bd2e5499ab15a1afc4ab20bbb);
+        
+
+        marker_8da2682363b34d53b4d13bc9b092ee22.bindPopup(popup_840d8f4a41a54673bd9142f7b200b267)
+        ;
+
+        
+    
+    
+            var marker_cc08fb05113740c7a0978e38383c0a05 = L.marker(
+                [9.73, -83.95],
+                {}
+            ).addTo(marker_cluster_75075eda779644849aad5b432610e2cd);
+        
+    
+        var popup_3c36aca034da4dc4b75efde7a2832afb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f70f45cedb642e1a7671c543d088cab = $(`<div id="html_4f70f45cedb642e1a7671c543d088cab" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Empalme. <strong>Elevación:</strong> 2208.0 m  <strong>Fecha:</strong> 1975-11-14 <strong>Recolectores:</strong> Poveda, Luis Jorge <strong>Identificadores:</strong> Poveda, Luis Jorge</div>`)[0];
+            popup_3c36aca034da4dc4b75efde7a2832afb.setContent(html_4f70f45cedb642e1a7671c543d088cab);
+        
+
+        marker_cc08fb05113740c7a0978e38383c0a05.bindPopup(popup_3c36aca034da4dc4b75efde7a2832afb)
+        ;
+
+        
+    
+    
+            var layer_control_b723aa14d5b44c5b9862295365ec7d04 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_eefa3f9b54374dec972ad49df20a9aa5,
+                    "ESRI World Imagery" : tile_layer_d1c4b0a320b04bb982d7ef98cd8cc6bb,
+                },
+                overlays :  {
+                    "macro_element_75075eda779644849aad5b432610e2cd" : marker_cluster_75075eda779644849aad5b432610e2cd,
+                },
+            };
+            L.control.layers(
+                layer_control_b723aa14d5b44c5b9862295365ec7d04.base_layers,
+                layer_control_b723aa14d5b44c5b9862295365ec7d04.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6bedb726d8d94b47933e683fd26c24ce);
+            tile_layer_d1c4b0a320b04bb982d7ef98cd8cc6bb.remove();
+        
+</script>

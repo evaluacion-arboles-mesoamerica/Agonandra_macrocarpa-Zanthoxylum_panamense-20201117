@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66ab5ce8cdfe4db080c686d94fef6fd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_66ab5ce8cdfe4db080c686d94fef6fd4" ></div>
+        
+</body>
+<script>    
+    
+            var map_66ab5ce8cdfe4db080c686d94fef6fd4 = L.map(
+                "map_66ab5ce8cdfe4db080c686d94fef6fd4",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_66ab5ce8cdfe4db080c686d94fef6fd4);
+
+            
+
+        
+    
+            var tile_layer_89b5707df85848f0b8c1438e4cba12e8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66ab5ce8cdfe4db080c686d94fef6fd4);
+        
+    
+            var tile_layer_06822cc2796f4539bc152ec1f9b2e28b = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66ab5ce8cdfe4db080c686d94fef6fd4);
+        
+    
+            var marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a = L.markerClusterGroup(
+                {}
+            );
+            map_66ab5ce8cdfe4db080c686d94fef6fd4.addLayer(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+            var marker_8d3ac06b9f984f69bf2d3f7ed9e3bcdb = L.marker(
+                [10.885, -85.258],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_c5bd718f6e8f430eaba4c50d88593b01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6191fd8307604aa596d481203ccf025a = $(`<div id="html_6191fd8307604aa596d481203ccf025a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Area de Conservacion Guanacaste, Sector Rincon Rain Forest, Finca Aurita <strong>Elevación:</strong> 440.0 m  <strong>Fecha:</strong> 2012-05-23 <strong>Recolectores:</strong> Jorge Hernandez <strong>Identificadores:</strong> Daniel H. Janzen</div>`)[0];
+            popup_c5bd718f6e8f430eaba4c50d88593b01.setContent(html_6191fd8307604aa596d481203ccf025a);
+        
+
+        marker_8d3ac06b9f984f69bf2d3f7ed9e3bcdb.bindPopup(popup_c5bd718f6e8f430eaba4c50d88593b01)
+        ;
+
+        
+    
+    
+            var marker_2fa36119801446d989b6e2eb82273429 = L.marker(
+                [10.58, -84.6],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_bc3c42712849466db84aa1f49b7ab412 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6331c52799fe46f59c1220a2361c0681 = $(`<div id="html_6331c52799fe46f59c1220a2361c0681" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Lago Coter. Hotel Eco-lodge. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1996-11-22 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_bc3c42712849466db84aa1f49b7ab412.setContent(html_6331c52799fe46f59c1220a2361c0681);
+        
+
+        marker_2fa36119801446d989b6e2eb82273429.bindPopup(popup_bc3c42712849466db84aa1f49b7ab412)
+        ;
+
+        
+    
+    
+            var marker_2c643e26846f4771910527f037407aa8 = L.marker(
+                [9.49, -84.01],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_ac0e84ac6bf64b3f8cfac77ed02513ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db498450325b4d95bffb274190304aed = $(`<div id="html_db498450325b4d95bffb274190304aed" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Z.P. Cerro Nara <strong>Elevación:</strong> 950.0 m  <strong>Fecha:</strong> 1998-07-21 <strong>Recolectores:</strong> Estrada, Armando <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_ac0e84ac6bf64b3f8cfac77ed02513ff.setContent(html_db498450325b4d95bffb274190304aed);
+        
+
+        marker_2c643e26846f4771910527f037407aa8.bindPopup(popup_ac0e84ac6bf64b3f8cfac77ed02513ff)
+        ;
+
+        
+    
+    
+            var marker_95fc66a0b2874238b919b768a098397f = L.marker(
+                [10.99, -85.42],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_80ae86cd9a1e440ebc4e07c517338a3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40c46be8bb7c4afb94971c945a3211b2 = $(`<div id="html_40c46be8bb7c4afb94971c945a3211b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste Estación Pitilla , Santa Cecilia. Sendero Fila Orosilito. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1991-11-15 <strong>Recolectores:</strong> Moraga, Calixto <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_80ae86cd9a1e440ebc4e07c517338a3b.setContent(html_40c46be8bb7c4afb94971c945a3211b2);
+        
+
+        marker_95fc66a0b2874238b919b768a098397f.bindPopup(popup_80ae86cd9a1e440ebc4e07c517338a3b)
+        ;
+
+        
+    
+    
+            var marker_40cae08e885847abbfc9da39a4221e9d = L.marker(
+                [10.78, -85.26],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_d33a25b72ca140fc9ce9e558dc0092a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d22fe34b251a4e859ebaf55cb0a5c7b9 = $(`<div id="html_d22fe34b251a4e859ebaf55cb0a5c7b9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Rincón de la Vieja Camino a Colonia Blana. Finca Los Mora y límite del parque. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-08-23 <strong>Recolectores:</strong> Rivera, Gerardo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_d33a25b72ca140fc9ce9e558dc0092a1.setContent(html_d22fe34b251a4e859ebaf55cb0a5c7b9);
+        
+
+        marker_40cae08e885847abbfc9da39a4221e9d.bindPopup(popup_d33a25b72ca140fc9ce9e558dc0092a1)
+        ;
+
+        
+    
+    
+            var marker_49dc9796f6214c8b9521b793a9f52b10 = L.marker(
+                [10.99, -85.42],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_5e7ba839e11c44f58dfc9ea90b38b160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a101bb1cc1634c4dbf2c6898a4e70321 = $(`<div id="html_a101bb1cc1634c4dbf2c6898a4e70321" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste Estación Pitilla , Fila Orosilito y sendero El Mismo. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-03-02 <strong>Recolectores:</strong> Ríos, Petrona <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_5e7ba839e11c44f58dfc9ea90b38b160.setContent(html_a101bb1cc1634c4dbf2c6898a4e70321);
+        
+
+        marker_49dc9796f6214c8b9521b793a9f52b10.bindPopup(popup_5e7ba839e11c44f58dfc9ea90b38b160)
+        ;
+
+        
+    
+    
+            var marker_afd6930df01b4e25a71fcf568f889134 = L.marker(
+                [10.99, -85.42],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_7ed8d389014d406a87fcd9d0a4e45699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed261f45c0af484e9082b464a771905e = $(`<div id="html_ed261f45c0af484e9082b464a771905e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Guanacaste Estación Pitilla y sendero El Mismo. <strong>Elevación:</strong> 700.0 m  <strong>Fecha:</strong> 1991-06-15 <strong>Recolectores:</strong> Ríos, Petrona <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_7ed8d389014d406a87fcd9d0a4e45699.setContent(html_ed261f45c0af484e9082b464a771905e);
+        
+
+        marker_afd6930df01b4e25a71fcf568f889134.bindPopup(popup_7ed8d389014d406a87fcd9d0a4e45699)
+        ;
+
+        
+    
+    
+            var marker_16c343935da84ffeb0197cc39543af42 = L.marker(
+                [10.58, -84.93],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_ffb4987ddf234ac0a397becdf7264f04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_625171d4297f4033aa03f15473de3f79 = $(`<div id="html_625171d4297f4033aa03f15473de3f79" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 1-2 km West of Lago de Cote, 13 km north of Tilarán, continental divide on SE slope  of Volcán Tenorio, Eco Lodge cloud. <strong>Elevación:</strong> 850.0 m  <strong>Fecha:</strong> 1993-08-24 <strong>Recolectores:</strong> Haber, William <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_ffb4987ddf234ac0a397becdf7264f04.setContent(html_625171d4297f4033aa03f15473de3f79);
+        
+
+        marker_16c343935da84ffeb0197cc39543af42.bindPopup(popup_ffb4987ddf234ac0a397becdf7264f04)
+        ;
+
+        
+    
+    
+            var marker_06753d5c444c4967b5423505c16fb637 = L.marker(
+                [10.58, -84.93],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_021ea09fbf5646b38139002859fb30e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62cb67bf225c4c8cb7ee2c090af6ddb8 = $(`<div id="html_62cb67bf225c4c8cb7ee2c090af6ddb8" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cordillera de Tilarán. 5 km norte del lago Arenal. Alrededores del lago Cote. <strong>Elevación:</strong> 900.0 m  <strong>Fecha:</strong> 1994-10-14 <strong>Recolectores:</strong> Cascante, Alfredo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_021ea09fbf5646b38139002859fb30e3.setContent(html_62cb67bf225c4c8cb7ee2c090af6ddb8);
+        
+
+        marker_06753d5c444c4967b5423505c16fb637.bindPopup(popup_021ea09fbf5646b38139002859fb30e3)
+        ;
+
+        
+    
+    
+            var marker_2f28f68648644cada233f81b8e05de9e = L.marker(
+                [9.76, -84.53],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_4f4a24adbeff40789e5b32359ab26050 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c2496bd66ac436ebe5332f1723287f9 = $(`<div id="html_0c2496bd66ac436ebe5332f1723287f9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Carara Alrededores del puesto Carara, sendero Lalo Barboza, por río Sur. <strong>Elevación:</strong> 300.0 m  <strong>Fecha:</strong> 1990-05-10 <strong>Recolectores:</strong> Zúñiga, Rodolfo <strong>Identificadores:</strong> Sánchez, Pablo E.</div>`)[0];
+            popup_4f4a24adbeff40789e5b32359ab26050.setContent(html_0c2496bd66ac436ebe5332f1723287f9);
+        
+
+        marker_2f28f68648644cada233f81b8e05de9e.bindPopup(popup_4f4a24adbeff40789e5b32359ab26050)
+        ;
+
+        
+    
+    
+            var marker_a546bbe2b99f4f40bd68779a23b74b7b = L.marker(
+                [10.8, -85.31],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_0cd47ddc00644b208573c9540fede040 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01c7f48a63334b64a8f9b524f44527ba = $(`<div id="html_01c7f48a63334b64a8f9b524f44527ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> P.N. Rincón de la Vieja Hacienda Santa María, carretera a Colonia Blanca hasta quebrada Rancho Grande, 2 km aguas arriba. <strong>Elevación:</strong> 675.0 m  <strong>Fecha:</strong> 1987-10-17 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_0cd47ddc00644b208573c9540fede040.setContent(html_01c7f48a63334b64a8f9b524f44527ba);
+        
+
+        marker_a546bbe2b99f4f40bd68779a23b74b7b.bindPopup(popup_0cd47ddc00644b208573c9540fede040)
+        ;
+
+        
+    
+    
+            var marker_e77afb945da34d65a9748fcf930ac7c1 = L.marker(
+                [10.91, -85.33],
+                {}
+            ).addTo(marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a);
+        
+    
+        var popup_45a89a23610043d39c56f098f660e37b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b7daa4c9a9c45038453a3d11e8d991b = $(`<div id="html_2b7daa4c9a9c45038453a3d11e8d991b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Siguiendo la margen izquierda del río Cucaracho 2 km aguas abajo a partir del puente camino a Brasilia. <strong>Elevación:</strong> 500.0 m  <strong>Fecha:</strong> 1987-11-03 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Estrada, Armando</div>`)[0];
+            popup_45a89a23610043d39c56f098f660e37b.setContent(html_2b7daa4c9a9c45038453a3d11e8d991b);
+        
+
+        marker_e77afb945da34d65a9748fcf930ac7c1.bindPopup(popup_45a89a23610043d39c56f098f660e37b)
+        ;
+
+        
+    
+    
+            var layer_control_f7f0020b18dc47ec858aea3b70efdbc6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_89b5707df85848f0b8c1438e4cba12e8,
+                    "ESRI World Imagery" : tile_layer_06822cc2796f4539bc152ec1f9b2e28b,
+                },
+                overlays :  {
+                    "macro_element_33c2014d23fc44d58ad551eb9b7aad4a" : marker_cluster_33c2014d23fc44d58ad551eb9b7aad4a,
+                },
+            };
+            L.control.layers(
+                layer_control_f7f0020b18dc47ec858aea3b70efdbc6.base_layers,
+                layer_control_f7f0020b18dc47ec858aea3b70efdbc6.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_66ab5ce8cdfe4db080c686d94fef6fd4);
+            tile_layer_06822cc2796f4539bc152ec1f9b2e28b.remove();
+        
+</script>

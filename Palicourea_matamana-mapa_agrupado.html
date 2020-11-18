@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e8d8cd243474cdd9560708264a3e8fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6e8d8cd243474cdd9560708264a3e8fa" ></div>
+        
+</body>
+<script>    
+    
+            var map_6e8d8cd243474cdd9560708264a3e8fa = L.map(
+                "map_6e8d8cd243474cdd9560708264a3e8fa",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6e8d8cd243474cdd9560708264a3e8fa);
+
+            
+
+        
+    
+            var tile_layer_311279700eb2447c949c016c26fe3a2d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6e8d8cd243474cdd9560708264a3e8fa);
+        
+    
+            var tile_layer_816b30b0adf341f1903a609bbc6fd508 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6e8d8cd243474cdd9560708264a3e8fa);
+        
+    
+            var marker_cluster_6343a71e045648eaa9147d4df2b2acd6 = L.markerClusterGroup(
+                {}
+            );
+            map_6e8d8cd243474cdd9560708264a3e8fa.addLayer(marker_cluster_6343a71e045648eaa9147d4df2b2acd6);
+        
+    
+            var marker_28f82c385db94b408f6a93bb0bc9de3e = L.marker(
+                [9.78, -83.13],
+                {}
+            ).addTo(marker_cluster_6343a71e045648eaa9147d4df2b2acd6);
+        
+    
+        var popup_9f5cf9eef40b43ef8559f9f338e26d4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e3fcb5399c14db78e9e776e798bef18 = $(`<div id="html_1e3fcb5399c14db78e9e776e798bef18" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso, Cabeceras de Río Cariei, Fila Matama, Valle de La Estrella <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-04-26 <strong>Recolectores:</strong> Gerardo Herrera Ch.|Abelardo Chacón <strong>Identificadores:</strong> C.M. Taylor, TYPE</div>`)[0];
+            popup_9f5cf9eef40b43ef8559f9f338e26d4c.setContent(html_1e3fcb5399c14db78e9e776e798bef18);
+        
+
+        marker_28f82c385db94b408f6a93bb0bc9de3e.bindPopup(popup_9f5cf9eef40b43ef8559f9f338e26d4c)
+        ;
+
+        
+    
+    
+            var marker_37a53000f577483eb972ad1f7a66fe96 = L.marker(
+                [9.788889, -83.13833299999999],
+                {}
+            ).addTo(marker_cluster_6343a71e045648eaa9147d4df2b2acd6);
+        
+    
+        var popup_6ae3b41c6ced44439b19c1bf31737ef8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3b13d42023245898b66eeb65db91d51 = $(`<div id="html_c3b13d42023245898b66eeb65db91d51" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> El Progreso. Cabeceras de Rio Cariei. Fila Matama. <strong>Elevación:</strong> 1400.0 m  <strong>Fecha:</strong> 1989-04-26 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6ae3b41c6ced44439b19c1bf31737ef8.setContent(html_c3b13d42023245898b66eeb65db91d51);
+        
+
+        marker_37a53000f577483eb972ad1f7a66fe96.bindPopup(popup_6ae3b41c6ced44439b19c1bf31737ef8)
+        ;
+
+        
+    
+    
+            var layer_control_f31d1bffcca747838c92a607fad491d9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_311279700eb2447c949c016c26fe3a2d,
+                    "ESRI World Imagery" : tile_layer_816b30b0adf341f1903a609bbc6fd508,
+                },
+                overlays :  {
+                    "macro_element_6343a71e045648eaa9147d4df2b2acd6" : marker_cluster_6343a71e045648eaa9147d4df2b2acd6,
+                },
+            };
+            L.control.layers(
+                layer_control_f31d1bffcca747838c92a607fad491d9.base_layers,
+                layer_control_f31d1bffcca747838c92a607fad491d9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6e8d8cd243474cdd9560708264a3e8fa);
+            tile_layer_816b30b0adf341f1903a609bbc6fd508.remove();
+        
+</script>

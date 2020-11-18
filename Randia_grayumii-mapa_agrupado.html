@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1bb0765db1c2412783b43dfeee01ef1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1bb0765db1c2412783b43dfeee01ef1b" ></div>
+        
+</body>
+<script>    
+    
+            var map_1bb0765db1c2412783b43dfeee01ef1b = L.map(
+                "map_1bb0765db1c2412783b43dfeee01ef1b",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1bb0765db1c2412783b43dfeee01ef1b);
+
+            
+
+        
+    
+            var tile_layer_adf0427c42ea4410b9731085cc8193da = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1bb0765db1c2412783b43dfeee01ef1b);
+        
+    
+            var tile_layer_c96c45cf0751401491e7c0f2b3fdb745 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1bb0765db1c2412783b43dfeee01ef1b);
+        
+    
+            var marker_cluster_e31bb4c2b8db429a86850fb764e6ae53 = L.markerClusterGroup(
+                {}
+            );
+            map_1bb0765db1c2412783b43dfeee01ef1b.addLayer(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+            var marker_cc3198a4e3d9494abe03396e60901f2b = L.marker(
+                [9.6, -82.62],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_e6e069e61da34aed8462efb3301e640b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e4aceb49e7a4cf1b2ecd6d17c978155 = $(`<div id="html_3e4aceb49e7a4cf1b2ecd6d17c978155" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Patch of slightly disturbed primary forest on level tract behind NAISA house, Gandoca. 9°36'N 82°37'W, 3 m <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-05-04 <strong>Recolectores:</strong> M. H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e6e069e61da34aed8462efb3301e640b.setContent(html_3e4aceb49e7a4cf1b2ecd6d17c978155);
+        
+
+        marker_cc3198a4e3d9494abe03396e60901f2b.bindPopup(popup_e6e069e61da34aed8462efb3301e640b)
+        ;
+
+        
+    
+    
+            var marker_44823db121484cd687d216e99c05f9ac = L.marker(
+                [9.6, -82.6167],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_2c4e015465e84b0f919a6b81f69b99a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1506081b393e4f958d115b517e9814a4 = $(`<div id="html_1506081b393e4f958d115b517e9814a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forest on level tract behind Naisa house, Gandoca. <strong>Elevación:</strong> 3.0 m  <strong>Fecha:</strong> 1985-05-04 <strong>Recolectores:</strong> M. H. Grayum <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_2c4e015465e84b0f919a6b81f69b99a7.setContent(html_1506081b393e4f958d115b517e9814a4);
+        
+
+        marker_44823db121484cd687d216e99c05f9ac.bindPopup(popup_2c4e015465e84b0f919a6b81f69b99a7)
+        ;
+
+        
+    
+    
+            var marker_6ec9857f621541d3bb4a2576acc8efee = L.marker(
+                [10.63, -83.75],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_2c542bd7157947e4bcd5cb9dc255c8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_078212de5c164448b8958cfe35e1215a = $(`<div id="html_078212de5c164448b8958cfe35e1215a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Refugio Barra de Colorado. Forests and pastures between Río Chirripocito and Río Sardina ("Sardinal" on Chirripó Atlántico quadrangle). <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1988-11-13 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> C. M. Taylor, I/1990 (MO)</div>`)[0];
+            popup_2c542bd7157947e4bcd5cb9dc255c8f6.setContent(html_078212de5c164448b8958cfe35e1215a);
+        
+
+        marker_6ec9857f621541d3bb4a2576acc8efee.bindPopup(popup_2c542bd7157947e4bcd5cb9dc255c8f6)
+        ;
+
+        
+    
+    
+            var marker_019a1d7272264cc4859cee79d59ece37 = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_06544b2176b44533bdb46a32aa6edccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1379295be2349e09aefb5f8b513ec9a = $(`<div id="html_d1379295be2349e09aefb5f8b513ec9a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 95.0 m  <strong>Fecha:</strong> 1986-01-16 <strong>Recolectores:</strong> W. D. Stevens <strong>Identificadores:</strong> D. Lorence, X 1993 (PTBG)</div>`)[0];
+            popup_06544b2176b44533bdb46a32aa6edccc.setContent(html_d1379295be2349e09aefb5f8b513ec9a);
+        
+
+        marker_019a1d7272264cc4859cee79d59ece37.bindPopup(popup_06544b2176b44533bdb46a32aa6edccc)
+        ;
+
+        
+    
+    
+            var marker_2230fb738b5e4bea9e1079cc27b00489 = L.marker(
+                [10.683333, -83.633333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_7b446814839747c9ab8dcfd98694afe1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc239868b08946c993c2f28547e08c7a = $(`<div id="html_bc239868b08946c993c2f28547e08c7a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of Laguna Danto. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 1987-03-14 <strong>Recolectores:</strong> W. D. Stevens|Gerardo Herrera Ch.|O. M. Montiel J. <strong>Identificadores:</strong> D.H. Lorence</div>`)[0];
+            popup_7b446814839747c9ab8dcfd98694afe1.setContent(html_bc239868b08946c993c2f28547e08c7a);
+        
+
+        marker_2230fb738b5e4bea9e1079cc27b00489.bindPopup(popup_7b446814839747c9ab8dcfd98694afe1)
+        ;
+
+        
+    
+    
+            var marker_5cd8867601804a87ac02971aeba2e14c = L.marker(
+                [10.675, -83.658333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_fb4590dd24a8474d91b16b96c07b4326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f2f0189070c4de0b9f4b3993379f46c = $(`<div id="html_3f2f0189070c4de0b9f4b3993379f46c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Southwestern-most ridge of Cerro Coronel, NW-facing slope, just S of the Río Colorado. <strong>Elevación:</strong> 45.0 m  <strong>Fecha:</strong> 1986-09-17 <strong>Recolectores:</strong> Gerrit Davidse|Gerardo Herrera Ch. <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_fb4590dd24a8474d91b16b96c07b4326.setContent(html_3f2f0189070c4de0b9f4b3993379f46c);
+        
+
+        marker_5cd8867601804a87ac02971aeba2e14c.bindPopup(popup_fb4590dd24a8474d91b16b96c07b4326)
+        ;
+
+        
+    
+    
+            var marker_ce6a5df6a8914f5687ec52fa6f9d9a31 = L.marker(
+                [9.6, -82.61],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_94dc9c0c943b4d3c8a9345e5f032688f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f7bbb1db99d4b55bc065dec3f118327 = $(`<div id="html_0f7bbb1db99d4b55bc065dec3f118327" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Patch of slightly disturbed primary forest on level tract behind NAISA house, Gandoca. Elev. ca. 3 m. 9º36'N, 82º37'W. <strong>Elevación:</strong> 3.0 m  <strong>Fecha:</strong> 1985-05-04 <strong>Recolectores:</strong> Michael H. Grayum|George E. Schatz <strong>Identificadores:</strong> David H. Lorence, 1993 (PTBG)</div>`)[0];
+            popup_94dc9c0c943b4d3c8a9345e5f032688f.setContent(html_0f7bbb1db99d4b55bc065dec3f118327);
+        
+
+        marker_ce6a5df6a8914f5687ec52fa6f9d9a31.bindPopup(popup_94dc9c0c943b4d3c8a9345e5f032688f)
+        ;
+
+        
+    
+    
+            var marker_9bb438e45faa4e6592b64a2bb4572f00 = L.marker(
+                [9.45, -79.083333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_bbdd6c1ece7b490a8c2e8f1feb8fbe78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a3b19ae854c4f8ea7f94804cb443a9c = $(`<div id="html_4a3b19ae854c4f8ea7f94804cb443a9c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Río Cangandí, pueblo Cangandí, camino entre el pueblo y el aeropuerto de Mandinga. [Coordinates on original label: 09º27'N, 079º07'W] <strong>Elevación:</strong> 20.0 m  <strong>Fecha:</strong> 1987-06-17 <strong>Recolectores:</strong> Heraclio Herrera <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_bbdd6c1ece7b490a8c2e8f1feb8fbe78.setContent(html_4a3b19ae854c4f8ea7f94804cb443a9c);
+        
+
+        marker_9bb438e45faa4e6592b64a2bb4572f00.bindPopup(popup_bbdd6c1ece7b490a8c2e8f1feb8fbe78)
+        ;
+
+        
+    
+    
+            var marker_c335b44c570a4fcfb82806dc49a13ac0 = L.marker(
+                [9.0, -82.233333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_1bbe70b8d63d47ada02982dd5ce4d240 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_574600de773b41a282586193dca05fc9 = $(`<div id="html_574600de773b41a282586193dca05fc9" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fish Creek Mountains, vicinity of Chiriquí Lagoon. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1941-04-16 <strong>Recolectores:</strong> H. von Wedel <strong>Identificadores:</strong> David H. Lorence, Oct.</div>`)[0];
+            popup_1bbe70b8d63d47ada02982dd5ce4d240.setContent(html_574600de773b41a282586193dca05fc9);
+        
+
+        marker_c335b44c570a4fcfb82806dc49a13ac0.bindPopup(popup_1bbe70b8d63d47ada02982dd5ce4d240)
+        ;
+
+        
+    
+    
+            var marker_f5a2d1534e4a447ca46276ede99bb9ad = L.marker(
+                [9.0, -82.233333],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_342de876dcd8415987594d2c9369fd58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da72b6c8965c422eaca35cf788bb5363 = $(`<div id="html_da72b6c8965c422eaca35cf788bb5363" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Fish Creek Mountains, vicinity of Chiriquí Lagoon <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1941-04-25 <strong>Recolectores:</strong> H. von Wedel <strong>Identificadores:</strong> D. Lorence</div>`)[0];
+            popup_342de876dcd8415987594d2c9369fd58.setContent(html_da72b6c8965c422eaca35cf788bb5363);
+        
+
+        marker_f5a2d1534e4a447ca46276ede99bb9ad.bindPopup(popup_342de876dcd8415987594d2c9369fd58)
+        ;
+
+        
+    
+    
+            var marker_33401242cd84494abf2892a28a5e767c = L.marker(
+                [10.16, -83.95],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_999887443cf648e5a7ff4a29e43c00e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d054516af56457e9a8f7887a24aba70 = $(`<div id="html_6d054516af56457e9a8f7887a24aba70" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Parque Nacional Braulio Carrillo, Fila Carrillo-Sendero La Botella, bosque muy húmedo, tropical transición a premontano <strong>Elevación:</strong> 600.0 m  <strong>Fecha:</strong> 1984-02-15 <strong>Recolectores:</strong> Luis Diego Gómez P.|Gerardo Herrera Ch.|Isidro A. Chacón G. <strong>Identificadores:</strong> David H. Lorence</div>`)[0];
+            popup_999887443cf648e5a7ff4a29e43c00e5.setContent(html_6d054516af56457e9a8f7887a24aba70);
+        
+
+        marker_33401242cd84494abf2892a28a5e767c.bindPopup(popup_999887443cf648e5a7ff4a29e43c00e5)
+        ;
+
+        
+    
+    
+            var marker_c2034ea09b5c433d9c8b4b7a0e05b42f = L.marker(
+                [10.633333, -83.75],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_8eac3a9697f54580af4c8ec174d0c098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aea8bea040641e4885610ec5d79c888 = $(`<div id="html_1aea8bea040641e4885610ec5d79c888" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forests and pastures between Rio Chirripocito and Rio Sardina ( Sardinal  on Chirripo Atlantico quadrangle). <strong>Elevación:</strong> 10.0 m  <strong>Fecha:</strong> 1988-11-13 <strong>Recolectores:</strong> Michael H. Grayum <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_8eac3a9697f54580af4c8ec174d0c098.setContent(html_1aea8bea040641e4885610ec5d79c888);
+        
+
+        marker_c2034ea09b5c433d9c8b4b7a0e05b42f.bindPopup(popup_8eac3a9697f54580af4c8ec174d0c098)
+        ;
+
+        
+    
+    
+            var marker_3dba0d4c284a458680e90980f66d479f = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_d7d60cea652342b0911d0713202f7cb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15bbec477ad9475e8b43be6e7bbd0dff = $(`<div id="html_15bbec477ad9475e8b43be6e7bbd0dff" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1985-05-04 <strong>Recolectores:</strong> M. H. Grayum & G. E. Schatz <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_d7d60cea652342b0911d0713202f7cb9.setContent(html_15bbec477ad9475e8b43be6e7bbd0dff);
+        
+
+        marker_3dba0d4c284a458680e90980f66d479f.bindPopup(popup_d7d60cea652342b0911d0713202f7cb9)
+        ;
+
+        
+    
+    
+            var marker_aba4a2f3570f4c0bac7e380d6f564244 = L.marker(
+                [8.4833, -78.5],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_a088db07d89342528d26ba140c2f0ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73158eb02c0f470687f72f4cd48aa7a7 = $(`<div id="html_73158eb02c0f470687f72f4cd48aa7a7" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1974-09-02 <strong>Recolectores:</strong> H. A. Kennedy <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_a088db07d89342528d26ba140c2f0ea4.setContent(html_73158eb02c0f470687f72f4cd48aa7a7);
+        
+
+        marker_aba4a2f3570f4c0bac7e380d6f564244.bindPopup(popup_a088db07d89342528d26ba140c2f0ea4)
+        ;
+
+        
+    
+    
+            var marker_d23211b9421d4bfd965b8489adf7d129 = L.marker(
+                [8.8333, -82.1667],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_5a78208634f1408f92f6399eee207de0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a36ee0f151da44bab58cd89ed973cc3f = $(`<div id="html_a36ee0f151da44bab58cd89ed973cc3f" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1941-04-16 <strong>Recolectores:</strong> H. von Wedel <strong>Identificadores:</strong> RRC ID Flag</div>`)[0];
+            popup_5a78208634f1408f92f6399eee207de0.setContent(html_a36ee0f151da44bab58cd89ed973cc3f);
+        
+
+        marker_d23211b9421d4bfd965b8489adf7d129.bindPopup(popup_5a78208634f1408f92f6399eee207de0)
+        ;
+
+        
+    
+    
+            var marker_bac0c7831d7842d3a54a75e5e1a73705 = L.marker(
+                [9.94, -83.42],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_4e3ab9327f984056b9be1500b0101331 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c33c7a5aec6b4d9eb918bcb5c90ad17c = $(`<div id="html_c33c7a5aec6b4d9eb918bcb5c90ad17c" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Las Brisas de Pacuarito. Margen izquierda de Quebrada Jesùs, afluente innominado. Camino a Cerro Tigre. <strong>Elevación:</strong> 800.0 m  <strong>Fecha:</strong> 1996-03-22 <strong>Recolectores:</strong> Herrera, Gerardo <strong>Identificadores:</strong> Sánchez, Joaquín</div>`)[0];
+            popup_4e3ab9327f984056b9be1500b0101331.setContent(html_c33c7a5aec6b4d9eb918bcb5c90ad17c);
+        
+
+        marker_bac0c7831d7842d3a54a75e5e1a73705.bindPopup(popup_4e3ab9327f984056b9be1500b0101331)
+        ;
+
+        
+    
+    
+            var marker_2d90af26ff674ba2988a4d982a465d46 = L.marker(
+                [10.63, -83.75],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_6d046a2fbfe54d69a3a608ccd8a98502 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8236721ce9434ddfa7d4ae5c1b406767 = $(`<div id="html_8236721ce9434ddfa7d4ae5c1b406767" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.V.S. Barra del Colorado Forests and pastures between Rìo Chirripocito and Rìo Sardina (Sardinal on Chirripò Atlàntico quadrangle) <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 1988-11-13 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_6d046a2fbfe54d69a3a608ccd8a98502.setContent(html_8236721ce9434ddfa7d4ae5c1b406767);
+        
+
+        marker_2d90af26ff674ba2988a4d982a465d46.bindPopup(popup_6d046a2fbfe54d69a3a608ccd8a98502)
+        ;
+
+        
+    
+    
+            var marker_8fb0fceda7e54244b834170f6f25d415 = L.marker(
+                [10.66, -83.65],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_409c2d6bb89e4c86a8d7e4ed158693d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d645300ca884652bbd443f57443e754 = $(`<div id="html_1d645300ca884652bbd443f57443e754" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Southwestern-most ridge of Cerro Coronel, NW facing slope, just S of the Rìo Colorado. <strong>Elevación:</strong> 70.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Davidse, Gerrit <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_409c2d6bb89e4c86a8d7e4ed158693d2.setContent(html_1d645300ca884652bbd443f57443e754);
+        
+
+        marker_8fb0fceda7e54244b834170f6f25d415.bindPopup(popup_409c2d6bb89e4c86a8d7e4ed158693d2)
+        ;
+
+        
+    
+    
+            var marker_1a657e1635584e2388ed593ea1d6059b = L.marker(
+                [10.68, -83.63],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_93697229016a4bb8ac762dae3080dd4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fbbc210c71f4c948d269121438b405b = $(`<div id="html_7fbbc210c71f4c948d269121438b405b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Cerro Coronel, E of laguna Danto. Tall evergreen forest on gentle to moderately steep slopes. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Stevens, Warren D. <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_93697229016a4bb8ac762dae3080dd4e.setContent(html_7fbbc210c71f4c948d269121438b405b);
+        
+
+        marker_1a657e1635584e2388ed593ea1d6059b.bindPopup(popup_93697229016a4bb8ac762dae3080dd4e)
+        ;
+
+        
+    
+    
+            var marker_17d2845803024bf9ae8ef4eb7d5dac2e = L.marker(
+                [9.6, -82.61],
+                {}
+            ).addTo(marker_cluster_e31bb4c2b8db429a86850fb764e6ae53);
+        
+    
+        var popup_0cc55716d4624099843e8bbad5ce81f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0acc376271134863a1121ed017e0e582 = $(`<div id="html_0acc376271134863a1121ed017e0e582" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Patch of slightly disturbed primary forest on level tract behind NAISA house, Gandoca. <strong>Elevación:</strong> 3.0 m  <strong>Fecha:</strong> 1985-05-04 <strong>Recolectores:</strong> Grayum, Michael <strong>Identificadores:</strong> Dwyer, John D.</div>`)[0];
+            popup_0cc55716d4624099843e8bbad5ce81f7.setContent(html_0acc376271134863a1121ed017e0e582);
+        
+
+        marker_17d2845803024bf9ae8ef4eb7d5dac2e.bindPopup(popup_0cc55716d4624099843e8bbad5ce81f7)
+        ;
+
+        
+    
+    
+            var layer_control_8ec1613dcfeb43518289c3cee4b08124 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_adf0427c42ea4410b9731085cc8193da,
+                    "ESRI World Imagery" : tile_layer_c96c45cf0751401491e7c0f2b3fdb745,
+                },
+                overlays :  {
+                    "macro_element_e31bb4c2b8db429a86850fb764e6ae53" : marker_cluster_e31bb4c2b8db429a86850fb764e6ae53,
+                },
+            };
+            L.control.layers(
+                layer_control_8ec1613dcfeb43518289c3cee4b08124.base_layers,
+                layer_control_8ec1613dcfeb43518289c3cee4b08124.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1bb0765db1c2412783b43dfeee01ef1b);
+            tile_layer_c96c45cf0751401491e7c0f2b3fdb745.remove();
+        
+</script>

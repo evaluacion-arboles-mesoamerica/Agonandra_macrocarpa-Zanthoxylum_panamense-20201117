@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5afbf842ebea46cf980dc2a92cc33bc5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5afbf842ebea46cf980dc2a92cc33bc5" ></div>
+        
+</body>
+<script>    
+    
+            var map_5afbf842ebea46cf980dc2a92cc33bc5 = L.map(
+                "map_5afbf842ebea46cf980dc2a92cc33bc5",
+                {
+                    center: [9.63, -84.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_5afbf842ebea46cf980dc2a92cc33bc5);
+
+            
+
+        
+    
+            var tile_layer_211900229b3b4839a4e8f18223fd051b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5afbf842ebea46cf980dc2a92cc33bc5);
+        
+    
+            var tile_layer_ea890e460115489a9224fd2fdb2669a5 = L.tileLayer(
+                "http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "ESRI World Imagery", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5afbf842ebea46cf980dc2a92cc33bc5);
+        
+    
+            var marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a = L.markerClusterGroup(
+                {}
+            );
+            map_5afbf842ebea46cf980dc2a92cc33bc5.addLayer(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+            var marker_7649f4b9ebba47f7865995d3066f3051 = L.marker(
+                [8.776164, -83.428049],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_0278534409cb48849eb38aab885c8745 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_796853e5483b4e6ab6a6d8e5c091fca2 = $(`<div id="html_796853e5483b4e6ab6a6d8e5c091fca2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2012-03-30 15:31:00 <strong>Recolectores:</strong> Eduardo Chacón-Madrigal <strong>Identificadores:</strong> Eduardo Chacón-Madrigal</div>`)[0];
+            popup_0278534409cb48849eb38aab885c8745.setContent(html_796853e5483b4e6ab6a6d8e5c091fca2);
+        
+
+        marker_7649f4b9ebba47f7865995d3066f3051.bindPopup(popup_0278534409cb48849eb38aab885c8745)
+        ;
+
+        
+    
+    
+            var marker_bc5d188c653c4240a7a36ee397fe9947 = L.marker(
+                [40.665977000000005, -73.961849],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_5a27a0eea33746c2902a8c6b7de229c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06680a4b149b48a0a833c20aad3769af = $(`<div id="html_06680a4b149b48a0a833c20aad3769af" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2019-09-13 15:07:01 <strong>Recolectores:</strong> petersaucy <strong>Identificadores:</strong> petersaucy</div>`)[0];
+            popup_5a27a0eea33746c2902a8c6b7de229c6.setContent(html_06680a4b149b48a0a833c20aad3769af);
+        
+
+        marker_bc5d188c653c4240a7a36ee397fe9947.bindPopup(popup_5a27a0eea33746c2902a8c6b7de229c6)
+        ;
+
+        
+    
+    
+            var marker_8cd0bc0e08b54ab4a5bbbca657800cd0 = L.marker(
+                [38.541667, -121.772222],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_09cf45dad6c64671936c71a7993b642b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04ab433df0634b25a04193e29d35d943 = $(`<div id="html_04ab433df0634b25a04193e29d35d943" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Yolo County: University of California, Davis. Botanical Conservatory. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 2012-11-11 00:00:00 <strong>Recolectores:</strong> Eva Bayón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_09cf45dad6c64671936c71a7993b642b.setContent(html_04ab433df0634b25a04193e29d35d943);
+        
+
+        marker_8cd0bc0e08b54ab4a5bbbca657800cd0.bindPopup(popup_09cf45dad6c64671936c71a7993b642b)
+        ;
+
+        
+    
+    
+            var marker_4b6e59a416df488eba023fab8e61cc38 = L.marker(
+                [38.541667, -121.772222],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_f88ff9e495d94e6583af3d161eef176f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c6c646bd7e5419982890c72e332ad17 = $(`<div id="html_2c6c646bd7e5419982890c72e332ad17" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Yolo County: University of California, Davis. Botanical Conservatory. <strong>Elevación:</strong> 15.0 m  <strong>Fecha:</strong> 2012-11-11 00:00:00 <strong>Recolectores:</strong> Eva Bayón <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f88ff9e495d94e6583af3d161eef176f.setContent(html_2c6c646bd7e5419982890c72e332ad17);
+        
+
+        marker_4b6e59a416df488eba023fab8e61cc38.bindPopup(popup_f88ff9e495d94e6583af3d161eef176f)
+        ;
+
+        
+    
+    
+            var marker_51e143f3ae95488b8d00b1a17c64916e = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_1b1202466e444187b3f091f731132770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eab21107362343db9fb3f6f3d13faf95 = $(`<div id="html_eab21107362343db9fb3f6f3d13faf95" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> north and west of the airfield c. 5 km. west of Rincón de Osa, Osa Península, Prov. Puntarenas. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-01-09 00:00:00 <strong>Recolectores:</strong> Burger WC; Liesner RL <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1b1202466e444187b3f091f731132770.setContent(html_eab21107362343db9fb3f6f3d13faf95);
+        
+
+        marker_51e143f3ae95488b8d00b1a17c64916e.bindPopup(popup_1b1202466e444187b3f091f731132770)
+        ;
+
+        
+    
+    
+            var marker_786a4934fe0c44a3878795378281ee65 = L.marker(
+                [38.82, -77.02],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_20d09ba10fd64b00aa0c13bc101ee20f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac1313202b9d4d35845ee32e4e2fb994 = $(`<div id="html_ac1313202b9d4d35845ee32e4e2fb994" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> USA:District of Columbia; U.S. Botanic Gardens Production Facility, 4700 Shepherd Parkway SW. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-06-15 00:00:00 <strong>Recolectores:</strong> VanNeste 200 <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_20d09ba10fd64b00aa0c13bc101ee20f.setContent(html_ac1313202b9d4d35845ee32e4e2fb994);
+        
+
+        marker_786a4934fe0c44a3878795378281ee65.bindPopup(popup_20d09ba10fd64b00aa0c13bc101ee20f)
+        ;
+
+        
+    
+    
+            var marker_f7ee8b814d1a4ebfb5879d99332d88af = L.marker(
+                [38.82, -77.02],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_7a8df2b448714974bd8100df15c76467 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d06085dbbc8649a98a8f8505e72a85a4 = $(`<div id="html_d06085dbbc8649a98a8f8505e72a85a4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> USA:District of Columbia; U.S. Botanic Gardens Production Facility, 4700 Shepherd Parkway SW. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-06-15 00:00:00 <strong>Recolectores:</strong> VanNeste 200 <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7a8df2b448714974bd8100df15c76467.setContent(html_d06085dbbc8649a98a8f8505e72a85a4);
+        
+
+        marker_f7ee8b814d1a4ebfb5879d99332d88af.bindPopup(popup_7a8df2b448714974bd8100df15c76467)
+        ;
+
+        
+    
+    
+            var marker_4658e852cd5540b5806650431866a6b5 = L.marker(
+                [38.82, -77.02],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_395b04706d05458e860eeddbb7971347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4eae3f7268544ea8213ad2dc100c2c5 = $(`<div id="html_b4eae3f7268544ea8213ad2dc100c2c5" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> USA:District of Columbia; U.S. Botanic Gardens Production Facility, 4700 Shepherd Parkway SW. <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 2015-06-15 00:00:00 <strong>Recolectores:</strong> VanNeste 200 <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_395b04706d05458e860eeddbb7971347.setContent(html_b4eae3f7268544ea8213ad2dc100c2c5);
+        
+
+        marker_4658e852cd5540b5806650431866a6b5.bindPopup(popup_395b04706d05458e860eeddbb7971347)
+        ;
+
+        
+    
+    
+            var marker_e9500acc021f485688917cd3351019f4 = L.marker(
+                [40.856792, -73.874442],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_1c865da64e1044aea2815cfc94a80e97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56ba7546f2b4434ea68a5fdad347e022 = $(`<div id="html_56ba7546f2b4434ea68a5fdad347e022" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> The New York Botanical Garden, The Nolen Greenhouses. <strong>Elevación:</strong> 18.0 m  <strong>Fecha:</strong> 2009-09-16 00:00:00 <strong>Recolectores:</strong> X. Cornejo <strong>Identificadores:</strong> X. Cornejo</div>`)[0];
+            popup_1c865da64e1044aea2815cfc94a80e97.setContent(html_56ba7546f2b4434ea68a5fdad347e022);
+        
+
+        marker_e9500acc021f485688917cd3351019f4.bindPopup(popup_1c865da64e1044aea2815cfc94a80e97)
+        ;
+
+        
+    
+    
+            var marker_43d430e49d0f4851a400358676c1595e = L.marker(
+                [8.7, -83.5153],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_69df68a852cf421fa3c48f3c36c96a02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbec620bcd7c47029f1435ade81f6581 = $(`<div id="html_bbec620bcd7c47029f1435ade81f6581" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Canton Osa; Reserva Forestal Golfo Dulce; Rincón, Cuenca de la Quebrada Aguabuena, fin de campo de aterrizaje Centro Boscosa bosques alrededor <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 2008-01-01 00:00:00 <strong>Recolectores:</strong> R. Aguilar <strong>Identificadores:</strong> R. Aguilar</div>`)[0];
+            popup_69df68a852cf421fa3c48f3c36c96a02.setContent(html_bbec620bcd7c47029f1435ade81f6581);
+        
+
+        marker_43d430e49d0f4851a400358676c1595e.bindPopup(popup_69df68a852cf421fa3c48f3c36c96a02)
+        ;
+
+        
+    
+    
+            var marker_72fc8ecc5baa4d2e8c633ff69f3cc0bb = L.marker(
+                [8.7, -83.52],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_1c07aa2704f54f03bce0807016ae98d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b719abc87c448db8d50d6e0a0827df3 = $(`<div id="html_3b719abc87c448db8d50d6e0a0827df3" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa Península, north and west of the air field, about 5 km. west of Rincón de Osa. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1970-01-09 00:00:00 <strong>Recolectores:</strong> W. C. Burger <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_1c07aa2704f54f03bce0807016ae98d1.setContent(html_3b719abc87c448db8d50d6e0a0827df3);
+        
+
+        marker_72fc8ecc5baa4d2e8c633ff69f3cc0bb.bindPopup(popup_1c07aa2704f54f03bce0807016ae98d1)
+        ;
+
+        
+    
+    
+            var marker_3e13a3d288014580a6ed03547bb9cf31 = L.marker(
+                [40.8569, -73.8744],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_40e96b79307d4b65b034e158022672da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73181650026b4d6085602503a376c91b = $(`<div id="html_73181650026b4d6085602503a376c91b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> New York Botanical Garden, Nolen Greenhouses collections <strong>Elevación:</strong> 17.0 m  <strong>Fecha:</strong> 2011-07-15 00:00:00 <strong>Recolectores:</strong> M. H. Nee <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_40e96b79307d4b65b034e158022672da.setContent(html_73181650026b4d6085602503a376c91b);
+        
+
+        marker_3e13a3d288014580a6ed03547bb9cf31.bindPopup(popup_40e96b79307d4b65b034e158022672da)
+        ;
+
+        
+    
+    
+            var marker_2159b25a07a34ba49aacbbaf9d1f6105 = L.marker(
+                [38.8173, -77.016],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_88f10e467bc74c27ba2b223caa1ab505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c65dc673a454d9580e6f0f91c537c84 = $(`<div id="html_2c65dc673a454d9580e6f0f91c537c84" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> U.S. Botanic Gardens Production Facility, 4700 Shepherd Parkway SW <strong>Elevación:</strong> 12.5 m  <strong>Fecha:</strong> 2015-06-15 00:00:00 <strong>Recolectores:</strong> K. M. Van Neste, S. E. Gabler, C. Coddington & K. Wallick <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_88f10e467bc74c27ba2b223caa1ab505.setContent(html_2c65dc673a454d9580e6f0f91c537c84);
+        
+
+        marker_2159b25a07a34ba49aacbbaf9d1f6105.bindPopup(popup_88f10e467bc74c27ba2b223caa1ab505)
+        ;
+
+        
+    
+    
+            var marker_7a88919ca1604875b68c44707b6d0e07 = L.marker(
+                [8.71, -83.52],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_4ae57eba5b134e1f98f5a877da807e78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_987f6686b5bc4d2e8653e06d2b04c2ba = $(`<div id="html_987f6686b5bc4d2e8653e06d2b04c2ba" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Aguabuena. Margen izquierda de de la Quebrada Aguabuena, 500 m aguas arriba de la unión con Quebrada Orito. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1991-01-16 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera Ch. <strong>Identificadores:</strong> J.F. Morales, April</div>`)[0];
+            popup_4ae57eba5b134e1f98f5a877da807e78.setContent(html_987f6686b5bc4d2e8653e06d2b04c2ba);
+        
+
+        marker_7a88919ca1604875b68c44707b6d0e07.bindPopup(popup_4ae57eba5b134e1f98f5a877da807e78)
+        ;
+
+        
+    
+    
+            var marker_6b1278378d534ecb9b02522d1b5b6920 = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_95ecc7940ec344508bfa8a2e653c736e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8547d9b41c84d6c8c48fe6eb0baa42e = $(`<div id="html_c8547d9b41c84d6c8c48fe6eb0baa42e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Quebrada Agua Buena cerca del viejo campo de aterrizaje; Estación Agua Buena de BOSCOSA. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1991-02-14 00:00:00 <strong>Recolectores:</strong> Ricardo Soto <strong>Identificadores:</strong> H. Ochoterena</div>`)[0];
+            popup_95ecc7940ec344508bfa8a2e653c736e.setContent(html_c8547d9b41c84d6c8c48fe6eb0baa42e);
+        
+
+        marker_6b1278378d534ecb9b02522d1b5b6920.bindPopup(popup_95ecc7940ec344508bfa8a2e653c736e)
+        ;
+
+        
+    
+    
+            var marker_7ab9408395be4bf0bb93da3f0c2a2e51 = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_8675db89643a47b9a81f39ddba879cf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02c7081bcc1a4e98a8dfe52c0cdd2052 = $(`<div id="html_02c7081bcc1a4e98a8dfe52c0cdd2052" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Reserva Forestal Golfo Dulce; Quebrada Agua Buena; Estación Agua Buena de Boscosa; cerca de campo de aterrizaje, ca. 5 km oeste de Rincón. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1991-10-10 00:00:00 <strong>Recolectores:</strong> Barry E. Hammel|Larry E. Gilbert|Robert J. Marquis|Ricardo Soto <strong>Identificadores:</strong> H. Ochoterena</div>`)[0];
+            popup_8675db89643a47b9a81f39ddba879cf5.setContent(html_02c7081bcc1a4e98a8dfe52c0cdd2052);
+        
+
+        marker_7ab9408395be4bf0bb93da3f0c2a2e51.bindPopup(popup_8675db89643a47b9a81f39ddba879cf5)
+        ;
+
+        
+    
+    
+            var marker_6cbf25b5551d4a55911649c116af1cf1 = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_ba1e89c847074c079ff55c790d82bc85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b84fdd7acd104d1992fc307e44eb1252 = $(`<div id="html_b84fdd7acd104d1992fc307e44eb1252" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce; Península de Osa. Sector Aguabuena. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1994-12-11 00:00:00 <strong>Recolectores:</strong> Quírico Jiménez <strong>Identificadores:</strong> C.M. Taylor (MO)</div>`)[0];
+            popup_ba1e89c847074c079ff55c790d82bc85.setContent(html_b84fdd7acd104d1992fc307e44eb1252);
+        
+
+        marker_6cbf25b5551d4a55911649c116af1cf1.bindPopup(popup_ba1e89c847074c079ff55c790d82bc85)
+        ;
+
+        
+    
+    
+            var marker_cf5109af7f664f0996b36c9abbd10571 = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_91bab5cd1e484186a6b0555007754957 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44fca27f29e445b58cb30706d720aac4 = $(`<div id="html_44fca27f29e445b58cb30706d720aac4" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> North and west of the air field ca. 5 km west of Rincón de Osa, Osa Peninsula. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1970-01-09 00:00:00 <strong>Recolectores:</strong> William C. Burger|Ronald L. Liesner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_91bab5cd1e484186a6b0555007754957.setContent(html_44fca27f29e445b58cb30706d720aac4);
+        
+
+        marker_cf5109af7f664f0996b36c9abbd10571.bindPopup(popup_91bab5cd1e484186a6b0555007754957)
+        ;
+
+        
+    
+    
+            var marker_dbbffbcd59434a9b92048cbcb3671d5c = L.marker(
+                [8.704444, -83.522778],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_cba972127ca349f4af2f3d3dabe23d98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_200c0845034542b99e23d659c28e4712 = $(`<div id="html_200c0845034542b99e23d659c28e4712" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Osa Peninsula. Reserva Forestal Golfo Dulce, Rincon de Osa, Agua Buena, near Quebrada. North of Corcovado National Park. <strong>Elevación:</strong> 130.0 m  <strong>Fecha:</strong> 2006-03-20 00:00:00 <strong>Recolectores:</strong> Arne A. Anderberg|J. Smedmark|Ulf Swenson|I. Bartish|J. Richardson|Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_cba972127ca349f4af2f3d3dabe23d98.setContent(html_200c0845034542b99e23d659c28e4712);
+        
+
+        marker_dbbffbcd59434a9b92048cbcb3671d5c.bindPopup(popup_cba972127ca349f4af2f3d3dabe23d98)
+        ;
+
+        
+    
+    
+            var marker_becff7e9d44f4f8ebd9f757e3d92bfe6 = L.marker(
+                [8.683333, -83.511944],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_59c99e85094f4ce0960d6bb348257ded = L.popup({"maxWidth": "100%"});
+
+        
+            var html_818f965960d848d88bda93443ffbf061 = $(`<div id="html_818f965960d848d88bda93443ffbf061" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena. <strong>Elevación:</strong> 100.0 m  <strong>Fecha:</strong> 2005-09-22 00:00:00 <strong>Recolectores:</strong> Claes Persson; Daniel Santamaría <strong>Identificadores:</strong> Persson, Claes</div>`)[0];
+            popup_59c99e85094f4ce0960d6bb348257ded.setContent(html_818f965960d848d88bda93443ffbf061);
+        
+
+        marker_becff7e9d44f4f8ebd9f757e3d92bfe6.bindPopup(popup_59c99e85094f4ce0960d6bb348257ded)
+        ;
+
+        
+    
+    
+            var marker_ad976addd2c14fc2a361fb567dcff1da = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_9b2d35115ef14eacb33423fb835eb26d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4423115fe2104e60b3af353dc3d5d89d = $(`<div id="html_4423115fe2104e60b3af353dc3d5d89d" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Aguabuena cerca del viejo campo de aterrizaje; Estacion Aguabuena de BOSCOSA. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1991-02-14 00:00:00 <strong>Recolectores:</strong> Ricardo Soto <strong>Identificadores:</strong> Soto, Ricardo</div>`)[0];
+            popup_9b2d35115ef14eacb33423fb835eb26d.setContent(html_4423115fe2104e60b3af353dc3d5d89d);
+        
+
+        marker_ad976addd2c14fc2a361fb567dcff1da.bindPopup(popup_9b2d35115ef14eacb33423fb835eb26d)
+        ;
+
+        
+    
+    
+            var marker_b6624182c4674d2f91bdb3f4dce20d58 = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_00135d070f824d018355ea3df0467a23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_104bf1ea16454fc1a4c061c8bc1c9b76 = $(`<div id="html_104bf1ea16454fc1a4c061c8bc1c9b76" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Quebrada Aguabuena; Estacion Aguabuena de Boscosa; cerca de campo de aterrizaje ca. 5 km oeste de Rincon. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1991-10-10 00:00:00 <strong>Recolectores:</strong> Barry Hammel <strong>Identificadores:</strong> Hammel, Barry</div>`)[0];
+            popup_00135d070f824d018355ea3df0467a23.setContent(html_104bf1ea16454fc1a4c061c8bc1c9b76);
+        
+
+        marker_b6624182c4674d2f91bdb3f4dce20d58.bindPopup(popup_00135d070f824d018355ea3df0467a23)
+        ;
+
+        
+    
+    
+            var marker_53b9d48cb8044af9b29d3d133ddad5b4 = L.marker(
+                [8.7, -83.51666800000001],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_57ebeedac8c84726954fc04c71a32f10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16dd3fd8e98d485aa62868bd820a16fc = $(`<div id="html_16dd3fd8e98d485aa62868bd820a16fc" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Sector Aguabuena. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1994-12-11 00:00:00 <strong>Recolectores:</strong> Quirico Jiménez <strong>Identificadores:</strong> Jiménez, Quirico</div>`)[0];
+            popup_57ebeedac8c84726954fc04c71a32f10.setContent(html_16dd3fd8e98d485aa62868bd820a16fc);
+        
+
+        marker_53b9d48cb8044af9b29d3d133ddad5b4.bindPopup(popup_57ebeedac8c84726954fc04c71a32f10)
+        ;
+
+        
+    
+    
+            var marker_926e21220b85499a833dae44222f8ed0 = L.marker(
+                [8.711111, -83.527778],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_e4ee84cecfab40df90d987ce7bd08fdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62771a5569a6419293106e54190cf98b = $(`<div id="html_62771a5569a6419293106e54190cf98b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Aguabuena. Margen izquierda de de la Quebrada Aguabuena, 500 m aguas arriba de la union con Quebrada Orito. <strong>Elevación:</strong> 250.0 m  <strong>Fecha:</strong> 1991-01-16 00:00:00 <strong>Recolectores:</strong> Gerardo Herrera <strong>Identificadores:</strong> Morales Quirós, Juan Francisco</div>`)[0];
+            popup_e4ee84cecfab40df90d987ce7bd08fdb.setContent(html_62771a5569a6419293106e54190cf98b);
+        
+
+        marker_926e21220b85499a833dae44222f8ed0.bindPopup(popup_e4ee84cecfab40df90d987ce7bd08fdb)
+        ;
+
+        
+    
+    
+            var marker_e093eca210254eb3a02225b864247fc8 = L.marker(
+                [10.0114, -83.9519],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_e6674f1e8e7c4b848acb83bc98dcc280 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec71cd4c9d934132aeabe9eba41aad9b = $(`<div id="html_ec71cd4c9d934132aeabe9eba41aad9b" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> nan <strong>Elevación:</strong> nan m  <strong>Fecha:</strong> 1970-01-01 00:00:00 <strong>Recolectores:</strong> W. C. Burger & R. L. Liesner <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_e6674f1e8e7c4b848acb83bc98dcc280.setContent(html_ec71cd4c9d934132aeabe9eba41aad9b);
+        
+
+        marker_e093eca210254eb3a02225b864247fc8.bindPopup(popup_e6674f1e8e7c4b848acb83bc98dcc280)
+        ;
+
+        
+    
+    
+            var marker_6a66ac691be9490fb6601505eae266c1 = L.marker(
+                [8.7, -83.52],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_59044391e21c452da5a75aefda400401 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e98b7ff6ea4b41498f9fbde6ea1bf95e = $(`<div id="html_e98b7ff6ea4b41498f9fbde6ea1bf95e" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Costa Rica. Prov. Puntarenas. Osa Peninsula. Reserva Forestal Golfo Dulce, Rincon de Osa, Agua Buena, near Quebrada. North of Corcovado National Park. <strong>Elevación:</strong> 130.0 m  <strong>Fecha:</strong> 2006-03-20 00:00:00 <strong>Recolectores:</strong> Arne Anderberg, Jenny Smedmark, Ulf Swenson, Igor Bartish, James Richardson & Reinaldo Aguilar <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_59044391e21c452da5a75aefda400401.setContent(html_e98b7ff6ea4b41498f9fbde6ea1bf95e);
+        
+
+        marker_6a66ac691be9490fb6601505eae266c1.bindPopup(popup_59044391e21c452da5a75aefda400401)
+        ;
+
+        
+    
+    
+            var marker_18ebbdf8d69a44cdadb5e7d61ae8d23d = L.marker(
+                [8.7, -83.516667],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_7d7eb9635ee7473da6db87ca50f88eee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6008f69509ae4d7e8699a4c5844b1300 = $(`<div id="html_6008f69509ae4d7e8699a4c5844b1300" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R.F. Golfo Dulce, Peninsula de Osa, Aguabuena. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> 1994-12-11 00:00:00 <strong>Recolectores:</strong> Jimenez, Quirico <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_7d7eb9635ee7473da6db87ca50f88eee.setContent(html_6008f69509ae4d7e8699a4c5844b1300);
+        
+
+        marker_18ebbdf8d69a44cdadb5e7d61ae8d23d.bindPopup(popup_7d7eb9635ee7473da6db87ca50f88eee)
+        ;
+
+        
+    
+    
+            var marker_a7069984c93c41cda24163c5592572e8 = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_b567f78a1e154df6a4ca6de04e6733fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67ce74893d974cf6b7e59fac422c43b2 = $(`<div id="html_67ce74893d974cf6b7e59fac422c43b2" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Penìnsula de Osa. Sector Aguabuena. <strong>Elevación:</strong> 50.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Jiménez, Quírico <strong>Identificadores:</strong> Jiménez, Quírico</div>`)[0];
+            popup_b567f78a1e154df6a4ca6de04e6733fc.setContent(html_67ce74893d974cf6b7e59fac422c43b2);
+        
+
+        marker_a7069984c93c41cda24163c5592572e8.bindPopup(popup_b567f78a1e154df6a4ca6de04e6733fc)
+        ;
+
+        
+    
+    
+            var marker_afba423205694d3f8fe85b3425d0b52d = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_516f15ad1e2c4b2289c64bad76030e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ba1973c69454a3db16c1bbcd5c49033 = $(`<div id="html_3ba1973c69454a3db16c1bbcd5c49033" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Aguabuena, 4.5 km  W of Rincòn. Moist terrain at the foot of 500 m high ridge, close to the house of Don Edilberto Bermùdez. Tall disturbed forest. <strong>Elevación:</strong> 60.0 m  <strong>Fecha:</strong> 1992-10-31 00:00:00 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Thomsen, Karsten</div>`)[0];
+            popup_516f15ad1e2c4b2289c64bad76030e98.setContent(html_3ba1973c69454a3db16c1bbcd5c49033);
+        
+
+        marker_afba423205694d3f8fe85b3425d0b52d.bindPopup(popup_516f15ad1e2c4b2289c64bad76030e98)
+        ;
+
+        
+    
+    
+            var marker_bf526700ab944f74aa76d6dfac41560d = L.marker(
+                [8.71, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_6c6eea945b624a49a460352ed2a5fb74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52129295794f41b3bf1a664280c880a0 = $(`<div id="html_52129295794f41b3bf1a664280c880a0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Upper Aguabuena, 5 km W of Rincòn. Moist terrain at the foot of 500 m high ridge, in ravine of Rìo Orito, a tributary to Rìo Aguabuena. Tall forest on dark soil on steep slope. <strong>Elevación:</strong> 120.0 m  <strong>Fecha:</strong> 1993-04-08 00:00:00 <strong>Recolectores:</strong> Thomsen, Karsten <strong>Identificadores:</strong> Thomsen, Karsten</div>`)[0];
+            popup_6c6eea945b624a49a460352ed2a5fb74.setContent(html_52129295794f41b3bf1a664280c880a0);
+        
+
+        marker_bf526700ab944f74aa76d6dfac41560d.bindPopup(popup_6c6eea945b624a49a460352ed2a5fb74)
+        ;
+
+        
+    
+    
+            var marker_754a7aebf1674942995708b30277834e = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_debe0a55541749d59cd5c9c14780d271 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9f4cfee513b492ca923826bee0d279a = $(`<div id="html_e9f4cfee513b492ca923826bee0d279a" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> R. F. Golfo Dulce Quebrada Agua Buena, Estaciòn Agua Buena de Boscosa, cerca de campo de aterrizaje, ca. 5 km oeste de Rincòn. <strong>Elevación:</strong> 150.0 m  <strong>Fecha:</strong> 1991-10-10 00:00:00 <strong>Recolectores:</strong> Hammel, Barry E. <strong>Identificadores:</strong> Hammel, Barry E.</div>`)[0];
+            popup_debe0a55541749d59cd5c9c14780d271.setContent(html_e9f4cfee513b492ca923826bee0d279a);
+        
+
+        marker_754a7aebf1674942995708b30277834e.bindPopup(popup_debe0a55541749d59cd5c9c14780d271)
+        ;
+
+        
+    
+    
+            var marker_811232aa42c34b3a80b81a12f0548460 = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_7aa8d1ec0ae54c0087b60c157408efc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa22f921060446cba0753555d8775ad0 = $(`<div id="html_aa22f921060446cba0753555d8775ad0" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Forested area near the airfield about 4  miles wes of Rincòn de Osa, Osa Penìnsula. <strong>Elevación:</strong> 30.0 m  <strong>Fecha:</strong> NaT <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> Taylor, Charlotte M.</div>`)[0];
+            popup_7aa8d1ec0ae54c0087b60c157408efc0.setContent(html_aa22f921060446cba0753555d8775ad0);
+        
+
+        marker_811232aa42c34b3a80b81a12f0548460.bindPopup(popup_7aa8d1ec0ae54c0087b60c157408efc0)
+        ;
+
+        
+    
+    
+            var marker_0aa72037c96049ec9778d28bcd05a198 = L.marker(
+                [8.7, -83.51],
+                {}
+            ).addTo(marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a);
+        
+    
+        var popup_f4cd682e2fcd4495b37b38c804d8ab96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79070480026843babbf07eb1cca96357 = $(`<div id="html_79070480026843babbf07eb1cca96357" style="width: 100.0%; height: 100.0%;"><strong>Localidad:</strong> Moist forest in valley -bottoms, forest with open under story on steep slopes and ridges, and areas of secondary vegetation north and west of the air field. About 5 Km W of Rincón. <strong>Elevación:</strong> 125.0 m  <strong>Fecha:</strong> 1970-01-11 00:00:00 <strong>Recolectores:</strong> Burger, William <strong>Identificadores:</strong> nan</div>`)[0];
+            popup_f4cd682e2fcd4495b37b38c804d8ab96.setContent(html_79070480026843babbf07eb1cca96357);
+        
+
+        marker_0aa72037c96049ec9778d28bcd05a198.bindPopup(popup_f4cd682e2fcd4495b37b38c804d8ab96)
+        ;
+
+        
+    
+    
+            var layer_control_ce2d53f080b14447a760f4d5e43ce12e = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_211900229b3b4839a4e8f18223fd051b,
+                    "ESRI World Imagery" : tile_layer_ea890e460115489a9224fd2fdb2669a5,
+                },
+                overlays :  {
+                    "macro_element_60c99f42a0fc42cb9d406f3a47f6629a" : marker_cluster_60c99f42a0fc42cb9d406f3a47f6629a,
+                },
+            };
+            L.control.layers(
+                layer_control_ce2d53f080b14447a760f4d5e43ce12e.base_layers,
+                layer_control_ce2d53f080b14447a760f4d5e43ce12e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5afbf842ebea46cf980dc2a92cc33bc5);
+            tile_layer_ea890e460115489a9224fd2fdb2669a5.remove();
+        
+</script>
